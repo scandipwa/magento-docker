@@ -1,0 +1,19 @@
+# MySQL settings
+MYSQL_HOST=mysql
+MYSQL_PORT=3306
+MYSQL_ROOT_PASSWORD=scandipwa
+MYSQL_USER=magento
+MYSQL_PASSWORD=magento
+MYSQL_DATABASE=magento
+
+MAGENTO_FIRST_NAME=Scandiweb
+MAGENTO_LAST_NAME=Developer
+MAGENTO_EMAIL=developer@indvp.com
+MAGENTO_USER=admin
+MAGENTO_PASSWORD=scandipwa123
+MAGENTO_ADMINURI=admin
+
+MAGENTO_MODE=developer
+# You might experience some session-related issues when using localhost, use 127.0.0.1 instead!
+MAGENTO_BASEURL=http://scandipwa.indvp.com
+MAGENTO_SECURE_BASEURL=https://scandipwa.indvp.com

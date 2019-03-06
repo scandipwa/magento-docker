@@ -1,0 +1,59 @@
+## Local configuration, used for developer setup with docker-compose
+## Note: this file already referenced in docker-compose.yml, alter this file to override options
+
+# Use for forcing container to run even errors occurs during the run
+DOCKER_DEBUG=true
+
+# Service versions (ENV)
+MYSQL_VERSION=5.7
+NGINX_VERSION=alpine
+REDIS_VERSION=alpine
+ELASTICSEARCH_VERSION=5.6.13
+RABBITMQ_VERSION=alpine
+
+# Service configurations (ENV)
+VARNISH_PORT=80
+# Varnish memory limit, defaults to 256m
+#VARNISH_MEMORY=512m
+NGINX_BIND_PORT=3031
+MYSQL_PORT=3307
+REDIS_PORT=6379
+ELASTICSEARCH_PORT=9200
+RABBITMQ_PORT=15672
+MAILDEV_PORT=1080
+
+### General settings (ARG)
+# These settings used in build and deploy stages, set them once, recheck and deploy.
+BASEPATH=/var/www/public
+THEMEPATH=app/design/frontend/Scandiweb/pwa
+PROJECT_TAG=local
+
+# PHP Composer uses plain version number, fail if not existing
+# version list, manual download section: https://getcomposer.org/download/
+# default COMPOSER version: latest
+D_COMPOSER_HOME=/var/lib/composer
+# Set version for override, or leave the "latest", updated on each build
+COMPOSER_VERSION=latest
+COMPOSER_ALLOW_SUPERUSER=1
+
+# Node.js is installed via n
+# node versions: `n list` or https://nodejs.org/dist/
+# default NODEJS version: latest LTS
+NODEJS_DIR=/var/lib/node
+NODEJS_VERSION=10
+NPM_CONFIG_LOGLEVEL=warn
+
+# Ruby is installed via rbenv
+# rbenv recognizes RBENV_ROOT as is. Value is also used for extending PATH definition
+D_RBENV_ROOT=/var/lib/ruby
+D_RBENV_VERSION=2.5.1
+
+# Increase wait time given to docker to respond under heavy load
+COMPOSE_HTTP_TIMEOUT=360
+
+GRAPHQL_ENDPOINT=https://scandipwa.local/graphql
+MEDIA_ENDPOINT=https://scandipwa.local/media
+STATIC_ASSET_PATH=/static/frontend/Scandiweb/pwa/en_US/Magento_Theme/
+MAIN_MENU_ID=1
+SMART_STREET_KEY=''
+GOOGLE_MAP_API_KEY=''

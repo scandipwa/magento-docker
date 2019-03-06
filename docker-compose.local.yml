@@ -1,0 +1,24 @@
+version: '3'
+services:
+  app:
+    environment:
+      # This variable is required to run local setup on Linux, determines the switch from root to user
+      - LOCAL=true
+    volumes:
+      # Mount source instead of copy
+      - ./src:/var/www/public:cached
+      # PHP configuration mount
+      - ./deploy/shared/conf/php/php.ini:/usr/local/etc/php/php.ini
+      # PHP FPM pool settings
+      - ./deploy/shared/conf/php/zz-docker.conf:/usr/local/etc/php-fpm.d/zz-docker.conf
+      # Uncomment to use custom configuration with -debug image
+      #- ./deploy/local/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      # Uncomment line below only for testing launch script without rebuild
+      - ./deploy/start.sh:/start.sh
+  nginx:
+    volumes:
+      - ./src:/var/www/public:cached
+    networks:
+      default:
+        aliases:
+          - scandipwa.local

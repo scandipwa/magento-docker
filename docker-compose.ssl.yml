@@ -1,0 +1,21 @@
+version: '3'
+services:
+  ssl-term:
+    image: nginx:${NGINX_VERSION}
+    restart: on-failure:30
+    env_file:
+      - .env
+    ports:
+      - 80:80
+      - 443:443
+    expose:
+      - 80
+      - 443
+    networks:
+      - default
+    volumes:
+      - ./deploy/local/cert:/etc/nginx/cert:cached
+      - ./deploy/shared/conf/nginx/ssl-terminator.conf:/etc/nginx/conf.d/default.conf
+    links:
+      - nginx
+      - varnish

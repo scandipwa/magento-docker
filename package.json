@@ -1,0 +1,21 @@
+{
+  "name": "docker-magento22-template",
+  "version": "1.0.0",
+  "description": "All docs are in the [docs](docs) folder",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "docsify-cli": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node_modules/docsify-cli/bin/docsify serve docs -p 4000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/scandiweb/docker-magento22-template"
+  },
+  "author": "Ilja Lapkovskis",
+  "license": "ISC"
+}

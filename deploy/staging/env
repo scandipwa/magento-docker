@@ -1,0 +1,49 @@
+## Local configuration, used for developer setup with docker-compose
+## Note: this file already referenced in docker-compose.yml, alter this file to override options
+
+# Use for forcing container to run even errors occurs during the run
+DOCKER_DEBUG=true
+
+# Service versions (ENV)
+MYSQL_VERSION=5.7
+NGINX_VERSION=alpine
+REDIS_VERSION=alpine
+VARNISH_VERSION=5.0
+ELASTICSEARCH_VERSION=5.5.3
+RABBITMQ_VERSION=alpine
+
+# Service configurations (ENV)
+VARNISH_PORT=3002
+# Varnish memory limit, defaults to 256m
+#VARNISH_MEMORY=512m
+NGINX_BIND_PORT=8081
+MYSQL_PORT=3308
+REDIS_PORT=6380
+ELASTICSEARCH_PORT=9201
+RABBITMQ_PORT=15673
+MAILDEV_PORT=1081
+
+### General settings (ARG)
+# These settings used in build and deploy stages, set them once, recheck and deploy.
+BASEPATH=/var/www/public
+PROJECT_TAG=staging
+
+# PHP Composer uses plain version number, fail if not existing
+# version list, manual download section: https://getcomposer.org/download/
+# default COMPOSER version: latest
+D_COMPOSER_HOME=/var/lib/composer
+# Set version for override, or leave the "latest", updated on each build
+COMPOSER_VERSION=latest
+COMPOSER_ALLOW_SUPERUSER=1
+
+# Node.js is installed via n
+# node versions: `n list` or https://nodejs.org/dist/
+# default NODEJS version: latest LTS
+NODEJS_DIR=/var/lib/node
+NODEJS_VERSION=lts
+NPM_CONFIG_LOGLEVEL=warn
+
+# Ruby is installed via rbenv
+# rbenv recognizes RBENV_ROOT as is. Value is also used for extending PATH definition
+D_RBENV_ROOT=/var/lib/ruby
+D_RBENV_VERSION=2.5.1
