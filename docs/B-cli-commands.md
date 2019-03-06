@@ -1,9 +1,5 @@
 # Docker-Compose Usage
 
-These usage settings apply on any environment where docker-compose is used, with one exception:
-
-On **indvp** environment you must add `-p target_environment` to each docker-compose command, so called project or prefix in terms of docker-compose, this allowes to use same docker-compose template multiple times on the same machine
-
 ## Stack operations
 
 Start and create containers `docker-compose up -d`

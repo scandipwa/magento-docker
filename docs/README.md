@@ -1,12 +1,12 @@
 # Documentation hub {docsify-ignore}
 
-> These docs cover docker setup and usage for local/indvp, and it's deployment
+> These docs cover docker setup and usage for local, and it's deployment
 
 #### Currently under development, so the structure and logic can change before stable release {docsify-ignore}
 
 ## Reporting issues
 
-Simply create a new ticket here: <https://scandiweb.atlassian.net/secure/CreateIssue.jspa?pid=32401>
+Simply create a new ticket here: <https://github.com/scandipwa/base-theme/issues>
 
 Or ask in [#docker](slack://channel?team=scandiweb&id=C60MXN7AL) channel
 
@@ -14,8 +14,7 @@ Or ask in [#docker](slack://channel?team=scandiweb&id=C60MXN7AL) channel
 
 Docs written in Markdown, use any editor as you like
 
-[Docsify](https://docsify.js.org/#/?id=docsify) is used to make local preview, with additional plugins and generate [docs.kube.indvp.com](docs.kube.indvp.com)
-
+[Docsify](https://docsify.js.org/#/?id=docsify) is used to make local preview, with additional plugins and generate 
 To use local preview you need:
 
 *   Setup docsify with `npm install`

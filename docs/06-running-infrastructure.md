@@ -33,17 +33,13 @@ Such command will follow simple logic:
 When containers are created, they are automatically prefixed with current directory name by default.
 Additionaly, by passing `-p` flag, you can isolate them within the namespace:
 
-In example: `docker-compose -f docker-compose.yml -f docker-compose.remote.yml -p staging up -d`
-will raise the same infrastructure within the virtual Docker-compose project, called staging.
+In example: `docker-compose -f docker-compose.yml -f docker-compose.remote.yml -p prefix up -d`
+will raise the same infrastructure within the virtual Docker-compose project, called by the prefix.
 In order to reach any of containers over docker-compose, you must always follow up your command with `-p` project 
 command, for example:
 
 `docker-compose ps` - will show the status of the first example
 
-`docker-compose -p staging ps` - will show the status of the second example: only containers belonging to the 
-*staging* project.
-
-Such specific behaviour is used on IMS-indvp servers. 
 
 **Please note** Mounting behaviour might seems not to follow this logic, however, that is only caused by mounting 
 nature itself. Apparently you can not mount (bind) more then one volume and/or directory to the same path. Only the latest rule will take affect.

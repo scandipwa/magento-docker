@@ -27,15 +27,3 @@ full-rebuild:
 flushall:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml exec varnish varnishadm "ban req.url ~ /"
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml exec redis redis-cli FLUSHALL
-
-indvp-stage-recreate:
-	docker-compose -p staging -f docker-compose.yml -f docker-compose.staging.yml up -d --force-recreate
-
-indvp-stage-down:
-	docker-compose -p staging down
-
-indvp-stage-pull:
-	docker-compose -p staging pull
-
-indvp-stage-rm-volume:
-	docker volume rm staging_app-data

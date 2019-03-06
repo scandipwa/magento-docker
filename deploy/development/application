@@ -8,7 +8,7 @@ MYSQL_DATABASE=magento
 
 MAGENTO_FIRST_NAME=Scandiweb
 MAGENTO_LAST_NAME=Developer
-MAGENTO_EMAIL=developer@indvp.com
+MAGENTO_EMAIL=developer@scandipwa
 MAGENTO_USER=admin
 MAGENTO_PASSWORD=scandipwa123
 MAGENTO_ADMINURI=admin

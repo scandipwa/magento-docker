@@ -7,10 +7,9 @@ Template is using as much of pre-builts and originally shipped images as possibl
 All services are defined within docker-compose.yml and can be enabled or disabled depending or project needs.
 
 ## List of available services:
-* app - **build is required** - application running and maintaining (php, composer, nodejs, gulp, ruby, python). Latest versions available from: [https://registry.kube.indvp.com/harbor/tags/1/library%2Fm2fullstack](https://registry.kube.indvp.com/harbor/tags/1/library%2Fm2fullstack)
+* app - **build is required** - application running and maintaining (php, composer, nodejs, gulp, ruby, python). Latest versions available from: [https://hub.docker.com/scandipwa/scandipwa-base](https://hub.docker.com/scandipwa/scandipwa-base)
 
-* varnish - **scandiweb pre-built version is available** - For version list please refer to: [https://registry.kube
-.indvp.com/harbor/tags/1/library%2Fvarnish](https://registry.kube.indvp.com/harbor/tags/1/library%2Fvarnish)
+* varnish - **scandiweb pre-built version is available** - For version list please refer to: [https://hub.docker.com/scandipwa/varnish](https://hub.docker.com/scandipwa/varnish)
 * nginx - **build is not required** - container running nginx, based on official images. For version list and 
 details please refer to: 
 [https://hub.docker.com/_/nginx/](https://hub.docker.com/_/nginx/)

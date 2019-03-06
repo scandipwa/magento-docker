@@ -34,13 +34,13 @@ These options are optional and require good understanding of versioning and stac
  
 2) Remove the existing image and rebuild the image normally:
 
-```docker rmi registry.kube.indvp.com/library/m2fullstack:<version>```
+```docker rmi scandipwa/scandipwa-base```
 
 ```docker-compose -f docker-compose.yml -f docker-compose.local.yml up -d```
   
 3) Pull the basic image:
 
-```docker pull registry.kube.indvp.com/library/m2fullstack:<version>```
+```docker pull scandipwa/scandipwa-base:<version>```
 
 
 **Note**:
@@ -62,6 +62,3 @@ Versions are defined in `.env` file symlinked to the `root folder` of the Docker
 Currently available for configuration binaries:
 * Composer
 * NodeJS
-* Ruby
-
-**If you found required tools are missing - `bootstrap.sh` is designated place to add them**
