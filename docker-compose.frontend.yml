@@ -6,7 +6,7 @@ services:
     links:
       - frontend
   frontend:
-    image: scandipwa/frontend:${PROJECT_TAG}
+    image: registry.kube.indvp.com/scandipwa-oss/frontend:${PROJECT_TAG}
     build:
       context: frontend
       args:
