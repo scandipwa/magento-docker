@@ -60,7 +60,7 @@ function pwa_theme_install {
   echo "${blue}${bold}PWA theme registration in magento${normal}"
   magento scandipwa:theme:bootstrap Scandiweb/pwa -n
 
-  # Theme build  
+  # Theme build
   if [[  -d $BASEPATH/app/design/frontend/Scandiweb/pwa  ]]; then
     echo "${blue}${bold}Building PWA theme${normal}"
     cd $BASEPATH/app/design/frontend/Scandiweb/pwa
@@ -98,9 +98,7 @@ function composer_install {
   if [ -z ${COMPOSER_AUTH+x} ]; then echo "Please set COMPOSER_AUTH environment variable" && exit 1; fi
   # Check environment to install Dev Dependencies on specific ones
   if [ $MAGENTO_MODE = "developer" ]; then
-    COMPOSER_NO_DEV="--dev"
-  else 
-    COMPOSER_NO_DEV="--no-dev"
+    COMPOSER_NO_DEV=""
   fi
 
   # Composer install
@@ -157,7 +155,6 @@ function magento_database_migration {
     echo "${blue}${bold}No upgrade/install is needed${normal}"
   else
     echo "${red}${bold}Database migration failed: manual action is required!${normal}"
-    exit 1
   fi
   if [ $DOCKER_DEBUG != "true" ]; then
     set -e

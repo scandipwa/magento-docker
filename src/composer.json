@@ -66,8 +66,48 @@
             "url": "https://repo.magento.com/"
         },
         {
-            "type": "composer",
-            "url": "https://packages.indvp.com"
+            "type": "vcs",
+            "url": "https://github.com/scandipwa/slider-graphql.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/scandipwa/slider.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/scandipwa/cms-graphql.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/scandipwa/slider-graphql.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/scandipwa/base-theme.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/scandipwa/graphql.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/scandipwa/menu-organizer.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/scandipwa/installer.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/scandipwa/persisted-query.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/scandipwa/catalog-graphql.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/scandiwebcom/Scandiweb-Assets-Core.git"
         }
     ],
     "extra": {
