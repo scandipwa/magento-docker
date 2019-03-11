@@ -1,4 +1,6 @@
 # Welcome to ScandiPWA
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base?ref=badge_shield)
+
 
 This repository is a base repository that contains Docker environment for Magento ^2.3 and is dedicated for ScandiPWA
  theme development and ScandiPWA based project development.
@@ -55,3 +57,7 @@ docker-compose exec -T mysql mysql -u root -pscandipwa magento < deploy/latest.s
 ```console
 docker-compose up -d --force-recreate
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base?ref=badge_large)
