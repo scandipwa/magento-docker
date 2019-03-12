@@ -59,9 +59,8 @@ function pwa_theme_install {
   # Composer install
   echo "${blue}${bold}PWA theme registration in magento${normal}"
   magento scandipwa:theme:bootstrap Scandiweb/pwa -n
-
   # Theme build
-  if [[  -d $BASEPATH/app/design/frontend/Scandiweb/pwa  ]]; then
+  if [ $? -eq 0 ]; then
     echo "${blue}${bold}Building PWA theme${normal}"
     cd $BASEPATH/app/design/frontend/Scandiweb/pwa
     npm i
