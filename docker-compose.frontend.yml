@@ -13,8 +13,9 @@ services:
         - BASEPATH=${BASEPATH}
         - NODEJS_VERSION=${NODEJS_VERSION}
     volumes:
-      - ./src/localmodules/scandipwa-base-theme:/var/www/public
-    working_dir: "/var/www/public"
+      - ./src/app/design/frontend/Scandiweb/pwa:/var/www/public/app/design/frontend/Scandiweb/pwa
+      - ./src/vendor/scandipwa/source:/var/www/public/vendor/scandipwa/source
+    working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
     env_file: .env
     expose:
       - 3003
