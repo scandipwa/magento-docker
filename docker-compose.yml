@@ -33,7 +33,7 @@ services:
   varnish:
     image: registry.kube.indvp.com/scandipwa-oss/varnish:5.1
     build:
-      context: varnish
+      context: build/varnish
     restart: on-failure:30
     env_file:
       - .env
