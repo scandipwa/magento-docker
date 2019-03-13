@@ -53,8 +53,8 @@ cd cert || exit
 # Dicovery of paths for CA and Cert configurations
 export CA_CONF_LOCATION
 export CERT_CONF_LOCATION
-CA_CONF_LOCATION=$(readlink -e ../../deploy/shared/conf/local-ssl/ca.conf)
-CERT_CONF_LOCATION=$(readlink -e ../../deploy/shared/conf/local-ssl/certificate.conf)
+CA_CONF_LOCATION=$(greadlink -e ../../deploy/shared/conf/local-ssl/ca.conf)
+CERT_CONF_LOCATION=$(greadlink -e ../../deploy/shared/conf/local-ssl/certificate.conf)
 
 # Skip Root CA and key generation is exists
 if [[ -f scandipwa-ca.key ]] && [[ -f scandipwa-ca.pem ]]; then
@@ -86,11 +86,11 @@ else
   # Make server key without passphrase
   echo "${yellow}Generating server key without passphrase, enter same passphrase as above${normal}"
   openssl rsa < tempkey.pem > server_key.pem
-  cat server_crt.pem scandipwa-ca.pem > server_fullchain.pem
+  cat server_key.pem scandipwa-ca.pem > server_fullchain.pem
   # Singing certificate with CA
   echo "${yellow}Singing server certificate with CA${normal}"
   export OPENSSL_CONF=$CA_CONF_LOCATION
-  yes | openssl ca -in tempreq.pem -out server_crt.pem
+  yes | openssl ca -in tempreq.pem -out server_key.pem
   echo "#########################################################################################################################"
   echo "#"                                                                                                                     "#"
   echo "# ${green}Certificate generation is complete${normal}"                                                                 "#"
