@@ -1,5 +1,5 @@
 # Define available commands
-.PHONY: build full-rebuild push up recreate down frontend-up frontend-down frontend-build \
+.PHONY: build full-rebuild push up recreate down cert \
  down-rm-volumes applogs logs flushall
 
 # Warning! Do not use soft tabs!
@@ -27,3 +27,11 @@ full-rebuild:
 flushall:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml exec varnish varnishadm "ban req.url ~ /"
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml exec redis redis-cli FLUSHALL
+	
+cert:
+	docker run -it --rm --init \
+	--user $(id -u):$(id -g) \
+	-v $(pwd)/deploy/shared/conf/local-ssl:/cert_config/ \
+	-v $(pwd)/opt/cert:/cert \
+	-v $(pwd)/deploy/create_certificates.sh:/create_certificates.sh \
+	alpine:latest chmod +x /create_certificates.sh && /create_certificates.sh

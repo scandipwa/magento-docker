@@ -1,10 +1,12 @@
-#!/usr/bin/env bash
+#!/bin/sh
 set -euo pipefail
 
-# Path to certificate store, can be set globally via ENV variable SSL_CERT_PATH
-# defaults to ../opt/ directory of PWA project, relative from script path
-export SSL_CERT_PATH
-SSL_CERT_PATH=${SSL_CERT_PATH:-"../opt/"}
+# Installing required packages
+apk add --update ncurses openssl coreutils
+
+ls -la /
+ls -la /cert/
+ls -la /cert_config/
 
 # Bash color library
 function bash_color_library {
@@ -32,29 +34,15 @@ bash_color_library
 bash_colors=$(bash_color_library)
 export bash_colors
 
-# Check exetables before start
-if ! [ -x "$(command -v openssl)" ]; then
-  echo >&2 "${bold}${red}openssl${normal}${red} is not installed. Please install it and rerun this script${normal}"; exit 1;
-fi
-
-if ! [ -x "$(command -v readlink)" ]; then
-  echo >&2 "${bold}${red}coreutils${normal}${red} is not installed. Please install them and rerun this script${normal}"; exit 1;
-fi
-
-# Change to the script execution path for proper relative paths
-cd $(dirname $([ -L $0 ] && readlink -f $0 || echo $0))
-
-# Generating ROOT CA key and cert
-echo "${blue}Creating and switching to ${bold}${SSL_CERT_PATH}${normal}"
-mkdir -p ${SSL_CERT_PATH}/cert
-cd $SSL_CERT_PATH || exit
-cd cert || exit
+# # Generating ROOT CA key and cert
+mkdir -p /cert
+cd /cert || exit
 
 # Dicovery of paths for CA and Cert configurations
 export CA_CONF_LOCATION
 export CERT_CONF_LOCATION
-CA_CONF_LOCATION=$(readlink -e ../../deploy/shared/conf/local-ssl/ca.conf)
-CERT_CONF_LOCATION=$(readlink -e ../../deploy/shared/conf/local-ssl/certificate.conf)
+CA_CONF_LOCATION=/cert_config/ca.conf
+CERT_CONF_LOCATION=/cert_config/certificate.conf
 
 # Skip Root CA and key generation is exists
 if [[ -f scandipwa-ca.key ]] && [[ -f scandipwa-ca.pem ]]; then
@@ -86,7 +74,6 @@ else
   # Make server key without passphrase
   echo "${yellow}Generating server key without passphrase, enter same passphrase as above${normal}"
   openssl rsa < tempkey.pem > server_key.pem
-  cat server_crt.pem scandipwa-ca.pem > server_fullchain.pem
   # Singing certificate with CA
   echo "${yellow}Singing server certificate with CA${normal}"
   export OPENSSL_CONF=$CA_CONF_LOCATION
