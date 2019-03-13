@@ -2,8 +2,7 @@
 
 ## Setup
 
-php with xdebug is set for local by default, through $PHP_VERSION variable by appending `-debug` to docker image 
-version.
+php with xdebug is can be set for local, by changing  $PROJECT_IMAGE variable to `xdebug`, ensuring corrent docker image to be used.
 
 ### PhpStorm configuration
 
