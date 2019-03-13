@@ -12,7 +12,7 @@ ELASTICSEARCH_VERSION=5.6.13
 RABBITMQ_VERSION=alpine
 
 # Service configurations (ENV)
-VARNISH_PORT=80
+VARNISH_PORT=8080
 # Varnish memory limit, defaults to 256m
 #VARNISH_MEMORY=512m
 NGINX_BIND_PORT=3031
