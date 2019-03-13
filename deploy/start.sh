@@ -55,10 +55,14 @@ export bash_colors
 ### Colors in command output end
 
 function pwa_theme_install {
-  echo "${bold}${green}Installing ScandiPWA${normal}"
-  # Composer install
-  echo "${blue}${bold}PWA theme registration in magento${normal}"
-  magento scandipwa:theme:bootstrap Scandiweb/pwa -n
+  # Theme install
+  if [[ ! $(composer show | grep scandipwa/installer) ]]; then
+    echo "${bold}${green}Installing ScandiPWA${normal}"
+    composer require --prefer-dist scandipwa/installer
+    php bin/magento setup:upgrade
+    echo "${blue}${bold}PWA theme registration in magento${normal}"
+    magento scandipwa:theme:bootstrap Scandiweb/pwa -n
+  fi
   # Theme build
   if [ $? -eq 0 ]; then
     echo "${blue}${bold}Building PWA theme${normal}"
