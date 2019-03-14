@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: registry.kube.indvp.com/scandipwa-oss/scandipwa-base:${PROJECT_TAG}
+    image: scandipwa/base:${PROJECT_IMAGE}
     build:
       context: .
       args:
@@ -31,7 +31,7 @@ services:
     command: ["/wait-for-it.sh", "mysql:3306", "--", "/start.sh"]
     entrypoint: ["/usr/local/bin/entrypoint.sh"]
   varnish:
-    image: registry.kube.indvp.com/scandipwa-oss/varnish:5.1
+    image: scandipwa/varnish:latest
     build:
       context: build/varnish
     restart: on-failure:30
