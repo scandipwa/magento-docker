@@ -6,7 +6,7 @@ services:
     links:
       - frontend
   frontend:
-    image: scandipwa/frontend:${PROJECT_TAG}
+    image: scandipwa/frontend:${PROJECT_IMAGE}
     build:
       context: frontend
       args:
