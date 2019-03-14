@@ -63,10 +63,6 @@
         {
             "type": "composer",
             "url": "https://repo.magento.com/"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/scandiwebcom/Scandiweb-Assets-Core.git"
         }
     ],
     "extra": {
