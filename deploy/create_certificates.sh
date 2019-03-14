@@ -1,15 +1,11 @@
-#!/bin/sh
-set -euo pipefail
+#!/usr/bin/env sh
+set -eu
 
 # Installing required packages
 apk add --update ncurses openssl coreutils
 
-ls -la /
-ls -la /cert/
-ls -la /cert_config/
-
-# Bash color library
-function bash_color_library {
+# Color library
+bash_color_library() {
   # see if it supports colors...
   ncolors=$(tput colors)
   # shellcheck disable=SC2034
@@ -38,6 +34,8 @@ export bash_colors
 mkdir -p /cert
 cd /cert || exit
 
+export UID
+export GID
 # Dicovery of paths for CA and Cert configurations
 export CA_CONF_LOCATION
 export CERT_CONF_LOCATION
@@ -45,7 +43,7 @@ CA_CONF_LOCATION=/cert_config/ca.conf
 CERT_CONF_LOCATION=/cert_config/certificate.conf
 
 # Skip Root CA and key generation is exists
-if [[ -f scandipwa-ca.key ]] && [[ -f scandipwa-ca.pem ]]; then
+if [ -f scandipwa-ca.key ] && [ -f scandipwa-ca.pem ]; then
   echo "${blue}Root CA and it's key already in place, skipping generation${normal}"
 else
   echo "${blue}Creating ${bold}Root key and certificate${normal}"
@@ -53,7 +51,7 @@ else
   export OPENSSL_CONF=$CA_CONF_LOCATION
 
   # Creating index and serial files
-  echo '01' > serial && touch index.txt
+  echo '01' > /cert/serial && touch /cert/index.txt && touch index.txt.attr
   # Generate CA and key
   echo "${yellow}Generating Root CA and key${normal}"
   openssl req -x509 -newkey rsa:2048 -out scandipwa-ca.pem -outform PEM -days 1825
@@ -61,12 +59,12 @@ else
 fi
 
 # If Root CA and key does not exists, abort
-if [[ ! -f scandipwa-ca.key && ! -f scandipwa-ca.pem ]]; then
+if [ ! -f scandipwa-ca.key ] && [ ! -f scandipwa-ca.pem ]; then
   echo "${red}${bold}Root key and certificate are not present, aborting${normal}"
   exit
 else
   # Refresh files after cleanup
-  touch index.txt
+  touch index.txt && touch index.txt.attr
   # Set certificate config
   export OPENSSL_CONF=$CERT_CONF_LOCATION
   echo "${yellow}Generating private key for server certificate and CSR${normal}"
