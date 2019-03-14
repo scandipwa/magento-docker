@@ -46,6 +46,9 @@ RUN apt-get -qq update &&\
     git \
     rsync \
     wget \
+    nano \
+    vim \
+    pv \
     gnupg \
     bc \
     curl \
