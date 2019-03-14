@@ -4,6 +4,8 @@
 
 # Variables
 current_dir := $(shell pwd)
+uid := $(shell id -u)
+gid := $(shell id -g)
 
 # Warning! Do not use soft tabs!
 up:
@@ -32,7 +34,10 @@ flushall:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml exec redis redis-cli FLUSHALL
 
 cert:
+	mkdir -p opt/cert
 	docker run -it --rm --init \
+	-e UID=$(uid) \
+	-e GID=$(gid) \
 	--mount type=bind,source=$(current_dir)/deploy/shared/conf/local-ssl,target=/cert_config/ \
 	--mount type=bind,source=$(current_dir)/opt/cert,target=/cert \
 	--mount type=bind,source=$(current_dir)/deploy/create_certificates.sh,target=/usr/local/bin/create_certificates \

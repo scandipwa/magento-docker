@@ -7,7 +7,7 @@ Warning about untrusted certificate counts as untrusted, so generating and trust
 
 ## Certificate generator
 
-There is a script in `./deploy/create_certificate.sh` which guides you thorough CA and certificate generation process
+There is a script in `./deploy/create_certificates.sh` which guides you thorough CA and certificate generation process
 
 Packages required: `openssl`, `coreutils`.
 

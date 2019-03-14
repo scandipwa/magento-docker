@@ -78,6 +78,7 @@ else
   echo "${yellow}Singing server certificate with CA${normal}"
   export OPENSSL_CONF=$CA_CONF_LOCATION
   yes | openssl ca -in tempreq.pem -out server_crt.pem
+  chown -R $UID:$GID /cert
   echo "#########################################################################################################################"
   echo "#"                                                                                                                     "#"
   echo "# ${green}Certificate generation is complete${normal}"                                                                 "#"
