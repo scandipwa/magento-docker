@@ -27,6 +27,7 @@ MAILDEV_PORT=1080
 BASEPATH=/var/www/public
 THEMEPATH=app/design/frontend/Scandiweb/pwa
 PROJECT_TAG=local
+PROJECT_IMAGE=latest
 
 # PHP Composer uses plain version number, fail if not existing
 # version list, manual download section: https://getcomposer.org/download/
