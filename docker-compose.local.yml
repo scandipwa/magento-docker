@@ -12,7 +12,7 @@ services:
       # PHP FPM pool settings
       - ./deploy/shared/conf/php/zz-docker.conf:/usr/local/etc/php-fpm.d/zz-docker.conf
       # Uncomment to use custom configuration with -debug image
-      #- ./deploy/local/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./deploy/shared/conf/xdebug/xdebug-config.ini:/usr/local/etc/php/conf.d/xdebug-config.ini
       # Uncomment line below only for testing launch script without rebuild
       - ./deploy/start.sh:/start.sh
   nginx:

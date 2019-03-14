@@ -6,9 +6,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Install required PHP extensions
 RUN pecl install xdebug; \
     docker-php-ext-enable xdebug
-    
-# Copy xdebug config
-COPY xdebug-config.ini /usr/local/etc/php/conf.d/xdebug-config.ini
 
 EXPOSE 9000
 CMD ["php-fpm"]
