@@ -33,7 +33,7 @@ services:
   varnish:
     image: scandipwa/varnish:latest
     build:
-      context: varnish
+      context: build/varnish
     restart: on-failure:30
     env_file:
       - .env
