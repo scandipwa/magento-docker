@@ -31,6 +31,7 @@ export COMPOSER_NO_DEV="--no-dev"
 function bash_color_library {
   # see if it supports colors...
   ncolors=$(tput colors)
+  # shellcheck disable=SC2034
   if test -n "$ncolors" && test $ncolors -ge 8; then
 
     bold="$(tput bold)"
@@ -56,7 +57,8 @@ export bash_colors
 
 function pwa_theme_install {
   # Theme setup
-  magento scandipwa:theme:bootstrap Scandiweb/pwa -n
+  magento scandipwa:theme:bootstrap Scandiweb/pwa -n || true
+  php bin/magento setup:upgrade
   # Theme build
   if [ $? -eq 0 ]; then
     echo "${blue}${bold}Building PWA theme${normal}"
@@ -100,7 +102,7 @@ function composer_install {
 
   # Composer install
   echo "${blue}${bold}Installing magento dependencies${normal}"
-  composer install $COMPOSER_NO_DEV --ansi --no-interaction --verbose --prefer-dist
+  composer install $COMPOSER_NO_DEV --ansi --no-interaction --prefer-dist -v
 }
 
 function magento_database_config {
