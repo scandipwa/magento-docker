@@ -56,6 +56,7 @@ export bash_colors
 ### Colors in command output end
 
 function pwa_theme_install {
+  echo "${blue}${bold}Register PWA theme in Magento${normal}"
   # Theme setup
   magento scandipwa:theme:bootstrap Scandiweb/pwa -n || true
   php bin/magento setup:upgrade
