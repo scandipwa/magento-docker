@@ -10,16 +10,16 @@ Please refer to [Docker](./DOCKER.md) and documentation [docs](./docs/)
 The repository is based on Magento 2.3.0. All components and modules, except the further theme development must be 
 managed by [Composer](https://getcomposer.org)
 
-## List of corresponding modules
-- scandipwa/catalog-graphql
-- scandipwa/cms-graphql
-- scandipwa/graphql
-- scandipwa/installer
-- scandipwa/menu-organizer
-- scandipwa/persisted-query
-- scandipwa/slider-graphql
-- scandipwa/source
-- scandipwa/slider
+## Dependencies
+- [scandipwa/installer](https://github.com/scandipwa/installer)
+- [scandipwa/source](https://github.com/scandipwa/base-theme)
+- [scandipwa/graphql](https://github.com/scandipwa/graphql)
+- [scandipwa/catalog-graphql](https://github.com/scandipwa/catalog-graphql)
+- [scandipwa/cms-graphql](https://github.com/scandipwa/cms-graphql)
+- [scandipwa/menu-organizer](https://github.com/scandipwa/menu-organizer)
+- [scandipwa/persisted-query](https://github.com/scandipwa/persisted-query)
+- [scandipwa/slider-graphql](https://github.com/scandipwa/slider-graphql)
+- [scandipwa/slider](https://github.com/scandipwa/slider)
 - [scandiweb/module-core](https://github.com/scandiwebcom/Scandiweb-Assets-Core)
 
 ## Quick start
@@ -45,7 +45,7 @@ docker-compose stop app
 ```
 6. Recreate existing database 
 ```console
-docker-compose exec mysql mysql -u root -pscandipwa -e "DROP DATABASE magento CREATE DATABASE magento;"
+docker-compose exec mysql mysql -u root -pscandipwa -e "DROP DATABASE magento; CREATE DATABASE magento;"
 ```
 7. Import DEMO ScandiPWA database: 
 ```console
