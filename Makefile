@@ -1,5 +1,5 @@
 # Define available commands
-.PHONY: build full-rebuild push up recreate down cert \
+.PHONY: build full-rebuild push up recreate down cert pull \
  down-rm-volumes applogs logs flushall
 
 # Variables
@@ -13,6 +13,9 @@ up:
 
 build:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml build
+
+pull:
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml pull
 
 down:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml down --remove-orphans
