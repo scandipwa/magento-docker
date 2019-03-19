@@ -1,5 +1,5 @@
 {
-  "name": "docker-magento22-template",
+  "name": "docker-magento2-template",
   "version": "1.0.0",
   "description": "All docs are in the [docs](docs) folder",
   "directories": {
@@ -14,8 +14,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/scandiweb/docker-magento22-template"
+    "url": "https://github.com/scandipwa/scandipwa-base"
   },
   "author": "Ilja Lapkovskis",
-  "license": "ISC"
+  "license": "OSL-3.0"
 }
