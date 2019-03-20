@@ -1,4 +1,6 @@
 # Welcome to ScandiPWA
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base?ref=badge_shield)
+
 
 This repository is a base repository that contains Docker environment for Magento ^2.3 and is dedicated for ScandiPWA
  theme development and ScandiPWA based project development.
@@ -32,13 +34,18 @@ git clone git@github.com:scandipwa/scandipwa-base.git
 ```console
 export COMPOSER_AUTH='{"http-basic":{"repo.magento.com": {"username": "REPLACE_THIS", "password": "REPLACE_THIS"}}}'
 ```
+
 4. Generate selfsigned ssl certificates with (more details [here](docs/G-SSL-container.md) )
 ```console
 make cert
 ```
-5. Run the infrastructure 
+
+5. Pull and run the infrastructure
 ```console
-docker-compose up -d
+docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml pull
+``` 
+```console
+docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml up -d
 ```
 
 > **NOTICE**: Do the following steps only in case you need ScandiPWA DEMO
@@ -57,5 +64,13 @@ docker-compose exec -T mysql mysql -u root -pscandipwa magento < deploy/latest.s
 ```
 9. Recreate Docker infrastructure
 ```console
-docker-compose up -d --force-recreate
+docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up -d --force-recreate
 ```
+
+## Media
+Media is available: [https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz](https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz)
+
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base?ref=badge_large)

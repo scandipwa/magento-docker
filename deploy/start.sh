@@ -31,6 +31,7 @@ export COMPOSER_NO_DEV="--no-dev"
 function bash_color_library {
   # see if it supports colors...
   ncolors=$(tput colors)
+  # shellcheck disable=SC2034
   if test -n "$ncolors" && test $ncolors -ge 8; then
 
     bold="$(tput bold)"
@@ -55,8 +56,10 @@ export bash_colors
 ### Colors in command output end
 
 function pwa_theme_install {
+  echo "${blue}${bold}Register PWA theme in Magento${normal}"
   # Theme setup
-  magento scandipwa:theme:bootstrap Scandiweb/pwa -n
+  magento scandipwa:theme:bootstrap Scandiweb/pwa -n || true
+  php bin/magento setup:upgrade
   # Theme build
   if [ $? -eq 0 ]; then
     echo "${blue}${bold}Building PWA theme${normal}"
@@ -100,7 +103,7 @@ function composer_install {
 
   # Composer install
   echo "${blue}${bold}Installing magento dependencies${normal}"
-  composer install $COMPOSER_NO_DEV --ansi --no-interaction --verbose --prefer-dist
+  composer install $COMPOSER_NO_DEV --ansi --no-interaction --prefer-dist -v
 }
 
 function magento_database_config {
@@ -110,7 +113,7 @@ function magento_database_config {
       --db-name $MYSQL_DATABASE \
       --db-user $MYSQL_USER \
       --db-password $MYSQL_PASSWORD \
-  --backend-frontname $MAGENTO_ADMINURI
+      --backend-frontname $MAGENTO_ADMINURI
 }
 
 function magento_database_migration {
@@ -132,7 +135,7 @@ function magento_database_migration {
         --admin-lastname $MAGENTO_LAST_NAME \
         --admin-email $MAGENTO_EMAIL \
         --admin-user $MAGENTO_USER \
-    --admin-password $MAGENTO_PASSWORD
+        --admin-password $MAGENTO_PASSWORD
   else
     magento setup:db:status
     export ME=$?
@@ -171,6 +174,13 @@ function magento_redis_config {
       --session-save-redis-host=redis \
       --session-save-redis-log-level=3 \
   --session-save-redis-db=1
+  # Redis for persisted query
+  echo "${blue}${bold}Setting redis for persisted query(PWA)${normal}"
+  bin/magento setup:config:set \
+      --pq-host=redis \
+      --pq-port=6379 \
+      --pq-database=5 \
+      --pq-scheme=tcp
 }
 
 function magento_varnish_config {

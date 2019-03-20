@@ -1,6 +1,6 @@
 node_modules/
 opt/*
-src/
+src/*
 !src/composer.*
 !.gitignore
 !**/.gitkeep
