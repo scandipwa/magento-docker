@@ -182,7 +182,7 @@ function magento_redis_config {
       --pq-database=5 \
       --pq-scheme=tcp
   # Elasticsearch5 as a search engine
-  echo "${blue}${bold}Setting ElasticSearch5 as a search engine${normal}"
+  echo "${blue}${bold}Setting Elasticsearch5 as a search engine${normal}"
   php bin/magento config:set catalog/search/engine elasticsearch5
 }
 
