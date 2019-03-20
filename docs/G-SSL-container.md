@@ -7,17 +7,11 @@ Warning about untrusted certificate counts as untrusted, so generating and trust
 
 ## Certificate generator
 
-There is a script in `./deploy/create_certificates.sh` which guides you thorough CA and certificate generation process
+To generate certificates, run `make cert` from project root path
 
-Packages required: `openssl`, `coreutils`.
+There is a script in `./deploy/create_certificates.sh` which guides you through CA and certificate generation process. Aimed to executed inside Alpine Linux container.
 
 By default it will store all files in `/opt/cert` at project base path.
-Your can override this path with env variable `SSH_CERT_PATH`
-For example, to make all files in home directory just run
-`export SSH_CERT_PATH=~/.scandipwa/` and run script.
-Newly generated certificates will be stored in `~/.scandipwa/certs`
-
-Note that you have to update mounting of `certs` folder in `docker-compose.ssl.yml` or `docker-compose.override.yml` to make it working
 
 ## What's inside
 
@@ -53,4 +47,4 @@ You might be prompted for an admin password for a few times during this steps:
 
 ### Firefox
 
-Additinaly to default import set `security.enterprise_roots.enabled` to **true** in the `about:config` 
+Additionally to default import set `security.enterprise_roots.enabled` to **true** in the `about:config` 
