@@ -36,7 +36,7 @@ export COMPOSER_AUTH='{"http-basic":{"repo.magento.com": {"username": "REPLACE_T
 ```
 4. Run the infrastructure 
 ```console
-docker-compose up -d
+docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up -d
 ```
 
 > **NOTICE**: Do the following steps only in case you need ScandiPWA DEMO
@@ -55,7 +55,7 @@ docker-compose exec -T mysql mysql -u root -pscandipwa magento < deploy/latest.s
 ```
 8. Recreate Docker infrastructure
 ```console
-docker-compose up -d --force-recreate
+docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up -d --force-recreate
 ```
 
 ## Media
