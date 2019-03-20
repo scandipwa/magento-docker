@@ -34,7 +34,13 @@ git clone git@github.com:scandipwa/scandipwa-base.git
 ```console
 export COMPOSER_AUTH='{"http-basic":{"repo.magento.com": {"username": "REPLACE_THIS", "password": "REPLACE_THIS"}}}'
 ```
-4. Pull and run the infrastructure
+
+4. Generate selfsigned ssl certificates with (more details [here](docs/G-SSL-container.md) )
+```console
+make cert
+```
+
+5. Pull and run the infrastructure
 ```console
 docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml pull
 ``` 
@@ -44,19 +50,19 @@ docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compo
 
 > **NOTICE**: Do the following steps only in case you need ScandiPWA DEMO
 
-5. Stop the application container 
+6. Stop the application container 
 ```console
 docker-compose stop app
 ```
-6. Recreate existing database 
+7. Recreate existing database 
 ```console
 docker-compose exec mysql mysql -u root -pscandipwa -e "DROP DATABASE magento; CREATE DATABASE magento;"
 ```
-7. Import DEMO ScandiPWA database: 
+8. Import DEMO ScandiPWA database: 
 ```console
 docker-compose exec -T mysql mysql -u root -pscandipwa magento < deploy/latest.sql
 ```
-8. Recreate Docker infrastructure
+9. Recreate Docker infrastructure
 ```console
 docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up -d --force-recreate
 ```
