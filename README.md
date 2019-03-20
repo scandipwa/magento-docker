@@ -58,6 +58,10 @@ docker-compose exec -T mysql mysql -u root -pscandipwa magento < deploy/latest.s
 docker-compose up -d --force-recreate
 ```
 
+## Media
+Media is available: [https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz](https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz)
+
+
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base?ref=badge_large)
