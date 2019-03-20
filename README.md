@@ -34,9 +34,12 @@ git clone git@github.com:scandipwa/scandipwa-base.git
 ```console
 export COMPOSER_AUTH='{"http-basic":{"repo.magento.com": {"username": "REPLACE_THIS", "password": "REPLACE_THIS"}}}'
 ```
-4. Run the infrastructure 
+4. Pull and run the infrastructure
 ```console
-docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up -d
+docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml pull
+``` 
+```console
+docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml up -d
 ```
 
 > **NOTICE**: Do the following steps only in case you need ScandiPWA DEMO
