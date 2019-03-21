@@ -97,11 +97,30 @@ services:
       - ${MAILDEV_PORT}:80
     expose:
       - 25
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ELASTICSEARCH_VERSION}
+    restart: on-failure:5
+    env_file: .env
+    environment:
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - ${ELASTICSEARCH_PORT}:9200
+    networks:
+      - default
 volumes:
   app-data:
   media-data:
   mysql-data:
   redis-data:
+  elasticsearch-data:
 
 networks:
   default:
