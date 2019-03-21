@@ -181,6 +181,12 @@ function magento_redis_config {
       --pq-port=6379 \
       --pq-database=5 \
       --pq-scheme=tcp
+  # Elasticsearch5 as a search engine
+  echo "${blue}${bold}Setting Elasticsearch5 as a search engine${normal}"
+  php bin/magento config:set catalog/search/engine elasticsearch5
+  # elasticsearch container as a host name
+  echo "${blue}${bold}Setting elasticsearch as a host name for Elasticsearch5${normal}"
+  php bin/magento config:set catalog/search/elasticsearch5_server_hostname elasticsearch
 }
 
 function magento_varnish_config {
