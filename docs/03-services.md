@@ -26,4 +26,4 @@ only**
 * middleware - **build is required** - container, that provides GraphQL request caching
 
 ### Optional (disabled by default)
-* elasticsearch - **coming up**
+* elasticsearch - container running elasticsearch. For version list and details please refer to: [https://www.docker.elastic.co](https://www.docker.elastic.co)

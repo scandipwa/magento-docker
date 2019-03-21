@@ -140,6 +140,20 @@ RUN set -eux; \
     wget -O - -o /dev/null https://git.io/n-install | N_PREFIX=$NODEJS_DIR bash -s -- -t; \
     wget -O - -o /dev/null https://git.io/n-install | N_PREFIX=$NODEJS_DIR bash -s -- -q $NODEJS_VERSION; \
     npm install npm -g
+
+# MSMTP config set
+RUN { \
+        echo 'defaults'; \
+        echo 'logfile /proc/self/fd/2'; \
+        echo 'timeout 30'; \
+        echo 'host maildev'; \
+        echo 'tls off'; \
+        echo 'tls_certcheck off'; \
+        echo 'port 25'; \
+        echo 'auth off'; \
+        echo 'from no-reply@docker'; \
+        echo 'account default'; \
+    } | tee /etc/msmtprc
     
 # Start script, executed upon container creation from image
 COPY deploy/start.sh /start.sh
