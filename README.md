@@ -22,6 +22,7 @@ managed by [Composer](https://getcomposer.org)
 - [scandipwa/persisted-query](https://github.com/scandipwa/persisted-query)
 - [scandipwa/slider-graphql](https://github.com/scandipwa/slider-graphql)
 - [scandipwa/slider](https://github.com/scandipwa/slider)
+- [scandipwa/route171](https://github.com/scandipwa/route717)
 - [scandiweb/module-core](https://github.com/scandiwebcom/Scandiweb-Assets-Core)
 
 ## Quick start
@@ -64,7 +65,7 @@ docker-compose exec -T mysql mysql -u root -pscandipwa magento < deploy/latest.s
 ```
 9. Recreate Docker infrastructure
 ```console
-docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up -d --force-recreate
+docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml up -d --force-recreate
 ```
 
 ## Media
