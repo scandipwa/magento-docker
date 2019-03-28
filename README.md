@@ -8,6 +8,9 @@ This repository is a base repository that contains Docker environment for Magent
 ## Docker
 Please refer to [Docker](./DOCKER.md) and documentation [docs](./docs/)
 
+## Theme documentation
+Please refer to [theme](https://github.com/scandipwa/base-theme) repository and [docs](https://github.com/scandipwa/base-theme/tree/master/docs) section.
+
 ## Modularity
 The repository is based on Magento 2.3.0. All components and modules, except the further theme development must be 
 managed by [Composer](https://getcomposer.org)
@@ -69,8 +72,11 @@ docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compo
 ```
 
 ## Media
-Media is available: [https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz](https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz)
+1) Download [media](https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz)
 
+2) Put archive into the `pub/media` folder (if mounted)
+
+3) Extract archive `tar -zxvf scandipwa_media.tgz`
 
 
 ## License
