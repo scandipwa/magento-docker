@@ -204,6 +204,7 @@ function magento_redis_config {
   # elasticsearch container as a host name
   echo "${blue}${bold}Setting elasticsearch as a host name for Elasticsearch5${normal}"
   php bin/magento config:set catalog/search/elasticsearch5_server_hostname elasticsearch
+  php bin/magento cache:enable
 }
 
 function magento_varnish_config {
