@@ -168,12 +168,6 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 # Copy project files
 COPY src/ $BASEPATH/
 
-# Install composer by default if folders are not mapped
-RUN set -ex \
-    echo "$(tput setaf 4)Installing composer packages$(tput sgr0)";\
-    cd $BASEPATH;\
-    composer install --ansi --no-interaction --prefer-dist -v;
-
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
 #ENTRYPOINT ["/entrypoint.sh"]
