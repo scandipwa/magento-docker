@@ -94,8 +94,8 @@ RUN set -euo pipefail; \
 # verify the signature
   export GNUPGHOME="$(mktemp -d)"; \
   for key in $GOSU_GPG_KEY; do \
-          gpg --keyserver keys.gnupg.net --recv-keys "$keys" || \
-          gpg --keyserver pgp.key-server.io--recv-keys "$keys" || \
+          gpg --keyserver keys.gnupg.net --recv-keys "$key" || \
+          gpg --keyserver pgp.key-server.io--recv-keys "$key" || \
           gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" || \
           gpg --keyserver pgp.mit.edu --recv-keys "$key" || \
           gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys "$key" || \
