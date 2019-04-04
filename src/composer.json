@@ -12,8 +12,7 @@
     },
     "require": {
         "magento/product-community-edition": "2.3.0",
-        "scandipwa/installer": "^1.0",
-        "scandipwa/migrations": "^1.0"
+        "scandipwa/installer": "^1.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "~2.13.0",
