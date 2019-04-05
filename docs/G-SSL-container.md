@@ -7,7 +7,8 @@ Warning about untrusted certificate counts as untrusted, so generating and trust
 
 ## Certificate generator
 
-To generate certificates, run `make cert` from project root path
+To generate certificates, run `make cert` from project root path.
+To refresh SSL certificate, rerun the `make cert`, it will remove existing server certificates and generates new ones.
 
 There is a script in `./deploy/create_certificates.sh` which guides you through CA and certificate generation process. Aimed to executed inside Alpine Linux container.
 
@@ -26,7 +27,10 @@ Out of the box there are self-signed certificates to serve encrypted traffic fro
 
 -   `localhost`
 -   `*.local`
+-   `scandipwa.local`
 -   `127.0.0.1`
+-   `*.dev`
+-   `scandipwa.dev`
 
 Keep in mind you must add corresponding records to your `/etc/hosts` yourself.
 
@@ -37,13 +41,13 @@ Keep in mind you must add corresponding records to your `/etc/hosts` yourself.
 
 ### MacOS
 
-You might be prompted for an admin password for a few times during this steps: 
-1\. Add certificate `opt/cert/scandipwa-ca.pem` to your `Keychain`
-2\. Double click on `ScandiPWA CA`
-3\. Unfold `Trust` section
-4\. Set _When using this certificate_ -> **Always trust**
-5\. Restart you machine
-6\. Add one more file (`-f docker-compose.ssl.yml`) to you docker-compose command
+You might be prompted for an admin password for a few times during this steps:  
+1\. Add certificate `opt/cert/scandipwa-ca.pem` to your `Keychain`  
+2\. Double click on `ScandiPWA CA`  
+3\. Unfold `Trust` section  
+4\. Set _When using this certificate_ -> **Always trust**  
+5\. Restart you machine  
+6\. Add one more file (`-f docker-compose.ssl.yml`) to you docker-compose command  
 
 ### Firefox
 
