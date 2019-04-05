@@ -4,6 +4,9 @@
 
 This repository is a base repository that contains Docker environment for Magento ^2.3 and is dedicated for ScandiPWA
  theme development and ScandiPWA based project development.
+
+## Demo
+You can easily access demo simply clicking [here](https://demo.scandipwa.com)
  
 ## Docker
 Please refer to [Docker](./DOCKER.md) and documentation [docs](./docs/)
