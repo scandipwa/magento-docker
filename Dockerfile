@@ -94,6 +94,8 @@ RUN set -euo pipefail; \
 # verify the signature
   export GNUPGHOME="$(mktemp -d)"; \
   for key in $GOSU_GPG_KEY; do \
+          gpg --keyserver keys.gnupg.net --recv-keys "$key" || \
+          gpg --keyserver pgp.key-server.io--recv-keys "$key" || \
           gpg --keyserver ha.pool.sks-keyservers.net --recv-keys "$key" || \
           gpg --keyserver pgp.mit.edu --recv-keys "$key" || \
           gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys "$key" || \
@@ -116,10 +118,10 @@ RUN chmod +x /wait-for-it.sh
 
 # Install PHP Composer
 RUN set -euo pipefail; \
-    echo "$(tput setaf 111)Installing php composer$(tput sgr0)"; \
+    echo "$(tput setaf 4)Installing php composer$(tput sgr0)"; \
     export EXPECTED_SIGNATURE=$(curl -s -f -L https://composer.github.io/installer.sig); \
     wget -nc -O composer-setup.php https://getcomposer.org/installer; \
-    echo "$(tput setaf 111)Checking php composer signature$(tput sgr0)"; \
+    echo "$(tput setaf 4)Checking php composer signature$(tput sgr0)"; \
     echo "$EXPECTED_SIGNATURE" composer-setup.php | sha384sum -c - ; \
     \
     if [ -n "$COMPOSER_VERSION" ] && [ "$COMPOSER_VERSION" != "latest" ]; then \
@@ -176,9 +178,9 @@ ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["/start.sh"]
 
 # Print all versions for verification
-RUN echo "$(tput setaf 118)php, composer$(tput sgr0)";\
+RUN echo "$(tput setaf 3)php, composer$(tput sgr0)";\
     composer diagnose; printf "\n"; \
     #echo "$(tput setaf 118)ruby, bundler$(tput sgr0)";\
     #bundle env; printf "\n"; \
-    echo "$(tput setaf 118)nodejs, npm$(tput sgr0)";\
+    echo "$(tput setaf 3)nodejs, npm$(tput sgr0)";\
     npm doctor; printf "\n";

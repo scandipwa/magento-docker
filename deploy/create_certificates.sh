@@ -64,6 +64,10 @@ if [ ! -f scandipwa-ca.key ] && [ ! -f scandipwa-ca.pem ]; then
   exit
 else
   # Refresh files after cleanup
+  if [ -f server_crt.pem ] || [ -f server_key.pem ]; then
+    echo "${yellow}Removing old server certificate and key${normal}"
+    rm -f server_crt.pem server_key.pem scandipwa-fullchain.pem index.txt index.txt.attr
+  fi
   touch index.txt && touch index.txt.attr
   # Set certificate config
   export OPENSSL_CONF=$CERT_CONF_LOCATION
@@ -76,6 +80,7 @@ else
   echo "${yellow}Singing server certificate with CA${normal}"
   export OPENSSL_CONF=$CA_CONF_LOCATION
   yes | openssl ca -in tempreq.pem -out server_crt.pem
+  cat server_crt.pem scandipwa-ca.pem > scandipwa-fullchain.pem
   chown -R $UID:$GID /cert
   echo "#########################################################################################################################"
   echo "#"                                                                                                                     "#"

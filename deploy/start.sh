@@ -116,6 +116,23 @@ function magento_database_config {
       --backend-frontname $MAGENTO_ADMINURI
 }
 
+function create_admin_user {
+    echo "${blue}${bold}Checking user $MAGENTO_USER ${normal}"
+    USER_STATUS=$(php bin/magento admin:user:unlock $MAGENTO_USER)
+    export USER_STATUS
+    if [[ $USER_STATUS =~ "Couldn't find the user account" ]]; then
+        php bin/magento admin:user:create \
+            --admin-firstname $MAGENTO_FIRST_NAME \
+            --admin-lastname $MAGENTO_LAST_NAME \
+            --admin-email $MAGENTO_EMAIL \
+            --admin-user $MAGENTO_USER \
+            --admin-password $MAGENTO_PASSWORD
+
+         echo "${blue}${bold}User $MAGENTO_USER created${normal}"
+    fi
+}
+
+
 function magento_database_migration {
   # Check if magento already installed or not, ignoring exit statuses of eval, since it's magento subprocess
   set +e
@@ -187,6 +204,7 @@ function magento_redis_config {
   # elasticsearch container as a host name
   echo "${blue}${bold}Setting elasticsearch as a host name for Elasticsearch5${normal}"
   php bin/magento config:set catalog/search/elasticsearch5_server_hostname elasticsearch
+  php bin/magento cache:enable
 }
 
 function magento_varnish_config {
@@ -255,6 +273,8 @@ magento_flush_config
 magento_database_config
 # Executing Magento install or migration
 magento_database_migration
+# Create admin user if not exists
+create_admin_user
 # Configuring Magento to use Redis for session and config storage
 magento_redis_config
 # Configuring Magento to use Varnish as HTTP cache

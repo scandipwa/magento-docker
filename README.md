@@ -4,9 +4,15 @@
 
 This repository is a base repository that contains Docker environment for Magento ^2.3 and is dedicated for ScandiPWA
  theme development and ScandiPWA based project development.
+
+## Demo
+You can easily access demo simply clicking [here](https://demo.scandipwa.com)
  
 ## Docker
 Please refer to [Docker](./DOCKER.md) and documentation [docs](./docs/)
+
+## Theme documentation
+Please refer to [theme](https://github.com/scandipwa/base-theme) repository and [docs](https://github.com/scandipwa/base-theme/tree/master/docs) section.
 
 ## Modularity
 The repository is based on Magento 2.3.0. All components and modules, except the further theme development must be 
@@ -22,6 +28,7 @@ managed by [Composer](https://getcomposer.org)
 - [scandipwa/persisted-query](https://github.com/scandipwa/persisted-query)
 - [scandipwa/slider-graphql](https://github.com/scandipwa/slider-graphql)
 - [scandipwa/slider](https://github.com/scandipwa/slider)
+- [scandipwa/route171](https://github.com/scandipwa/route717)
 - [scandiweb/module-core](https://github.com/scandiwebcom/Scandiweb-Assets-Core)
 
 ## Quick start
@@ -64,12 +71,15 @@ docker-compose exec -T mysql mysql -u root -pscandipwa magento < deploy/latest.s
 ```
 9. Recreate Docker infrastructure
 ```console
-docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up -d --force-recreate
+docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml up -d --force-recreate
 ```
 
 ## Media
-Media is available: [https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz](https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz)
+1) Download [media](https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz)
 
+2) Put archive into the `pub/media` folder (if mounted)
+
+3) Extract archive `tar -zxvf scandipwa_media.tgz`
 
 
 ## License
