@@ -11159,21 +11159,21 @@
         },
         {
             "name": "scandipwa/installer",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/installer.git",
-                "reference": "7579c50219ffce7c89f75076a02a00abf405c774"
+                "reference": "ea65440e3420d6f37032bbf676ff9173de54adef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/installer/zipball/7579c50219ffce7c89f75076a02a00abf405c774",
-                "reference": "7579c50219ffce7c89f75076a02a00abf405c774",
+                "url": "https://api.github.com/repos/scandipwa/installer/zipball/ea65440e3420d6f37032bbf676ff9173de54adef",
+                "reference": "ea65440e3420d6f37032bbf676ff9173de54adef",
                 "shasum": ""
             },
             "require": {
                 "magento/product-community-edition": "^2.3",
-                "scandipwa/source": "^1.0"
+                "scandipwa/source": "^1.2.1"
             },
             "type": "magento2-theme",
             "autoload": {
@@ -11202,7 +11202,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-03-08T14:39:19+00:00"
+            "time": "2019-04-10T07:12:44+00:00"
         },
         {
             "name": "scandipwa/menu-organizer",
@@ -11504,16 +11504,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "be280c1562327be1197b39961bd2664bb9e9c810"
+                "reference": "1ed6e6ba765dfae9a47927f33a05c960a0335531"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/be280c1562327be1197b39961bd2664bb9e9c810",
-                "reference": "be280c1562327be1197b39961bd2664bb9e9c810",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/1ed6e6ba765dfae9a47927f33a05c960a0335531",
+                "reference": "1ed6e6ba765dfae9a47927f33a05c960a0335531",
                 "shasum": ""
             },
             "require": {
@@ -11565,7 +11565,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-04-08T10:53:37+00:00"
+            "time": "2019-04-10T07:32:37+00:00"
         },
         {
             "name": "scandiweb/locale-resolver-fix",
