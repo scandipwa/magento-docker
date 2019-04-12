@@ -1,0 +1,21 @@
+version: '3'
+services:
+  nginx:
+    volumes:
+      - ./deploy/frontend/conf/nginx/cache-router.conf:/etc/nginx/conf.d/cache-router.conf
+    links:
+      - frontend
+  frontend:
+    image: scandipwa/frontend:${PROJECT_IMAGE}
+    build:
+      context: build/frontend
+      args:
+        - BASEPATH=${BASEPATH}
+        - NODEJS_VERSION=${NODEJS_VERSION}
+    volumes:
+      - ./src/localmodules/base-theme:/var/www/public/app/design/frontend/Scandiweb/pwa
+      - ./src/vendor/scandipwa/source:/var/www/public/vendor/scandipwa/source
+    working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
+    env_file: .env
+    expose:
+      - 3003
