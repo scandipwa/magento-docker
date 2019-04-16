@@ -13,7 +13,6 @@
     "require": {
         "magento/product-community-edition": "2.3.1",
         "scandipwa/installer": "^1.0",
-        "scandipwa/migrations": "^1.0",
         "scandipwa/sitemap": "^1.0"
     },
     "require-dev": {
