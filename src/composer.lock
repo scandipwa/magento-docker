@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b207a31f6c3746e99401a087af23a98",
+    "content-hash": "793774e61468b91c3b9f15af75d60f5a",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -11236,52 +11236,6 @@
             ],
             "description": "Scandiweb Menu Organizer for ScandiPWA",
             "time": "2019-03-08T15:33:49+00:00"
-        },
-        {
-            "name": "scandipwa/migrations",
-            "version": "1.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scandipwa/migrations.git",
-                "reference": "86a2af2f1b12453badcec139668831f90244099b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/migrations/zipball/86a2af2f1b12453badcec139668831f90244099b",
-                "reference": "86a2af2f1b12453badcec139668831f90244099b",
-                "shasum": ""
-            },
-            "require": {
-                "magento/product-community-edition": "^2.3"
-            },
-            "type": "magento2-theme",
-            "autoload": {
-                "files": [
-                    "src/registration.php"
-                ],
-                "psr-4": {
-                    "ScandiPWA\\Migrations\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "OSL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Vladimirs Mihnovics",
-                    "email": "vladimirs.mihnovics@scandiweb.com"
-                }
-            ],
-            "description": "ScandiPWA migrations module",
-            "keywords": [
-                "magento2",
-                "migrations",
-                "pwa",
-                "scandipwa",
-                "theme"
-            ],
-            "time": "2019-04-09T16:01:48+00:00"
         },
         {
             "name": "scandipwa/persisted-query",
