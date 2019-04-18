@@ -11286,16 +11286,16 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "5cffc4ebd68c4c68cf53da5dc5cdf5ea0c656610"
+                "reference": "d39cdfefc3d557c440d07ce115f028e1ad082071"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/5cffc4ebd68c4c68cf53da5dc5cdf5ea0c656610",
-                "reference": "5cffc4ebd68c4c68cf53da5dc5cdf5ea0c656610",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/d39cdfefc3d557c440d07ce115f028e1ad082071",
+                "reference": "d39cdfefc3d557c440d07ce115f028e1ad082071",
                 "shasum": ""
             },
             "require": {
@@ -11326,7 +11326,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-04-18T11:29:09+00:00"
+            "time": "2019-04-18T14:18:51+00:00"
         },
         {
             "name": "scandipwa/route717",
