@@ -103,12 +103,13 @@ services:
     networks:
       - default
   rendertron:
+    image: scandipwa/ssr
     build:
       context: build/rendertron
-    ports:
-      - ${RENDERTRON_PORT}:80
+#    ports:
+#      - ${RENDERTRON_PORT}:80
     expose:
-      - 80
+      - 8083
     links:
       - nginx:webserver
     networks:
