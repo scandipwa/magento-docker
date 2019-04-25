@@ -21,6 +21,7 @@ REDIS_PORT=6379
 ELASTICSEARCH_PORT=9200
 RABBITMQ_PORT=15672
 MAILDEV_PORT=1080
+RENDERTRON_PORT=8083
 
 ### General settings (ARG)
 # These settings used in build and deploy stages, set them once, recheck and deploy.
