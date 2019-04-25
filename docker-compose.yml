@@ -103,7 +103,7 @@ services:
     networks:
       - default
   rendertron:
-    image: scandipwa/ssr
+    image: scandipwa/rendertron
     build:
       context: build/rendertron
 #    ports:
