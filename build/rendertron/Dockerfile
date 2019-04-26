@@ -23,7 +23,7 @@ RUN npm i puppeteer \
 # Run everything after as non-privileged user.
 USER 1001
 
-RUN git clone https://github.com/GoogleChrome/rendertron.git \
+RUN git clone https://github.com/vladimirsm/rendertron.git \
     && cd rendertron \
     && npm install \
     && npm run build 
