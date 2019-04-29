@@ -12,7 +12,9 @@ services:
       - 80
       - 443
     networks:
-      - default
+      default:
+        aliases:
+          - scandipwa.local
     volumes:
       - ./opt/cert:/etc/nginx/cert:cached
       - ./deploy/shared/conf/nginx/ssl-terminator.conf:/etc/nginx/conf.d/default.conf
