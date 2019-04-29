@@ -325,6 +325,25 @@ RUN set -euo pipefail; \
 # verify that the binary works
 	gosu nobody true;
 
+# Install PHP Composer
+RUN set -euo pipefail; \
+    echo "$(tput setaf 111)Installing php composer$(tput sgr0)"; \
+    export EXPECTED_SIGNATURE=$(curl -s -f -L https://composer.github.io/installer.sig); \
+    wget -nc -O composer-setup.php https://getcomposer.org/installer; \
+    echo "$(tput setaf 111)Checking php composer signature$(tput sgr0)"; \
+    echo "$EXPECTED_SIGNATURE" composer-setup.php | sha384sum -c - ; \
+    \
+    if [ -n "$COMPOSER_VERSION" ] && [ "$COMPOSER_VERSION" != "latest" ]; then \
+      COMPOSER_VERSION_OVERRIDE="--version=$COMPOSER_VERSION"; \
+    else COMPOSER_VERSION_OVERRIDE=""; \
+    fi; \
+    php composer-setup.php --no-ansi --install-dir=/usr/local/bin --filename=composer $COMPOSER_VERSION_OVERRIDE; \
+    rm composer-setup.php; \
+    # Ensure cache folder is available \
+    echo "The compose home dir is: $COMPOSER_HOME"; \
+    # Install prestissimo, multithread install helper \
+    composer global require hirak/prestissimo;
+
 EXPOSE 9000
 CMD ["php-fpm"]
 
