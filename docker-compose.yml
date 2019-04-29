@@ -72,8 +72,8 @@ services:
     restart: on-failure:10
     depends_on:
       - app
-    ports:
-     - ${RENDERTRON_PORT}:8083
+    expose:
+     - 8083
     networks:
       - default
   mysql:
