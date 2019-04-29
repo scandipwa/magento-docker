@@ -23,7 +23,7 @@ RUN git clone https://github.com/GoogleChrome/rendertron.git \
     # Patching Puppeteer launch arguments \
     && DEFAULT_ARGS="\['--no-sandbox'\]" \
     && ARGS="\['--no-sandbox', '--disable-dev-shm-usage', '--ignore-certificate-errors'\], ignoreHTTPSErrors: true" \
-    && sed -i "s/$DEFAULT_ARGS/$ARGS/g" build/rendertron.js \
+    && sed -i "s/$DEFAULT_ARGS/$ARGS/g" build/rendertron.js
 
 WORKDIR /rendertron
 
