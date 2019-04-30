@@ -65,6 +65,17 @@ services:
       - 80
     networks:
       - default
+  rendertron:
+    image: scandipwa/rendertron
+    build:
+      context: build/rendertron
+    restart: on-failure:10
+    depends_on:
+      - app
+    expose:
+     - 8083
+    networks:
+      - default
   mysql:
     image: mysql:${MYSQL_VERSION}
     restart: on-failure:5

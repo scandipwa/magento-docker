@@ -19,6 +19,4 @@ services:
     volumes:
       - ./src:/var/www/public:cached
     networks:
-      default:
-        aliases:
-          - scandipwa.local
+    - default
