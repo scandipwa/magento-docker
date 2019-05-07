@@ -114,6 +114,13 @@ function magento_database_config {
       --db-user $MYSQL_USER \
       --db-password $MYSQL_PASSWORD \
       --backend-frontname $MAGENTO_ADMINURI
+  # Redis for persisted query
+  echo "${blue}${bold}Setting redis for persisted query(PWA)${normal}"
+  bin/magento setup:config:set \
+      --pq-host=redis \
+      --pq-port=6379 \
+      --pq-database=5 \
+      --pq-scheme=tcp
 }
 
 function create_admin_user {
@@ -191,13 +198,6 @@ function magento_redis_config {
       --session-save-redis-host=redis \
       --session-save-redis-log-level=3 \
   --session-save-redis-db=1
-  # Redis for persisted query
-  echo "${blue}${bold}Setting redis for persisted query(PWA)${normal}"
-  bin/magento setup:config:set \
-      --pq-host=redis \
-      --pq-port=6379 \
-      --pq-database=5 \
-      --pq-scheme=tcp
   # Elasticsearch5 as a search engine
   echo "${blue}${bold}Setting Elasticsearch5 as a search engine${normal}"
   php bin/magento config:set catalog/search/engine elasticsearch5
