@@ -9,28 +9,28 @@ gid := $(shell id -g)
 
 # Warning! Do not use soft tabs!
 up:
-	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up -d
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml up -d
 
 build:
-	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml build
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml build
 
 pull:
-	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml pull
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml pull
 
 down:
-	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml down --remove-orphans
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml down --remove-orphans
 
 down-rm-volumes:
-	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml down -v
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml down -v
 
 applogs:
-	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml logs -f app
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml logs -f app
 
 logs:
-	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml logs -f
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml logs -f
 
 full-rebuild:
-	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml build --pull --no-cache
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml build --pull --no-cache
 
 flushall:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml exec varnish varnishadm "ban req.url ~ /"
