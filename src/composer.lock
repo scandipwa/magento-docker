@@ -11239,16 +11239,16 @@
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
-                "reference": "c783c3bc37ef5fcda016f6c38b8cd63eb6a379f4"
+                "reference": "f76fcfd62aad9bf82daa73d5068963c02b73f0ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/c783c3bc37ef5fcda016f6c38b8cd63eb6a379f4",
-                "reference": "c783c3bc37ef5fcda016f6c38b8cd63eb6a379f4",
+                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/f76fcfd62aad9bf82daa73d5068963c02b73f0ba",
+                "reference": "f76fcfd62aad9bf82daa73d5068963c02b73f0ba",
                 "shasum": ""
             },
             "require": {
@@ -11282,7 +11282,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-03-20T12:25:42+00:00"
+            "time": "2019-05-07T07:37:38+00:00"
         },
         {
             "name": "scandipwa/quote-graphql",
