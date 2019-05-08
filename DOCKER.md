@@ -1,10 +1,10 @@
 # Docker template for ScandiPWA based on Magento ^2.3
 
-Detailed docs are available in [docs](docs) folder
+Detailed docs are available in [docs](docs.scandipwa.com) folder
 
 ### Composer Authentification
 
-For `COMPOSER_AUTH` use your personal Magento 2 key from marketplace. [More info here](docs/A-requirements.md).
+For `COMPOSER_AUTH` use your personal Magento 2 key from marketplace. [More info here](https://docs.scandipwa.com/#/docker/A-requirements.md).
 
 
 ### Host environment variables must be set
