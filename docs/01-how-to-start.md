@@ -23,7 +23,7 @@ or add it to the .bashrc or corresponding file and reload the terminal window or
 ### Running (prod environment)
 Execute `docker-compose -f docker-compose.yml -f docker-compose.remote.yml up -d`
 
-### Running (dev environment)
+### Running (dev environment) - do not use for the first run
 1.  Run `docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up -d`
 2.  Check with `docker-compose ps` that all containers `Running`
 3.  Open <http://localhost:3000> to check if Magento is started
