@@ -6,7 +6,6 @@ Detailed docs are available in [docs](docs.scandipwa.com) folder
 
 For `COMPOSER_AUTH` use your personal Magento 2 key from marketplace. [More info here](https://docs.scandipwa.com/#/docker/A-requirements.md).
 
-
 ## Host environment variables must be set
 
 ```
@@ -34,7 +33,7 @@ If something does not work, like you see 404 when opening the site.
 #### Container exited exited with code 1
 
 If you see error like this
-```
+```php
 [Composer\Downloader\TransportException]                                   
 app_1      |   The 'https://repo.magento.com/packages.json' URL required authentication.  
 app_1      |   You must be using the interactive console to authenticate
