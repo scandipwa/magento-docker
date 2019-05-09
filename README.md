@@ -1,4 +1,5 @@
 # Welcome to ScandiPWA
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d1c78f671a4e4317af723862e2206797)](https://app.codacy.com/app/ScandiPWA/scandipwa-base?utm_source=github.com&utm_medium=referral&utm_content=scandipwa/scandipwa-base&utm_campaign=Badge_Grade_Dashboard)
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/scandipwa/base.svg)](https://hub.docker.com/r/scandipwa/base)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base?ref=badge_shield)
 
