@@ -81,9 +81,9 @@ ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["/start.sh"]
 
 # Print all versions for verification
-RUN echo "$(tput setaf 3)php, composer$(tput sgr0)";\
+RUN echo "$(tput setaf 3)php, composer$(tput sgr0)"; \
     composer diagnose; printf "\n"; \
-    #echo "$(tput setaf 118)ruby, bundler$(tput sgr0)";\
+    #echo "$(tput setaf 118)ruby, bundler$(tput sgr0)"; \
     #bundle env; printf "\n"; \
-    echo "$(tput setaf 3)nodejs, npm$(tput sgr0)";\
+    echo "$(tput setaf 3)nodejs, npm$(tput sgr0)"; \
     npm doctor; printf "\n";
