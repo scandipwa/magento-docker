@@ -52,7 +52,7 @@ Make sure you can run docker without `sudo`. See [Manage Docker as a non-root us
 #### Can't get into bash in the container
 
 If you see error like this
-```
+```bash
 $ docker-compose exec -u user app bash -l
 unable to find user user: no matching entries in passwd file
 ``` 

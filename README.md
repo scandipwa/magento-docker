@@ -82,6 +82,5 @@ docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compo
 
 3) Extract archive `tar -zxvf scandipwa_media.tgz`
 
-
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fscandipwa%2Fscandipwa-base?ref=badge_large)
