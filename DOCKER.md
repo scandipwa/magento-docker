@@ -2,12 +2,12 @@
 
 Detailed docs are available in [docs](docs.scandipwa.com) folder
 
-### Composer Authentification
+## Composer Authentification
 
 For `COMPOSER_AUTH` use your personal Magento 2 key from marketplace. [More info here](https://docs.scandipwa.com/#/docker/A-requirements.md).
 
 
-### Host environment variables must be set
+## Host environment variables must be set
 
 ```
 export COMPOSER_AUTH='{"http-basic":{"repo.magento.com": {"username": "REPLACE_THIS", "password": "REPLACE_THIS"}}}'
@@ -16,8 +16,8 @@ export COMPOSER_AUTH='{"http-basic":{"repo.magento.com": {"username": "REPLACE_T
 ## Quick start
 
 1.  Requirements are met, see above
-1.  Clone repository and cd to it
-2.  `composer.json` must be present in `/src`
+2.  Clone repository and cd to it
+3.  `composer.json` must be present in `/src`
 4.  Run `docker-compose -f docker-compose.yml -f docker-compose.local.yml up -d`
 5.  Check with `docker-compose ps` that all containers `Running`
 6.  Open <http://localhost:3000> to check if Magento is started
