@@ -1,9 +1,10 @@
+# hadolint ignore=DL3007
 FROM scandipwa/php:latest
 LABEL maintainer="Scandiweb <info@scandiweb.com>"
 LABEL authors="Jurijs Jegorovs jurijs+oss@scandiweb.com; Ilja Lapkovskis info@scandiweb.com"
 
 # Set bash by default
-SHELL ["/bin/bash", "-c"]
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Default configuration, override in deploy/local.env for localsetup
 # Do not remove variables, build depends on them,
@@ -81,7 +82,7 @@ ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 CMD ["/start.sh"]
 
 # Print all versions for verification
-RUN echo "$(tput setaf 3)php, composer$(tput sgr0)"; &&\
-    composer diagnose; printf "\n"; &&\
-    echo "$(tput setaf 3)nodejs, npm$(tput sgr0)"; &&\
+RUN echo 'php, composer'\
+    composer diagnose; printf "\n";\
+    echo "$(tput setaf 3)nodejs, npm$(tput sgr0)";\
     npm doctor; printf "\n";
