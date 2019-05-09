@@ -20,35 +20,35 @@ The repository is based on Magento 2.3.0. All components and modules, except the
 managed by [Composer](https://getcomposer.org)
 
 ## Dependencies
-- [scandipwa/installer](https://github.com/scandipwa/installer)
-- [scandipwa/source](https://github.com/scandipwa/base-theme)
-- [scandipwa/graphql](https://github.com/scandipwa/graphql)
-- [scandipwa/catalog-graphql](https://github.com/scandipwa/catalog-graphql)
-- [scandipwa/cms-graphql](https://github.com/scandipwa/cms-graphql)
-- [scandipwa/menu-organizer](https://github.com/scandipwa/menu-organizer)
-- [scandipwa/persisted-query](https://github.com/scandipwa/persisted-query)
-- [scandipwa/slider-graphql](https://github.com/scandipwa/slider-graphql)
-- [scandipwa/slider](https://github.com/scandipwa/slider)
-- [scandipwa/route171](https://github.com/scandipwa/route717)
-- [scandiweb/module-core](https://github.com/scandiwebcom/Scandiweb-Assets-Core)
+-   [scandipwa/installer](https://github.com/scandipwa/installer)
+-   [scandipwa/source](https://github.com/scandipwa/base-theme)
+-   [scandipwa/graphql](https://github.com/scandipwa/graphql)
+-   [scandipwa/catalog-graphql](https://github.com/scandipwa/catalog-graphql)
+-   [scandipwa/cms-graphql](https://github.com/scandipwa/cms-graphql)
+-   [scandipwa/menu-organizer](https://github.com/scandipwa/menu-organizer)
+-   [scandipwa/persisted-query](https://github.com/scandipwa/persisted-query)
+-   [scandipwa/slider-graphql](https://github.com/scandipwa/slider-graphql)
+-   [scandipwa/slider](https://github.com/scandipwa/slider)
+-   [scandipwa/route171](https://github.com/scandipwa/route717)
+-   [scandiweb/module-core](https://github.com/scandiwebcom/Scandiweb-Assets-Core)
 
 ## Quick start
-1. Make sure [requirements](docs/A-requirements.md) are met
-2. Clone the repository
+1.  Make sure [requirements](docs/A-requirements.md) are met
+2.  Clone the repository
 ```console
 git clone git@github.com:scandipwa/scandipwa-base.git
 ```
-3. Set `COMPOSER_HOME` on your machine (you can obtain credentials using [Magento2 Marketplace](https://account.magento.com/applications/customer/login/))
+3.  Set `COMPOSER_HOME` on your machine (you can obtain credentials using [Magento2 Marketplace](https://account.magento.com/applications/customer/login/))
 ```console
 export COMPOSER_AUTH='{"http-basic":{"repo.magento.com": {"username": "REPLACE_THIS", "password": "REPLACE_THIS"}}}'
 ```
 
-4. Generate selfsigned ssl certificates with (more details [here](docs/G-SSL-container.md) )
+4.  Generate selfsigned ssl certificates with (more details [here](docs/G-SSL-container.md) )
 ```console
 make cert
 ```
 
-5. Pull and run the infrastructure
+5.  Pull and run the infrastructure
 ```console
 docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml pull
 ``` 
@@ -58,19 +58,19 @@ docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compo
 
 > **NOTICE**: Do the following steps only in case you need ScandiPWA DEMO
 
-6. Stop the application container 
+6.  Stop the application container 
 ```console
 docker-compose stop app
 ```
-7. Recreate existing database 
+7.  Recreate existing database 
 ```console
 docker-compose exec mysql mysql -u root -pscandipwa -e "DROP DATABASE magento; CREATE DATABASE magento;"
 ```
-8. Import DEMO ScandiPWA database: 
+8.  Import DEMO ScandiPWA database: 
 ```console
 docker-compose exec -T mysql mysql -u root -pscandipwa magento < deploy/latest.sql
 ```
-9. Recreate Docker infrastructure
+9.  Recreate Docker infrastructure
 ```console
 docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml up -d --force-recreate
 ```

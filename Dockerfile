@@ -65,7 +65,7 @@ COPY deploy/start.sh /start.sh
 RUN chmod +x /start.sh
 
 # Clean up APT and temp when done.
-RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* $BASEPATH/bootstrap.sh
+RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY deploy/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh

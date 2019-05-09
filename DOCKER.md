@@ -58,6 +58,6 @@ unable to find user user: no matching entries in passwd file
 ``` 
 there is an issue with your `app` container.
 
-1. Make sure you have latest version of the docker
-2. (Optional, if previous versions exists on your machine) Run `docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml build`
-3. Start containers with `--force-recreate` like this `docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up --force-recreate`
+1.  Make sure you have latest version of the docker
+2.  (Optional, if previous versions exists on your machine) Run `docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml build`
+3.  Start containers with `--force-recreate` like this `docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.frontend.yml up --force-recreate`
