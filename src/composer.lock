@@ -11330,16 +11330,16 @@
         },
         {
             "name": "scandipwa/route717",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/route717.git",
-                "reference": "8126757cdaa263da241b16b9283311653e75dc20"
+                "reference": "668e18b4a0928f14a24ea54e213ff7aaaae8831e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/route717/zipball/8126757cdaa263da241b16b9283311653e75dc20",
-                "reference": "8126757cdaa263da241b16b9283311653e75dc20",
+                "url": "https://api.github.com/repos/scandipwa/route717/zipball/668e18b4a0928f14a24ea54e213ff7aaaae8831e",
+                "reference": "668e18b4a0928f14a24ea54e213ff7aaaae8831e",
                 "shasum": ""
             },
             "require": {
@@ -11371,7 +11371,7 @@
                 "router",
                 "scandipwa"
             ],
-            "time": "2019-03-26T10:19:34+00:00"
+            "time": "2019-05-10T10:00:16+00:00"
         },
         {
             "name": "scandipwa/sitemap",
