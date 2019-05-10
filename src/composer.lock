@@ -11375,16 +11375,16 @@
         },
         {
             "name": "scandipwa/sitemap",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/sitemap.git",
-                "reference": "6f10fa8496818df0078e9b8d6c2e57d14b29c944"
+                "reference": "aa453eedb02f85c2fabad6cd1bd3fc5d79b1e51d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/sitemap/zipball/6f10fa8496818df0078e9b8d6c2e57d14b29c944",
-                "reference": "6f10fa8496818df0078e9b8d6c2e57d14b29c944",
+                "url": "https://api.github.com/repos/scandipwa/sitemap/zipball/aa453eedb02f85c2fabad6cd1bd3fc5d79b1e51d",
+                "reference": "aa453eedb02f85c2fabad6cd1bd3fc5d79b1e51d",
                 "shasum": ""
             },
             "require": {
@@ -11417,7 +11417,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-04-09T15:44:51+00:00"
+            "time": "2019-05-08T10:32:15+00:00"
         },
         {
             "name": "scandipwa/slider",
