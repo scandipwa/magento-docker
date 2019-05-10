@@ -11159,16 +11159,16 @@
         },
         {
             "name": "scandipwa/installer",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/installer.git",
-                "reference": "ea65440e3420d6f37032bbf676ff9173de54adef"
+                "reference": "c98afdce07c50c74d4d1326f0ba633be3182c867"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/installer/zipball/ea65440e3420d6f37032bbf676ff9173de54adef",
-                "reference": "ea65440e3420d6f37032bbf676ff9173de54adef",
+                "url": "https://api.github.com/repos/scandipwa/installer/zipball/c98afdce07c50c74d4d1326f0ba633be3182c867",
+                "reference": "c98afdce07c50c74d4d1326f0ba633be3182c867",
                 "shasum": ""
             },
             "require": {
@@ -11202,7 +11202,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-04-10T07:12:44+00:00"
+            "time": "2019-05-10T09:56:04+00:00"
         },
         {
             "name": "scandipwa/menu-organizer",
