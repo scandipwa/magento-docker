@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "793774e61468b91c3b9f15af75d60f5a",
+    "content-hash": "a61e1030919a47a213ffe4729bd90e97",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -11286,16 +11286,16 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "6823f8c7a8faf4669c50a67423e94cb55877294f"
+                "reference": "37e48fb9ede52170caa5aea685a1b73d0aebdb1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/6823f8c7a8faf4669c50a67423e94cb55877294f",
-                "reference": "6823f8c7a8faf4669c50a67423e94cb55877294f",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/37e48fb9ede52170caa5aea685a1b73d0aebdb1b",
+                "reference": "37e48fb9ede52170caa5aea685a1b73d0aebdb1b",
                 "shasum": ""
             },
             "require": {
@@ -11326,7 +11326,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-05-08T10:33:45+00:00"
+            "time": "2019-05-13T10:23:02+00:00"
         },
         {
             "name": "scandipwa/route717",
