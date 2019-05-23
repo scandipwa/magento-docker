@@ -4,9 +4,17 @@
 
 This repository is a base repository that contains Docker environment for Magento ^2.3 and is dedicated for ScandiPWA
  theme development and ScandiPWA based project development.
+ 
+## Important note
+This branch contains experimental 2.x version, having different codebase inlucded (source v2.x) and DB dump.
+ 
+v1.x is currently the main [master branch](https://github.com/scandipwa/scandipwa-base) and has active support and 
+ development.  
 
 ## Demo
 You can easily access demo simply clicking [here](https://demo.scandipwa.com)
+
+v1.x demo is available [here](https://v1.scandipwa.com/)
  
 ## Docker
 Please refer to [Docker](./DOCKER.md) and documentation [docs](https://docs.scandipwa.com)
@@ -20,7 +28,7 @@ managed by [Composer](https://getcomposer.org)
 
 ## Dependencies
 -   [scandipwa/installer](https://github.com/scandipwa/installer)
--   [scandipwa/source](https://github.com/scandipwa/base-theme)
+-   [scandipwa/source](https://github.com/scandipwa/base-theme) (v.2.x)
 -   [scandipwa/graphql](https://github.com/scandipwa/graphql)
 -   [scandipwa/catalog-graphql](https://github.com/scandipwa/catalog-graphql)
 -   [scandipwa/cms-graphql](https://github.com/scandipwa/cms-graphql)

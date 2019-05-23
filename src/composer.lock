@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a61e1030919a47a213ffe4729bd90e97",
+    "content-hash": "d3963e11a0d54978effbb4b018917c62",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -11159,21 +11159,21 @@
         },
         {
             "name": "scandipwa/installer",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/installer.git",
-                "reference": "c98afdce07c50c74d4d1326f0ba633be3182c867"
+                "reference": "571830e6b7015a550f4dc50a09b23a0c6c2af6a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/installer/zipball/c98afdce07c50c74d4d1326f0ba633be3182c867",
-                "reference": "c98afdce07c50c74d4d1326f0ba633be3182c867",
+                "url": "https://api.github.com/repos/scandipwa/installer/zipball/571830e6b7015a550f4dc50a09b23a0c6c2af6a9",
+                "reference": "571830e6b7015a550f4dc50a09b23a0c6c2af6a9",
                 "shasum": ""
             },
             "require": {
                 "magento/product-community-edition": "^2.3",
-                "scandipwa/source": "^1.2.1"
+                "scandipwa/source": "^1.0|^2.0"
             },
             "type": "magento2-theme",
             "autoload": {
@@ -11202,7 +11202,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-05-10T09:56:04+00:00"
+            "time": "2019-05-23T10:45:45+00:00"
         },
         {
             "name": "scandipwa/menu-organizer",
@@ -11239,16 +11239,16 @@
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
-                "reference": "f76fcfd62aad9bf82daa73d5068963c02b73f0ba"
+                "reference": "41287cf84b26aadedf9f3d25a076582ff8087208"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/f76fcfd62aad9bf82daa73d5068963c02b73f0ba",
-                "reference": "f76fcfd62aad9bf82daa73d5068963c02b73f0ba",
+                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/41287cf84b26aadedf9f3d25a076582ff8087208",
+                "reference": "41287cf84b26aadedf9f3d25a076582ff8087208",
                 "shasum": ""
             },
             "require": {
@@ -11282,7 +11282,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-05-07T07:37:38+00:00"
+            "time": "2019-05-23T10:07:48+00:00"
         },
         {
             "name": "scandipwa/quote-graphql",
@@ -11375,21 +11375,21 @@
         },
         {
             "name": "scandipwa/sitemap",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/sitemap.git",
-                "reference": "aa453eedb02f85c2fabad6cd1bd3fc5d79b1e51d"
+                "reference": "23dd976823f3e65c5e500b9b3a037cc7be72ff65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/sitemap/zipball/aa453eedb02f85c2fabad6cd1bd3fc5d79b1e51d",
-                "reference": "aa453eedb02f85c2fabad6cd1bd3fc5d79b1e51d",
+                "url": "https://api.github.com/repos/scandipwa/sitemap/zipball/23dd976823f3e65c5e500b9b3a037cc7be72ff65",
+                "reference": "23dd976823f3e65c5e500b9b3a037cc7be72ff65",
                 "shasum": ""
             },
             "require": {
                 "magento/product-community-edition": "^2.3",
-                "scandipwa/source": "^1.0"
+                "scandipwa/source": "^1.0|^2.0"
             },
             "type": "magento2-module",
             "autoload": {
@@ -11417,7 +11417,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-05-08T10:32:15+00:00"
+            "time": "2019-05-23T10:46:07+00:00"
         },
         {
             "name": "scandipwa/slider",
@@ -11502,16 +11502,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "1.4.1",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "ed0486a911bc5c9d3db59131eda5886de84118d1"
+                "reference": "38eb63598488bef3f719effde1987a7a8a2a6a62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/ed0486a911bc5c9d3db59131eda5886de84118d1",
-                "reference": "ed0486a911bc5c9d3db59131eda5886de84118d1",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/38eb63598488bef3f719effde1987a7a8a2a6a62",
+                "reference": "38eb63598488bef3f719effde1987a7a8a2a6a62",
                 "shasum": ""
             },
             "require": {
@@ -11566,7 +11566,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-05-10T16:01:17+00:00"
+            "time": "2019-05-20T09:32:47+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
@@ -19668,9 +19668,17 @@
             "time": "2018-12-25T11:19:39+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "2.0.0",
+            "alias_normalized": "2.0.0.0",
+            "version": "2.0.9999999.9999999-dev",
+            "package": "scandipwa/source"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "scandipwa/source": 20,
         "phpmd/phpmd": 0
     },
     "prefer-stable": false,
