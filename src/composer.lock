@@ -11042,16 +11042,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "1.2.4",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "fe1e0ac1a9bbf3e14f07474e810ef30f38514ff1"
+                "reference": "878407d5eafe9726ea2db7aad0aac5445d29d4e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/fe1e0ac1a9bbf3e14f07474e810ef30f38514ff1",
-                "reference": "fe1e0ac1a9bbf3e14f07474e810ef30f38514ff1",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/878407d5eafe9726ea2db7aad0aac5445d29d4e0",
+                "reference": "878407d5eafe9726ea2db7aad0aac5445d29d4e0",
                 "shasum": ""
             },
             "require": {
@@ -11077,7 +11077,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-04-09T15:01:39+00:00"
+            "time": "2019-05-29T13:20:04+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -11286,16 +11286,16 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "1.0.5",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "6823f8c7a8faf4669c50a67423e94cb55877294f"
+                "reference": "0ae2b84dce820845e53777abf4c9fcc66683ea0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/6823f8c7a8faf4669c50a67423e94cb55877294f",
-                "reference": "6823f8c7a8faf4669c50a67423e94cb55877294f",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/0ae2b84dce820845e53777abf4c9fcc66683ea0c",
+                "reference": "0ae2b84dce820845e53777abf4c9fcc66683ea0c",
                 "shasum": ""
             },
             "require": {
@@ -11326,7 +11326,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-05-08T10:33:45+00:00"
+            "time": "2019-05-30T11:39:22+00:00"
         },
         {
             "name": "scandipwa/route717",
@@ -11502,26 +11502,26 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "ed0486a911bc5c9d3db59131eda5886de84118d1"
+                "reference": "783f609923d5481f4216cd3d5410ce468f326d7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/ed0486a911bc5c9d3db59131eda5886de84118d1",
-                "reference": "ed0486a911bc5c9d3db59131eda5886de84118d1",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/783f609923d5481f4216cd3d5410ce468f326d7e",
+                "reference": "783f609923d5481f4216cd3d5410ce468f326d7e",
                 "shasum": ""
             },
             "require": {
                 "magento/product-community-edition": "2.3.1",
-                "scandipwa/catalog-graphql": "^1.2",
+                "scandipwa/catalog-graphql": "^1.3",
                 "scandipwa/cms-graphql": "^1.0",
                 "scandipwa/customer-graph-ql": "^1.1",
                 "scandipwa/menu-organizer": "^1.0",
                 "scandipwa/persisted-query": "^1.0",
-                "scandipwa/quote-graphql": "^1.0",
+                "scandipwa/quote-graphql": "^2.0.1",
                 "scandipwa/route717": "^1.0",
                 "scandipwa/slider-graphql": "^1.0",
                 "scandipwa/urlrewrite-graphql": "^1.0",
@@ -11566,7 +11566,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-05-10T16:01:17+00:00"
+            "time": "2019-05-30T09:50:43+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
