@@ -11128,16 +11128,16 @@
         },
         {
             "name": "scandipwa/customer-graph-ql",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/customer-graph-ql.git",
-                "reference": "536a09f8d2c3e677d751f7abda2083d6aaccf15b"
+                "reference": "08cd57b620c6fa3445f2c2e006956df85a0606d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/customer-graph-ql/zipball/536a09f8d2c3e677d751f7abda2083d6aaccf15b",
-                "reference": "536a09f8d2c3e677d751f7abda2083d6aaccf15b",
+                "url": "https://api.github.com/repos/scandipwa/customer-graph-ql/zipball/08cd57b620c6fa3445f2c2e006956df85a0606d1",
+                "reference": "08cd57b620c6fa3445f2c2e006956df85a0606d1",
                 "shasum": ""
             },
             "require": {
@@ -11158,7 +11158,7 @@
                 "AFL-3.0"
             ],
             "description": "N/A",
-            "time": "2019-03-27T09:23:49+00:00"
+            "time": "2019-06-12T10:43:36+00:00"
         },
         {
             "name": "scandipwa/installer",
@@ -11209,16 +11209,16 @@
         },
         {
             "name": "scandipwa/menu-organizer",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/menu-organizer.git",
-                "reference": "1451e39f42ba63211626dd3a1f7550e8fbd34b16"
+                "reference": "aa4ee95b7044a424714598a596c20b88523fb188"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/menu-organizer/zipball/1451e39f42ba63211626dd3a1f7550e8fbd34b16",
-                "reference": "1451e39f42ba63211626dd3a1f7550e8fbd34b16",
+                "url": "https://api.github.com/repos/scandipwa/menu-organizer/zipball/aa4ee95b7044a424714598a596c20b88523fb188",
+                "reference": "aa4ee95b7044a424714598a596c20b88523fb188",
                 "shasum": ""
             },
             "require": {
@@ -11238,20 +11238,20 @@
                 "OSL-3.0"
             ],
             "description": "Scandiweb Menu Organizer for ScandiPWA",
-            "time": "2019-04-25T13:52:43+00:00"
+            "time": "2019-06-04T14:10:44+00:00"
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
-                "reference": "c8bff64cdfd246c75e5daada682c1e4bd4a0cc78"
+                "reference": "fbd882ab77d024ca3e6afad749fbb09463d59a42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/c8bff64cdfd246c75e5daada682c1e4bd4a0cc78",
-                "reference": "c8bff64cdfd246c75e5daada682c1e4bd4a0cc78",
+                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/fbd882ab77d024ca3e6afad749fbb09463d59a42",
+                "reference": "fbd882ab77d024ca3e6afad749fbb09463d59a42",
                 "shasum": ""
             },
             "require": {
@@ -11285,20 +11285,20 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-05-30T14:14:04+00:00"
+            "time": "2019-06-11T13:32:43+00:00"
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.0.2",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "0ae2b84dce820845e53777abf4c9fcc66683ea0c"
+                "reference": "9fc8428f4702544f6e22bdc735b87e0f30bcce0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/0ae2b84dce820845e53777abf4c9fcc66683ea0c",
-                "reference": "0ae2b84dce820845e53777abf4c9fcc66683ea0c",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/9fc8428f4702544f6e22bdc735b87e0f30bcce0d",
+                "reference": "9fc8428f4702544f6e22bdc735b87e0f30bcce0d",
                 "shasum": ""
             },
             "require": {
@@ -11329,7 +11329,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-05-30T11:39:22+00:00"
+            "time": "2019-06-10T06:08:18+00:00"
         },
         {
             "name": "scandipwa/route717",
@@ -11505,16 +11505,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "1.5.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "783f609923d5481f4216cd3d5410ce468f326d7e"
+                "reference": "8dc7332af17c0f9b130a285f8a9aee24f3a6e9be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/783f609923d5481f4216cd3d5410ce468f326d7e",
-                "reference": "783f609923d5481f4216cd3d5410ce468f326d7e",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/8dc7332af17c0f9b130a285f8a9aee24f3a6e9be",
+                "reference": "8dc7332af17c0f9b130a285f8a9aee24f3a6e9be",
                 "shasum": ""
             },
             "require": {
@@ -11569,7 +11569,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-05-30T09:50:43+00:00"
+            "time": "2019-06-14T11:39:53+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
