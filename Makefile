@@ -1,6 +1,7 @@
 # Define available commands
 .PHONY: build full-rebuild push up recreate down cert pull \
- down-rm-volumes applogs logs flushall
+ down-rm-volumes applogs logs flushall core-up core-down core-logs \
+ exec
 
 # Variables
 current_dir := $(shell pwd)
@@ -11,6 +12,9 @@ gid := $(shell id -g)
 up:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml up -d
 
+core-up:
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.core.yml -f docker-compose.ssl.yml up -d
+
 build:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml build
 
@@ -19,6 +23,9 @@ pull:
 
 down:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml down --remove-orphans
+
+core-down:
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.core.yml -f docker-compose.ssl.yml down --remove-orphans
 
 down-rm-volumes:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml down -v
@@ -29,12 +36,21 @@ applogs:
 logs:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml logs -f
 
+core-logs:
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.core.yml -f docker-compose.ssl.yml logs -f --tail 100
+
 full-rebuild:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml build --pull --no-cache
 
 flushall:
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml exec varnish varnishadm "ban req.url ~ /"
 	docker-compose -f docker-compose.yml -f docker-compose.local.yml exec redis redis-cli FLUSHALL
+
+exec:
+	docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.core.yml -f docker-compose.ssl.yml exec -u user app $(filter-out $@,$(MAKECMDGOALS))
+
+%:
+	@true
 
 cert:
 	mkdir -p opt/cert
