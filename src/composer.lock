@@ -11045,16 +11045,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "1.3.0",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "878407d5eafe9726ea2db7aad0aac5445d29d4e0"
+                "reference": "a9950591dee32dcc20bcbb5b1455322d9a562a84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/878407d5eafe9726ea2db7aad0aac5445d29d4e0",
-                "reference": "878407d5eafe9726ea2db7aad0aac5445d29d4e0",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/a9950591dee32dcc20bcbb5b1455322d9a562a84",
+                "reference": "a9950591dee32dcc20bcbb5b1455322d9a562a84",
                 "shasum": ""
             },
             "require": {
@@ -11080,7 +11080,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-05-29T13:20:04+00:00"
+            "time": "2019-06-18T07:45:12+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -11162,16 +11162,16 @@
         },
         {
             "name": "scandipwa/installer",
-            "version": "1.3.0",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/installer.git",
-                "reference": "571830e6b7015a550f4dc50a09b23a0c6c2af6a9"
+                "reference": "ae06a6e4146eef73288fdad06d4a08622793435d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/installer/zipball/571830e6b7015a550f4dc50a09b23a0c6c2af6a9",
-                "reference": "571830e6b7015a550f4dc50a09b23a0c6c2af6a9",
+                "url": "https://api.github.com/repos/scandipwa/installer/zipball/ae06a6e4146eef73288fdad06d4a08622793435d",
+                "reference": "ae06a6e4146eef73288fdad06d4a08622793435d",
                 "shasum": ""
             },
             "require": {
@@ -11205,7 +11205,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-05-23T10:45:45+00:00"
+            "time": "2019-06-17T10:59:08+00:00"
         },
         {
             "name": "scandipwa/menu-organizer",
