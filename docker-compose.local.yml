@@ -21,7 +21,7 @@ services:
     networks:
     - default
   kibana:
-    image: docker.elastic.co/kibana/kibana:5.6.16
+    image: docker.elastic.co/kibana/kibana:${ELASTICSEARCH_VERSION}
     restart: on-failure:5
     environment:
       - xpack.security.enabled=false
