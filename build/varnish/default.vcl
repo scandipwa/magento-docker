@@ -5,6 +5,8 @@ import std;
 # The minimal Varnish version is 5.0
 # For SSL offloading, pass the following header in your proxy server or load balancer: 'X-Forwarded-Proto: https'
 import geoip2;
+# For server Set-Cookie headers processing
+import header;
 
 backend default {
     .host = "nginx";
@@ -165,7 +167,8 @@ sub vcl_backend_response {
     # validate if we need to cache it and prevent from setting cookie
     # images, css and js are cacheable by default so we have to remove cookie also
     if (beresp.ttl > 0s && (bereq.method == "GET" || bereq.method == "HEAD")) {
-        unset beresp.http.set-cookie;
+        # Removes all cookies except 'action_type'
+        header.remove(beresp.http.set-cookie, "^(?!action_type=).+$");
     }
 
    # If page is not cacheable then bypass varnish for 2 minutes as Hit-For-Pass

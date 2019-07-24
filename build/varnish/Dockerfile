@@ -17,7 +17,7 @@ RUN /bin/bash -c 'curl -L https://packagecloud.io/varnishcache/varnish${VARNISH_
 
 RUN /bin/bash -c 'apt-get -qq update; \
     apt-get -qq dist-upgrade ; \
-    apt-get -qq install make gcc pkg-config git autoconf libtool-bin python-docutils varnish varnish-dev libmaxminddb0 libmaxminddb-dev mmdb-bin geoip-bin; \
+    apt-get -qq install make gcc pkg-config git wget autoconf libtool-bin python-docutils varnish varnish-dev libmaxminddb0 libmaxminddb-dev mmdb-bin geoip-bin; \
     curl -LO https://github.com/maxmind/geoipupdate/releases/download/v4.0.2/geoipupdate_4.0.2_linux_amd64.deb; \
     dpkg -i geoipupdate_4.0.2_linux_amd64.deb;\
     rm geoipupdate_4.0.2_linux_amd64.deb;\
@@ -30,6 +30,15 @@ RUN /bin/bash -c 'set -xe; \
     cd /tmp/geoip2; \
     git checkout -f oldstable && git submodule update --recursive --remote; \
     ./autogen.sh; \
+    ./configure; \
+    make; \
+    make install'
+
+RUN /bin/bash -c 'set -xe; \
+    wget -P /tmp/varnish-modules "https://download.varnish-software.com/varnish-modules/varnish-modules-0.15.0.tar.gz"; \
+    cd /tmp/varnish-modules; \
+    tar xvzf varnish-modules-0.15.0.tar.gz; \
+    cd ./varnish-modules-0.15.0; \
     ./configure; \
     make; \
     make install'
