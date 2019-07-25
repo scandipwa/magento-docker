@@ -1,0 +1,18 @@
+{
+  "name": "image-optimizer",
+  "version": "1.0.0",
+  "description": "script for optimising images before upload",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kriss ANdrejevs",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "recursive-readdir": "^2.2.2",
+    "sqip": "^0.3.3",
+    "webp-converter": "^2.2.2"
+  }
+}

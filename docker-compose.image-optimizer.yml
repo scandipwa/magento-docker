@@ -1,0 +1,7 @@
+version: '3'
+services:
+  image-optimizer:
+    build:
+      context: build/image-optimizer
+    volumes:
+      - ./src/pub/media:/var/www/media/images
