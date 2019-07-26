@@ -11242,16 +11242,16 @@
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
-                "reference": "fbd882ab77d024ca3e6afad749fbb09463d59a42"
+                "reference": "cf57d677d9f0922d741f0a994842bfca0198535d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/fbd882ab77d024ca3e6afad749fbb09463d59a42",
-                "reference": "fbd882ab77d024ca3e6afad749fbb09463d59a42",
+                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/cf57d677d9f0922d741f0a994842bfca0198535d",
+                "reference": "cf57d677d9f0922d741f0a994842bfca0198535d",
                 "shasum": ""
             },
             "require": {
@@ -11285,20 +11285,20 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-06-11T13:32:43+00:00"
+            "time": "2019-07-26T13:02:23+00:00"
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "eb23d33fcb96c7939f42d5f2d1f46b715c65d8c6"
+                "reference": "e2147eae6b65c8b5b7d3a9652a8871ca93f22960"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/eb23d33fcb96c7939f42d5f2d1f46b715c65d8c6",
-                "reference": "eb23d33fcb96c7939f42d5f2d1f46b715c65d8c6",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/e2147eae6b65c8b5b7d3a9652a8871ca93f22960",
+                "reference": "e2147eae6b65c8b5b7d3a9652a8871ca93f22960",
                 "shasum": ""
             },
             "require": {
@@ -11320,16 +11320,16 @@
             ],
             "authors": [
                 {
-                    "name": "Ilja Lapkovskis",
-                    "email": "ilja@scandiweb.com"
-                },
-                {
                     "name": "Alfreds Genkins",
                     "email": "alfreds@scandiweb.com"
+                },
+                {
+                    "name": "Ilja Lapkovskis",
+                    "email": "ilja@scandiweb.com"
                 }
             ],
             "description": "N/A",
-            "time": "2019-07-17T07:40:18+00:00"
+            "time": "2019-07-26T11:22:12+00:00"
         },
         {
             "name": "scandipwa/reviews-graphql",
