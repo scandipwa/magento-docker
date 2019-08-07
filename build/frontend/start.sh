@@ -1,3 +1,4 @@
 #!/bin/bash
 npm ci
-npm run watch
+npm install pm2 forever -g
+pm2-runtime process.yml
