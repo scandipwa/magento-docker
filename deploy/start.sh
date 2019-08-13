@@ -271,14 +271,14 @@ composer_install
 magento_flush_config
 # Setting magento database credentials
 magento_database_config
+# Configuring Magento to use Varnish as HTTP cache
+magento_varnish_config
+# Configuring Magento to use Redis for session and config storage
+magento_redis_config
 # Executing Magento install or migration
 magento_database_migration
 # Create admin user if not exists
 create_admin_user
-# Configuring Magento to use Redis for session and config storage
-magento_redis_config
-# Configuring Magento to use Varnish as HTTP cache
-magento_varnish_config
 
 # Set magento mode
 magento_set_mode
