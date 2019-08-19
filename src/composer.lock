@@ -274,13 +274,13 @@
             "authors": [
                 {
                     "name": "Benjamin Eberlei",
-                    "email": "kontakt@beberlei.de",
-                    "role": "Lead Developer"
+                    "role": "Lead Developer",
+                    "email": "kontakt@beberlei.de"
                 },
                 {
                     "name": "Richard Quadling",
-                    "email": "rquadling@gmail.com",
-                    "role": "Collaborator"
+                    "role": "Collaborator",
+                    "email": "rquadling@gmail.com"
                 }
             ],
             "description": "Thin assertion library for input validation in business models.",
@@ -10632,28 +10632,28 @@
             "authors": [
                 {
                     "name": "Jim Wigginton",
-                    "email": "terrafrost@php.net",
-                    "role": "Lead Developer"
+                    "role": "Lead Developer",
+                    "email": "terrafrost@php.net"
                 },
                 {
                     "name": "Patrick Monnerat",
-                    "email": "pm@datasphere.ch",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "pm@datasphere.ch"
                 },
                 {
                     "name": "Andreas Fischer",
-                    "email": "bantu@phpbb.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "bantu@phpbb.com"
                 },
                 {
                     "name": "Hans-Jürgen Petrich",
-                    "email": "petrich@tronic-media.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "petrich@tronic-media.com"
                 },
                 {
                     "name": "Graham Campbell",
-                    "email": "graham@alt-three.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "graham@alt-three.com"
                 }
             ],
             "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
@@ -11128,20 +11128,20 @@
         },
         {
             "name": "scandipwa/customer-graph-ql",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/customer-graph-ql.git",
-                "reference": "08cd57b620c6fa3445f2c2e006956df85a0606d1"
+                "reference": "431e398fa90ad00e6617a860c836b9459d65e34b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/customer-graph-ql/zipball/08cd57b620c6fa3445f2c2e006956df85a0606d1",
-                "reference": "08cd57b620c6fa3445f2c2e006956df85a0606d1",
+                "url": "https://api.github.com/repos/scandipwa/customer-graph-ql/zipball/431e398fa90ad00e6617a860c836b9459d65e34b",
+                "reference": "431e398fa90ad00e6617a860c836b9459d65e34b",
                 "shasum": ""
             },
             "require": {
-                "magento/product-community-edition": "2.3.1"
+                "magento/magento2-base": "2.3.1"
             },
             "type": "magento2-module",
             "autoload": {
@@ -11158,20 +11158,20 @@
                 "AFL-3.0"
             ],
             "description": "N/A",
-            "time": "2019-06-12T10:43:36+00:00"
+            "time": "2019-08-01T09:44:36+00:00"
         },
         {
             "name": "scandipwa/installer",
-            "version": "1.4.0",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/installer.git",
-                "reference": "8d48b293417842457770ede541b88d63d97fb0e3"
+                "reference": "6a7a1373c3b2154f61f6d263804411990dde288a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/installer/zipball/8d48b293417842457770ede541b88d63d97fb0e3",
-                "reference": "8d48b293417842457770ede541b88d63d97fb0e3",
+                "url": "https://api.github.com/repos/scandipwa/installer/zipball/6a7a1373c3b2154f61f6d263804411990dde288a",
+                "reference": "6a7a1373c3b2154f61f6d263804411990dde288a",
                 "shasum": ""
             },
             "require": {
@@ -11205,7 +11205,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-07-29T12:38:17+00:00"
+            "time": "2019-08-07T15:04:01+00:00"
         },
         {
             "name": "scandipwa/menu-organizer",
@@ -11242,7 +11242,7 @@
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "1.4.3",
+            "version": "1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
@@ -11289,16 +11289,16 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "7980395ce143ad45169093d3faa36adef82aa775"
+                "reference": "3b01e073562efc950eae5171d390db9c625d24b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/7980395ce143ad45169093d3faa36adef82aa775",
-                "reference": "7980395ce143ad45169093d3faa36adef82aa775",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/3b01e073562efc950eae5171d390db9c625d24b6",
+                "reference": "3b01e073562efc950eae5171d390db9c625d24b6",
                 "shasum": ""
             },
             "require": {
@@ -11329,7 +11329,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-07-29T11:51:45+00:00"
+            "time": "2019-08-01T14:37:05+00:00"
         },
         {
             "name": "scandipwa/reviews-graphql",
@@ -11422,20 +11422,20 @@
         },
         {
             "name": "scandipwa/sitemap",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/sitemap.git",
-                "reference": "23dd976823f3e65c5e500b9b3a037cc7be72ff65"
+                "reference": "28c8b9ac7de52179cd6441eea4114bd4ff6913c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/sitemap/zipball/23dd976823f3e65c5e500b9b3a037cc7be72ff65",
-                "reference": "23dd976823f3e65c5e500b9b3a037cc7be72ff65",
+                "url": "https://api.github.com/repos/scandipwa/sitemap/zipball/28c8b9ac7de52179cd6441eea4114bd4ff6913c7",
+                "reference": "28c8b9ac7de52179cd6441eea4114bd4ff6913c7",
                 "shasum": ""
             },
             "require": {
-                "magento/product-community-edition": "^2.3",
+                "magento/magento2-base": "^2.3",
                 "scandipwa/source": "^1.0|^2.0"
             },
             "type": "magento2-module",
@@ -11464,7 +11464,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-05-23T10:46:07+00:00"
+            "time": "2019-08-01T09:42:38+00:00"
         },
         {
             "name": "scandipwa/slider",
@@ -11549,20 +11549,20 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "1.9.6",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "cf905cb8d1a824a20613bb611210af87fe428325"
+                "reference": "c2ffc96e3507222f1adbf5d5119a003f7cb7a85e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/cf905cb8d1a824a20613bb611210af87fe428325",
-                "reference": "cf905cb8d1a824a20613bb611210af87fe428325",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/c2ffc96e3507222f1adbf5d5119a003f7cb7a85e",
+                "reference": "c2ffc96e3507222f1adbf5d5119a003f7cb7a85e",
                 "shasum": ""
             },
             "require": {
-                "magento/product-community-edition": "2.3.1",
+                "magento/magento2-base": "2.3.1",
                 "scandipwa/catalog-graphql": "^1.4.1",
                 "scandipwa/cms-graphql": "^1.0",
                 "scandipwa/customer-graph-ql": "^1.1",
@@ -11591,10 +11591,6 @@
                     "email": "ilja@scandiweb.com"
                 },
                 {
-                    "name": "Yefim Butrameev",
-                    "email": "yefim.butrameev@scandiweb.com"
-                },
-                {
                     "name": "Alfreds Genkins",
                     "email": "alfreds@scandiweb.com"
                 },
@@ -11605,6 +11601,10 @@
                 {
                     "name": "Eduards Mukans",
                     "email": "eduards@scandiweb.com"
+                },
+                {
+                    "name": "Yefim Butrameev",
+                    "email": "yefim.butrameev@scandiweb.com"
                 }
             ],
             "description": "ScandiPWA",
@@ -11614,7 +11614,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-07-18T12:59:31+00:00"
+            "time": "2019-08-19T10:13:18+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
