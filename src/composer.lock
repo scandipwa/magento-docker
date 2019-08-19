@@ -11289,16 +11289,16 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "3b01e073562efc950eae5171d390db9c625d24b6"
+                "reference": "1e3516d1857cc0d1fc44891146599d5459414e44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/3b01e073562efc950eae5171d390db9c625d24b6",
-                "reference": "3b01e073562efc950eae5171d390db9c625d24b6",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/1e3516d1857cc0d1fc44891146599d5459414e44",
+                "reference": "1e3516d1857cc0d1fc44891146599d5459414e44",
                 "shasum": ""
             },
             "require": {
@@ -11329,7 +11329,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-08-01T14:37:05+00:00"
+            "time": "2019-08-19T10:51:10+00:00"
         },
         {
             "name": "scandipwa/reviews-graphql",
