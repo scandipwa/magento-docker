@@ -15,6 +15,7 @@ services:
     volumes:
       - ./src/app/design/frontend/Scandiweb/pwa:/var/www/public/app/design/frontend/Scandiweb/pwa
       - ./src/vendor/scandipwa/source:/var/www/public/vendor/scandipwa/source
+    command: ["npm", "run", "pm2-watch"]
     working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
     env_file: .env
     expose:
