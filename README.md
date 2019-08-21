@@ -36,7 +36,7 @@ managed by [Composer](https://getcomposer.org)
 -   [scandiweb/module-core](https://github.com/scandiwebcom/Scandiweb-Assets-Core)
 
 ## Quick start
-1.  Make sure [requirements](docs/A-requirements.md) are met
+1.  Make sure [requirements](https://docs.scandipwa.com/#/docker/A-requirements) are met
 2.  Clone the repository
 ```console
 git clone git@github.com:scandipwa/scandipwa-base.git
