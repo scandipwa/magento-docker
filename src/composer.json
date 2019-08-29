@@ -11,10 +11,9 @@
         "sort-packages": true
     },
     "require": {
-        "magento/product-community-edition": "2.3.1",
-        "scandipwa/source": "1.*",
-        "scandipwa/installer": "^1.2.0",
-        "scandipwa/sitemap": "^1.0"
+        "magento/product-community-edition": "2.3.2",
+        "scandipwa/source": "^2.1",
+        "scandipwa/installer": "^1.2.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "~2.13.0",
