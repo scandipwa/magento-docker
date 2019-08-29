@@ -11242,20 +11242,20 @@
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "1.4.4",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
-                "reference": "cf57d677d9f0922d741f0a994842bfca0198535d"
+                "reference": "64074ff03198cbfb1af377abebd5da5d96d132ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/cf57d677d9f0922d741f0a994842bfca0198535d",
-                "reference": "cf57d677d9f0922d741f0a994842bfca0198535d",
+                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/64074ff03198cbfb1af377abebd5da5d96d132ab",
+                "reference": "64074ff03198cbfb1af377abebd5da5d96d132ab",
                 "shasum": ""
             },
             "require": {
-                "magento/product-community-edition": "^2.3",
+                "magento/magento2-base": "^2.3",
                 "predis/predis": "^1.1"
             },
             "type": "magento2-module",
@@ -11285,7 +11285,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-07-26T13:02:23+00:00"
+            "time": "2019-08-29T11:20:55+00:00"
         },
         {
             "name": "scandipwa/quote-graphql",
