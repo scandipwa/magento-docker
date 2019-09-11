@@ -428,8 +428,8 @@
             "authors": [
                 {
                     "name": "Cory LaViska",
-                    "role": "Developer",
-                    "homepage": "http://www.abeautifulsite.net/"
+                    "homepage": "http://www.abeautifulsite.net/",
+                    "role": "Developer"
                 }
             ],
             "description": "A PHP class that makes working with images as simple as possible.",
@@ -1900,9 +1900,9 @@
             "authors": [
                 {
                     "name": "Mathieu Lechat",
-                    "role": "Developer",
                     "email": "math.lechat@gmail.com",
-                    "homepage": "http://matthecat.com"
+                    "homepage": "http://matthecat.com",
+                    "role": "Developer"
                 }
             ],
             "description": "Extract colors from an image as a human would do.",
@@ -11320,20 +11320,20 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "ab2345c68c0c3042f97eddba3c90ecd649fa83b0"
+                "reference": "e5798c1988313fbe10cb5481acdadf48d5b76315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/ab2345c68c0c3042f97eddba3c90ecd649fa83b0",
-                "reference": "ab2345c68c0c3042f97eddba3c90ecd649fa83b0",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/e5798c1988313fbe10cb5481acdadf48d5b76315",
+                "reference": "e5798c1988313fbe10cb5481acdadf48d5b76315",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "2.3.2"
+                "magento/magento2-base": "^2.3.1"
             },
             "type": "magento2-module",
             "autoload": {
@@ -11355,20 +11355,20 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-07-29T10:50:58+00:00"
+            "time": "2019-09-09T11:12:02+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
-            "version": "1.0.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/cms-graphql.git",
-                "reference": "54819269840bab9f8a8d92e022b341fe5db5057c"
+                "reference": "3b347396db916525f258fe25af25a348201f84e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/cms-graphql/zipball/54819269840bab9f8a8d92e022b341fe5db5057c",
-                "reference": "54819269840bab9f8a8d92e022b341fe5db5057c",
+                "url": "https://api.github.com/repos/scandipwa/cms-graphql/zipball/3b347396db916525f258fe25af25a348201f84e6",
+                "reference": "3b347396db916525f258fe25af25a348201f84e6",
                 "shasum": ""
             },
             "require": {
@@ -11399,7 +11399,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-03-08T15:16:43+00:00"
+            "time": "2019-09-09T11:09:11+00:00"
         },
         {
             "name": "scandipwa/customer-graph-ql",
@@ -11484,16 +11484,16 @@
         },
         {
             "name": "scandipwa/menu-organizer",
-            "version": "1.0.3",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/menu-organizer.git",
-                "reference": "aa4ee95b7044a424714598a596c20b88523fb188"
+                "reference": "8308b09929ed89b6a07151c8bb0205fdab8c8b7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/menu-organizer/zipball/aa4ee95b7044a424714598a596c20b88523fb188",
-                "reference": "aa4ee95b7044a424714598a596c20b88523fb188",
+                "url": "https://api.github.com/repos/scandipwa/menu-organizer/zipball/8308b09929ed89b6a07151c8bb0205fdab8c8b7b",
+                "reference": "8308b09929ed89b6a07151c8bb0205fdab8c8b7b",
                 "shasum": ""
             },
             "require": {
@@ -11513,7 +11513,7 @@
                 "OSL-3.0"
             ],
             "description": "Scandiweb Menu Organizer for ScandiPWA",
-            "time": "2019-06-04T14:10:44+00:00"
+            "time": "2019-09-09T13:22:54+00:00"
         },
         {
             "name": "scandipwa/persisted-query",
