@@ -11359,16 +11359,16 @@
         },
         {
             "name": "scandipwa/cms-graphql",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/cms-graphql.git",
-                "reference": "975a19f48a5758e9161b81fb439c0dbe6fc9d0a7"
+                "reference": "ed56c0cb705f882d790dc599cf84c46e6797d45b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/cms-graphql/zipball/975a19f48a5758e9161b81fb439c0dbe6fc9d0a7",
-                "reference": "975a19f48a5758e9161b81fb439c0dbe6fc9d0a7",
+                "url": "https://api.github.com/repos/scandipwa/cms-graphql/zipball/ed56c0cb705f882d790dc599cf84c46e6797d45b",
+                "reference": "ed56c0cb705f882d790dc599cf84c46e6797d45b",
                 "shasum": ""
             },
             "require": {
@@ -11399,7 +11399,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-09-12T15:25:35+00:00"
+            "time": "2019-09-16T10:14:29+00:00"
         },
         {
             "name": "scandipwa/customer-graph-ql",
