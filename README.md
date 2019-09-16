@@ -79,7 +79,7 @@ docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compo
 ```
 
 ## Media
-1) Download [media](https://s3-eu-west-1.amazonaws.com/scandipwa-public-assets/scandipwa_media.tgz)
+1) Download [media](https://scandipwa-public-assets.s3-eu-west-1.amazonaws.com/2.2.x-media.tar.gz)
 
 2) Put archive into the `pub/media` folder (if mounted)
 
