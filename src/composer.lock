@@ -11320,16 +11320,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.1.1",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "c00eb71222fa628e59a2782c06361af153c5c962"
+                "reference": "3750a6f7a778ca6c572b03a5625be89f95c4fdd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/c00eb71222fa628e59a2782c06361af153c5c962",
-                "reference": "c00eb71222fa628e59a2782c06361af153c5c962",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/3750a6f7a778ca6c572b03a5625be89f95c4fdd2",
+                "reference": "3750a6f7a778ca6c572b03a5625be89f95c4fdd2",
                 "shasum": ""
             },
             "require": {
@@ -11355,7 +11355,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-09-23T05:13:00+00:00"
+            "time": "2019-10-01T08:27:41+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -11484,16 +11484,16 @@
         },
         {
             "name": "scandipwa/menu-organizer",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/menu-organizer.git",
-                "reference": "8308b09929ed89b6a07151c8bb0205fdab8c8b7b"
+                "reference": "5a35e51355860d3e08e0995fe9d238a6acc6c3e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/menu-organizer/zipball/8308b09929ed89b6a07151c8bb0205fdab8c8b7b",
-                "reference": "8308b09929ed89b6a07151c8bb0205fdab8c8b7b",
+                "url": "https://api.github.com/repos/scandipwa/menu-organizer/zipball/5a35e51355860d3e08e0995fe9d238a6acc6c3e3",
+                "reference": "5a35e51355860d3e08e0995fe9d238a6acc6c3e3",
                 "shasum": ""
             },
             "require": {
@@ -11513,7 +11513,7 @@
                 "OSL-3.0"
             ],
             "description": "Scandiweb Menu Organizer for ScandiPWA",
-            "time": "2019-09-09T13:22:54+00:00"
+            "time": "2019-09-26T12:45:08+00:00"
         },
         {
             "name": "scandipwa/persisted-query",
@@ -11778,21 +11778,21 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "4617f9af137877d9400ae896cd7a0ce458f6f01a"
+                "reference": "f1b171a503bbf72ea98a89c2aa0eee20eb5d164e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/4617f9af137877d9400ae896cd7a0ce458f6f01a",
-                "reference": "4617f9af137877d9400ae896cd7a0ce458f6f01a",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/f1b171a503bbf72ea98a89c2aa0eee20eb5d164e",
+                "reference": "f1b171a503bbf72ea98a89c2aa0eee20eb5d164e",
                 "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "2.3.2",
-                "scandipwa/catalog-graphql": "^2.0",
+                "scandipwa/catalog-graphql": "^2.1.1",
                 "scandipwa/cms-graphql": "^1.2.3",
                 "scandipwa/customer-graph-ql": "^2.0",
                 "scandipwa/menu-organizer": "^1.1.1",
@@ -11843,7 +11843,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-09-16T12:49:46+00:00"
+            "time": "2019-10-02T13:01:51+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
@@ -11894,17 +11894,11 @@
         },
         {
             "name": "scandipwa/wishlist-graphql",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scandipwa/wishlist-graphql.git",
-                "reference": "0dc8e620ed0067093ca57b07c27cfdd3e76265e3"
-            },
+            "version": "1.2.0",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/wishlist-graphql/zipball/0dc8e620ed0067093ca57b07c27cfdd3e76265e3",
-                "reference": "0dc8e620ed0067093ca57b07c27cfdd3e76265e3",
-                "shasum": ""
+                "type": "path",
+                "url": "localmodules/wishlist-graphql",
+                "reference": "dfbd0aab7608a3128bda94bef925b20063d2a906"
             },
             "require": {
                 "magento/magento2-base": "^2.3.1"
@@ -11918,7 +11912,6 @@
                     "ScandiPWA\\WishlistGraphQl\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0",
                 "AFL-3.0"
@@ -11931,10 +11924,17 @@
                 {
                     "name": "Alfreds Genkins",
                     "email": "alfreds@scandiweb.com"
+                },
+                {
+                    "name": "Artjoms Travkovs",
+                    "email": "artjoms.travkovs@scandiweb.com"
                 }
             ],
             "description": "N/A",
-            "time": "2019-07-29T11:56:21+00:00"
+            "support": {
+                "source": "https://github.com/scandipwa/wishlist-graphql",
+                "email": "info@scandiweb.com"
+            }
         },
         {
             "name": "scandiweb/locale-resolver-fix",
