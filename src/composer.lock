@@ -10907,28 +10907,28 @@
             "authors": [
                 {
                     "name": "Jim Wigginton",
-                    "role": "Lead Developer",
-                    "email": "terrafrost@php.net"
+                    "email": "terrafrost@php.net",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Patrick Monnerat",
-                    "role": "Developer",
-                    "email": "pm@datasphere.ch"
+                    "email": "pm@datasphere.ch",
+                    "role": "Developer"
                 },
                 {
                     "name": "Andreas Fischer",
-                    "role": "Developer",
-                    "email": "bantu@phpbb.com"
+                    "email": "bantu@phpbb.com",
+                    "role": "Developer"
                 },
                 {
                     "name": "Hans-Jürgen Petrich",
-                    "role": "Developer",
-                    "email": "petrich@tronic-media.com"
+                    "email": "petrich@tronic-media.com",
+                    "role": "Developer"
                 },
                 {
                     "name": "Graham Campbell",
-                    "role": "Developer",
-                    "email": "graham@alt-three.com"
+                    "email": "graham@alt-three.com",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
@@ -11894,11 +11894,17 @@
         },
         {
             "name": "scandipwa/wishlist-graphql",
-            "version": "1.2.0",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/wishlist-graphql.git",
+                "reference": "0dc8e620ed0067093ca57b07c27cfdd3e76265e3"
+            },
             "dist": {
-                "type": "path",
-                "url": "localmodules/wishlist-graphql",
-                "reference": "dfbd0aab7608a3128bda94bef925b20063d2a906"
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/wishlist-graphql/zipball/0dc8e620ed0067093ca57b07c27cfdd3e76265e3",
+                "reference": "0dc8e620ed0067093ca57b07c27cfdd3e76265e3",
+                "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "^2.3.1"
@@ -11912,6 +11918,7 @@
                     "ScandiPWA\\WishlistGraphQl\\": "src"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0",
                 "AFL-3.0"
@@ -11924,17 +11931,10 @@
                 {
                     "name": "Alfreds Genkins",
                     "email": "alfreds@scandiweb.com"
-                },
-                {
-                    "name": "Artjoms Travkovs",
-                    "email": "artjoms.travkovs@scandiweb.com"
                 }
             ],
             "description": "N/A",
-            "support": {
-                "source": "https://github.com/scandipwa/wishlist-graphql",
-                "email": "info@scandiweb.com"
-            }
+            "time": "2019-07-29T11:56:21+00:00"
         },
         {
             "name": "scandiweb/locale-resolver-fix",
@@ -17940,20 +17940,20 @@
             "authors": [
                 {
                     "name": "Manuel Pichler",
-                    "role": "Project Founder",
                     "email": "github@manuel-pichler.de",
-                    "homepage": "https://github.com/manuelpichler"
+                    "homepage": "https://github.com/manuelpichler",
+                    "role": "Project Founder"
                 },
                 {
                     "name": "Marc Würth",
-                    "role": "Project Maintainer",
                     "email": "ravage@bluewin.ch",
-                    "homepage": "https://github.com/ravage84"
+                    "homepage": "https://github.com/ravage84",
+                    "role": "Project Maintainer"
                 },
                 {
                     "name": "Other contributors",
-                    "role": "Contributors",
-                    "homepage": "https://github.com/phpmd/phpmd/graphs/contributors"
+                    "homepage": "https://github.com/phpmd/phpmd/graphs/contributors",
+                    "role": "Contributors"
                 }
             ],
             "description": "PHPMD is a spin-off project of PHP Depend and aims to be a PHP equivalent of the well known Java tool PMD.",
@@ -19959,8 +19959,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
