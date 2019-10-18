@@ -10907,28 +10907,28 @@
             "authors": [
                 {
                     "name": "Jim Wigginton",
-                    "email": "terrafrost@php.net",
-                    "role": "Lead Developer"
+                    "role": "Lead Developer",
+                    "email": "terrafrost@php.net"
                 },
                 {
                     "name": "Patrick Monnerat",
-                    "email": "pm@datasphere.ch",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "pm@datasphere.ch"
                 },
                 {
                     "name": "Andreas Fischer",
-                    "email": "bantu@phpbb.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "bantu@phpbb.com"
                 },
                 {
                     "name": "Hans-Jürgen Petrich",
-                    "email": "petrich@tronic-media.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "petrich@tronic-media.com"
                 },
                 {
                     "name": "Graham Campbell",
-                    "email": "graham@alt-three.com",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "graham@alt-three.com"
                 }
             ],
             "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
@@ -11517,16 +11517,16 @@
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
-                "reference": "02e2aeb1c246a90f5c4b9442a03adf3491ed6776"
+                "reference": "68bf6b4e49a7c2f244230a5f099f36f279593197"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/02e2aeb1c246a90f5c4b9442a03adf3491ed6776",
-                "reference": "02e2aeb1c246a90f5c4b9442a03adf3491ed6776",
+                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/68bf6b4e49a7c2f244230a5f099f36f279593197",
+                "reference": "68bf6b4e49a7c2f244230a5f099f36f279593197",
                 "shasum": ""
             },
             "require": {
@@ -11560,7 +11560,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-07-29T10:24:22+00:00"
+            "time": "2019-10-18T07:59:31+00:00"
         },
         {
             "name": "scandipwa/quote-graphql",
