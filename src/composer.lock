@@ -11320,16 +11320,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.1.3",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "3750a6f7a778ca6c572b03a5625be89f95c4fdd2"
+                "reference": "9d298d40f69ff2c953429b4c8e5a2373716e16e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/3750a6f7a778ca6c572b03a5625be89f95c4fdd2",
-                "reference": "3750a6f7a778ca6c572b03a5625be89f95c4fdd2",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/9d298d40f69ff2c953429b4c8e5a2373716e16e4",
+                "reference": "9d298d40f69ff2c953429b4c8e5a2373716e16e4",
                 "shasum": ""
             },
             "require": {
@@ -11355,7 +11355,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-10-01T08:27:41+00:00"
+            "time": "2019-10-23T05:25:43+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -11608,20 +11608,21 @@
         },
         {
             "name": "scandipwa/reviews-graphql",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/reviews-graphql.git",
-                "reference": "f92b2f8cc08c2fece089a00f1610607335c8af19"
+                "reference": "a7bd39ac268ccef89e4285e8f98c0984f0204508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/reviews-graphql/zipball/f92b2f8cc08c2fece089a00f1610607335c8af19",
-                "reference": "f92b2f8cc08c2fece089a00f1610607335c8af19",
+                "url": "https://api.github.com/repos/scandipwa/reviews-graphql/zipball/a7bd39ac268ccef89e4285e8f98c0984f0204508",
+                "reference": "a7bd39ac268ccef89e4285e8f98c0984f0204508",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.1"
+                "magento/magento2-base": "^2.3.1",
+                "scandipwa/catalog-graphql": "^2.2.0"
             },
             "type": "magento2-module",
             "autoload": {
@@ -11648,7 +11649,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-07-29T12:16:07+00:00"
+            "time": "2019-10-23T05:31:49+00:00"
         },
         {
             "name": "scandipwa/route717",
