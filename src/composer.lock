@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b975152828dc9349886f99c1d036df09",
+    "content-hash": "c1e58214a27115ed06d3e3296ac36f50",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -10907,28 +10907,28 @@
             "authors": [
                 {
                     "name": "Jim Wigginton",
-                    "role": "Lead Developer",
-                    "email": "terrafrost@php.net"
+                    "email": "terrafrost@php.net",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Patrick Monnerat",
-                    "role": "Developer",
-                    "email": "pm@datasphere.ch"
+                    "email": "pm@datasphere.ch",
+                    "role": "Developer"
                 },
                 {
                     "name": "Andreas Fischer",
-                    "role": "Developer",
-                    "email": "bantu@phpbb.com"
+                    "email": "bantu@phpbb.com",
+                    "role": "Developer"
                 },
                 {
                     "name": "Hans-Jürgen Petrich",
-                    "role": "Developer",
-                    "email": "petrich@tronic-media.com"
+                    "email": "petrich@tronic-media.com",
+                    "role": "Developer"
                 },
                 {
                     "name": "Graham Campbell",
-                    "role": "Developer",
-                    "email": "graham@alt-three.com"
+                    "email": "graham@alt-three.com",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
@@ -11320,16 +11320,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.2.0",
+            "version": "dev-attributes-reworked",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "9d298d40f69ff2c953429b4c8e5a2373716e16e4"
+                "reference": "16b249d29b07caba7af8e505969b73a8ef7b8425"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/9d298d40f69ff2c953429b4c8e5a2373716e16e4",
-                "reference": "9d298d40f69ff2c953429b4c8e5a2373716e16e4",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/16b249d29b07caba7af8e505969b73a8ef7b8425",
+                "reference": "16b249d29b07caba7af8e505969b73a8ef7b8425",
                 "shasum": ""
             },
             "require": {
@@ -11355,7 +11355,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-10-23T05:25:43+00:00"
+            "time": "2019-10-24T16:36:43+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -11564,16 +11564,16 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.6.0",
+            "version": "dev-for-attributes",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "a656df4c12b7c3781d12e30eae46e3fb309f7635"
+                "reference": "6c214f6ecc81cb40686989de6bee7a6dede6ebb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/a656df4c12b7c3781d12e30eae46e3fb309f7635",
-                "reference": "a656df4c12b7c3781d12e30eae46e3fb309f7635",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/6c214f6ecc81cb40686989de6bee7a6dede6ebb0",
+                "reference": "6c214f6ecc81cb40686989de6bee7a6dede6ebb0",
                 "shasum": ""
             },
             "require": {
@@ -11604,7 +11604,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-10-16T07:46:40+00:00"
+            "time": "2019-10-24T16:37:53+00:00"
         },
         {
             "name": "scandipwa/reviews-graphql",
@@ -11779,16 +11779,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "2.4.3",
+            "version": "dev-optimization-fixes",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "f35ffc2d31422b45fe0122aa9b002d52eab1bcb1"
+                "reference": "18385c79023527f19833bfdd5476d620c51209db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/f35ffc2d31422b45fe0122aa9b002d52eab1bcb1",
-                "reference": "f35ffc2d31422b45fe0122aa9b002d52eab1bcb1",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/18385c79023527f19833bfdd5476d620c51209db",
+                "reference": "18385c79023527f19833bfdd5476d620c51209db",
                 "shasum": ""
             },
             "require": {
@@ -11844,7 +11844,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-10-16T13:41:03+00:00"
+            "time": "2019-10-24T16:48:39+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
@@ -20073,9 +20073,31 @@
             "time": "2019-08-24T08:43:50+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "2.3.x-dev",
+            "alias_normalized": "2.3.9999999.9999999-dev",
+            "version": "dev-attributes-reworked",
+            "package": "scandipwa/catalog-graphql"
+        },
+        {
+            "alias": "2.7.x-dev",
+            "alias_normalized": "2.7.9999999.9999999-dev",
+            "version": "dev-for-attributes",
+            "package": "scandipwa/quote-graphql"
+        },
+        {
+            "alias": "2.5.x-dev",
+            "alias_normalized": "2.5.9999999.9999999-dev",
+            "version": "dev-optimization-fixes",
+            "package": "scandipwa/source"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "scandipwa/catalog-graphql": 20,
+        "scandipwa/quote-graphql": 20,
+        "scandipwa/source": 20,
         "phpmd/phpmd": 0
     },
     "prefer-stable": false,
