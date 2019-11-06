@@ -12,11 +12,7 @@
     },
     "require": {
         "magento/product-community-edition": "2.3.2",
-        "scandipwa/catalog-graphql": "dev-attributes-reworked as 2.3.x-dev",
-        "scandipwa/installer": "^1.2.0",
-        "scandipwa/quote-graphql": "dev-for-attributes as 2.7.x-dev",
-        "scandipwa/reviews-graphql": "dev-optimization as 1.3.x-dev",
-        "scandipwa/source": "dev-optimization-fixes as 2.5.x-dev"
+        "scandipwa/installer": "^1.2.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "~2.13.0",
@@ -68,6 +64,10 @@
         {
             "type": "composer",
             "url": "https://repo.magento.com/"
+        },
+        {
+            "type": "path",
+            "url": "localmodules/catalog-graphql"
         }
     ],
     "extra": {
