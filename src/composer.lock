@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "822d1de6d8b5aa09b174908dcaf8ca9b",
+    "content-hash": "a2944a9ef56d3473c07437efa34c15ee",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -11271,16 +11271,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "cc605653f18efbd3a426ab7fb35f699b0e2cbfba"
+                "reference": "7ed0486d8289645517d414260de38598110f462b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/cc605653f18efbd3a426ab7fb35f699b0e2cbfba",
-                "reference": "cc605653f18efbd3a426ab7fb35f699b0e2cbfba",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/7ed0486d8289645517d414260de38598110f462b",
+                "reference": "7ed0486d8289645517d414260de38598110f462b",
                 "shasum": ""
             },
             "require": {
@@ -11306,7 +11306,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-11-11T10:10:22+00:00"
+            "time": "2019-11-11T13:04:10+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -11734,12 +11734,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "09873fb9458ee7cb5231033dc76a85454538d477"
+                "reference": "ce0896505ac8f8a778709f0b93dac335a4c8733b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/09873fb9458ee7cb5231033dc76a85454538d477",
-                "reference": "09873fb9458ee7cb5231033dc76a85454538d477",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/ce0896505ac8f8a778709f0b93dac335a4c8733b",
+                "reference": "ce0896505ac8f8a778709f0b93dac335a4c8733b",
                 "shasum": ""
             },
             "require": {
@@ -11795,7 +11795,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-11-11T10:52:13+00:00"
+            "time": "2019-11-11T13:09:27+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
