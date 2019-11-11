@@ -11271,14 +11271,20 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.4.0",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/catalog-graphql.git",
+                "reference": "cc605653f18efbd3a426ab7fb35f699b0e2cbfba"
+            },
             "dist": {
-                "type": "path",
-                "url": "localmodules/catalog-graphql",
-                "reference": "cdd31f57deb5800342b778ae838d106c9da92cd9"
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/cc605653f18efbd3a426ab7fb35f699b0e2cbfba",
+                "reference": "cc605653f18efbd3a426ab7fb35f699b0e2cbfba",
+                "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.1"
+                "magento/magento2-base": "^2.3.2"
             },
             "type": "magento2-module",
             "autoload": {
@@ -11289,6 +11295,7 @@
                     "ScandiPWA\\CatalogGraphQl\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0"
             ],
@@ -11299,9 +11306,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "support": {
-                "email": "info@scandiweb.com"
-            }
+            "time": "2019-11-11T10:10:22+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",

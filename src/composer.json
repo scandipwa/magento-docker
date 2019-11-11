@@ -65,10 +65,6 @@
         {
             "type": "composer",
             "url": "https://repo.magento.com/"
-        },
-        {
-            "type": "path",
-            "url": "localmodules/catalog-graphql"
         }
     ],
     "extra": {
