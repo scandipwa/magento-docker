@@ -11681,16 +11681,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.2.2",
+            "version": "2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "7ed0486d8289645517d414260de38598110f462b"
+                "reference": "9501dcca2c4c72e40ad12309850658f79c0a2d86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/7ed0486d8289645517d414260de38598110f462b",
-                "reference": "7ed0486d8289645517d414260de38598110f462b",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/9501dcca2c4c72e40ad12309850658f79c0a2d86",
+                "reference": "9501dcca2c4c72e40ad12309850658f79c0a2d86",
                 "shasum": ""
             },
             "require": {
@@ -11716,7 +11716,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-11-11T13:04:10+00:00"
+            "time": "2019-11-11T16:31:34+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
