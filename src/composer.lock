@@ -12143,12 +12143,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "165bb1a9c7bdf72600b41a875dcd96cadab6585f"
+                "reference": "eb135041ca62abd760f892acc77e4a3e677287d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/165bb1a9c7bdf72600b41a875dcd96cadab6585f",
-                "reference": "165bb1a9c7bdf72600b41a875dcd96cadab6585f",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/eb135041ca62abd760f892acc77e4a3e677287d7",
+                "reference": "eb135041ca62abd760f892acc77e4a3e677287d7",
                 "shasum": ""
             },
             "require": {
@@ -12204,7 +12204,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-11-12T10:54:38+00:00"
+            "time": "2019-11-12T12:33:24+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
