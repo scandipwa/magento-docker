@@ -19,7 +19,7 @@ For ScandiPWA Theme details please refer to [theme repository](https://github.co
 
 
 ## Modularity
-The repository is based on Magento 2.3.0. All components and modules, except the further theme development must be 
+The repository is based on Magento 2.3. All components and modules, except the further theme development must be 
 managed by [Composer](https://getcomposer.org)
 
 ## Dependencies
