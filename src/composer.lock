@@ -11877,6 +11877,54 @@
             "time": "2019-09-26T12:45:08+00:00"
         },
         {
+            "name": "scandipwa/paypal-graphql",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/paypal-graphql.git",
+                "reference": "9991d2ae16a37ae81b66886f192a46ede713f89f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/paypal-graphql/zipball/9991d2ae16a37ae81b66886f192a46ede713f89f",
+                "reference": "9991d2ae16a37ae81b66886f192a46ede713f89f",
+                "shasum": ""
+            },
+            "require": {
+                "magento/magento2-base": "^2.3.2",
+                "magento/module-paypal-graph-ql": "*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "ScandiPWA\\PayPalGraphQl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Artjoms Travkovs",
+                    "email": "artjoms.travkovs@scandiweb.com"
+                }
+            ],
+            "description": "ScandiPWA GraphQl extend for PayPal",
+            "keywords": [
+                "graphql",
+                "magento2",
+                "module",
+                "paypal",
+                "pwa",
+                "scandipwa"
+            ],
+            "time": "2019-11-14T11:21:33+00:00"
+        },
+        {
             "name": "scandipwa/persisted-query",
             "version": "2.1.1",
             "source": {
@@ -12143,20 +12191,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "7d86a161fe048cedcefbf242377d6dd706e1c357"
+                "reference": "fd1818c2b7ed929b9a9b66d809a6a9e6c45c5987"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/7d86a161fe048cedcefbf242377d6dd706e1c357",
-                "reference": "7d86a161fe048cedcefbf242377d6dd706e1c357",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/fd1818c2b7ed929b9a9b66d809a6a9e6c45c5987",
+                "reference": "fd1818c2b7ed929b9a9b66d809a6a9e6c45c5987",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.2",
+                "magento/magento2-base": "^2.3.3",
                 "scandipwa/catalog-graphql": "^2.1.1",
                 "scandipwa/cms-graphql": "^1.2.3",
                 "scandipwa/customer-graph-ql": "^2.0",
                 "scandipwa/menu-organizer": "^1.1.1",
+                "scandipwa/paypal-graphql": "^1.0",
                 "scandipwa/persisted-query": "^2.0",
                 "scandipwa/quote-graphql": "^2.6.0",
                 "scandipwa/reviews-graphql": "^1.0",
@@ -12204,7 +12253,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-11-14T09:13:37+00:00"
+            "time": "2019-11-14T12:10:51+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
