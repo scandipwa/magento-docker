@@ -1,5 +1,5 @@
 FROM debian:stretch-slim
-LABEL maintainer="Jurijs Jegorovs admin@scandiweb.com"
+LABEL maintainer="Ilja Lapkovskis admin@scandiweb.com"
 LABEL author="Jurijs Jegorovs admin@scandiweb.com"
 ENV DEBIAN_FRONTEND=noninteractive \
     VARNISH_VERSION=5.1 \
@@ -26,13 +26,16 @@ RUN /bin/bash -c 'apt-get -qq update; \
 COPY default.vcl /etc/varnish/default.vcl
 
 RUN /bin/bash -c 'set -xe; \
-    git clone --recursive https://github.com/fgsch/libvmod-geoip2 /tmp/geoip2; \
-    cd /tmp/geoip2; \
-    git checkout -f oldstable && git submodule update --recursive --remote; \
-    ./autogen.sh; \
-    ./configure; \
-    make; \
-    make install'
+    if [ $VARNISH_VERSION_FLATTEN -gt 60 ]; then \
+      apt-get -qq install libmaxminddb0 libmaxminddb-dev mmdb-bin geoipupdate; \
+      geoipupdate -v; \
+      git clone --recursive https://github.com/fgsch/libvmod-geoip2 /tmp/geoip2; \
+      cd /tmp/geoip2; \
+      ./autogen.sh; \
+      ./configure; \
+      make; \
+      make install; \
+    fi;'
 
 EXPOSE 6081 6082 80
 
