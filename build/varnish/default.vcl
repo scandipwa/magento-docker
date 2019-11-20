@@ -4,7 +4,6 @@ vcl 4.0;
 import std;
 # The minimal Varnish version is 5.0
 # For SSL offloading, pass the following header in your proxy server or load balancer: 'X-Forwarded-Proto: https'
-import geoip2;
 
 backend default {
     .host = "nginx";
@@ -15,11 +14,6 @@ backend default {
 acl purge {
     "localhost";
     "172.0.0.0"/8;
-}
-
-sub vcl_init {
-    # Please note that absolute path must be used
-    new country = geoip2.geoip2("/usr/share/GeoIP/GeoLite2-Country.mmdb");
 }
 
 sub vcl_recv {
