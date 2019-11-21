@@ -912,6 +912,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -12191,12 +12192,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "0306dd5ffb5055a428f715730fffd542c69d649e"
+                "reference": "00403bfc6418d5c389a6ce35cfa719d75552702d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/0306dd5ffb5055a428f715730fffd542c69d649e",
-                "reference": "0306dd5ffb5055a428f715730fffd542c69d649e",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/00403bfc6418d5c389a6ce35cfa719d75552702d",
+                "reference": "00403bfc6418d5c389a6ce35cfa719d75552702d",
                 "shasum": ""
             },
             "require": {
@@ -12253,7 +12254,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-11-15T07:32:12+00:00"
+            "time": "2019-11-21T13:41:21+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
