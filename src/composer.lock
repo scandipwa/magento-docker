@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad65ee8711e277264964067d8470c5be",
+    "content-hash": "29bd76f54b35a702b8abbc432f79f829",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -12255,6 +12255,45 @@
                 "source"
             ],
             "time": "2019-11-22T14:08:29+00:00"
+        },
+        {
+            "name": "scandipwa/store-graphql",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/store-graphql.git",
+                "reference": "add7987a164eab539c233090e32006fa6cd9f740"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/add7987a164eab539c233090e32006fa6cd9f740",
+                "reference": "add7987a164eab539c233090e32006fa6cd9f740",
+                "shasum": ""
+            },
+            "require": {
+                "magento/magento2-base": "^2.3.2"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "ScandiPWA\\StoreGraphQl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "Magneto 2 Store related functionality extension",
+            "keywords": [
+                "magento2",
+                "module",
+                "pwa",
+                "scandipwa"
+            ],
+            "time": "2019-11-27T12:22:59+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
