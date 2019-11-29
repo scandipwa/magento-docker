@@ -11845,6 +11845,54 @@
             "time": "2019-10-16T09:54:00+00:00"
         },
         {
+            "name": "scandipwa/klarna-graphql",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/klarna-graphql.git",
+                "reference": "0df449d4c8610f6114584cdf02c34931448ba203"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/klarna-graphql/zipball/0df449d4c8610f6114584cdf02c34931448ba203",
+                "reference": "0df449d4c8610f6114584cdf02c34931448ba203",
+                "shasum": ""
+            },
+            "require": {
+                "klarna/module-kp": "^6.3.4",
+                "magento/magento2-base": "^2.3.2"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "ScandiPWA\\KlarnaGraphQl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Artjoms Travkovs",
+                    "email": "artjoms.travkovs@scandiweb.com"
+                }
+            ],
+            "description": "ScandiPWA GraphQl extend for Klarna",
+            "keywords": [
+                "graphql",
+                "klarna",
+                "magento2",
+                "module",
+                "pwa",
+                "scandipwa"
+            ],
+            "time": "2019-11-29T10:42:46+00:00"
+        },
+        {
             "name": "scandipwa/menu-organizer",
             "version": "1.1.2",
             "source": {
@@ -12192,12 +12240,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "0353e70d6be80351db36dd5928eb76d014a76a94"
+                "reference": "d6a1cfabe82e74bc052fe5e7399dbfaeaf28a7e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/0353e70d6be80351db36dd5928eb76d014a76a94",
-                "reference": "0353e70d6be80351db36dd5928eb76d014a76a94",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/d6a1cfabe82e74bc052fe5e7399dbfaeaf28a7e1",
+                "reference": "d6a1cfabe82e74bc052fe5e7399dbfaeaf28a7e1",
                 "shasum": ""
             },
             "require": {
@@ -12205,6 +12253,7 @@
                 "scandipwa/catalog-graphql": "^2.1.1",
                 "scandipwa/cms-graphql": "^1.2.3",
                 "scandipwa/customer-graph-ql": "^2.0",
+                "scandipwa/klarna-graphql": "^1.1",
                 "scandipwa/menu-organizer": "^1.1.1",
                 "scandipwa/paypal-graphql": "^1.0",
                 "scandipwa/persisted-query": "^2.0",
@@ -12255,7 +12304,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-11-27T13:44:55+00:00"
+            "time": "2019-11-29T10:47:48+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
