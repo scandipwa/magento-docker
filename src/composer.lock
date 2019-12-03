@@ -11681,6 +11681,53 @@
             "time": "2019-01-07T21:25:54+00:00"
         },
         {
+            "name": "scandipwa/cache",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/cache.git",
+                "reference": "623d76529110f536e61bcafe19104471780d991e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/cache/zipball/623d76529110f536e61bcafe19104471780d991e",
+                "reference": "623d76529110f536e61bcafe19104471780d991e",
+                "shasum": ""
+            },
+            "require": {
+                "magento/magento2-base": "^2.3",
+                "scandipwa/persisted-query": "^2.0"
+            },
+            "type": "magento2-theme",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "ScandiPWA\\Cache\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Ilja Lapkovskis",
+                    "email": "ilja@scandiweb.com"
+                }
+            ],
+            "description": "ScandiPWA bootstrap module",
+            "keywords": [
+                "installer",
+                "magento2",
+                "pwa",
+                "scandipwa",
+                "theme"
+            ],
+            "time": "2019-12-03T09:36:25+00:00"
+        },
+        {
             "name": "scandipwa/catalog-graphql",
             "version": "2.2.3",
             "source": {
@@ -12240,16 +12287,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "32ab774f368ab42736b8b3fd39e0455ed0855749"
+                "reference": "f50c91a416bad2a34f303b3aa49eb754e3638e6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/32ab774f368ab42736b8b3fd39e0455ed0855749",
-                "reference": "32ab774f368ab42736b8b3fd39e0455ed0855749",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/f50c91a416bad2a34f303b3aa49eb754e3638e6f",
+                "reference": "f50c91a416bad2a34f303b3aa49eb754e3638e6f",
                 "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "^2.3.3",
+                "scandipwa/cache": "^1.0",
                 "scandipwa/catalog-graphql": "^2.1.1",
                 "scandipwa/cms-graphql": "^1.2.3",
                 "scandipwa/customer-graph-ql": "^2.0",
