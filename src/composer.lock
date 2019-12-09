@@ -11981,16 +11981,16 @@
         },
         {
             "name": "scandipwa/menu-organizer",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/menu-organizer.git",
-                "reference": "5a35e51355860d3e08e0995fe9d238a6acc6c3e3"
+                "reference": "281ee7f6b06b0a92058b08564808943d90308da9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/menu-organizer/zipball/5a35e51355860d3e08e0995fe9d238a6acc6c3e3",
-                "reference": "5a35e51355860d3e08e0995fe9d238a6acc6c3e3",
+                "url": "https://api.github.com/repos/scandipwa/menu-organizer/zipball/281ee7f6b06b0a92058b08564808943d90308da9",
+                "reference": "281ee7f6b06b0a92058b08564808943d90308da9",
                 "shasum": ""
             },
             "require": {
@@ -12010,7 +12010,7 @@
                 "OSL-3.0"
             ],
             "description": "Scandiweb Menu Organizer for ScandiPWA",
-            "time": "2019-09-26T12:45:08+00:00"
+            "time": "2019-12-09T15:12:34+00:00"
         },
         {
             "name": "scandipwa/paypal-graphql",
