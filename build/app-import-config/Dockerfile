@@ -63,17 +63,17 @@ RUN { \
 
 # Start script, executed upon container creation from image
 # LINE BELLOW IS CHANGED in compare with default config
-COPY deploy/start-import-config.sh /start.sh
+COPY ../../deploy/start-import-config.sh /start.sh
 RUN chmod +x /start.sh
 
 # Clean up APT and temp when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-COPY deploy/entrypoint.sh /usr/local/bin/entrypoint.sh
+COPY ../../deploy/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 # Copy project files
-COPY src/ $BASEPATH/
+COPY ../../src/ $BASEPATH/
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
