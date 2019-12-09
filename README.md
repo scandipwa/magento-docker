@@ -46,7 +46,7 @@ git clone git@github.com:scandipwa/scandipwa-base.git
 export COMPOSER_AUTH='{"http-basic":{"repo.magento.com": {"username": "REPLACE_THIS", "password": "REPLACE_THIS"}}}'
 ```
 
-4.  Generate selfsigned ssl certificates with (more details [here](docs/G-SSL-container.md) )
+4.  Generate selfsigned ssl certificates with (more details [here](https://docs.scandipwa.com/#/docker/G-SSL-container) )
 ```console
 make cert
 ```
