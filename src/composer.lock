@@ -11941,16 +11941,16 @@
         },
         {
             "name": "scandipwa/locale",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/locale.git",
-                "reference": "5306185e0efaa23ceb005608d893caac1c4ff1a3"
+                "reference": "8bfecbe7615011c0886f793d9347e4afa15bf6af"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/locale/zipball/5306185e0efaa23ceb005608d893caac1c4ff1a3",
-                "reference": "5306185e0efaa23ceb005608d893caac1c4ff1a3",
+                "url": "https://api.github.com/repos/scandipwa/locale/zipball/8bfecbe7615011c0886f793d9347e4afa15bf6af",
+                "reference": "8bfecbe7615011c0886f793d9347e4afa15bf6af",
                 "shasum": ""
             },
             "require": {
@@ -11977,7 +11977,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-12-04T13:48:25+00:00"
+            "time": "2019-12-09T13:43:28+00:00"
         },
         {
             "name": "scandipwa/menu-organizer",
