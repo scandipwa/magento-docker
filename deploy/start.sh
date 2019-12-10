@@ -64,7 +64,7 @@ function pwa_theme_install {
   if [ $? -eq 0 ]; then
     echo "${blue}${bold}Building PWA theme${normal}"
     cd $BASEPATH/app/design/frontend/Scandiweb/pwa
-    npm i
+    npm ci
     npm run build
     cd $BASEPATH
   fi
