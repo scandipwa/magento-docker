@@ -60,6 +60,7 @@ function install_additional_composer_modules {
 #  mkdir -p $BASEPATH/composer-modules/stripe
 #  wget -qO- https://code.stripe.com/magento/stripe-magento2-1.5.0.tgz | tar -xzf - -C composer-modules/stripe --strip-components=4
 #  composer config repositories.stripe path composer-modules/stripe
+  composer config repositories.scandiweb composer https://packages.indvp.com
   composer require stripe/module-payments scandipwa/stripe-graphql
 }
 
