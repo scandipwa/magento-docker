@@ -63,7 +63,7 @@ RUN { \
 
 # Start script, executed upon container creation from image
 # LINE BELLOW IS CHANGED in compare with default config
-COPY deploy/start-import-config.sh /start.sh
+COPY deploy/start-demo.sh /start.sh
 RUN chmod +x /start.sh
 
 # Clean up APT and temp when done.

@@ -53,6 +53,16 @@ bash_color_library
 bash_colors=$(bash_color_library)
 export bash_colors
 
+function install_additional_composer_modules {
+  echo "${blue}${bold}Requiring additional composer moduels${normal}"
+#  Not required - we are installing from private repository
+#  mkdir -p $BASEPATH/composer-modules
+#  mkdir -p $BASEPATH/composer-modules/stripe
+#  wget -qO- https://code.stripe.com/magento/stripe-magento2-1.5.0.tgz | tar -xzf - -C composer-modules/stripe --strip-components=4
+#  composer config repositories.stripe path composer-modules/stripe
+  composer require stripe/module-payments scandipwa/stripe-graphql
+}
+
 ### Colors in command output end
 
 function pwa_theme_install {
@@ -93,14 +103,16 @@ function in_basepath {
   fi
 }
 
-function composer_install {
+function check_for_composer {
   # Check if COMPOSER_AUTH environment variable exists
   if [ -z ${COMPOSER_AUTH+x} ]; then echo "Please set COMPOSER_AUTH environment variable" && exit 1; fi
   # Check environment to install Dev Dependencies on specific ones
   if [ $MAGENTO_MODE = "developer" ]; then
     COMPOSER_NO_DEV=""
   fi
+}
 
+function composer_install {
   # Composer install
   echo "${blue}${bold}Installing magento dependencies${normal}"
   composer install $COMPOSER_NO_DEV --ansi --no-interaction --prefer-dist -v
@@ -164,6 +176,7 @@ function magento_database_migration {
     magento setup:db:status
     export ME=$?
     echo "${blue}${bold}DB STATUS: $ME ${normal}"
+
     # Import configuration
     configuration_import
   fi
@@ -215,17 +228,11 @@ function magento_varnish_endpoint {
 }
 
 function magento_varnish_config {
-  echo "${blue}${bold}Setting Varnish config for Magento${normal}"
+    echo "${blue}${bold}Setting Varnish config for Magento${normal}"
   php bin/magento config:set system/full_page_cache/varnish/access_list "127.0.0.1, app, nginx"
   php bin/magento config:set system/full_page_cache/varnish/backend_host nginx
   php bin/magento config:set system/full_page_cache/varnish/backend_port 80
   php bin/magento config:set system/full_page_cache/caching_application 2
-}
-
-function configuration_import {
-  echo "${blue}${bold}Importing Magento configuration${normal}"
-  php bin/magento app:config:import -n
-  php bin/magento cache:flush
 }
 
 function magento_set_mode {
@@ -242,6 +249,12 @@ function magento_compile {
     bin/magento setup:di:compile
     bin/magento setup:static-content:deploy
   fi
+}
+
+function configuration_import {
+  echo "${blue}${bold}Importing Magento configuration${normal}"
+  php bin/magento app:config:import -n
+  php bin/magento cache:flush
 }
 
 function magento_set_baseurl {
@@ -274,6 +287,10 @@ function exit_catch {
 
 # Switch current execution directory to WORKDIR (BASEPATH)
 in_basepath
+# Do the composer check
+check_for_composer
+# Install additional composer modules
+install_additional_composer_modules
 # Installing PHP Composer and packages
 composer_install
 
@@ -317,5 +334,3 @@ trap exit_catch EXIT
 
 echo "${blue}${bold}Staring php fpm, ready to rock${normal}"
 php-fpm -R
-
-
