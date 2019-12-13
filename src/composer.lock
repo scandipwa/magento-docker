@@ -11729,16 +11729,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.2.3",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "9501dcca2c4c72e40ad12309850658f79c0a2d86"
+                "reference": "85724f4d406dc6bbe232cacb913ed5e4dc0601cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/9501dcca2c4c72e40ad12309850658f79c0a2d86",
-                "reference": "9501dcca2c4c72e40ad12309850658f79c0a2d86",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/85724f4d406dc6bbe232cacb913ed5e4dc0601cc",
+                "reference": "85724f4d406dc6bbe232cacb913ed5e4dc0601cc",
                 "shasum": ""
             },
             "require": {
@@ -11764,7 +11764,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-11-11T16:31:34+00:00"
+            "time": "2019-12-13T15:48:48+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -11846,16 +11846,16 @@
         },
         {
             "name": "scandipwa/installer",
-            "version": "1.6.1",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/installer.git",
-                "reference": "ecb45db63e812990411779d620096377943348f3"
+                "reference": "10ff34b375a892ce8277b9aae01e38669f9ea749"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/installer/zipball/ecb45db63e812990411779d620096377943348f3",
-                "reference": "ecb45db63e812990411779d620096377943348f3",
+                "url": "https://api.github.com/repos/scandipwa/installer/zipball/10ff34b375a892ce8277b9aae01e38669f9ea749",
+                "reference": "10ff34b375a892ce8277b9aae01e38669f9ea749",
                 "shasum": ""
             },
             "require": {
@@ -11889,7 +11889,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-10-16T09:54:00+00:00"
+            "time": "2019-12-13T15:55:52+00:00"
         },
         {
             "name": "scandipwa/klarna-graphql",
@@ -12323,22 +12323,22 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "2.7.1",
+            "version": "2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "272996e89d1fcc4d8eb9f0b664d1f64b2e3b3b1b"
+                "reference": "4ca7d09af26066b42b7c5b33c6d63055a26e0250"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/272996e89d1fcc4d8eb9f0b664d1f64b2e3b3b1b",
-                "reference": "272996e89d1fcc4d8eb9f0b664d1f64b2e3b3b1b",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/4ca7d09af26066b42b7c5b33c6d63055a26e0250",
+                "reference": "4ca7d09af26066b42b7c5b33c6d63055a26e0250",
                 "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "^2.3.3",
                 "scandipwa/cache": "^1.0",
-                "scandipwa/catalog-graphql": "^2.1.1",
+                "scandipwa/catalog-graphql": "^2.3.2",
                 "scandipwa/cms-graphql": "^1.2.3",
                 "scandipwa/customer-graph-ql": "^2.1",
                 "scandipwa/klarna-graphql": "^1.1",
@@ -12393,7 +12393,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-12-12T16:58:28+00:00"
+            "time": "2019-12-13T16:28:40+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
