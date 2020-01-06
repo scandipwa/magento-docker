@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d855cb2eeb42f6dd374b3817d07fc95",
+    "content-hash": "35b0a4c5948e0a12fdba9a5c624efe15",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -12097,16 +12097,16 @@
         },
         {
             "name": "scandipwa/performance",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/performance.git",
-                "reference": "ffe2315baf191cea86408541ffba6a5daede3032"
+                "reference": "b985ad653a5850f0a5173b85220cd82c004449eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/performance/zipball/ffe2315baf191cea86408541ffba6a5daede3032",
-                "reference": "ffe2315baf191cea86408541ffba6a5daede3032",
+                "url": "https://api.github.com/repos/scandipwa/performance/zipball/b985ad653a5850f0a5173b85220cd82c004449eb",
+                "reference": "b985ad653a5850f0a5173b85220cd82c004449eb",
                 "shasum": ""
             },
             "type": "magento2-module",
@@ -12130,7 +12130,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2020-01-06T14:54:29+00:00"
+            "time": "2020-01-06T16:59:13+00:00"
         },
         {
             "name": "scandipwa/persisted-query",
@@ -20977,6 +20977,12 @@
             "package": "scandipwa/catalog-graphql"
         },
         {
+            "alias": "1.0.1",
+            "alias_normalized": "1.0.1.0",
+            "version": "9999999-dev",
+            "package": "scandipwa/performance"
+        },
+        {
             "alias": "2.10.0",
             "alias_normalized": "2.10.0.0",
             "version": "dev-performance",
@@ -21004,6 +21010,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "scandipwa/catalog-graphql": 20,
+        "scandipwa/performance": 20,
         "scandipwa/quote-graphql": 20,
         "scandipwa/reviews-graphql": 20,
         "scandipwa/source": 20,
