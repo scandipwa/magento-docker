@@ -11729,20 +11729,21 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.5.1",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "ca4a2a9c793958a1c8e2a4be76cfbafdc7c2d7b6"
+                "reference": "81c234d60d15a43ddde93007f7aa8bbc7b81e166"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/ca4a2a9c793958a1c8e2a4be76cfbafdc7c2d7b6",
-                "reference": "ca4a2a9c793958a1c8e2a4be76cfbafdc7c2d7b6",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/81c234d60d15a43ddde93007f7aa8bbc7b81e166",
+                "reference": "81c234d60d15a43ddde93007f7aa8bbc7b81e166",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.2"
+                "magento/magento2-base": "^2.3.2",
+                "scandipwa/performance": "^1.0"
             },
             "type": "magento2-module",
             "autoload": {
@@ -11764,7 +11765,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-12-19T13:55:45+00:00"
+            "time": "2020-01-07T17:28:53+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -12095,6 +12096,43 @@
             "time": "2019-11-14T11:21:33+00:00"
         },
         {
+            "name": "scandipwa/performance",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/performance.git",
+                "reference": "b985ad653a5850f0a5173b85220cd82c004449eb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/performance/zipball/b985ad653a5850f0a5173b85220cd82c004449eb",
+                "reference": "b985ad653a5850f0a5173b85220cd82c004449eb",
+                "shasum": ""
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "ScandiPWA\\Performance\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Alfreds Genkins",
+                    "email": "alfreds@scandiweb.com"
+                }
+            ],
+            "description": "N/A",
+            "time": "2020-01-06T16:59:13+00:00"
+        },
+        {
             "name": "scandipwa/persisted-query",
             "version": "2.1.1",
             "source": {
@@ -12143,20 +12181,21 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.9.2",
+            "version": "2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "76a156f90d4774ca70d2708176734760acfd0682"
+                "reference": "f94f611ac37f6c3263c6733bb8f3b50fd175e37f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/76a156f90d4774ca70d2708176734760acfd0682",
-                "reference": "76a156f90d4774ca70d2708176734760acfd0682",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/f94f611ac37f6c3263c6733bb8f3b50fd175e37f",
+                "reference": "f94f611ac37f6c3263c6733bb8f3b50fd175e37f",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.2"
+                "magento/magento2-base": "^2.3.2",
+                "scandipwa/performance": "^1.0"
             },
             "type": "magento2-module",
             "autoload": {
@@ -12183,24 +12222,25 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-12-20T10:03:19+00:00"
+            "time": "2020-01-07T10:09:02+00:00"
         },
         {
             "name": "scandipwa/reviews-graphql",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/reviews-graphql.git",
-                "reference": "625ae54c4e42b74a7c3eff9b85ac5f921079abdc"
+                "reference": "f5b47f5fae47d876bbb4475ed650be2cadecef1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/reviews-graphql/zipball/625ae54c4e42b74a7c3eff9b85ac5f921079abdc",
-                "reference": "625ae54c4e42b74a7c3eff9b85ac5f921079abdc",
+                "url": "https://api.github.com/repos/scandipwa/reviews-graphql/zipball/f5b47f5fae47d876bbb4475ed650be2cadecef1b",
+                "reference": "f5b47f5fae47d876bbb4475ed650be2cadecef1b",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.1"
+                "magento/magento2-base": "^2.3.1",
+                "scandipwa/performance": "^1.0"
             },
             "type": "magento2-module",
             "autoload": {
@@ -12227,7 +12267,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-11-11T14:20:02+00:00"
+            "time": "2020-01-07T10:10:44+00:00"
         },
         {
             "name": "scandipwa/route717",
@@ -12357,16 +12397,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "2.8.1",
+            "version": "2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "3cedaaf4b43cc4abc8bafb16429377a8910deea6"
+                "reference": "4448e0a7a55e6e4987d41ac92384717a630f37cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/3cedaaf4b43cc4abc8bafb16429377a8910deea6",
-                "reference": "3cedaaf4b43cc4abc8bafb16429377a8910deea6",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/4448e0a7a55e6e4987d41ac92384717a630f37cd",
+                "reference": "4448e0a7a55e6e4987d41ac92384717a630f37cd",
                 "shasum": ""
             },
             "require": {
@@ -12380,6 +12420,7 @@
                 "scandipwa/locale": "^1.0",
                 "scandipwa/menu-organizer": "^1.1.1",
                 "scandipwa/paypal-graphql": "^1.0",
+                "scandipwa/performance": "^1.0",
                 "scandipwa/persisted-query": "^2.0",
                 "scandipwa/quote-graphql": "^2.9.1",
                 "scandipwa/reviews-graphql": "^1.0",
@@ -12428,7 +12469,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2019-12-19T15:51:46+00:00"
+            "time": "2020-01-08T13:25:28+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
@@ -12518,20 +12559,21 @@
         },
         {
             "name": "scandipwa/wishlist-graphql",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/wishlist-graphql.git",
-                "reference": "64c592c2fa7685615805b33d0eff566894ac47c0"
+                "reference": "ce4102c04ea119c03932d4162acb45ee197415ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/wishlist-graphql/zipball/64c592c2fa7685615805b33d0eff566894ac47c0",
-                "reference": "64c592c2fa7685615805b33d0eff566894ac47c0",
+                "url": "https://api.github.com/repos/scandipwa/wishlist-graphql/zipball/ce4102c04ea119c03932d4162acb45ee197415ea",
+                "reference": "ce4102c04ea119c03932d4162acb45ee197415ea",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.1"
+                "magento/magento2-base": "^2.3.1",
+                "scandipwa/performance": "^1.0"
             },
             "type": "magento2-module",
             "autoload": {
@@ -12562,7 +12604,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2019-10-16T07:36:01+00:00"
+            "time": "2020-01-07T10:13:05+00:00"
         },
         {
             "name": "scandiweb/locale-resolver-fix",
@@ -14200,6 +14242,7 @@
                 "barcode",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-barcode",
             "time": "2019-09-21T09:11:41+00:00"
         },
         {
@@ -14258,6 +14301,7 @@
                 "captcha",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-captcha",
             "time": "2019-06-18T09:32:52+00:00"
         },
         {
@@ -14311,6 +14355,7 @@
                 "code",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-code",
             "time": "2019-08-31T14:14:34+00:00"
         },
         {
@@ -14367,6 +14412,7 @@
                 "config",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-config",
             "time": "2016-02-04T23:01:10+00:00"
         },
         {
@@ -14420,6 +14466,7 @@
                 "console",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-console",
             "time": "2019-02-04T19:48:22+00:00"
         },
         {
@@ -14470,6 +14517,7 @@
                 "crypt",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-crypt",
             "time": "2016-02-03T23:46:30+00:00"
         },
         {
@@ -14528,6 +14576,7 @@
                 "db",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-db",
             "time": "2019-02-25T11:37:45+00:00"
         },
         {
@@ -14575,6 +14624,7 @@
                 "di",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-di",
             "time": "2016-04-25T20:58:11+00:00"
         },
         {
@@ -14637,6 +14687,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-diactoros",
             "time": "2019-08-06T17:53:53+00:00"
         },
         {
@@ -14682,6 +14733,7 @@
                 "escaper",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-escaper",
             "time": "2019-09-05T20:03:20+00:00"
         },
         {
@@ -14736,6 +14788,7 @@
                 "events",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-eventmanager",
             "time": "2018-04-25T15:33:34+00:00"
         },
         {
@@ -14799,6 +14852,7 @@
                 "feed",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-feed",
             "time": "2019-03-05T20:08:49+00:00"
         },
         {
@@ -14864,6 +14918,7 @@
                 "filter",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-filter",
             "time": "2019-08-19T07:08:04+00:00"
         },
         {
@@ -14942,6 +14997,7 @@
                 "form",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-form",
             "time": "2019-10-04T10:46:36+00:00"
         },
         {
@@ -14997,6 +15053,7 @@
                 "zend",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-http",
             "time": "2019-02-19T18:58:14+00:00"
         },
         {
@@ -15057,6 +15114,7 @@
                 "hydrator",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-hydrator",
             "time": "2019-10-04T11:17:36+00:00"
         },
         {
@@ -15125,6 +15183,7 @@
                 "i18n",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-i18n",
             "time": "2019-09-30T12:04:37+00:00"
         },
         {
@@ -15182,6 +15241,7 @@
                 "inputfilter",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-inputfilter",
             "time": "2019-08-28T19:45:32+00:00"
         },
         {
@@ -15237,6 +15297,7 @@
                 "json",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-json",
             "time": "2016-02-04T21:20:26+00:00"
         },
         {
@@ -15282,6 +15343,7 @@
                 "loader",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-loader",
             "time": "2019-09-04T19:38:14+00:00"
         },
         {
@@ -15352,6 +15414,7 @@
                 "logging",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-log",
             "time": "2019-08-23T21:28:18+00:00"
         },
         {
@@ -15414,6 +15477,7 @@
                 "mail",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-mail",
             "time": "2018-06-07T13:37:07+00:00"
         },
         {
@@ -15464,6 +15528,7 @@
                 "math",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-math",
             "time": "2018-12-04T15:34:17+00:00"
         },
         {
@@ -15514,6 +15579,7 @@
                 "mime",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-mime",
             "time": "2019-10-16T19:30:37+00:00"
         },
         {
@@ -15573,6 +15639,7 @@
                 "modulemanager",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-modulemanager",
             "time": "2019-10-28T13:29:38+00:00"
         },
         {
@@ -15668,6 +15735,7 @@
                 "mvc",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-mvc",
             "time": "2018-05-03T13:13:41+00:00"
         },
         {
@@ -15717,6 +15785,7 @@
                 "psr",
                 "psr-7"
             ],
+            "abandoned": "laminas/laminas-psr7bridge",
             "time": "2016-05-10T21:44:39+00:00"
         },
         {
@@ -15774,6 +15843,7 @@
                 "serializer",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-serializer",
             "time": "2019-10-19T08:06:30+00:00"
         },
         {
@@ -15821,6 +15891,7 @@
                 "server",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-server",
             "time": "2019-10-16T18:27:05+00:00"
         },
         {
@@ -15873,6 +15944,7 @@
                 "servicemanager",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-servicemanager",
             "time": "2018-06-22T14:49:54+00:00"
         },
         {
@@ -15940,6 +16012,7 @@
                 "session",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-session",
             "time": "2019-10-28T19:40:43+00:00"
         },
         {
@@ -15993,6 +16066,7 @@
                 "soap",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-soap",
             "time": "2019-04-30T16:45:35+00:00"
         },
         {
@@ -16039,6 +16113,7 @@
                 "stdlib",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-stdlib",
             "time": "2018-08-28T21:34:05+00:00"
         },
         {
@@ -16087,6 +16162,7 @@
                 "text",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-text",
             "time": "2019-10-16T20:36:27+00:00"
         },
         {
@@ -16134,6 +16210,7 @@
                 "uri",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-uri",
             "time": "2019-10-07T13:35:33+00:00"
         },
         {
@@ -16207,6 +16284,7 @@
                 "validator",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-validator",
             "time": "2019-10-29T08:33:25+00:00"
         },
         {
@@ -16294,6 +16372,7 @@
                 "view",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-view",
             "time": "2019-10-11T21:10:04+00:00"
         }
     ],
