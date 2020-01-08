@@ -11729,16 +11729,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.6.1",
+            "version": "2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "81c234d60d15a43ddde93007f7aa8bbc7b81e166"
+                "reference": "1e3223857b819f9b7dbf9c79776896bccf1d2f0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/81c234d60d15a43ddde93007f7aa8bbc7b81e166",
-                "reference": "81c234d60d15a43ddde93007f7aa8bbc7b81e166",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/1e3223857b819f9b7dbf9c79776896bccf1d2f0a",
+                "reference": "1e3223857b819f9b7dbf9c79776896bccf1d2f0a",
                 "shasum": ""
             },
             "require": {
@@ -11765,7 +11765,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-01-07T17:28:53+00:00"
+            "time": "2020-01-08T15:12:00+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -18315,6 +18315,7 @@
                 "bcmath",
                 "math"
             ],
+            "abandoned": "brick/math",
             "time": "2017-02-16T16:54:46+00:00"
         },
         {
