@@ -11729,16 +11729,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.6.2",
+            "version": "2.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "1e3223857b819f9b7dbf9c79776896bccf1d2f0a"
+                "reference": "eeda28b59aca5542418bdbcc2c1920aa1430c87c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/1e3223857b819f9b7dbf9c79776896bccf1d2f0a",
-                "reference": "1e3223857b819f9b7dbf9c79776896bccf1d2f0a",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/eeda28b59aca5542418bdbcc2c1920aa1430c87c",
+                "reference": "eeda28b59aca5542418bdbcc2c1920aa1430c87c",
                 "shasum": ""
             },
             "require": {
@@ -11765,7 +11765,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-01-08T15:12:00+00:00"
+            "time": "2020-01-10T11:52:01+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -12181,16 +12181,16 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.10.0",
+            "version": "2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "f94f611ac37f6c3263c6733bb8f3b50fd175e37f"
+                "reference": "75bfd4663194b907b2a90e879b1f01ea9028aa21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/f94f611ac37f6c3263c6733bb8f3b50fd175e37f",
-                "reference": "f94f611ac37f6c3263c6733bb8f3b50fd175e37f",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/75bfd4663194b907b2a90e879b1f01ea9028aa21",
+                "reference": "75bfd4663194b907b2a90e879b1f01ea9028aa21",
                 "shasum": ""
             },
             "require": {
@@ -12222,7 +12222,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2020-01-07T10:09:02+00:00"
+            "time": "2020-01-09T16:39:53+00:00"
         },
         {
             "name": "scandipwa/reviews-graphql",
