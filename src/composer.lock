@@ -11682,16 +11682,16 @@
         },
         {
             "name": "scandipwa/cache",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/cache.git",
-                "reference": "8153d0c287abe282194baeec7e228dde9a1eb85e"
+                "reference": "d3ec134e864259a08c5d9edb8d6d070fad9c9a0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/cache/zipball/8153d0c287abe282194baeec7e228dde9a1eb85e",
-                "reference": "8153d0c287abe282194baeec7e228dde9a1eb85e",
+                "url": "https://api.github.com/repos/scandipwa/cache/zipball/d3ec134e864259a08c5d9edb8d6d070fad9c9a0a",
+                "reference": "d3ec134e864259a08c5d9edb8d6d070fad9c9a0a",
                 "shasum": ""
             },
             "require": {
@@ -11725,7 +11725,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2019-12-18T12:49:50+00:00"
+            "time": "2020-01-09T15:15:28+00:00"
         },
         {
             "name": "scandipwa/catalog-graphql",
@@ -14517,6 +14517,7 @@
                 "crypt",
                 "zf2"
             ],
+            "abandoned": "laminas/laminas-crypt",
             "time": "2016-02-03T23:46:30+00:00"
         },
         {
@@ -16164,6 +16165,7 @@
                 "text",
                 "zf"
             ],
+            "abandoned": "laminas/laminas-text",
             "time": "2019-10-16T20:36:27+00:00"
         },
         {
