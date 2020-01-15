@@ -15,9 +15,9 @@ RUN /bin/bash -c 'curl -L https://packagecloud.io/varnishcache/varnish${VARNISH_
     echo "deb-src https://packagecloud.io/varnishcache/varnish${VARNISH_VERSION_FLATTEN}/debian/ stretch main"; \
     } | tee /etc/apt/sources.list.d/varnishcache_varnish.list;'
 
-#RUN /bin/bash -c 'apt-get -qq update; \
-#    apt-get -qq dist-upgrade ; \
-#    apt-get -qq install make gcc pkg-config git autoconf libtool-bin python-docutils varnish varnish-dev
+RUN /bin/bash -c 'apt-get -qq update; \
+    apt-get -qq dist-upgrade ; \
+    apt-get -qq install make gcc pkg-config git autoconf libtool-bin python-docutils varnish varnish-dev;'
 # libmaxminddb0 libmaxminddb-dev mmdb-bin geoip-bin; \
 #    curl -LO https://github.com/maxmind/geoipupdate/releases/download/v4.0.2/geoipupdate_4.0.2_linux_amd64.deb; \
 #    dpkg -i geoipupdate_4.0.2_linux_amd64.deb;\
