@@ -1455,6 +1455,7 @@
                 }
             ],
             "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function.",
+            "abandoned": true,
             "time": "2018-07-31T13:22:33+00:00"
         },
         {
@@ -12401,18 +12402,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "2063828e6820da0b42dfc183ab88474d8f538610"
+                "reference": "c852809a202a6b65c75ed6dc7ed0a29c68151701"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/2063828e6820da0b42dfc183ab88474d8f538610",
-                "reference": "2063828e6820da0b42dfc183ab88474d8f538610",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/c852809a202a6b65c75ed6dc7ed0a29c68151701",
+                "reference": "c852809a202a6b65c75ed6dc7ed0a29c68151701",
                 "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "^2.3.3",
                 "scandipwa/cache": "^1.0",
-                "scandipwa/catalog-graphql": "^2.5",
+                "scandipwa/catalog-graphql": "^2.6.4",
                 "scandipwa/cms-graphql": "^1.3",
                 "scandipwa/customer-graph-ql": "^2.1",
                 "scandipwa/customization": "^1.0",
@@ -12469,7 +12470,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-01-22T16:27:47+00:00"
+            "time": "2020-01-24T13:13:34+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
