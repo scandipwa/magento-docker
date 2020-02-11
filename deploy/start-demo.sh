@@ -224,18 +224,18 @@ function magento_redis_config {
   php bin/magento cache:enable
 }
 
-function magento_varnish_endpoint {
-  echo "${blue}${bold}Setting location for Varnish cache flushing${normal}"
-  bin/magento setup:config:set --http-cache-hosts=varnish
-}
+# function magento_varnish_endpoint {
+#   echo "${blue}${bold}Setting location for Varnish cache flushing${normal}"
+#   bin/magento setup:config:set --http-cache-hosts=varnish
+# }
 
-function magento_varnish_config {
-    echo "${blue}${bold}Setting Varnish config for Magento${normal}"
-  php bin/magento config:set system/full_page_cache/varnish/access_list "127.0.0.1, app, nginx"
-  php bin/magento config:set system/full_page_cache/varnish/backend_host nginx
-  php bin/magento config:set system/full_page_cache/varnish/backend_port 80
-  php bin/magento config:set system/full_page_cache/caching_application 2
-}
+# function magento_varnish_config {
+#     echo "${blue}${bold}Setting Varnish config for Magento${normal}"
+#   php bin/magento config:set system/full_page_cache/varnish/access_list "127.0.0.1, app, nginx"
+#   php bin/magento config:set system/full_page_cache/varnish/backend_host nginx
+#   php bin/magento config:set system/full_page_cache/varnish/backend_port 80
+#   php bin/magento config:set system/full_page_cache/caching_application 2
+# }
 
 function magento_set_mode {
   # Set Magento mode
@@ -301,13 +301,13 @@ magento_flush_config
 # Setting magento database credentials
 magento_database_config
 # Configuring Magento to use Varnish as HTTP cache
-magento_varnish_endpoint
+# magento_varnish_endpoint
 # Executing Magento install or migration
 magento_database_migration
 # Configuring Magento to use Redis for session and config storage
 magento_redis_config
 # Configure Magento to flush varnish
-magento_varnish_config
+# magento_varnish_config
 # Create admin user if not exists
 create_admin_user
 
