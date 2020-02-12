@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6414bae0408f66f7914da5f89acc674f",
+    "content-hash": "a9cd05171ddd210b7138f382bba6c759",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -12399,16 +12399,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "2.9.0",
+            "version": "2.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "4d82227893001e60b87eadbf427473ee3b33ca03"
+                "reference": "0b6f73017e837b7222b9b45734eaff56712daa52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/4d82227893001e60b87eadbf427473ee3b33ca03",
-                "reference": "4d82227893001e60b87eadbf427473ee3b33ca03",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/0b6f73017e837b7222b9b45734eaff56712daa52",
+                "reference": "0b6f73017e837b7222b9b45734eaff56712daa52",
                 "shasum": ""
             },
             "require": {
@@ -12471,7 +12471,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-01-28T22:29:37+00:00"
+            "time": "2020-02-12T11:16:14+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
