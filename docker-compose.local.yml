@@ -5,8 +5,6 @@ services:
       # This variable is required to run local setup on Linux, determines the switch from root to user
       - LOCAL=true
     volumes:
-      # Mount source instead of copy
-      - ./src:/var/www/public:cached
       # PHP configuration mount
       - ./deploy/shared/conf/php/php.ini:/usr/local/etc/php/php.ini
       # PHP FPM pool settings
@@ -16,8 +14,6 @@ services:
       # Uncomment line below only for testing launch script without rebuild
       - ./deploy/start.sh:/start.sh
   nginx:
-    volumes:
-      - ./src:/var/www/public:cached
     networks:
     - default
   kibana:
