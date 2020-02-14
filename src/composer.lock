@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9cd05171ddd210b7138f382bba6c759",
+    "content-hash": "481942a56991015c2af72eaa6651f185",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -1171,6 +1171,37 @@
             "time": "2017-10-22T18:56:00+00:00"
         },
         {
+            "name": "fastly/magento2",
+            "version": "1.2.127",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fastly/fastly-magento2.git",
+                "reference": "42d28ec843e8c50a4ca34eed6fccee52dbce7490"
+            },
+            "require": {
+                "magento/framework": ">=101.0.0",
+                "magento/module-cache-invalidate": ">=100.0.0",
+                "magento/module-config": ">=100.0.0",
+                "magento/module-page-cache": ">=100.0.0",
+                "magento/module-store": ">=100.0.0",
+                "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0|~7.3.0|~7.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Fastly\\Cdn\\": ""
+                }
+            },
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Fastly CDN Module for Magento 2.x",
+            "time": "2020-02-07T15:41:47+00:00"
+        },
+        {
             "name": "google/recaptcha",
             "version": "1.2.3",
             "source": {
@@ -1714,38 +1745,6 @@
             "license": [
                 "Apache-2.0"
             ],
-            "authors": [
-                {
-                    "name": "Joe Constant",
-                    "email": "joe.constant@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Fei Chen",
-                    "email": "fei.chen@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dario Kassler",
-                    "email": "dario.kassler@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jason Grim",
-                    "email": "jason.grim@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Kenny Gilles",
-                    "email": "kenny.gilles@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Markus Simon",
-                    "email": "markus.simon2@klarna.com",
-                    "role": "Developer"
-                }
-            ],
             "description": "Klarna Core Magento 2 Extension"
         },
         {
@@ -1801,38 +1800,6 @@
             "license": [
                 "Apache-2.0"
             ],
-            "authors": [
-                {
-                    "name": "Joe Constant",
-                    "email": "joe.constant@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Fei Chen",
-                    "email": "fei.chen@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dario Kassler",
-                    "email": "dario.kassler@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jason Grim",
-                    "email": "jason.grim@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Kenny Gilles",
-                    "email": "kenny.gilles@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Markus Simon",
-                    "email": "markus.simon2@klarna.com",
-                    "role": "Developer"
-                }
-            ],
             "description": "Klarna Payments Magento 2 Extension"
         },
         {
@@ -1881,38 +1848,6 @@
             },
             "license": [
                 "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Joe Constant",
-                    "email": "joe.constant@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Fei Chen",
-                    "email": "fei.chen@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dario Kassler",
-                    "email": "dario.kassler@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jason Grim",
-                    "email": "jason.grim@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Kenny Gilles",
-                    "email": "kenny.gilles@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Markus Simon",
-                    "email": "markus.simon2@klarna.com",
-                    "role": "Developer"
-                }
             ],
             "description": "Klarna Order Management Magento 2 Extension"
         },
@@ -10803,12 +10738,6 @@
             "license": [
                 "OSL-3.0"
             ],
-            "authors": [
-                {
-                    "name": "Riccardo Tempesta",
-                    "email": "riccardo.tempesta@magespecialist.it"
-                }
-            ],
             "description": "Google reCaptcha integration for Magento2"
         },
         {
@@ -10839,12 +10768,6 @@
             },
             "license": [
                 "OSL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Riccardo Tempesta",
-                    "email": "riccardo.tempesta@magespecialist.it"
-                }
             ],
             "description": "Two Factor Authentication module for Magento2"
         },
@@ -11614,17 +11537,17 @@
             ],
             "authors": [
                 {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
+                },
+                {
                     "name": "Marijn Huizendveld",
                     "email": "marijn.huizendveld@gmail.com"
                 },
                 {
                     "name": "Thibaud Fabre",
                     "email": "thibaud@aztech.io"
-                },
-                {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "https://benramsey.com"
                 }
             ],
             "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
@@ -12399,16 +12322,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "2.9.1",
+            "version": "2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "0b6f73017e837b7222b9b45734eaff56712daa52"
+                "reference": "70fde67943513c5251aaa9a83eb13c52605227f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/0b6f73017e837b7222b9b45734eaff56712daa52",
-                "reference": "0b6f73017e837b7222b9b45734eaff56712daa52",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/70fde67943513c5251aaa9a83eb13c52605227f1",
+                "reference": "70fde67943513c5251aaa9a83eb13c52605227f1",
                 "shasum": ""
             },
             "require": {
@@ -12471,7 +12394,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-02-12T11:16:14+00:00"
+            "time": "2020-02-14T08:50:55+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
@@ -12511,6 +12434,47 @@
                 "scandipwa"
             ],
             "time": "2020-01-16T08:23:51+00:00"
+        },
+        {
+            "name": "scandipwa/stripe-graphql",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/stripe-graphql.git",
+                "reference": "f45d27476615a9a1bc6fbe6514fb7df419f043d0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/stripe-graphql/zipball/f45d27476615a9a1bc6fbe6514fb7df419f043d0",
+                "reference": "f45d27476615a9a1bc6fbe6514fb7df419f043d0",
+                "shasum": ""
+            },
+            "require": {
+                "magento/magento2-base": "^2.3.2",
+                "stripe/module-payments": "^1.4.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "ScandiPWA\\StripeGraphQl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Reinis Mazeiks",
+                    "email": "info@scandiweb.com"
+                }
+            ],
+            "description": "Serves Stripe publishable keys as configured in admin",
+            "time": "2019-12-02T15:33:57+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
@@ -12659,10 +12623,10 @@
                 "reference": "cbec569f0f47393458b599c1aeafb400580682e0"
             },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scandiwebcom/Scandiweb-Assets-Core/zipball/cbec569f0f47393458b599c1aeafb400580682e0",
+                "type": "tar",
+                "url": "https://packages.indvp.com/dist/scandiweb/module-core/scandiweb-module-core-cbec569f0f47393458b599c1aeafb400580682e0-zip-c39845.tar",
                 "reference": "cbec569f0f47393458b599c1aeafb400580682e0",
-                "shasum": ""
+                "shasum": "3c13c8357643afe84ff01806afe37559195f8df4"
             },
             "type": "magento2-module",
             "autoload": {
@@ -12673,11 +12637,14 @@
                     "Scandiweb\\Core\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0"
             ],
             "description": "Scandiweb Core module for Magento 2 extensions.",
+            "support": {
+                "source": "https://github.com/scandiwebcom/Scandiweb-Assets-Core/tree/v0.1.4",
+                "issues": "https://github.com/scandiwebcom/Scandiweb-Assets-Core/issues"
+            },
             "time": "2019-03-19T11:21:34+00:00"
         },
         {
@@ -12836,6 +12803,94 @@
                 "totp"
             ],
             "time": "2018-09-13T19:25:26+00:00"
+        },
+        {
+            "name": "stripe/module-payments",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:scandiweb/stripe-payments.git",
+                "reference": "cccab25562bd0e95c40bd85b93ee09d23bf5c945"
+            },
+            "dist": {
+                "type": "tar",
+                "url": "https://packages.indvp.com/dist/stripe/module-payments/stripe-module-payments-1.5.0-f1b3b7.tar",
+                "reference": "cccab25562bd0e95c40bd85b93ee09d23bf5c945",
+                "shasum": "b2752c568bc80c484712eb4b179f5e85d5825821"
+            },
+            "require": {
+                "stripe/stripe-php": "^6"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "StripeIntegration\\Payments\\": ""
+                }
+            },
+            "license": [
+                "https://stripe.com/magento/legal"
+            ],
+            "description": "Shared component for accepting online payments in Magento 2 using the Stripe payment gateway.",
+            "time": "2019-12-11T15:53:29+00:00"
+        },
+        {
+            "name": "stripe/stripe-php",
+            "version": "v6.43.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "42fcdaf99c44bb26937223f8eae1f263491d5ab8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/42fcdaf99c44bb26937223f8eae1f263491d5ab8",
+                "reference": "42fcdaf99c44bb26937223f8eae1f263491d5ab8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "1.*",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.0",
+                "symfony/process": "~2.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "time": "2019-08-29T16:56:12+00:00"
         },
         {
             "name": "symfony/console",
@@ -13757,14 +13812,6 @@
             },
             "license": [
                 "OSL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Christoph Aßmann",
-                    "email": "christoph.assmann@netresearch.de",
-                    "homepage": "https://www.netresearch.de/",
-                    "role": "Developer"
-                }
             ],
             "description": "Temando multi-carrier shipping extension for Magento 2"
         },
