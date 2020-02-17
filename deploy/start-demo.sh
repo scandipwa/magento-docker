@@ -65,14 +65,17 @@ function install_additional_composer_modules {
 }
 
 ### Colors in command output end
-
 function pwa_theme_install {
   echo "${blue}${bold}Register PWA theme in Magento${normal}"
+
   # Theme setup
   magento scandipwa:theme:bootstrap Scandiweb/pwa -n || true
   php bin/magento setup:upgrade
-  # Theme build
-  if [ $? -eq 0 ]; then
+
+  if ping -c 1 frontend &> /dev/null
+  then
+    echo "${blue}${bold}Frontend container will build PWA theme${normal}"
+  else
     echo "${blue}${bold}Building PWA theme${normal}"
     cd $BASEPATH/app/design/frontend/Scandiweb/pwa
     npm ci
@@ -285,6 +288,12 @@ function exit_catch {
 }
 
 ### Deploy pipe start
+
+echo "${blue}${bold}Waiting for Mutagen to sync initial filese${normal}"
+while ! [ -f ./composer.json -a -f ./composer.lock ]
+do
+  sleep 2
+done
 
 # Switch current execution directory to WORKDIR (BASEPATH)
 in_basepath
