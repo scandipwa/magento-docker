@@ -60,7 +60,7 @@ RUN { \
         echo 'from no-reply@docker'; \
         echo 'account default'; \
     } | tee /etc/msmtprc
-    
+
 # Start script, executed upon container creation from image
 COPY deploy/start.sh /start.sh
 RUN chmod +x /start.sh
