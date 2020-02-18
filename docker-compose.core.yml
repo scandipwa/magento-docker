@@ -7,6 +7,8 @@ services:
       - frontend
   frontend:
     image: scandipwa/frontend:${PROJECT_IMAGE}
+    volumes:
+      - core-frontend-data:/var/www/public
     build:
       context: build/frontend
       args:
@@ -17,3 +19,6 @@ services:
     command: ["/bin/bash", "/start-core.sh"]
     expose:
       - 3003
+  app:
+    volumes:
+      - ./deploy/start-with-frontend.sh:/start.sh

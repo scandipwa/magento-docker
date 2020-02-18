@@ -13,9 +13,6 @@ services:
       - ./deploy/shared/conf/xdebug/xdebug-config.ini:/usr/local/etc/php/conf.d/xdebug-config.ini
       # Uncomment line below only for testing launch script without rebuild
       - ./deploy/start.sh:/start.sh
-  nginx:
-    networks:
-    - default
   kibana:
     image: docker.elastic.co/kibana/kibana:${ELASTICSEARCH_VERSION}
     restart: on-failure:5
@@ -25,5 +22,16 @@ services:
       - 5601:5601
     depends_on:
       - elasticsearch
+    networks:
+      - default
+  maildev:
+    image: djfarrelly/maildev
+    ports:
+      - ${MAILDEV_PORT}:80
+    expose:
+      - 25
+    links:
+      - nginx:webserver
+    command: ["bin/maildev", "--web", "80", "--smtp", "25", "--base-pathname", "/maildev/"]
     networks:
       - default

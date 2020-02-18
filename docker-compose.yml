@@ -21,6 +21,7 @@ services:
       - NODEJS_DIR=${NODEJS_DIR}
     volumes:
       - app-data:/var/www/public
+      - core-frontend-data:/var/www/public/localmodules/base-theme
     links:
       - mysql:db
       - redis:cache
@@ -102,17 +103,6 @@ services:
       - 6379
     networks:
      - default
-  maildev:
-    image: djfarrelly/maildev
-    ports:
-      - ${MAILDEV_PORT}:80
-    expose:
-      - 25
-    links:
-      - nginx:webserver
-    command: ["bin/maildev", "--web", "80", "--smtp", "25", "--base-pathname", "/maildev/"]
-    networks:
-      - default
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch:${ELASTICSEARCH_VERSION}
     restart: on-failure:5
@@ -137,6 +127,7 @@ volumes:
   mysql-data:
   redis-data:
   elasticsearch-data:
+  core-frontend-data:
 
 networks:
   default:
