@@ -9,6 +9,7 @@ services:
     image: scandipwa/frontend:${PROJECT_IMAGE}
     volumes:
       - core-frontend-data:/var/www/public
+      - ./build/frontend/start-core.sh:/start-core.sh
     build:
       context: build/frontend
       args:

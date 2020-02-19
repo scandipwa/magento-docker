@@ -9,12 +9,13 @@ services:
     image: scandipwa/frontend:${PROJECT_IMAGE}
     volumes:
       - app-data:/var/www/public
+      - ./build/frontend/start.sh:/start.sh
     build:
       context: build/frontend
       args:
         - BASEPATH=${BASEPATH}
         - NODEJS_VERSION=${NODEJS_VERSION}
-    working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
+    working_dir: "/var/www/public"
     env_file: .env
     command: ["/bin/bash", "/start.sh"]
     expose:

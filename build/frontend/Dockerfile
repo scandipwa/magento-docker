@@ -8,9 +8,4 @@ ARG BASEPATH=/var/www/public
 # Set working directory so any relative configuration or scripts wont fail
 WORKDIR $BASEPATH
 
-COPY start.sh /start.sh
-COPY start-core.sh /start-core.sh
-RUN chmod +x /start.sh
-RUN chmod +x /start-core.sh
-
 CMD ["/bin/bash", "/start.sh"]
