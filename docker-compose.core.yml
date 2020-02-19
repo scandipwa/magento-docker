@@ -22,4 +22,7 @@ services:
       - 3003
   app:
     volumes:
+      - core-frontend-data:/var/www/public/localmodules/base-theme
       - ./deploy/start-with-frontend.sh:/start.sh
+volumes:
+  core-frontend-data:

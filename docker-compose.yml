@@ -21,7 +21,6 @@ services:
       - NODEJS_DIR=${NODEJS_DIR}
     volumes:
       - app-data:/var/www/public
-      - core-frontend-data:/var/www/public/localmodules/base-theme
     links:
       - mysql:db
       - redis:cache
@@ -127,7 +126,6 @@ volumes:
   mysql-data:
   redis-data:
   elasticsearch-data:
-  core-frontend-data:
 
 networks:
   default:
