@@ -6,12 +6,19 @@ afterTerminate:
   - docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml ps
   - docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml down
 sync:
-  defaults:
-    permissions:
-      defaultOwner: "www-data"
   app:
+    permissions:
+      defaultOwner: "user"
     alpha: "./src"
     beta: "docker://scandipwa-base_app_1/var/www/public"
     mode: two-way-resolved
     symlink:
-      mode: ignore
+      mode: "ignore"
+  nginx:
+    permissions:
+      defaultOwner: "nginx"
+      defaultGroup: "nginx"
+    alpha: "./src/pub"
+    beta: "docker://scandipwa-base_nginx_1/var/www/public/pub"
+    symlink:
+      mode: "ignore"
