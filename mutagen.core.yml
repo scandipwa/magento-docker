@@ -1,10 +1,10 @@
 beforeCreate:
-  - docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.core.yml up -d
+  - docker-compose -f docker-compose.yml -f mutagen.docker-compose.local.yml -f docker-compose.ssl.yml -f mutagen.docker-compose.core.yml up -d
 afterCreate:
-  - docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.core.yml logs -f app
+  - docker-compose -f docker-compose.yml -f mutagen.docker-compose.local.yml -f docker-compose.ssl.yml -f mutagen.docker-compose.core.yml logs -f app
 afterTerminate:
-  - docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.core.yml ps
-  - docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml -f docker-compose.core.yml down
+  - docker-compose -f docker-compose.yml -f mutagen.docker-compose.local.yml -f docker-compose.ssl.yml -f mutagen.docker-compose.core.yml ps
+  - docker-compose -f docker-compose.yml -f mutagen.docker-compose.local.yml -f docker-compose.ssl.yml -f mutagen.docker-compose.core.yml down
 sync:
   app:
     permissions:
