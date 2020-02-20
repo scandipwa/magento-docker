@@ -7,17 +7,18 @@ services:
       - frontend
   frontend:
     image: scandipwa/frontend:${PROJECT_IMAGE}
-    volumes:
-      - app-data:/var/www/public
-      - ./build/frontend/start.sh:/start.sh
     build:
       context: build/frontend
       args:
         - BASEPATH=${BASEPATH}
         - NODEJS_VERSION=${NODEJS_VERSION}
-    working_dir: "/var/www/public"
+    volumes:
+      - ./src/app/design/frontend/Scandiweb/pwa:/var/www/public/app/design/frontend/Scandiweb/pwa
+      - ./src/vendor/scandipwa/source:/var/www/public/vendor/scandipwa/source
+      - ./build/frontend/start.sh:/start.sh
+    command: ["npm", "run", "pm2-watch"]
+    working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
     env_file: .env
-    command: ["/bin/bash", "/start.sh"]
     expose:
       - 3003
   app:

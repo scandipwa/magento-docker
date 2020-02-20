@@ -5,6 +5,8 @@ services:
       # This variable is required to run local setup on Linux, determines the switch from root to user
       - LOCAL=true
     volumes:
+      # Mount source instead of copy
+      - ./src:/var/www/public:cached
       # PHP configuration mount
       - ./deploy/shared/conf/php/php.ini:/usr/local/etc/php/php.ini
       # PHP FPM pool settings
@@ -13,6 +15,11 @@ services:
       - ./deploy/shared/conf/xdebug/xdebug-config.ini:/usr/local/etc/php/conf.d/xdebug-config.ini
       # Uncomment line below only for testing launch script without rebuild
       - ./deploy/start.sh:/start.sh
+  nginx:
+    volumes:
+      - ./src/pub:/var/www/public/pub:cached
+    networks:
+    - default
   kibana:
     image: docker.elastic.co/kibana/kibana:${ELASTICSEARCH_VERSION}
     restart: on-failure:5
