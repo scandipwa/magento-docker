@@ -23,3 +23,6 @@ services:
   app:
     volumes:
       - ./deploy/start-with-frontend.sh:/start.sh
+      - core-frontend-data:/var/www/public/localmodules/base-theme
+volumes:
+  core-frontend-data:
