@@ -11,15 +11,9 @@ sync:
     beta: "docker://scandipwa-base_app_1/var/www/public"
     configurationBeta:
       permissions:
-        defaultOwner: "user"
+        defaultGroup: "user"
+        defaultFileMode: 666
+        defaultDirectoryMode: 777
     mode: two-way-resolved
-    symlink:
-      mode: "ignore"
-  nginx:
-    alpha: "./src/pub"
-    beta: "docker://scandipwa-base_nginx_1/var/www/public/pub"
-    configurationBeta:
-      permissions:
-        defaultOwner: "nginx"
     symlink:
       mode: "ignore"
