@@ -14,7 +14,7 @@ fi
 
 ### Debug options end
 
-### Customdc commands for assets compilation
+### Custom commands for assets compilation
 # Add you custom tasks to execute them before magento static content deploy
 
 ################################################################################

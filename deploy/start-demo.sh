@@ -72,16 +72,11 @@ function pwa_theme_install {
   magento scandipwa:theme:bootstrap Scandiweb/pwa -n || true
   php bin/magento setup:upgrade
 
-  if ping -c 1 frontend &> /dev/null
-  then
-    echo "${blue}${bold}Frontend container will build PWA theme${normal}"
-  else
-    echo "${blue}${bold}Building PWA theme${normal}"
-    cd $BASEPATH/app/design/frontend/Scandiweb/pwa
-    npm ci
-    npm run build
-    cd $BASEPATH
-  fi
+  echo "${blue}${bold}Building PWA theme${normal}"
+  cd $BASEPATH/app/design/frontend/Scandiweb/pwa
+  npm ci
+  npm run build
+  cd $BASEPATH
 }
 
 # Empty the redis config caches to avoid errors with module configuration
