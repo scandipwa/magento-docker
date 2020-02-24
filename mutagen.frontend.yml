@@ -8,7 +8,7 @@ afterTerminate:
 sync:
   app:
     alpha: "./src"
-    beta: "docker://scandipwa-base_app_1/var/www/public"
+    beta: "docker://mutagen-powered-app/var/www/public"
     configurationBeta:
       permissions:
         defaultGroup: "user"

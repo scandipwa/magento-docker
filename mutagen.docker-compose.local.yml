@@ -1,6 +1,7 @@
 version: '3'
 services:
   app:
+    container_name: mutagen-powered-app
     environment:
       # This variable is required to run local setup on Linux, determines the switch from root to user
       - LOCAL=true
