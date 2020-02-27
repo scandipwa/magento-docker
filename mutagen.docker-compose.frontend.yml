@@ -18,7 +18,7 @@ services:
     environment:
       - PROCESS_FILE=process.yml
     working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
-    command: ["pm2-runtime", $PROCESS_FILE]
+    command: ["pm2-runtime", $FRONTEND_PROCESS_FILE]
     expose:
       - 3003
   app:

@@ -15,7 +15,7 @@ services:
       - app-data:/var/www/public
     env_file: .env
     working_dir: "/var/www/public/localmodules/base-theme/"
-    command: ["pm2-runtime", "$PROCESS_FILE"]
+    command: ["pm2-runtime", "$FRONTEND_CORE_PROCESS_FILE"]
     expose:
       - 3003
   app:
