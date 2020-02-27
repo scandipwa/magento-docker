@@ -17,7 +17,7 @@ services:
       - ./deploy/start.sh:/start.sh
   nginx:
     volumes:
-      - ./src/pub:/var/www/public/pub:cached
+    - ./src:/var/www/public:cached
     networks:
     - default
   kibana:

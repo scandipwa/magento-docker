@@ -21,7 +21,6 @@ services:
       - NODEJS_DIR=${NODEJS_DIR}
     volumes:
       - app-data:/var/www/public
-      - nginx-data:/var/www/public/pub
     links:
       - mysql:db
       - redis:cache
@@ -54,7 +53,7 @@ services:
     volumes:
       - ./deploy/shared/conf/nginx/magento.conf:/etc/nginx/conf.d/default.conf
       - ./deploy/shared/conf/nginx/cache-router.conf:/etc/nginx/conf.d/cache-router.conf
-      - nginx-data:/var/www/public/pub
+      - app-data:/var/www/public
     env_file:
       - .env
     ports:
