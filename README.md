@@ -51,6 +51,8 @@ export COMPOSER_AUTH='{"http-basic":{"repo.magento.com": {"username": "REPLACE_T
 make cert
 ```
 
+    You can find the generated certificates under `/opt/cert/`. On a mac you'll need to trust the certificate authority by opening `/opt/cert/scandipwa-ca.pem` and setting it to Always Trust
+
 5.  Pull and run the infrastructure
 ```console
 docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml pull
@@ -77,6 +79,10 @@ docker-compose exec -T mysql mysql -u root -pscandipwa magento < deploy/latest.s
 ```console
 docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml up -d --force-recreate
 ```
+
+10. Check out your new instance [https://scandipwa.local/](https://scandipwa.local/)
+
+     If you want to change your base URL update the `.application` file and re-run the command in step 9
 
 ## Media
 1) Download [media](https://scandipwa-public-assets.s3-eu-west-1.amazonaws.com/2.2.x-media.tar.gz)
