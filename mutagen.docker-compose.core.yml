@@ -7,22 +7,17 @@ services:
       - frontend
   frontend:
     image: scandipwa/frontend:${PROJECT_IMAGE}
-    volumes:
-      - core-frontend-data:/var/www/public
-      - ./build/frontend/start-core.sh:/start-core.sh
     build:
       context: build/frontend
       args:
-        - BASEPATH=${BASEPATH}
         - NODEJS_VERSION=${NODEJS_VERSION}
-    working_dir: "/var/www/public"
+    volumes:
+      - app-data:/var/www/public
     env_file: .env
-    command: ["/bin/bash", "/start-core.sh"]
+    working_dir: "/var/www/public/localmodules/base-theme/"
+    command: ["pm2-runtime", "$PROCESS_FILE"]
     expose:
       - 3003
   app:
     volumes:
-      - core-frontend-data:/var/www/public/localmodules/base-theme
-      - ./deploy/start-with-frontend.sh:/start.sh
-volumes:
-  core-frontend-data:
+      - ./deploy/start-when-frontend-serving.sh:/start.sh

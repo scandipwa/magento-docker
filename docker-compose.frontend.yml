@@ -14,13 +14,14 @@ services:
         - NODEJS_VERSION=${NODEJS_VERSION}
     volumes:
       - ./src/app/design/frontend/Scandiweb/pwa:/var/www/public/app/design/frontend/Scandiweb/pwa
-      - ./src/vendor/scandipwa/source:/var/www/public/vendor/scandipwa/source
-      - ./build/frontend/start.sh:/start.sh
-    command: ["npm", "run", "pm2-watch"]
-    working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
+      - ./src/vendor:/var/www/public/vendor
     env_file: .env
+    environment:
+      - PROCESS_FILE=process.yml
+    working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
+    command: ["pm2-runtime", "$FRONTEND_PROCESS_FILE"]
     expose:
       - 3003
   app:
     volumes:
-      - ./deploy/start-with-frontend.sh:/start.sh
+      - ./deploy/start-when-frontend-serving.sh:/start.sh

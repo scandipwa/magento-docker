@@ -9,4 +9,3 @@ done
 echo "Installing node modules"
 npm ci
 npm install pm2 forever -g
-pm2-runtime process-core.yml

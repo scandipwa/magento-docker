@@ -13,16 +13,14 @@ services:
         - BASEPATH=${BASEPATH}
         - NODEJS_VERSION=${NODEJS_VERSION}
     volumes:
-      - ./src/localmodules/base-theme:/var/www/public
-      - ./build/frontend/start-core.sh:/start-core.sh
-    working_dir: "/var/www/public"
+      - ./src/localmodules/base-theme:/var/www/public/localmodules/base-theme
+      - ./src/vendor:/var/www/public/vendor
+      - app-data:/var/www/public
     env_file: .env
-    command: ["/bin/bash", "/start-core.sh"]
+    working_dir: "/var/www/public/localmodules/base-theme/"
+    command: ["pm2-runtime", "$FRONTEND_CORE_PROCESS_FILE"]
     expose:
       - 3003
   app:
     volumes:
-      - ./deploy/start-with-frontend.sh:/start.sh
-      - core-frontend-data:/var/www/public/localmodules/base-theme
-volumes:
-  core-frontend-data:
+      - ./deploy/start-when-frontend-serving.sh:/start.sh
