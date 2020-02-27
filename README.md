@@ -50,10 +50,9 @@ export COMPOSER_AUTH='{"http-basic":{"repo.magento.com": {"username": "REPLACE_T
 ```console
 make cert
 ```
+5. Add the Certificate Authority to your computer's trusted certificates. You can find the generated certificates under `/opt/cert/`. On a mac you can trust the certificate authority by opening `/opt/cert/scandipwa-ca.pem` and setting it to Always Trust
 
-    You can find the generated certificates under `/opt/cert/`. On a mac you'll need to trust the certificate authority by opening `/opt/cert/scandipwa-ca.pem` and setting it to Always Trust
-
-5.  Pull and run the infrastructure
+6.  Pull and run the infrastructure
 ```console
 docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml pull
 ``` 
@@ -63,24 +62,24 @@ docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compo
 
 > **NOTICE**: Do the following steps only in case you need ScandiPWA DEMO
 
-6.  Stop the application container 
+7.  Stop the application container 
 ```console
 docker-compose stop app
 ```
-7.  Recreate existing database 
+8.  Recreate existing database 
 ```console
 docker-compose exec mysql mysql -u root -pscandipwa -e "DROP DATABASE magento; CREATE DATABASE magento;"
 ```
-8.  Import DEMO ScandiPWA database: 
+9.  Import DEMO ScandiPWA database: 
 ```console
 docker-compose exec -T mysql mysql -u root -pscandipwa magento < deploy/latest.sql
 ```
-9.  Recreate Docker infrastructure
+10.  Recreate Docker infrastructure
 ```console
 docker-compose -f docker-compose.yml -f docker-compose.local.yml -f docker-compose.ssl.yml up -d --force-recreate
 ```
 
-10. Check out your new instance [https://scandipwa.local/](https://scandipwa.local/)
+11. Check out your new instance [https://scandipwa.local/](https://scandipwa.local/)
 
      If you want to change your base URL update the `.application` file and re-run the command in step 9
 
