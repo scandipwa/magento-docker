@@ -15,10 +15,10 @@ services:
     volumes:
       - app-data:/var/www/public
     env_file: .env
-    environment:
-      - PROCESS_FILE=process.yml
+    environment: 
+      - PROCESS_FILE=${FRONTEND_PROCESS_FILE}
     working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
-    command: ["pm2-runtime", $FRONTEND_PROCESS_FILE]
+    command: ["/bin/bash", "/start.sh"]
     expose:
       - 3003
   app:

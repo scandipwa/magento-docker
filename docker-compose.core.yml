@@ -17,8 +17,10 @@ services:
       - ./src/vendor:/var/www/public/vendor
       - app-data:/var/www/public
     env_file: .env
+    environment: 
+      - PROCESS_FILE=${FRONTEND_CORE_PROCESS_FILE}
     working_dir: "/var/www/public/localmodules/base-theme/"
-    command: ["pm2-runtime", "$FRONTEND_CORE_PROCESS_FILE"]
+    command: ["/bin/bash", "/start.sh"]
     expose:
       - 3003
   app:
