@@ -12403,12 +12403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "342107d15fe1dd333f451ce676b7de3e7023b390"
+                "reference": "7163cbd6cfeb490856cc90061d970d630849ee4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/342107d15fe1dd333f451ce676b7de3e7023b390",
-                "reference": "342107d15fe1dd333f451ce676b7de3e7023b390",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/7163cbd6cfeb490856cc90061d970d630849ee4c",
+                "reference": "7163cbd6cfeb490856cc90061d970d630849ee4c",
                 "shasum": ""
             },
             "require": {
@@ -12471,7 +12471,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-03-03T18:20:12+00:00"
+            "time": "2020-03-04T15:21:46+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
