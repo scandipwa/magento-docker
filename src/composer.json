@@ -13,6 +13,7 @@
     "require": {
         "magento/product-community-edition": "2.3.3",
         "scandipwa/installer": "^1.2.0",
+        "scandipwa/reviews-graphql": "dev-master as 1.4.2",
         "scandipwa/source": "dev-2.x-dev as 2.9.1"
     },
     "require-dev": {
