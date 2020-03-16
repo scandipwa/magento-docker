@@ -1,0 +1,133 @@
+version: '3'
+services:
+  app:
+    image: scandipwa/base:${PROJECT_IMAGE}
+    build:
+      context: .
+      args:
+        - COMPOSER_VERSION=${COMPOSER_VERSION}
+        - PROJECT_TAG=${PROJECT_TAG}
+        - NODEJS_DIR=${NODEJS_DIR}
+        - BASEPATH=${BASEPATH}
+    restart: on-failure:5
+    env_file:
+      - .application
+      - .env
+    environment:
+      - COMPOSER_AUTH
+      - COMPOSER_CACHE_DIR=/tmp/composer_cache
+      - BASEPATH=${BASEPATH}
+      - PROJECT_TAG=${PROJECT_TAG}
+      - NODEJS_DIR=${NODEJS_DIR}
+    volumes:
+      - app-data:/var/www/public
+    links:
+      - mysql:db
+      - redis:cache
+    expose:
+      - 9000
+    networks:
+      - default
+    command: ["/wait-for-it.sh", "mysql:3306", "--", "/start-with-mutagen.sh"]
+    entrypoint: ["/usr/local/bin/entrypoint.sh"]
+  varnish:
+    image: scandipwa/varnish:latest
+    build:
+      context: build/varnish
+    restart: on-failure:30
+    env_file:
+      - .env
+    volumes:
+      - ./deploy/shared/conf/varnish/default.vcl:/etc/varnish/default.vcl
+    links:
+      - nginx:webserver
+    expose:
+      - 80
+    ports:
+      - ${VARNISH_PORT}:80
+    networks:
+      - default
+  nginx:
+    image: nginx:${NGINX_VERSION}
+    restart: on-failure:30
+    volumes:
+      - ./deploy/shared/conf/nginx/magento.conf:/etc/nginx/conf.d/default.conf
+      - ./deploy/shared/conf/nginx/cache-router.conf:/etc/nginx/conf.d/cache-router.conf
+      - app-data:/var/www/public
+    env_file:
+      - .env
+    ports:
+      - ${NGINX_BIND_PORT}:80
+    links:
+      - app:php
+    expose:
+      - 8090
+      - 80
+    networks:
+      - default
+  rendertron:
+    image: scandipwa/rendertron
+    build:
+      context: build/rendertron
+    restart: on-failure:10
+    depends_on:
+      - app
+    expose:
+     - 8083
+    networks:
+      - default
+  mysql:
+    image: mysql:${MYSQL_VERSION}
+    restart: on-failure:5
+    env_file:
+      - .env
+      - .application
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - ${MYSQL_PORT}:3306
+    expose:
+      - 3306
+    networks:
+      - default
+  redis:
+    image: redis:${REDIS_VERSION}
+    restart: on-failure:5
+    env_file: .env
+    volumes:
+      - redis-data:/data
+    ports:
+      - ${REDIS_PORT}:6379
+    expose:
+      - 6379
+    networks:
+     - default
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:${ELASTICSEARCH_VERSION}
+    restart: on-failure:5
+    env_file: .env
+    environment:
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+      - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    ports:
+      - ${ELASTICSEARCH_PORT}:9200
+    networks:
+      - default
+volumes:
+  app-data:
+  media-data:
+  mysql-data:
+  redis-data:
+  elasticsearch-data:
+  nginx-data:
+
+networks:
+  default:
+    driver: bridge
