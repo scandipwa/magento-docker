@@ -23,4 +23,4 @@ services:
       - 3003
   app:
     volumes:
-      - ./deploy/start-when-frontend-serving.sh:/start.sh
+      - ./deploy/mutagen/start-when-frontend-serving.sh:/start.sh
