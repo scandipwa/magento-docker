@@ -22,5 +22,4 @@ services:
     expose:
       - 3003
   app:
-    volumes:
-      - ./deploy/mutagen/start-when-frontend-serving.sh:/start.sh
+    command: ["/wait-for-it.sh", "mysql:3306", "--", "/start-with-mutagen-when-frontend-serving.sh"]
