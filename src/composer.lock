@@ -11815,16 +11815,16 @@
         },
         {
             "name": "scandipwa/customer-graph-ql",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/customer-graph-ql.git",
-                "reference": "d21e2b7660c021de794b0a2ff5d907e4fecc8854"
+                "reference": "24c4a612fd46159a3d8908c57c26faba842c7941"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/customer-graph-ql/zipball/d21e2b7660c021de794b0a2ff5d907e4fecc8854",
-                "reference": "d21e2b7660c021de794b0a2ff5d907e4fecc8854",
+                "url": "https://api.github.com/repos/scandipwa/customer-graph-ql/zipball/24c4a612fd46159a3d8908c57c26faba842c7941",
+                "reference": "24c4a612fd46159a3d8908c57c26faba842c7941",
                 "shasum": ""
             },
             "require": {
@@ -11845,7 +11845,7 @@
                 "AFL-3.0"
             ],
             "description": "N/A",
-            "time": "2019-12-05T09:11:19+00:00"
+            "time": "2020-03-19T15:29:57+00:00"
         },
         {
             "name": "scandipwa/customization",
@@ -12475,16 +12475,16 @@
         },
         {
             "name": "scandipwa/store-graphql",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/store-graphql.git",
-                "reference": "5da42eb798e0000c5e394f044fdd39fb4778b72e"
+                "reference": "29264e04f60ea0400c6ab73a45480eb36d86ddb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/5da42eb798e0000c5e394f044fdd39fb4778b72e",
-                "reference": "5da42eb798e0000c5e394f044fdd39fb4778b72e",
+                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/29264e04f60ea0400c6ab73a45480eb36d86ddb0",
+                "reference": "29264e04f60ea0400c6ab73a45480eb36d86ddb0",
                 "shasum": ""
             },
             "require": {
@@ -12510,7 +12510,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-01-16T08:23:51+00:00"
+            "time": "2020-03-20T16:22:41+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
