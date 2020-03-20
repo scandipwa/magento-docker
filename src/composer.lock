@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6414bae0408f66f7914da5f89acc674f",
+    "content-hash": "7de657cb7d06a7505c44689f93031808",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -12399,16 +12399,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "2.10.0",
+            "version": "dev-2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "f3b9b40a4f989e7e134a98cfb6649747eb2d3180"
+                "reference": "d92b57a86a6305233ce6ff0557215f66b7fcdc2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/f3b9b40a4f989e7e134a98cfb6649747eb2d3180",
-                "reference": "f3b9b40a4f989e7e134a98cfb6649747eb2d3180",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/d92b57a86a6305233ce6ff0557215f66b7fcdc2f",
+                "reference": "d92b57a86a6305233ce6ff0557215f66b7fcdc2f",
                 "shasum": ""
             },
             "require": {
@@ -12416,7 +12416,7 @@
                 "scandipwa/cache": "^1.0",
                 "scandipwa/catalog-graphql": "^2.6",
                 "scandipwa/cms-graphql": "^1.3",
-                "scandipwa/customer-graph-ql": "^2.1",
+                "scandipwa/customer-graph-ql": "^2.2",
                 "scandipwa/customization": "^1.0",
                 "scandipwa/klarna-graphql": "^1.1",
                 "scandipwa/locale": "^1.0",
@@ -12428,7 +12428,7 @@
                 "scandipwa/reviews-graphql": "^1.0",
                 "scandipwa/route717": "^1.3",
                 "scandipwa/slider-graphql": "^1.0",
-                "scandipwa/store-graphql": "^1.0.2",
+                "scandipwa/store-graphql": "^1.0.4",
                 "scandipwa/urlrewrite-graphql": "^1.0",
                 "scandipwa/wishlist-graphql": "^1.2"
             },
@@ -12471,20 +12471,20 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-03-13T14:05:33+00:00"
+            "time": "2020-03-20T16:45:42+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/store-graphql.git",
-                "reference": "29264e04f60ea0400c6ab73a45480eb36d86ddb0"
+                "reference": "2191a9149574c0ba022ab87ac3dfaa3ddcf3f312"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/29264e04f60ea0400c6ab73a45480eb36d86ddb0",
-                "reference": "29264e04f60ea0400c6ab73a45480eb36d86ddb0",
+                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/2191a9149574c0ba022ab87ac3dfaa3ddcf3f312",
+                "reference": "2191a9149574c0ba022ab87ac3dfaa3ddcf3f312",
                 "shasum": ""
             },
             "require": {
@@ -12510,7 +12510,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-03-20T16:22:41+00:00"
+            "time": "2020-03-20T16:43:38+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
@@ -20972,9 +20972,17 @@
             "time": "2019-08-24T08:43:50+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "2.11.0",
+            "alias_normalized": "2.11.0.0",
+            "version": "dev-2.x-dev",
+            "package": "scandipwa/source"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "scandipwa/source": 20,
         "phpmd/phpmd": 0
     },
     "prefer-stable": false,
