@@ -1714,6 +1714,38 @@
             "license": [
                 "Apache-2.0"
             ],
+            "authors": [
+                {
+                    "name": "Joe Constant",
+                    "email": "joe.constant@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fei Chen",
+                    "email": "fei.chen@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jason Grim",
+                    "email": "jason.grim@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kenny Gilles",
+                    "email": "kenny.gilles@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                }
+            ],
             "description": "Klarna Core Magento 2 Extension"
         },
         {
@@ -1769,6 +1801,38 @@
             "license": [
                 "Apache-2.0"
             ],
+            "authors": [
+                {
+                    "name": "Joe Constant",
+                    "email": "joe.constant@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fei Chen",
+                    "email": "fei.chen@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jason Grim",
+                    "email": "jason.grim@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kenny Gilles",
+                    "email": "kenny.gilles@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                }
+            ],
             "description": "Klarna Payments Magento 2 Extension"
         },
         {
@@ -1817,6 +1881,38 @@
             },
             "license": [
                 "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Constant",
+                    "email": "joe.constant@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Fei Chen",
+                    "email": "fei.chen@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Dario Kassler",
+                    "email": "dario.kassler@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Jason Grim",
+                    "email": "jason.grim@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Kenny Gilles",
+                    "email": "kenny.gilles@klarna.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Markus Simon",
+                    "email": "markus.simon2@klarna.com",
+                    "role": "Developer"
+                }
             ],
             "description": "Klarna Order Management Magento 2 Extension"
         },
@@ -10707,6 +10803,12 @@
             "license": [
                 "OSL-3.0"
             ],
+            "authors": [
+                {
+                    "name": "Riccardo Tempesta",
+                    "email": "riccardo.tempesta@magespecialist.it"
+                }
+            ],
             "description": "Google reCaptcha integration for Magento2"
         },
         {
@@ -10737,6 +10839,12 @@
             },
             "license": [
                 "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Riccardo Tempesta",
+                    "email": "riccardo.tempesta@magespecialist.it"
+                }
             ],
             "description": "Two Factor Authentication module for Magento2"
         },
@@ -11507,17 +11615,17 @@
             ],
             "authors": [
                 {
-                    "name": "Ben Ramsey",
-                    "email": "ben@benramsey.com",
-                    "homepage": "https://benramsey.com"
-                },
-                {
                     "name": "Marijn Huizendveld",
                     "email": "marijn.huizendveld@gmail.com"
                 },
                 {
                     "name": "Thibaud Fabre",
                     "email": "thibaud@aztech.io"
+                },
+                {
+                    "name": "Ben Ramsey",
+                    "email": "ben@benramsey.com",
+                    "homepage": "https://benramsey.com"
                 }
             ],
             "description": "Formerly rhumsaa/uuid. A PHP 5.4+ library for generating RFC 4122 version 1, 3, 4, and 5 universally unique identifiers (UUID).",
@@ -11708,16 +11816,16 @@
         },
         {
             "name": "scandipwa/customer-graph-ql",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/customer-graph-ql.git",
-                "reference": "d21e2b7660c021de794b0a2ff5d907e4fecc8854"
+                "reference": "24c4a612fd46159a3d8908c57c26faba842c7941"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/customer-graph-ql/zipball/d21e2b7660c021de794b0a2ff5d907e4fecc8854",
-                "reference": "d21e2b7660c021de794b0a2ff5d907e4fecc8854",
+                "url": "https://api.github.com/repos/scandipwa/customer-graph-ql/zipball/24c4a612fd46159a3d8908c57c26faba842c7941",
+                "reference": "24c4a612fd46159a3d8908c57c26faba842c7941",
                 "shasum": ""
             },
             "require": {
@@ -11738,7 +11846,7 @@
                 "AFL-3.0"
             ],
             "description": "N/A",
-            "time": "2019-12-05T09:11:19+00:00"
+            "time": "2020-03-19T15:29:57+00:00"
         },
         {
             "name": "scandipwa/customization",
@@ -12211,16 +12319,16 @@
         },
         {
             "name": "scandipwa/slider",
-            "version": "1.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/slider.git",
-                "reference": "38f15409cd03f6668e57d66b4b07a19f529f0ee8"
+                "reference": "8c1d2c6d3a74d17f27084f5cc30568e912bbe66d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/slider/zipball/38f15409cd03f6668e57d66b4b07a19f529f0ee8",
-                "reference": "38f15409cd03f6668e57d66b4b07a19f529f0ee8",
+                "url": "https://api.github.com/repos/scandipwa/slider/zipball/8c1d2c6d3a74d17f27084f5cc30568e912bbe66d",
+                "reference": "8c1d2c6d3a74d17f27084f5cc30568e912bbe66d",
                 "shasum": ""
             },
             "require": {
@@ -12243,25 +12351,25 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Slider module for Magento 2",
-            "time": "2019-03-15T10:52:14+00:00"
+            "time": "2020-03-23T11:13:24+00:00"
         },
         {
             "name": "scandipwa/slider-graphql",
-            "version": "1.2.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/slider-graphql.git",
-                "reference": "299da8da05e013aaf9fffed172a505f599ceb3d0"
+                "reference": "0252014a3d78c4c5de4178dc20b9994d6bd20a4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/slider-graphql/zipball/299da8da05e013aaf9fffed172a505f599ceb3d0",
-                "reference": "299da8da05e013aaf9fffed172a505f599ceb3d0",
+                "url": "https://api.github.com/repos/scandipwa/slider-graphql/zipball/0252014a3d78c4c5de4178dc20b9994d6bd20a4e",
+                "reference": "0252014a3d78c4c5de4178dc20b9994d6bd20a4e",
                 "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "^2.3.1",
-                "scandipwa/slider": "^1.0"
+                "scandipwa/slider": "^2.0"
             },
             "type": "magento2-module",
             "autoload": {
@@ -12288,20 +12396,20 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-07-29T10:40:07+00:00"
+            "time": "2020-03-23T11:16:26+00:00"
         },
         {
             "name": "scandipwa/source",
-            "version": "2.10.0",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "f3b9b40a4f989e7e134a98cfb6649747eb2d3180"
+                "reference": "e4bd1cf2d839572908daaedb8d698ff9fcf21c20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/f3b9b40a4f989e7e134a98cfb6649747eb2d3180",
-                "reference": "f3b9b40a4f989e7e134a98cfb6649747eb2d3180",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/e4bd1cf2d839572908daaedb8d698ff9fcf21c20",
+                "reference": "e4bd1cf2d839572908daaedb8d698ff9fcf21c20",
                 "shasum": ""
             },
             "require": {
@@ -12309,7 +12417,7 @@
                 "scandipwa/cache": "^1.0",
                 "scandipwa/catalog-graphql": "^2.6",
                 "scandipwa/cms-graphql": "^1.3",
-                "scandipwa/customer-graph-ql": "^2.1",
+                "scandipwa/customer-graph-ql": "^2.2",
                 "scandipwa/customization": "^1.0",
                 "scandipwa/klarna-graphql": "^1.1",
                 "scandipwa/locale": "^1.0",
@@ -12320,8 +12428,8 @@
                 "scandipwa/quote-graphql": "^2.9.1",
                 "scandipwa/reviews-graphql": "^1.0",
                 "scandipwa/route717": "^1.3",
-                "scandipwa/slider-graphql": "^1.0",
-                "scandipwa/store-graphql": "^1.0.2",
+                "scandipwa/slider-graphql": "^2.0",
+                "scandipwa/store-graphql": "^1.0.4",
                 "scandipwa/urlrewrite-graphql": "^1.0",
                 "scandipwa/wishlist-graphql": "^1.2"
             },
@@ -12364,20 +12472,20 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-03-13T14:05:33+00:00"
+            "time": "2020-03-23T14:12:19+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
-            "version": "1.0.2",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/store-graphql.git",
-                "reference": "5da42eb798e0000c5e394f044fdd39fb4778b72e"
+                "reference": "2191a9149574c0ba022ab87ac3dfaa3ddcf3f312"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/5da42eb798e0000c5e394f044fdd39fb4778b72e",
-                "reference": "5da42eb798e0000c5e394f044fdd39fb4778b72e",
+                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/2191a9149574c0ba022ab87ac3dfaa3ddcf3f312",
+                "reference": "2191a9149574c0ba022ab87ac3dfaa3ddcf3f312",
                 "shasum": ""
             },
             "require": {
@@ -12403,7 +12511,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-01-16T08:23:51+00:00"
+            "time": "2020-03-20T16:43:38+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
@@ -13650,6 +13758,14 @@
             },
             "license": [
                 "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Christoph Aßmann",
+                    "email": "christoph.assmann@netresearch.de",
+                    "homepage": "https://www.netresearch.de/",
+                    "role": "Developer"
+                }
             ],
             "description": "Temando multi-carrier shipping extension for Magento 2"
         },
@@ -17444,12 +17560,12 @@
             "version": "1.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/facebook/php-webdriver.git",
+                "url": "https://github.com/php-webdriver/php-webdriver-archive.git",
                 "reference": "e43de70f3c7166169d0f14a374505392734160e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facebook/php-webdriver/zipball/e43de70f3c7166169d0f14a374505392734160e5",
+                "url": "https://api.github.com/repos/php-webdriver/php-webdriver-archive/zipball/e43de70f3c7166169d0f14a374505392734160e5",
                 "reference": "e43de70f3c7166169d0f14a374505392734160e5",
                 "shasum": ""
             },
