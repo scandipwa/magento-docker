@@ -715,6 +715,16 @@
                 "dependency",
                 "package"
             ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-13T19:34:27+00:00"
         },
         {
@@ -879,6 +889,12 @@
             "keywords": [
                 "Xdebug",
                 "performance"
+            ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                }
             ],
             "time": "2020-03-01T12:26:26+00:00"
         },
@@ -11366,6 +11382,20 @@
                 "x.509",
                 "x509"
             ],
+            "funding": [
+                {
+                    "url": "https://github.com/terrafrost",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/phpseclib",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/phpseclib/phpseclib",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-03-13T04:15:39+00:00"
         },
         {
@@ -11731,16 +11761,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.6.8",
+            "version": "2.6.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "7fdb02f38c4d18e3ed933c43cee6cb11c47cd7e7"
+                "reference": "83d9ace190a032425f1e2991bd5f4e9ca96a69a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/7fdb02f38c4d18e3ed933c43cee6cb11c47cd7e7",
-                "reference": "7fdb02f38c4d18e3ed933c43cee6cb11c47cd7e7",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/83d9ace190a032425f1e2991bd5f4e9ca96a69a1",
+                "reference": "83d9ace190a032425f1e2991bd5f4e9ca96a69a1",
                 "shasum": ""
             },
             "require": {
@@ -11767,7 +11797,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-03-26T11:55:50+00:00"
+            "time": "2020-04-03T14:07:37+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -12274,16 +12304,16 @@
         },
         {
             "name": "scandipwa/route717",
-            "version": "1.5.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/route717.git",
-                "reference": "0a7db37c7067e3cd397607e5afcbf4753dab2fc8"
+                "reference": "1aaa3155e6fb27b26ec1358264e0694f2dc95c7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/route717/zipball/0a7db37c7067e3cd397607e5afcbf4753dab2fc8",
-                "reference": "0a7db37c7067e3cd397607e5afcbf4753dab2fc8",
+                "url": "https://api.github.com/repos/scandipwa/route717/zipball/1aaa3155e6fb27b26ec1358264e0694f2dc95c7c",
+                "reference": "1aaa3155e6fb27b26ec1358264e0694f2dc95c7c",
                 "shasum": ""
             },
             "require": {
@@ -12315,25 +12345,24 @@
                 "router",
                 "scandipwa"
             ],
-            "time": "2020-01-21T15:13:56+00:00"
+            "time": "2020-04-08T08:09:00+00:00"
         },
         {
             "name": "scandipwa/slider",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/slider.git",
-                "reference": "8c1d2c6d3a74d17f27084f5cc30568e912bbe66d"
+                "reference": "a0e7e9a8bc4f48af57f7468678440b9b142dee44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/slider/zipball/8c1d2c6d3a74d17f27084f5cc30568e912bbe66d",
-                "reference": "8c1d2c6d3a74d17f27084f5cc30568e912bbe66d",
+                "url": "https://api.github.com/repos/scandipwa/slider/zipball/a0e7e9a8bc4f48af57f7468678440b9b142dee44",
+                "reference": "a0e7e9a8bc4f48af57f7468678440b9b142dee44",
                 "shasum": ""
             },
             "require": {
                 "claviska/simpleimage": "^3.3",
-                "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0",
                 "scandiweb/locale-resolver-fix": "^1.0",
                 "scandiweb/module-core": "~0.1.2"
             },
@@ -12351,7 +12380,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Slider module for Magento 2",
-            "time": "2020-03-23T11:13:24+00:00"
+            "time": "2020-04-08T12:49:46+00:00"
         },
         {
             "name": "scandipwa/slider-graphql",
@@ -12476,16 +12505,16 @@
         },
         {
             "name": "scandipwa/store-graphql",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/store-graphql.git",
-                "reference": "2191a9149574c0ba022ab87ac3dfaa3ddcf3f312"
+                "reference": "755d77ae4fb442fcac903c401c8ee1fdb256f9eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/2191a9149574c0ba022ab87ac3dfaa3ddcf3f312",
-                "reference": "2191a9149574c0ba022ab87ac3dfaa3ddcf3f312",
+                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/755d77ae4fb442fcac903c401c8ee1fdb256f9eb",
+                "reference": "755d77ae4fb442fcac903c401c8ee1fdb256f9eb",
                 "shasum": ""
             },
             "require": {
@@ -12500,7 +12529,6 @@
                     "ScandiPWA\\StoreGraphQl\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "OSL-3.0"
             ],
@@ -12511,7 +12539,9 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-03-20T16:43:38+00:00"
+            "support": {
+                "email": "info@scandiweb.com"
+            }
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
@@ -13187,6 +13217,20 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-02-14T07:42:58+00:00"
         },
         {
@@ -20981,5 +21025,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
