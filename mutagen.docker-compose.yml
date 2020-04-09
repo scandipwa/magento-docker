@@ -28,7 +28,7 @@ services:
       - 9000
     networks:
       - default
-    command: ["/wait-for-it.sh", "mysql:3306", "--", "/start.sh"]
+    command: ["/wait-for-it.sh", "mysql:3306", "--", "/start-with-mutagen.sh"]
     entrypoint: ["/usr/local/bin/entrypoint.sh"]
   varnish:
     image: scandipwa/varnish:latest

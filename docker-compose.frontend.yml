@@ -22,5 +22,4 @@ services:
     expose:
       - 3003
   app:
-    volumes:
-      - ./deploy/start-when-frontend-serving.sh:/start.sh
+    command: ["/wait-for-it.sh", "mysql:3306", "--", "/start-when-frontend-serving.sh"]
