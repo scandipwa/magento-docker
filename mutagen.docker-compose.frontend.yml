@@ -15,10 +15,10 @@ services:
     volumes:
       - app-data:/var/www/public
     env_file: .env
-    environment: 
+    environment:
       - PROCESS_FILE=${FRONTEND_PROCESS_FILE}
     working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
-    command: ["/bin/bash", "/start.sh"]
+    command: ["/bin/bash", "/start-and-wait.sh"]
     expose:
       - 3003
   app:

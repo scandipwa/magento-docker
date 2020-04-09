@@ -17,7 +17,7 @@ services:
     environment: 
       - PROCESS_FILE=${FRONTEND_CORE_PROCESS_FILE}
     working_dir: "/var/www/public/localmodules/base-theme/"
-    command: ["/bin/bash", "/start.sh"]
+    command: ["/bin/bash", "/start-and-wait.sh"]
     expose:
       - 3003
   app:
