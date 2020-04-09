@@ -14,7 +14,7 @@ services:
       # Uncomment to use custom configuration with -debug image
       - ./deploy/shared/conf/xdebug/xdebug-config.ini:/usr/local/etc/php/conf.d/xdebug-config.ini
       # Uncomment line below only for testing launch script without rebuild
-      - ./deploy/start.sh:/start.sh
+      # - ./deploy/start.sh:/start.sh
   nginx:
     volumes:
     - ./src:/var/www/public:cached
