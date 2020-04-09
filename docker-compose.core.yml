@@ -13,8 +13,6 @@ services:
         - BASEPATH=${BASEPATH}
         - NODEJS_VERSION=${NODEJS_VERSION}
     volumes:
-      - ./src/localmodules/base-theme:/var/www/public/localmodules/base-theme
-      - ./src/vendor:/var/www/public/vendor
       - app-data:/var/www/public
     env_file: .env
     environment: 

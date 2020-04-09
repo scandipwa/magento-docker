@@ -13,8 +13,7 @@ services:
         - BASEPATH=${BASEPATH}
         - NODEJS_VERSION=${NODEJS_VERSION}
     volumes:
-      - ./src/app/design/frontend/Scandiweb/pwa:/var/www/public/app/design/frontend/Scandiweb/pwa
-      - ./src/vendor:/var/www/public/vendor
+      - app-data:/var/www/public
     env_file: .env
     environment: 
       - PROCESS_FILE=${FRONTEND_PROCESS_FILE}
