@@ -21,3 +21,5 @@ services:
     links:
       - nginx
       - varnish
+    depends_on:
+      - nginx

@@ -21,15 +21,17 @@ services:
       - NODEJS_DIR=${NODEJS_DIR}
     volumes:
       - app-data:/var/www/public
-    links:
-      - mysql:db
-      - redis:cache
     expose:
       - 9000
     networks:
       - default
-    command: ["/wait-for-it.sh", "mysql:3306", "--", "/start.sh"]
+    command: ["/wait-for-it.sh", "mysql:3306", "--", "/wait-for-it.sh", "varnish:80", "--", "/start.sh"]
     entrypoint: ["/usr/local/bin/entrypoint.sh"]
+    depends_on:
+      - redis
+      - mysql
+      - elasticsearch
+      - varnish
   varnish:
     image: scandipwa/varnish:latest
     build:
@@ -39,8 +41,6 @@ services:
       - .env
     volumes:
       - ./deploy/shared/conf/varnish/default.vcl:/etc/varnish/default.vcl
-    links:
-      - nginx:webserver
     expose:
       - 80
     ports:
@@ -58,20 +58,19 @@ services:
       - .env
     ports:
       - ${NGINX_BIND_PORT}:80
-    links:
-      - app:php
     expose:
       - 8090
       - 80
     networks:
       - default
+    depends_on:
+      - app
+      - rendertron
   rendertron:
     image: scandipwa/rendertron
     build:
       context: build/rendertron
     restart: on-failure:10
-    depends_on:
-      - app
     expose:
      - 8083
     networks:
@@ -85,7 +84,9 @@ services:
     volumes:
       - mysql-data:/var/lib/mysql
     ports:
-      - ${MYSQL_PORT}:3306
+      - ${MYSQL_PORT}:3
+#    links:
+#      - nginx:webserver306
     expose:
       - 3306
     networks:
@@ -108,8 +109,6 @@ services:
       - ${MAILDEV_PORT}:80
     expose:
       - 25
-    links:
-      - nginx:webserver
     command: ["bin/maildev", "--web", "80", "--smtp", "25", "--base-pathname", "/maildev/"]
     networks:
       - default
