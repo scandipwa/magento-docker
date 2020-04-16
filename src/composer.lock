@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd5045e3c44d70c52e979473531a5c11",
+    "content-hash": "9f18d870797fde73020393ac46c3fba7",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -11731,16 +11731,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.7.1",
+            "version": "2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "bc73155be998fef7d98af89663531881f5310729"
+                "reference": "f1d4bed4b5f0bce037fad1576bd5773bc59f01e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/bc73155be998fef7d98af89663531881f5310729",
-                "reference": "bc73155be998fef7d98af89663531881f5310729",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/f1d4bed4b5f0bce037fad1576bd5773bc59f01e3",
+                "reference": "f1d4bed4b5f0bce037fad1576bd5773bc59f01e3",
                 "shasum": ""
             },
             "require": {
@@ -11767,7 +11767,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-04-14T13:18:23+00:00"
+            "time": "2020-04-16T09:36:20+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -12399,22 +12399,22 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "2.11.1",
+            "version": "dev-2.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "25dad84571d3375d5d89a1b85e9227b260ffc7cf"
+                "reference": "fe0156a3c8cbd8b237e95eb3270731d109e7cbf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/25dad84571d3375d5d89a1b85e9227b260ffc7cf",
-                "reference": "25dad84571d3375d5d89a1b85e9227b260ffc7cf",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/fe0156a3c8cbd8b237e95eb3270731d109e7cbf7",
+                "reference": "fe0156a3c8cbd8b237e95eb3270731d109e7cbf7",
                 "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "^2.3.3",
                 "scandipwa/cache": "^1.0",
-                "scandipwa/catalog-graphql": "^2.6",
+                "scandipwa/catalog-graphql": "^2.7.2",
                 "scandipwa/cms-graphql": "^1.3",
                 "scandipwa/customer-graph-ql": "^2.2",
                 "scandipwa/customization": "^1.0.2",
@@ -12426,10 +12426,9 @@
                 "scandipwa/persisted-query": "^2.0",
                 "scandipwa/quote-graphql": "^2.9.1",
                 "scandipwa/reviews-graphql": "^1.0",
-                "scandipwa/route717": "^1.3",
+                "scandipwa/route717": "^1.6",
                 "scandipwa/slider-graphql": "^2.0",
-                "scandipwa/store-graphql": "^1.0.4",
-                "scandipwa/urlrewrite-graphql": "^1.0",
+                "scandipwa/store-graphql": "^1.0.5",
                 "scandipwa/wishlist-graphql": "^1.2"
             },
             "type": "magento2-theme",
@@ -12471,7 +12470,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-03-26T13:03:40+00:00"
+            "time": "2020-04-16T09:39:01+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
@@ -12512,53 +12511,6 @@
             "support": {
                 "email": "info@scandiweb.com"
             }
-        },
-        {
-            "name": "scandipwa/urlrewrite-graphql",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scandipwa/urlrewrite-graphql.git",
-                "reference": "ab5d1c504f7517ebd69a7882a8edc2109e8ab68a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/urlrewrite-graphql/zipball/ab5d1c504f7517ebd69a7882a8edc2109e8ab68a",
-                "reference": "ab5d1c504f7517ebd69a7882a8edc2109e8ab68a",
-                "shasum": ""
-            },
-            "require": {
-                "magento/magento2-base": "^2.3.1",
-                "scandipwa/route717": "^1.1.0"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "src/registration.php"
-                ],
-                "psr-4": {
-                    "ScandiPWA\\UrlrewriteGraphQl\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "OSL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Vladimirs Mihnovics",
-                    "email": "vladimirs.mihnovics@scandiweb.com"
-                }
-            ],
-            "description": "N/A",
-            "keywords": [
-                "magento2",
-                "pwa",
-                "scandipwa",
-                "theme",
-                "urlrewrite"
-            ],
-            "time": "2019-07-29T11:59:14+00:00"
         },
         {
             "name": "scandipwa/wishlist-graphql",
@@ -19379,6 +19331,53 @@
             "time": "2018-08-09T05:50:03+00:00"
         },
         {
+            "name": "scandipwa/urlrewrite-graphql",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/urlrewrite-graphql.git",
+                "reference": "ab5d1c504f7517ebd69a7882a8edc2109e8ab68a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/urlrewrite-graphql/zipball/ab5d1c504f7517ebd69a7882a8edc2109e8ab68a",
+                "reference": "ab5d1c504f7517ebd69a7882a8edc2109e8ab68a",
+                "shasum": ""
+            },
+            "require": {
+                "magento/magento2-base": "^2.3.1",
+                "scandipwa/route717": "^1.1.0"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "ScandiPWA\\UrlrewriteGraphQl\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimirs Mihnovics",
+                    "email": "vladimirs.mihnovics@scandiweb.com"
+                }
+            ],
+            "description": "N/A",
+            "keywords": [
+                "magento2",
+                "pwa",
+                "scandipwa",
+                "theme",
+                "urlrewrite"
+            ],
+            "time": "2019-07-29T11:59:14+00:00"
+        },
+        {
             "name": "sebastian/code-unit-reverse-lookup",
             "version": "1.0.1",
             "source": {
@@ -20973,9 +20972,17 @@
             "time": "2019-08-24T08:43:50+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "2.11.2",
+            "alias_normalized": "2.11.2.0",
+            "version": "dev-2.x-dev",
+            "package": "scandipwa/source"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "scandipwa/source": 20,
         "phpmd/phpmd": 0
     },
     "prefer-stable": false,
