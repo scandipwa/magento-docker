@@ -1,11 +1,11 @@
 FROM ubuntu:bionic
-LABEL maintainer="Jurijs Jegorovs jurijs+oss@scandiweb.com"
+LABEL maintainer="Ilja Lapkovskis ilja+oss@scandiweb.com"
 
 ARG COMPOSER_HOME=/var/lib/composer
 ARG COMPOSER_VERSION=latest
 ARG COMPOSER_ALLOW_SUPERUSER=1
 ARG NODEJS_DIR=/var/lib/node
-ARG NODEJS_VERSION=lts
+ARG NODEJS_VERSION=10.19
 ARG GOSU_GPG_KEY=B42F6819007F00F88E364FD4036A9C25BF357DD4
 
 # Set bash by default
@@ -296,6 +296,7 @@ RUN docker-php-ext-install -j$(nproc) \
 
 # Install node
 RUN set -eux; \
+    echo "About to install NodeJS, version: $NODEJS_VERSION"; \
     wget -O - -o /dev/null https://git.io/n-install | N_PREFIX=$NODEJS_DIR bash -s -- -t; \
     wget -O - -o /dev/null https://git.io/n-install | N_PREFIX=$NODEJS_DIR bash -s -- -q $NODEJS_VERSION; \
     npm install npm -g

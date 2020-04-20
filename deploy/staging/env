@@ -41,7 +41,7 @@ COMPOSER_ALLOW_SUPERUSER=1
 # node versions: `n list` or https://nodejs.org/dist/
 # default NODEJS version: latest LTS
 NODEJS_DIR=/var/lib/node
-NODEJS_VERSION=lts
+NODEJS_VERSION=10
 NPM_CONFIG_LOGLEVEL=warn
 
 # Ruby is installed via rbenv
