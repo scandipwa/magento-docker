@@ -31,7 +31,6 @@ services:
       - redis
       - mysql
       - elasticsearch
-      - varnish
   varnish:
     image: scandipwa/varnish:latest
     build:
@@ -66,6 +65,7 @@ services:
     depends_on:
       - app
       - rendertron
+      - varnish
   rendertron:
     image: scandipwa/rendertron
     build:
@@ -85,8 +85,6 @@ services:
       - mysql-data:/var/lib/mysql
     ports:
       - ${MYSQL_PORT}:3
-#    links:
-#      - nginx:webserver306
     expose:
       - 3306
     networks:
@@ -97,8 +95,9 @@ services:
     env_file: .env
     volumes:
       - redis-data:/data
-    ports:
-      - ${REDIS_PORT}:6379
+# Removed due bug-report: https://github.com/docker-library/redis/issues/235
+#    ports:
+#      - ${REDIS_PORT}:6379
     expose:
       - 6379
     networks:

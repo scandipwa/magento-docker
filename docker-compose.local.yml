@@ -20,6 +20,9 @@ services:
       - ./src:/var/www/public:cached
     networks:
     - default
+  redis:
+    ports:
+      - ${REDIS_PORT}:6379
   kibana:
     image: docker.elastic.co/kibana/kibana:${ELASTICSEARCH_VERSION}
     restart: on-failure:5
