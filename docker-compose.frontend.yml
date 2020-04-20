@@ -5,6 +5,8 @@ services:
       - ./deploy/frontend/conf/nginx/cache-router.conf:/etc/nginx/conf.d/cache-router.conf
     links:
       - frontend
+    depends_on:
+      - frontend
   frontend:
     image: scandipwa/frontend:${PROJECT_IMAGE}
     build:

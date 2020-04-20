@@ -18,6 +18,5 @@ services:
     volumes:
       - ./opt/cert:/etc/nginx/cert:cached
       - ./deploy/shared/conf/nginx/ssl-terminator.conf:/etc/nginx/conf.d/default.conf
-    links:
+    depends_on:
       - nginx
-      - varnish

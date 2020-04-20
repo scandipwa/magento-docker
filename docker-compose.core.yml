@@ -3,7 +3,7 @@ services:
   nginx:
     volumes:
       - ./deploy/frontend/conf/nginx/cache-router.conf:/etc/nginx/conf.d/cache-router.conf
-    links:
+    depends_on:
       - frontend
   frontend:
     image: scandipwa/frontend:${PROJECT_IMAGE}
@@ -14,7 +14,6 @@ services:
         - NODEJS_VERSION=${NODEJS_VERSION}
     volumes:
       - ./src/localmodules/base-theme:/var/www/public
-    command: ["npm", "run", "dev-server-core"]
     working_dir: "/var/www/public"
     env_file: .env
     command: ["/bin/bash", "/start-core.sh"]
