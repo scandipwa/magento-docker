@@ -84,7 +84,7 @@ services:
     volumes:
       - mysql-data:/var/lib/mysql
     ports:
-      - ${MYSQL_PORT}:3
+      - ${MYSQL_PORT}:3306
     expose:
       - 3306
     networks:
