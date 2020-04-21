@@ -1,7 +1,5 @@
 # hadolint ignore=DL3007
 FROM scandipwa/php:latest
-LABEL maintainer="Scandiweb <info@scandiweb.com>"
-LABEL authors="Jurijs Jegorovs jurijs+oss@scandiweb.com; Ilja Lapkovskis info@scandiweb.com"
 
 # Set bash by default
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
@@ -68,14 +66,6 @@ RUN chmod +x /start.sh
 # Start script for setup when frontend container serving
 COPY deploy/start-when-frontend-serving.sh /start-when-frontend-serving.sh
 RUN chmod +x /start-when-frontend-serving.sh
-
-# Start script for setup with mutagen
-COPY deploy/mutagen/start.sh /start-with-mutagen.sh
-RUN chmod +x /start-with-mutagen.sh
-
-# Start script for setup with mutagen and frontend container serving
-COPY deploy/mutagen/start-when-frontend-serving.sh /start-with-mutagen-when-frontend-serving.sh
-RUN chmod +x /start-with-mutagen-when-frontend-serving.sh
 
 # Clean up APT and temp when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

@@ -6,7 +6,7 @@ services:
     depends_on:
       - frontend
   frontend:
-    image: scandipwa/frontend:${PROJECT_IMAGE}
+    image: scandipwa/frontend:latest
     build:
       context: build/frontend
       args:

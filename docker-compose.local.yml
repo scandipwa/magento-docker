@@ -1,4 +1,5 @@
 version: '3'
+
 services:
   app:
     environment:
@@ -17,9 +18,9 @@ services:
       # - ./deploy/start.sh:/start.sh
   nginx:
     volumes:
-    - ./src:/var/www/public:cached
+      - ./src:/var/www/public:cached
     networks:
-    - default
+      - default
   redis:
     ports:
       - ${REDIS_PORT}:6379
