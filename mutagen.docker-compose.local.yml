@@ -25,14 +25,3 @@ services:
       - elasticsearch
     networks:
       - default
-  maildev:
-    image: djfarrelly/maildev
-    ports:
-      - ${MAILDEV_PORT}:80
-    expose:
-      - 25
-    links:
-      - nginx:webserver
-    command: ["bin/maildev", "--web", "80", "--smtp", "25", "--base-pathname", "/maildev/"]
-    networks:
-      - default

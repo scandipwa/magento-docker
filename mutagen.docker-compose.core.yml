@@ -3,7 +3,7 @@ services:
   nginx:
     volumes:
       - ./deploy/frontend/conf/nginx/cache-router.conf:/etc/nginx/conf.d/cache-router.conf
-    links:
+    depends_on:
       - frontend
   frontend:
     image: scandipwa/frontend:${PROJECT_IMAGE}
@@ -14,7 +14,7 @@ services:
     volumes:
       - app-data:/var/www/public
     env_file: .env
-    environment: 
+    environment:
       - PROCESS_FILE=${FRONTEND_CORE_PROCESS_FILE}
     working_dir: "/var/www/public/localmodules/base-theme/"
     command: ["/bin/bash", "/start-and-wait.sh"]

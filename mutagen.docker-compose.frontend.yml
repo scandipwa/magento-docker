@@ -3,7 +3,7 @@ services:
   nginx:
     volumes:
       - ./deploy/frontend/conf/nginx/cache-router.conf:/etc/nginx/conf.d/cache-router.conf
-    links:
+    depends_on:
       - frontend
   frontend:
     image: scandipwa/frontend:${PROJECT_IMAGE}
