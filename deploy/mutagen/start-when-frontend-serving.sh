@@ -62,13 +62,7 @@ function pwa_theme_install {
   magento scandipwa:theme:bootstrap Scandiweb/pwa -n || true
   php bin/magento setup:upgrade
 
-  if [ $? -eq 0 ]; then
-    echo "${blue}${bold}Building PWA theme${normal}"
-    cd $BASEPATH/app/design/frontend/Scandiweb/pwa
-    npm ci
-    npm run build
-    cd $BASEPATH
-  fi
+  echo "${blue}${bold}Frontend container will build PWA theme${normal}"
 }
 
 # Empty the redis config caches to avoid errors with module configuration
@@ -264,6 +258,17 @@ function exit_catch {
 }
 
 ### Deploy pipe start
+
+usermod -aG user root
+usermod -aG root user
+
+echo "${blue}${bold}Waiting for Mutagen to sync initial filese${normal}"
+while ! [ -f ./composer.json -a -f ./composer.lock ]
+do
+  sleep 2
+done
+
+
 # Switch current execution directory to WORKDIR (BASEPATH)
 in_basepath
 # Installing PHP Composer and packages

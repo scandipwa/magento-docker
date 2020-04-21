@@ -1,12 +1,11 @@
 version: '3'
 services:
   app:
+    container_name: mutagen-powered-app
     environment:
       # This variable is required to run local setup on Linux, determines the switch from root to user
       - LOCAL=true
     volumes:
-      # Mount source instead of copy
-      - ./src:/var/www/public:cached
       # PHP configuration mount
       - ./deploy/shared/conf/php/php.ini:/usr/local/etc/php/php.ini
       # PHP FPM pool settings
@@ -14,15 +13,7 @@ services:
       # Uncomment to use custom configuration with -debug image
       - ./deploy/shared/conf/xdebug/xdebug-config.ini:/usr/local/etc/php/conf.d/xdebug-config.ini
       # Uncomment line below only for testing launch script without rebuild
-      # - ./deploy/start.sh:/start.sh
-  nginx:
-    volumes:
-    - ./src:/var/www/public:cached
-    networks:
-    - default
-  redis:
-    ports:
-      - ${REDIS_PORT}:6379
+      # - ./deploy/mutagen/start.sh:/start.sh
   kibana:
     image: docker.elastic.co/kibana/kibana:${ELASTICSEARCH_VERSION}
     restart: on-failure:5

@@ -15,10 +15,13 @@ services:
         - BASEPATH=${BASEPATH}
         - NODEJS_VERSION=${NODEJS_VERSION}
     volumes:
-      - ./src/app/design/frontend/Scandiweb/pwa:/var/www/public/app/design/frontend/Scandiweb/pwa
-      - ./src/vendor/scandipwa/source:/var/www/public/vendor/scandipwa/source
-    command: ["npm", "run", "pm2-watch"]
-    working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
+      - app-data:/var/www/public
     env_file: .env
+    environment: 
+      - PROCESS_FILE=${FRONTEND_PROCESS_FILE}
+    working_dir: "/var/www/public/app/design/frontend/Scandiweb/pwa/"
+    command: ["/bin/bash", "/start.sh"]
     expose:
       - 3003
+  app:
+    command: ["/wait-for-it.sh", "mysql:3306", "--", "/start-when-frontend-serving.sh"]

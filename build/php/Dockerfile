@@ -55,7 +55,7 @@ ENV PHPIZE_DEPS \
   libxslt1-dev \
   libsodium-dev \
   libargon2-0-dev
-  
+
 # Update server packages to latest versions
 RUN apt-get -qq update &&\
     apt-get -qq dist-upgrade -y &&\

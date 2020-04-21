@@ -38,6 +38,10 @@ D_COMPOSER_HOME=/var/lib/composer
 COMPOSER_VERSION=latest
 COMPOSER_ALLOW_SUPERUSER=1
 
+# Process.yml files for frontend container
+FRONTEND_CORE_PROCESS_FILE=process-core.yml
+FRONTEND_PROCESS_FILE=process.yml
+
 # Node.js is installed via n
 # node versions: `n list` or https://nodejs.org/dist/
 # default NODEJS version: latest LTS

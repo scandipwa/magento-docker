@@ -60,10 +60,22 @@ RUN { \
         echo 'from no-reply@docker'; \
         echo 'account default'; \
     } | tee /etc/msmtprc
-    
+
 # Start script, executed upon container creation from image
 COPY deploy/start.sh /start.sh
 RUN chmod +x /start.sh
+
+# Start script for setup when frontend container serving
+COPY deploy/start-when-frontend-serving.sh /start-when-frontend-serving.sh
+RUN chmod +x /start-when-frontend-serving.sh
+
+# Start script for setup with mutagen
+COPY deploy/mutagen/start.sh /start-with-mutagen.sh
+RUN chmod +x /start-with-mutagen.sh
+
+# Start script for setup with mutagen and frontend container serving
+COPY deploy/mutagen/start-when-frontend-serving.sh /start-with-mutagen-when-frontend-serving.sh
+RUN chmod +x /start-with-mutagen-when-frontend-serving.sh
 
 # Clean up APT and temp when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

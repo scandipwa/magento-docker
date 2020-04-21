@@ -264,6 +264,17 @@ function exit_catch {
 }
 
 ### Deploy pipe start
+
+usermod -aG user root
+usermod -aG root user
+
+echo "${blue}${bold}Waiting for Mutagen to sync initial filese${normal}"
+while ! [ -f ./composer.json -a -f ./composer.lock ]
+do
+  sleep 2
+done
+
+
 # Switch current execution directory to WORKDIR (BASEPATH)
 in_basepath
 # Installing PHP Composer and packages
