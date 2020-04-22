@@ -22,4 +22,3 @@ services:
       - 3003
   app:
     command: ["/wait-for-it.sh", "mysql:3306", "--", "/start-with-mutagen-when-frontend-serving.sh"]
-
