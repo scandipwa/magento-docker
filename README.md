@@ -50,7 +50,7 @@ Learn more about [Docker template for ScandiPWA](https://github.com/scandipwa/sc
 
 Follow the guide for [Docker setup on Linux](https://docs.scandipwa.com/docs/installation/docker/linux/) or watch the video guide.
 
-[![docker install](https://i.ibb.co/SJFrNcf/Group-6.png)](https://www.youtube.com/watch?v=IOXSBcCBvCw&list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y&index=1)
+[![docker install](https://i.ibb.co/1f8W488/Group-8.png)](https://www.youtube.com/watch?v=IOXSBcCBvCw&list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y&index=1)
 
 ## Setup on existing Magento
 
@@ -62,9 +62,9 @@ ScandiPWA is a regular Magento theme. You can install it on the existing Magento
 
 Follow the guide for [setup on existing Magento](https://docs.scandipwa.com/docs/installation/on-existing-m2/) or watch the video guide.
 
-[![existing M2 setup](https://i.ibb.co/54GCmVW/Group-7.png)](https://www.youtube.com/watch?v=JfvC3PcaHPU&list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y&index=2)
+[![existing M2 setup](https://i.ibb.co/NFzZzWb/Group-8.png)](https://www.youtube.com/watch?v=JfvC3PcaHPU&list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y&index=2)
 
-## Setup with remote server
+## Setup with a remote server
 
 If you are not planning to developer a back-end functionality, but to modify the front-end only, you can try setting up the theme with the remote Magento 2 server.
 
