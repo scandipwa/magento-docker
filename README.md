@@ -50,7 +50,7 @@ Learn more about [Docker template for ScandiPWA](https://github.com/scandipwa/sc
 
 Follow the guide for [Docker setup on Linux](https://docs.scandipwa.com/docs/installation/docker/linux/) or watch the video guide.
 
-[![docker install](https://i.ibb.co/1f8W488/Group-8.png)](https://www.youtube.com/watch?v=IOXSBcCBvCw&list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y&index=1)
+[![docker install](https://i.ibb.co/0MpPFXL/Group-5.png)](https://www.youtube.com/watch?v=IOXSBcCBvCw&list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y&index=1)
 
 ## Setup on existing Magento
 
@@ -62,7 +62,7 @@ ScandiPWA is a regular Magento theme. You can install it on the existing Magento
 
 Follow the guide for [setup on existing Magento](https://docs.scandipwa.com/docs/installation/on-existing-m2/) or watch the video guide.
 
-[![existing M2 setup](https://i.ibb.co/NFzZzWb/Group-8.png)](https://www.youtube.com/watch?v=JfvC3PcaHPU&list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y&index=2)
+[![existing M2 setup](https://i.ibb.co/1Xc12Pd/Group-8.png)](https://www.youtube.com/watch?v=JfvC3PcaHPU&list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y&index=2)
 
 ## Setup with a remote server
 
