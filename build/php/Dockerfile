@@ -292,7 +292,8 @@ RUN docker-php-ext-install -j$(nproc) \
     zip \
     bcmath \
     dom \
-    soap
+    soap \
+    sockets
 
 # Install node
 RUN set -eux; \
