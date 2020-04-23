@@ -44,8 +44,6 @@ We recommend using it as:
 
 >**NOTE!** Currently, the docker setup is supported only for Linux.
 
-Learn more about [Docker template for ScandiPWA](https://github.com/scandipwa/scandipwa-base/blob/2.x-stable/DOCKER.md).
-
 ### Ready to try?
 
 Follow the guide for [Docker setup on Linux](https://docs.scandipwa.com/docs/installation/docker/linux/) or watch the video guide.
