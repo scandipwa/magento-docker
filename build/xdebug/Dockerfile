@@ -1,6 +1,5 @@
 FROM scandipwa/base
-LABEL authors="Jurijs Jegorovs jurijs+oss@scandiweb.com"
-LABEL maintainer="Jurijs Jegorovs jurijs+oss@scandiweb.com"
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install required PHP extensions
