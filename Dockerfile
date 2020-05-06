@@ -63,10 +63,6 @@ RUN { \
 COPY deploy/start.sh /start.sh
 RUN chmod +x /start.sh
 
-# Start script for setup when frontend container serving
-COPY deploy/start-when-frontend-serving.sh /start-when-frontend-serving.sh
-RUN chmod +x /start-when-frontend-serving.sh
-
 # Clean up APT and temp when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 

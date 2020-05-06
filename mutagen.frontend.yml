@@ -1,9 +1,30 @@
 beforeCreate:
-  - docker-compose -f mutagen.docker-compose.yml -f mutagen.docker-compose.local.yml -f docker-compose.ssl.yml -f mutagen.docker-compose.frontend.yml up -d  --force-recreate
+  - >
+    docker-compose
+    -f docker-compose.yml
+    -f docker-compose.ssl.yml
+    -f docker-compose.frontend.yml
+    -f docker-compose.frontend.mutagen.yml
+    -f docker-compose.local.mutagen.yml
+    up -d --force-recreate
 afterCreate:
-  - docker-compose -f mutagen.docker-compose.yml -f mutagen.docker-compose.local.yml -f docker-compose.ssl.yml -f mutagen.docker-compose.frontend.yml logs -f app
+  - >
+    docker-compose
+    -f docker-compose.yml
+    -f docker-compose.ssl.yml
+    -f docker-compose.frontend.yml
+    -f docker-compose.frontend.mutagen.yml
+    -f docker-compose.local.mutagen.yml
+    logs -f app
 afterTerminate:
-  - docker-compose -f mutagen.docker-compose.yml -f mutagen.docker-compose.local.yml -f docker-compose.ssl.yml -f mutagen.docker-compose.frontend.yml down
+  - >
+    docker-compose
+    -f docker-compose.yml
+    -f docker-compose.ssl.yml
+    -f docker-compose.frontend.yml
+    -f docker-compose.frontend.mutagen.yml
+    -f docker-compose.local.mutagen.yml
+    down
 sync:
   app:
     alpha: "./src"

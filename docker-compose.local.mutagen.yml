@@ -1,4 +1,4 @@
-version: '3'
+version: '3.6'
 services:
   app:
     container_name: mutagen-powered-app
@@ -10,10 +10,10 @@ services:
       - ./deploy/shared/conf/php/php.ini:/usr/local/etc/php/php.ini
       # PHP FPM pool settings
       - ./deploy/shared/conf/php/zz-docker.conf:/usr/local/etc/php-fpm.d/zz-docker.conf
-      # Uncomment to use custom configuration with -debug image
+      # Uncomment to use custom configuration with xdebug image
       - ./deploy/shared/conf/xdebug/xdebug-config.ini:/usr/local/etc/php/conf.d/xdebug-config.ini
       # Uncomment line below only for testing launch script without rebuild
-      # - ./deploy/mutagen/start.sh:/start.sh
+      # - ./deploy/start.sh:/start.sh
   kibana:
     image: docker.elastic.co/kibana/kibana:${ELASTICSEARCH_VERSION}
     restart: on-failure:5

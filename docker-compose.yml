@@ -1,5 +1,4 @@
-version: '3'
-
+version: '3.6'
 services:
   app:
     image: scandipwa/base:${PROJECT_IMAGE}
@@ -130,7 +129,6 @@ services:
       - ${ELASTICSEARCH_PORT}:9200
     networks:
       - default
-
 volumes:
   app-data:
   media-data:

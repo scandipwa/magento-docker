@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+mutagen="0"
+frontend="0"
+
 start_time="$(date -u +%s.%N)"
 ### Debug options start
 # Uncomment next line for script debug
@@ -63,11 +66,16 @@ function pwa_theme_install {
   php bin/magento setup:upgrade
 
   if [ $? -eq 0 ]; then
-    echo "${blue}${bold}Building PWA theme${normal}"
-    cd $BASEPATH/app/design/frontend/Scandiweb/pwa
-    npm ci
-    npm run build
-    cd $BASEPATH
+    if [ "$frontend" != "1" ]
+    then
+      echo "${blue}${bold}Building PWA theme${normal}"
+      cd $BASEPATH/app/design/frontend/Scandiweb/pwa
+      npm ci
+      npm run build
+      cd $BASEPATH
+    else
+      echo "${blue}${bold}Frontend container will build PWA theme${normal}"
+    fi
   fi
 }
 
@@ -264,6 +272,34 @@ function exit_catch {
 }
 
 ### Deploy pipe start
+
+helpFunction()
+{
+   echo ""
+   echo "Usage: $0 [-M] [-F]"
+   echo -e "\t-F Let frontend container handle theme build"
+   echo -e "\t-M Wait for Mutagen to sync files before start"
+   exit 1 # Exit script after printing help
+}
+
+while getopts "MF" opt
+do
+   case "$opt" in
+      M ) mutagen="1" ;;
+      F ) frontend="1" ;;
+      ? ) helpFunction ;;
+   esac
+done
+
+if [ "$mutagen" = "1" ]
+then
+    echo "${blue}${bold}Waiting for Mutagen to sync initial filese${normal}"
+    while ! [ -f ./composer.json -a -f ./composer.lock ]
+    do
+      sleep 2
+    done
+fi
+
 # Switch current execution directory to WORKDIR (BASEPATH)
 in_basepath
 # Installing PHP Composer and packages
@@ -309,5 +345,3 @@ trap exit_catch EXIT
 
 echo "${blue}${bold}Staring php fpm, ready to rock${normal}"
 php-fpm -R
-
-

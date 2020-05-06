@@ -1,4 +1,4 @@
-version: '3'
+version: '3.6'
 services:
   nginx:
     volumes:
@@ -10,16 +10,15 @@ services:
     build:
       context: build/frontend
       args:
-        - BASEPATH=${BASEPATH}
         - NODEJS_VERSION=${NODEJS_VERSION}
     volumes:
       - app-data:/var/www/public
+      # Uncomment line below only for testing launch script without rebuild
+      # - ./build/frontend/start.sh:/start.sh
     env_file: .env
-    environment:
-      - PROCESS_FILE=${FRONTEND_CORE_PROCESS_FILE}
-    working_dir: "/var/www/public/localmodules/base-theme/"
-    command: ["/bin/bash", "/start.sh"]
+    working_dir: "/var/www/public"
+    command: ["/start.sh", "-C"]
     expose:
       - 3003
   app:
-    command: ["/wait-for-it.sh", "mysql:3306", "--", "/start-when-frontend-serving.sh"]
+    command: ["/wait-for-it.sh", "mysql:3306", "--", "/start.sh", "-F"]
