@@ -1,5 +1,6 @@
 FROM ubuntu:bionic
-LABEL maintainer="Ilja Lapkovskis ilja+oss@scandiweb.com"
+LABEL author="Ilja Lapkovskis ilja+oss@scandiweb.com"
+LABEL maintainer="Alfreds Genkins alfreds@scandipwa.com"
 
 ARG COMPOSER_HOME=/var/lib/composer
 ARG COMPOSER_VERSION=latest
@@ -55,7 +56,7 @@ ENV PHPIZE_DEPS \
   libxslt1-dev \
   libsodium-dev \
   libargon2-0-dev
-  
+
 # Update server packages to latest versions
 RUN apt-get -qq update &&\
     apt-get -qq dist-upgrade -y &&\

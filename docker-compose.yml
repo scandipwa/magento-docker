@@ -1,4 +1,4 @@
-version: '3'
+version: '3.6'
 services:
   app:
     image: scandipwa/base:${PROJECT_IMAGE}
@@ -95,13 +95,13 @@ services:
     env_file: .env
     volumes:
       - redis-data:/data
-# Removed due bug-report: https://github.com/docker-library/redis/issues/235
-#    ports:
-#      - ${REDIS_PORT}:6379
+    # Removed due bug-report: https://github.com/docker-library/redis/issues/235
+    # ports:
+    #   - ${REDIS_PORT}:6379
     expose:
       - 6379
     networks:
-     - default
+      - default
   maildev:
     image: djfarrelly/maildev
     ports:
@@ -135,6 +135,7 @@ volumes:
   mysql-data:
   redis-data:
   elasticsearch-data:
+  nginx-data:
 
 networks:
   default:

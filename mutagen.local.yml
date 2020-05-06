@@ -1,0 +1,41 @@
+beforeCreate:
+  - >
+    docker-compose
+    -f docker-compose.yml
+    -f docker-compose.ssl.yml
+    -f docker-compose.mutagen.yml
+    -f docker-compose.local.mutagen.yml
+    up -d --force-recreate
+afterCreate:
+  - >
+    docker-compose
+    -f docker-compose.yml
+    -f docker-compose.ssl.yml
+    -f docker-compose.mutagen.yml
+    -f docker-compose.local.mutagen.yml
+    logs -f app
+afterTerminate:
+  - >
+    docker-compose
+    -f docker-compose.yml
+    -f docker-compose.ssl.yml
+    -f docker-compose.mutagen.yml
+    -f docker-compose.local.mutagen.yml
+    down
+sync:
+  app:
+    alpha: "./src"
+    beta: "docker://mutagen-powered-app/var/www/public"
+    configurationBeta:
+      permissions:
+        defaultGroup: "user"
+        defaultFileMode: 666
+        defaultDirectoryMode: 777
+    ignore:
+      vcs: true
+      paths:
+        - "**/node_modules/"
+        - "**/vendor/"
+    mode: two-way-resolved
+    symlink:
+      mode: "ignore"

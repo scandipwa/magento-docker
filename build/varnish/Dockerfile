@@ -1,6 +1,7 @@
 FROM debian:stretch-slim
-LABEL maintainer="Ilja Lapkovskis admin@scandiweb.com"
+LABEL maintainer="Alfreds Genkins alfreds@scandipwa.com"
 LABEL author="Jurijs Jegorovs admin@scandiweb.com"
+
 ENV DEBIAN_FRONTEND=noninteractive \
     VARNISH_VERSION=5.2 \
     VARNISH_VERSION_FLATTEN=52\

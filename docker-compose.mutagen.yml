@@ -1,0 +1,4 @@
+version: '3.6'
+services:
+  app:
+    command: ["/wait-for-it.sh", "mysql:3306", "--", "/wait-for-it.sh", "varnish:80", "--", "/start.sh", "-M"]

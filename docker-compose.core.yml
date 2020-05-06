@@ -1,4 +1,4 @@
-version: '3'
+version: '3.6'
 services:
   nginx:
     volumes:
@@ -6,16 +6,19 @@ services:
     depends_on:
       - frontend
   frontend:
-    image: scandipwa/frontend:${PROJECT_IMAGE}
+    image: scandipwa/frontend:latest
     build:
       context: build/frontend
       args:
-        - BASEPATH=${BASEPATH}
         - NODEJS_VERSION=${NODEJS_VERSION}
     volumes:
-      - ./src/localmodules/base-theme:/var/www/public
-    working_dir: "/var/www/public"
+      - app-data:/var/www/public
+      # Uncomment line below only for testing launch script without rebuild
+      # - ./build/frontend/start.sh:/start.sh
     env_file: .env
-    command: ["/bin/bash", "/start-core.sh"]
+    working_dir: "/var/www/public"
+    command: ["/start.sh", "-C"]
     expose:
       - 3003
+  app:
+    command: ["/wait-for-it.sh", "mysql:3306", "--", "/start.sh", "-F"]

@@ -1,16 +1,11 @@
 ARG NODEJS_VERSION=10
 
 FROM node:$NODEJS_VERSION
-LABEL authors="Alfred Genkins, Ilja Lapkovskis info@scandiweb.com"
 
-ARG BASEPATH=/var/www/public
+LABEL maintainer="Alfreds Genkins alfreds@scandipwa.com"
+LABEL author="Ilja Lapkovskis info@scandiweb.com"
 
-# Set working directory so any relative configuration or scripts wont fail
-WORKDIR $BASEPATH
+RUN npm install pm2 forever -g
 
 COPY start.sh /start.sh
-COPY start-core.sh /start-core.sh
 RUN chmod +x /start.sh
-RUN chmod +x /start-core.sh
-
-CMD ["/bin/bash", "/start.sh"]
