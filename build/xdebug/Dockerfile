@@ -1,5 +1,7 @@
 FROM scandipwa/base
 
+LABEL maintainer="Alfreds Genkins alfreds@scandipwa.com"
+
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Install required PHP extensions
