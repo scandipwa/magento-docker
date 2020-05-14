@@ -11,7 +11,7 @@
         "sort-packages": true
     },
     "require": {
-        "magento/product-community-edition": "2.3.3",
+        "magento/product-community-edition": "2.3.5",
         "scandipwa/installer": "2.0.1"
     },
     "require-dev": {
