@@ -12,7 +12,7 @@ services:
       args:
         - NODEJS_VERSION=${NODEJS_VERSION}
     volumes:
-      - app-data:/var/www/public
+      - ./src:/var/www/public
       # Uncomment line below only for testing launch script without rebuild
       # - ./build/frontend/start.sh:/start.sh
     env_file: .env
