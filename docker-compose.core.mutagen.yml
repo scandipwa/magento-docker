@@ -1,6 +1,24 @@
 version: '3.6'
 services:
+  nginx:
+    volumes:
+      - ./deploy/frontend/conf/nginx/cache-router.conf:/etc/nginx/conf.d/cache-router.conf
+    depends_on:
+      - frontend
   frontend:
+    image: scandipwa/frontend:latest
+    build:
+      context: build/frontend
+      args:
+        - NODEJS_VERSION=${NODEJS_VERSION}
+    volumes:
+      - app-data:/var/www/public
+      # Uncomment line below only for testing launch script without rebuild
+      # - ./build/frontend/start.sh:/start.sh
+    env_file: .env
+    working_dir: "/var/www/public"
     command: ["/start.sh", "-M", "-C"]
+    expose:
+      - 3003
   app:
     command: ["/wait-for-it.sh", "mysql:3306", "--", "/start.sh", "-F", "-M"]

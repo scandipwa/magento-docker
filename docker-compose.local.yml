@@ -15,6 +15,10 @@ services:
       - ./deploy/shared/conf/xdebug/xdebug-config.ini:/usr/local/etc/php/conf.d/xdebug-config.ini
       # Uncomment line below only for testing launch script without rebuild
       # - ./deploy/start.sh:/start.sh
+  nginx:
+    volumes:
+      # Mount source instead of copy
+      - ./src:/var/www/public:cached
   kibana:
     image: docker.elastic.co/kibana/kibana:${ELASTICSEARCH_VERSION}
     restart: on-failure:5
