@@ -3,7 +3,7 @@ beforeCreate:
     docker-compose
     -f docker-compose.yml
     -f docker-compose.ssl.yml
-    -f docker-compose.core.yml
+    -f docker-compose.core.mutagen.yml
     -f docker-compose.local.mutagen.yml
     up -d --force-recreate
 afterCreate:
@@ -11,7 +11,7 @@ afterCreate:
     docker-compose
     -f docker-compose.yml
     -f docker-compose.ssl.yml
-    -f docker-compose.core.yml
+    -f docker-compose.core.mutagen.yml
     -f docker-compose.local.mutagen.yml
     logs -f app
 afterTerminate:
