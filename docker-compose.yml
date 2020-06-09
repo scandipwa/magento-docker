@@ -78,6 +78,9 @@ services:
   mysql:
     image: mysql:${MYSQL_VERSION}
     restart: on-failure:5
+    command:
+      - mysqld
+      - --explicit_defaults_for_timestamp=on
     env_file:
       - .env
       - .application
