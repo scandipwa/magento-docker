@@ -15214,21 +15214,21 @@
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
-                "reference": "78c540e5074e1c6564cf270d94a92b95db82e008"
+                "reference": "12788b56c2ce752e3a26a635d26d8e403cbfa53b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/78c540e5074e1c6564cf270d94a92b95db82e008",
-                "reference": "78c540e5074e1c6564cf270d94a92b95db82e008",
+                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/12788b56c2ce752e3a26a635d26d8e403cbfa53b",
+                "reference": "12788b56c2ce752e3a26a635d26d8e403cbfa53b",
                 "shasum": ""
             },
             "require": {
                 "colinmollenhour/credis": "^1.10",
-                "magento/magento2-base": "~2.3.2"
+                "magento/magento2-base": "^2.3.5"
             },
             "type": "magento2-module",
             "autoload": {
@@ -15257,7 +15257,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2020-05-30T07:10:45+00:00"
+            "time": "2020-06-09T13:16:10+00:00"
         },
         {
             "name": "scandipwa/quote-graphql",
