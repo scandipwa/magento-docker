@@ -122,14 +122,17 @@ function magento_database_config {
       --db-name $MYSQL_DATABASE \
       --db-user $MYSQL_USER \
       --db-password $MYSQL_PASSWORD \
-      --backend-frontname $MAGENTO_ADMINURI
+      --backend-frontname $MAGENTO_ADMINURI \
+      -n
+
   # Redis for persisted query
   echo "${blue}${bold}Setting redis for persisted query(PWA)${normal}"
   bin/magento setup:config:set \
       --pq-host=redis \
       --pq-port=6379 \
       --pq-database=5 \
-      --pq-scheme=tcp
+      --pq-scheme=tcp \
+      -n
 }
 
 function create_admin_user {
@@ -199,17 +202,24 @@ function magento_redis_config {
   bin/magento setup:config:set \
       --cache-backend=redis \
       --cache-backend-redis-server=redis \
-  --cache-backend-redis-db=0
+      --cache-backend-redis-db=0 \
+      -n
+
   # Redis for sessions
   echo "${blue}${bold}Setting redis as session storage${normal}"
   bin/magento setup:config:set \
       --session-save=redis \
       --session-save-redis-host=redis \
       --session-save-redis-log-level=3 \
-  --session-save-redis-db=1
+      --session-save-redis-max-concurrency=30 \
+      --session-save-redis-db=1 \
+      --session-save-redis-disable-locking=1 \
+      -n
+
   # Elasticsearch5 as a search engine
   echo "${blue}${bold}Setting Elasticsearch5 as a search engine${normal}"
   php bin/magento config:set catalog/search/engine elasticsearch5
+
   # elasticsearch container as a host name
   echo "${blue}${bold}Setting elasticsearch as a host name for Elasticsearch5${normal}"
   php bin/magento config:set catalog/search/elasticsearch5_server_hostname elasticsearch
@@ -218,7 +228,7 @@ function magento_redis_config {
 
 function magento_varnish_endpoint {
   echo "${blue}${bold}Setting location for Varnish cache flushing${normal}"
-  bin/magento setup:config:set --http-cache-hosts=varnish
+  bin/magento setup:config:set --http-cache-hosts=varnish -n
 }
 
 function magento_varnish_config {
