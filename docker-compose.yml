@@ -25,8 +25,8 @@ services:
       - 9000
     networks:
       - default
-    command: ["/wait-for-it.sh", "mysql:3306", "--", "/wait-for-it.sh", "varnish:80", "--", "/start.sh"]
-    entrypoint: ["/usr/local/bin/entrypoint.sh"]
+    command: /wait-for-it.sh mysql:3306 -- /wait-for-it.sh varnish:80 -- /start.sh
+    entrypoint: /usr/local/bin/entrypoint.sh
     depends_on:
       - redis
       - mysql
@@ -78,6 +78,9 @@ services:
   mysql:
     image: mysql:${MYSQL_VERSION}
     restart: on-failure:5
+    command:
+      - mysqld
+      - --explicit_defaults_for_timestamp=on
     env_file:
       - .env
       - .application
@@ -108,7 +111,7 @@ services:
       - ${MAILDEV_PORT}:80
     expose:
       - 25
-    command: ["bin/maildev", "--web", "80", "--smtp", "25", "--base-pathname", "/maildev/"]
+    command: bin/maildev --web 80 --smtp 25 --base-pathname /maildev/
     networks:
       - default
   elasticsearch:
