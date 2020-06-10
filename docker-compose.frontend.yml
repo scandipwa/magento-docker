@@ -22,3 +22,5 @@ services:
     env_file: .env
     expose:
       - 3003
+  app:
+    command: /wait-for-it.sh mysql:3306 -- /start.sh -F
