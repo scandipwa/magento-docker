@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74b4fccf93d7759abad6869ccddf8389",
+    "content-hash": "102a16ab0a7eca8d65836000a1fa8df6",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -14959,21 +14959,21 @@
         },
         {
             "name": "scandipwa/installer",
-            "version": "2.0.1",
+            "version": "3.0.0-beta.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/installer.git",
-                "reference": "c0c3357a5e5b14d06cc524a5873ec22251a8f66d"
+                "reference": "716b5a9d28b4ee4e8235178611b8484902d1a454"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/installer/zipball/c0c3357a5e5b14d06cc524a5873ec22251a8f66d",
-                "reference": "c0c3357a5e5b14d06cc524a5873ec22251a8f66d",
+                "url": "https://api.github.com/repos/scandipwa/installer/zipball/716b5a9d28b4ee4e8235178611b8484902d1a454",
+                "reference": "716b5a9d28b4ee4e8235178611b8484902d1a454",
                 "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "^2.3.3",
-                "scandipwa/source": "^2.7.2"
+                "scandipwa/source": "3.0.*@beta"
             },
             "type": "magento2-theme",
             "autoload": {
@@ -15003,7 +15003,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2020-03-05T11:06:55+00:00"
+            "time": "2020-06-02T15:36:41+00:00"
         },
         {
             "name": "scandipwa/klarna-graphql",
@@ -15129,16 +15129,16 @@
         },
         {
             "name": "scandipwa/paypal-graphql",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/paypal-graphql.git",
-                "reference": "9991d2ae16a37ae81b66886f192a46ede713f89f"
+                "reference": "aedacdfb88cbe647abaf5c2eff60ab6909eba048"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/paypal-graphql/zipball/9991d2ae16a37ae81b66886f192a46ede713f89f",
-                "reference": "9991d2ae16a37ae81b66886f192a46ede713f89f",
+                "url": "https://api.github.com/repos/scandipwa/paypal-graphql/zipball/aedacdfb88cbe647abaf5c2eff60ab6909eba048",
+                "reference": "aedacdfb88cbe647abaf5c2eff60ab6909eba048",
                 "shasum": ""
             },
             "require": {
@@ -15162,6 +15162,10 @@
                 {
                     "name": "Artjoms Travkovs",
                     "email": "artjoms.travkovs@scandiweb.com"
+                },
+                {
+                    "name": "Jegors Batovs",
+                    "email": "yegor@scandipwa.com"
                 }
             ],
             "description": "ScandiPWA GraphQl extend for PayPal",
@@ -15173,7 +15177,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2019-11-14T11:21:33+00:00"
+            "time": "2020-06-01T14:53:06+00:00"
         },
         {
             "name": "scandipwa/performance",
@@ -15476,16 +15480,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "2.13.2",
+            "version": "3.0.0-beta.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "52a81bdffe6941761d4224a18092808fd748dd20"
+                "reference": "1c153199431bcdca92ff8a6fe3d1b24f794c11de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/52a81bdffe6941761d4224a18092808fd748dd20",
-                "reference": "52a81bdffe6941761d4224a18092808fd748dd20",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/1c153199431bcdca92ff8a6fe3d1b24f794c11de",
+                "reference": "1c153199431bcdca92ff8a6fe3d1b24f794c11de",
                 "shasum": ""
             },
             "require": {
@@ -15498,7 +15502,7 @@
                 "scandipwa/klarna-graphql": "^1.1",
                 "scandipwa/locale": "^1.0",
                 "scandipwa/menu-organizer": "^1.1.1",
-                "scandipwa/paypal-graphql": "^1.0",
+                "scandipwa/paypal-graphql": "^2.0",
                 "scandipwa/performance": "^1.0",
                 "scandipwa/persisted-query": "^2.0",
                 "scandipwa/quote-graphql": "^2.11.0",
@@ -15548,7 +15552,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-06-02T14:32:35+00:00"
+            "time": "2020-06-04T15:29:38+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
@@ -22649,8 +22653,9 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "stability-flags": {
+        "scandipwa/installer": 10,
         "phpmd/phpmd": 0
     },
     "prefer-stable": false,
