@@ -1,0 +1,9 @@
+version: '3.6'
+services:
+  ngrok:
+    image: wernight/ngrok:latest
+    networks:
+      - default
+    ports:
+      - 4040:4040
+    command: ngrok http nginx:80 -host-header="localhost:80"
