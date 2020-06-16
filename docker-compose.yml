@@ -19,6 +19,7 @@ services:
       - BASEPATH=${BASEPATH}
       - PROJECT_TAG=${PROJECT_TAG}
       - NODEJS_DIR=${NODEJS_DIR}
+      - THEMEPATH="app/design/frontend/${SCANDIPWA_THEME}"
     volumes:
       - app-data:/var/www/public
     expose:

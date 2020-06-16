@@ -36,7 +36,6 @@ function bash_color_library {
   ncolors=$(tput colors)
   # shellcheck disable=SC2034
   if test -n "$ncolors" && test $ncolors -ge 8; then
-
     bold="$(tput bold)"
     underline="$(tput smul)"
     standout="$(tput smso)"
@@ -62,14 +61,14 @@ function pwa_theme_install {
   echo "${blue}${bold}Register PWA theme in Magento${normal}"
 
   # Theme setup
-  magento scandipwa:theme:bootstrap Scandiweb/pwa -n || true
+  magento scandipwa:theme:bootstrap "$SCANDIPWA_THEME" -n || true
   php bin/magento setup:upgrade
 
   if [ $? -eq 0 ]; then
     if [ "$frontend" != "1" ]
     then
       echo "${blue}${bold}Building PWA theme${normal}"
-      cd $BASEPATH/app/design/frontend/Scandiweb/pwa
+      cd $BASEPATH/app/design/frontend/$SCANDIPWA_THEME
       npm ci
       npm run build
       cd $BASEPATH
