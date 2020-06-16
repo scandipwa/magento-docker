@@ -26,7 +26,7 @@ RENDERTRON_PORT=8083
 ### General settings (ARG)
 # These settings used in build and deploy stages, set them once, recheck and deploy.
 BASEPATH=/var/www/public
-THEMEPATH=app/design/frontend/Scandiweb/pwa
+SCANDIPWA_THEME=Supervendor/Megatheme
 PROJECT_TAG=local
 PROJECT_IMAGE=latest
 
@@ -55,7 +55,7 @@ COMPOSE_HTTP_TIMEOUT=360
 
 GRAPHQL_ENDPOINT=https://scandipwa.local/graphql
 MEDIA_ENDPOINT=https://scandipwa.local/media
-STATIC_ASSET_PATH=/static/frontend/Scandiweb/pwa/en_US/Magento_Theme/
+
 MAIN_MENU_ID=1
 SMART_STREET_KEY=''
 GOOGLE_MAP_API_KEY=''

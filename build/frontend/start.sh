@@ -27,7 +27,7 @@ if [ "$core" = "1" ]
 then
   PATH_TO_THEME="$PATH_TO_THEME/localmodules/base-theme/"
 else
-  PATH_TO_THEME="$PATH_TO_THEME/app/design/frontend/Scandiweb/pwa/"
+  PATH_TO_THEME="$PATH_TO_THEME/app/design/frontend/$SCANDIPWA_THEME/"
 fi
 
 if [ -d $PATH_TO_THEME ]
