@@ -213,6 +213,7 @@ function magento_redis_config {
       --session-save-redis-log-level=3 \
       --session-save-redis-max-concurrency=30 \
       --session-save-redis-db=1 \
+      --session-save-redis-disable-locking=1 \
       -n
 
   # Elasticsearch5 as a search engine
