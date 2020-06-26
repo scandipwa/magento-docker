@@ -14936,16 +14936,16 @@
         },
         {
             "name": "scandipwa/customization",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/customization.git",
-                "reference": "e908c42a12b30d602d6433db994f0d24e25b0dce"
+                "reference": "73a253cb10baa2339f22ef9b575dcd427b8e8aff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/customization/zipball/e908c42a12b30d602d6433db994f0d24e25b0dce",
-                "reference": "e908c42a12b30d602d6433db994f0d24e25b0dce",
+                "url": "https://api.github.com/repos/scandipwa/customization/zipball/73a253cb10baa2339f22ef9b575dcd427b8e8aff",
+                "reference": "73a253cb10baa2339f22ef9b575dcd427b8e8aff",
                 "shasum": ""
             },
             "require": {
@@ -14966,7 +14966,7 @@
                 "OSL-3.0"
             ],
             "description": "Customization configuration for ScandiPWA",
-            "time": "2020-03-26T10:07:32+00:00"
+            "time": "2020-06-26T14:50:26+00:00"
         },
         {
             "name": "scandipwa/installer",
@@ -15491,12 +15491,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "a0b3e86192feddbc3e326815b51dd03edd106b20"
+                "reference": "9a99eeec88236f22b20fcb893e60776d01e144e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/a0b3e86192feddbc3e326815b51dd03edd106b20",
-                "reference": "a0b3e86192feddbc3e326815b51dd03edd106b20",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/9a99eeec88236f22b20fcb893e60776d01e144e5",
+                "reference": "9a99eeec88236f22b20fcb893e60776d01e144e5",
                 "shasum": ""
             },
             "require": {
@@ -15505,7 +15505,7 @@
                 "scandipwa/catalog-graphql": "^2.11.0",
                 "scandipwa/cms-graphql": "^1.3",
                 "scandipwa/customer-graph-ql": "^2.2.3",
-                "scandipwa/customization": "^1.0.2",
+                "scandipwa/customization": "^1.0.3",
                 "scandipwa/klarna-graphql": "^1.1",
                 "scandipwa/locale": "^1.0",
                 "scandipwa/menu-organizer": "^2.0",
@@ -15559,7 +15559,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-06-26T10:11:50+00:00"
+            "time": "2020-06-26T14:56:45+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
