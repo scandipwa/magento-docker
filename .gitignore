@@ -2,6 +2,7 @@ node_modules/
 opt/*
 src/*
 !src/composer.*
+!src/app/design/frontend/Scandiweb/pwa/src/app/component/CartItem/CartItem.component.js
 !.gitignore
 !**/.gitkeep
 mutagen.*.lock

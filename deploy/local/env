@@ -26,7 +26,7 @@ RENDERTRON_PORT=8083
 ### General settings (ARG)
 # These settings used in build and deploy stages, set them once, recheck and deploy.
 BASEPATH=/var/www/public
-THEMEPATH=app/design/frontend/Scandiweb/pwa
+THEMEPATH=app/design/frontend/rudolfs-theme
 PROJECT_TAG=local
 PROJECT_IMAGE=latest
 
