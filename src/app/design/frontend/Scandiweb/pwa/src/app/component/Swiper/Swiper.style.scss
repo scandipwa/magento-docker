@@ -1,0 +1,53 @@
+@media only screen and (max-width: 600px) {
+  body {
+      .swiperListItem {
+          width: 100%;
+          align-items: center;
+          box-sizing: border-box;
+          background-color: #fff;
+          height: 100%;
+          display: flex;
+        }
+        
+        .swiperBackground {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: -1;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 16px;
+          color: white;
+          background-color: tomato;
+          box-sizing: border-box;
+        }
+        
+        .swiperWrapper {
+          position: relative;
+          transition: max-height 0.5s ease;
+          max-height: 1000px;
+          transform-origin: top;
+          overflow: hidden;
+          width: 100%;
+          }
+        
+        .swiperBouncingListItem {
+          transition: transform 0.5s ease-out;
+          width: 100%;
+          align-items: center;
+          box-sizing: border-box;
+          background-color: #fff;
+          height: 100%;
+          display: flex;
+        }
+        
+        .swiperDeleteText{
+            font-size: 150%;
+            font-weight: 900;
+            
+        }
+      }
+        
+}

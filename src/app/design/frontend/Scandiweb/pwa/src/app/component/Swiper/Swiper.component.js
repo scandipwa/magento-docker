@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './CartItem.style';
+import './Swiper.style';
 
 class SwipeableListItem extends Component {
 

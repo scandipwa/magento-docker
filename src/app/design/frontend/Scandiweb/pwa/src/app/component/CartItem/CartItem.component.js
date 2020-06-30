@@ -18,7 +18,7 @@ import CartItemPrice from 'Component/CartItemPrice';
 import Loader from 'Component/Loader';
 import { CartItemType } from 'Type/MiniCart';
 import './CartItem.style';
-import Swiper from 'Component/CartItem/Swiper';
+import Swiper from 'Component/Swiper/Swiper.component';
 
 
 /**
