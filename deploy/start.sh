@@ -62,14 +62,14 @@ function pwa_theme_install {
   echo "${blue}${bold}Register PWA theme in Magento${normal}"
 
   # Theme setup
-  magento scandipwa:theme:bootstrap Scandiweb/pwa -n || true
+  magento scandipwa:theme:bootstrap "$SCANDIPWA_THEME" -n || true
   php bin/magento setup:upgrade
 
   if [ $? -eq 0 ]; then
     if [ "$frontend" != "1" ]
     then
       echo "${blue}${bold}Building PWA theme${normal}"
-      cd $BASEPATH/app/design/frontend/Scandiweb/pwa
+      cd $BASEPATH/app/design/frontend/$SCANDIPWA_THEME
       npm ci
       npm run build
       cd $BASEPATH
@@ -217,12 +217,12 @@ function magento_redis_config {
       -n
 
   # Elasticsearch5 as a search engine
-  echo "${blue}${bold}Setting Elasticsearch5 as a search engine${normal}"
-  php bin/magento config:set catalog/search/engine elasticsearch5
+  echo "${blue}${bold}Setting Elasticsearch7 as a search engine${normal}"
+  php bin/magento config:set catalog/search/engine elasticsearch7
 
   # elasticsearch container as a host name
   echo "${blue}${bold}Setting elasticsearch as a host name for Elasticsearch5${normal}"
-  php bin/magento config:set catalog/search/elasticsearch5_server_hostname elasticsearch
+  php bin/magento config:set catalog/search/elasticsearch7_server_hostname elasticsearch
   php bin/magento cache:enable
 }
 
