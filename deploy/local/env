@@ -26,7 +26,6 @@ RENDERTRON_PORT=8083
 ### General settings (ARG)
 # These settings used in build and deploy stages, set them once, recheck and deploy.
 BASEPATH=/var/www/public
-THEMEPATH=app/design/frontend/Scandiweb/pwa
 PROJECT_TAG=local
 PROJECT_IMAGE=latest
 
@@ -52,10 +51,3 @@ D_RBENV_VERSION=2.5.1
 
 # Increase wait time given to docker to respond under heavy load
 COMPOSE_HTTP_TIMEOUT=360
-
-GRAPHQL_ENDPOINT=https://scandipwa.local/graphql
-MEDIA_ENDPOINT=https://scandipwa.local/media
-STATIC_ASSET_PATH=/static/frontend/Scandiweb/pwa/en_US/Magento_Theme/
-MAIN_MENU_ID=1
-SMART_STREET_KEY=''
-GOOGLE_MAP_API_KEY=''
