@@ -8,7 +8,7 @@ DOCKER_DEBUG=true
 MYSQL_VERSION=5.7
 NGINX_VERSION=alpine
 REDIS_VERSION=alpine
-ELASTICSEARCH_VERSION=5.6.13
+ELASTICSEARCH_VERSION=7.6.2
 RABBITMQ_VERSION=alpine
 
 # Service configurations (ENV)
@@ -26,7 +26,7 @@ RENDERTRON_PORT=8083
 ### General settings (ARG)
 # These settings used in build and deploy stages, set them once, recheck and deploy.
 BASEPATH=/var/www/public
-SCANDIPWA_THEME=Supervendor/Megatheme
+SCANDIPWA_THEME=Scandiweb/pwa
 PROJECT_TAG=local
 PROJECT_IMAGE=latest
 

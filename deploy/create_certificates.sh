@@ -42,6 +42,9 @@ export CERT_CONF_LOCATION
 CA_CONF_LOCATION=/cert_config/ca.conf
 CERT_CONF_LOCATION=/cert_config/certificate.conf
 
+# Generate random one time password
+export RANDOM_TMP_PASS=$(base64 /dev/urandom | tr -d '/+' | dd bs=32 count=1 2>/dev/null)
+
 # Skip Root CA and key generation is exists
 if [ -f scandipwa-ca.key ] && [ -f scandipwa-ca.pem ]; then
   echo "${blue}Root CA and it's key already in place, skipping generation${normal}"
@@ -54,7 +57,7 @@ else
   echo '01' > /cert/serial && touch /cert/index.txt && touch index.txt.attr
   # Generate CA and key
   echo "${yellow}Generating Root CA and key${normal}"
-  openssl req -x509 -newkey rsa:2048 -out scandipwa-ca.pem -outform PEM -days 1825
+  openssl req -x509 -newkey rsa:2048 -out scandipwa-ca.pem -outform PEM -days 825 -passin pass:${RANDOM_TMP_PASS} -passout pass:${RANDOM_TMP_PASS}
   echo "${green}Created ${bold}Root key and certificate${normal}"
 fi
 
@@ -72,20 +75,22 @@ else
   # Set certificate config
   export OPENSSL_CONF=$CERT_CONF_LOCATION
   echo "${yellow}Generating private key for server certificate and CSR${normal}"
-  openssl req -newkey rsa:2048 -keyout tempkey.pem -keyform PEM -out tempreq.pem -outform PEM -reqexts 'v3_req'
+  openssl req -newkey rsa:2048 -keyout tempkey.pem -keyform PEM -out tempreq.pem -outform PEM -reqexts 'v3_req' -passin pass:${RANDOM_TMP_PASS} -passout pass:${RANDOM_TMP_PASS}
   # Make server key without passphrase
   echo "${yellow}Generating server key without passphrase, enter same passphrase as above${normal}"
-  openssl rsa < tempkey.pem > server_key.pem
+  openssl rsa -passin pass:${RANDOM_TMP_PASS} -passout pass:${RANDOM_TMP_PASS} < tempkey.pem > server_key.pem
   # Singing certificate with CA
   echo "${yellow}Singing server certificate with CA${normal}"
   export OPENSSL_CONF=$CA_CONF_LOCATION
-  yes | openssl ca -in tempreq.pem -out server_crt.pem
+  yes | openssl ca -in tempreq.pem -out server_crt.pem -days 825 -passin pass:${RANDOM_TMP_PASS}
   cat server_crt.pem scandipwa-ca.pem > scandipwa-fullchain.pem
   chown -R $UID:$GID /cert
   echo "#########################################################################################################################"
   echo "#"                                                                                                                     "#"
   echo "# ${green}Certificate generation is complete${normal}"                                                                 "#"
   echo "# Now you need to import ${bold}scandipwa-ca.pem${normal} into your system/browser to make issued certificate valid"   "#"
+  echo "#"                                                                                                                     "#"
+  echo "# An automated one time password was generated as ${cyan}${RANDOM_TMP_PASS}${normal}"                                  "#"
   echo "#"                                                                                                                     "#"
   echo "# ${magenta}${bold}Do not commit or share your ${bold}scandipwa-ca.key${normal},"                                      "#"
   echo "# this can lead to major security hole in your system"                                                                 "#"

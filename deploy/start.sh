@@ -216,12 +216,12 @@ function magento_redis_config {
       -n
 
   # Elasticsearch5 as a search engine
-  echo "${blue}${bold}Setting Elasticsearch5 as a search engine${normal}"
-  php bin/magento config:set catalog/search/engine elasticsearch5
+  echo "${blue}${bold}Setting Elasticsearch7 as a search engine${normal}"
+  php bin/magento config:set catalog/search/engine elasticsearch7
 
   # elasticsearch container as a host name
   echo "${blue}${bold}Setting elasticsearch as a host name for Elasticsearch5${normal}"
-  php bin/magento config:set catalog/search/elasticsearch5_server_hostname elasticsearch
+  php bin/magento config:set catalog/search/elasticsearch7_server_hostname elasticsearch
   php bin/magento cache:enable
 }
 
