@@ -15142,16 +15142,16 @@
         },
         {
             "name": "scandipwa/paypal-graphql",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/paypal-graphql.git",
-                "reference": "a80b4ee96a8ce0b597ab738cc140a0fac883cf8c"
+                "reference": "5c50ab574550aea6d0bda78d8f924c40b2db4784"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/paypal-graphql/zipball/a80b4ee96a8ce0b597ab738cc140a0fac883cf8c",
-                "reference": "a80b4ee96a8ce0b597ab738cc140a0fac883cf8c",
+                "url": "https://api.github.com/repos/scandipwa/paypal-graphql/zipball/5c50ab574550aea6d0bda78d8f924c40b2db4784",
+                "reference": "5c50ab574550aea6d0bda78d8f924c40b2db4784",
                 "shasum": ""
             },
             "require": {
@@ -15190,7 +15190,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-06-08T11:06:02+00:00"
+            "time": "2020-06-15T16:08:26+00:00"
         },
         {
             "name": "scandipwa/performance",
@@ -15493,16 +15493,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "3.0.0-beta.3",
+            "version": "3.0.0-beta.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "efe2d94dc407f06e2bbaa8029ffc5b3534929dc9"
+                "reference": "fa60f04057530115720922ad6aa2813e1a8b555b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/efe2d94dc407f06e2bbaa8029ffc5b3534929dc9",
-                "reference": "efe2d94dc407f06e2bbaa8029ffc5b3534929dc9",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/fa60f04057530115720922ad6aa2813e1a8b555b",
+                "reference": "fa60f04057530115720922ad6aa2813e1a8b555b",
                 "shasum": ""
             },
             "require": {
@@ -15514,7 +15514,7 @@
                 "scandipwa/customization": "^1.0.3",
                 "scandipwa/klarna-graphql": "^1.1",
                 "scandipwa/locale": "^1.0",
-                "scandipwa/menu-organizer": "^1.1.1",
+                "scandipwa/menu-organizer": "^2.0",
                 "scandipwa/paypal-graphql": "^2.0",
                 "scandipwa/performance": "^1.0",
                 "scandipwa/persisted-query": "^2.0",
@@ -15565,7 +15565,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-06-08T14:14:28+00:00"
+            "time": "2020-07-13T16:10:59+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
@@ -18063,6 +18063,14 @@
             "type": "metapackage",
             "license": [
                 "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mediotype",
+                    "email": "diveinto@mediotype.com",
+                    "homepage": "http://www.mediotype.com/",
+                    "role": "Development Company"
+                }
             ],
             "description": "Vertex Tax Links for Magento 2",
             "homepage": "http://go.vertexsmb.com/magento_cbe",
