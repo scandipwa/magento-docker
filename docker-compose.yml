@@ -1,4 +1,4 @@
-version: '3.6'
+version: '3'
 services:
   app:
     image: scandipwa/base:${PROJECT_IMAGE}
@@ -122,7 +122,8 @@ services:
     environment:
       - bootstrap.memory_lock=true
       - xpack.security.enabled=false
-      - "ES_JAVA_OPTS=-Xms256m -Xmx256m"
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
     ulimits:
       memlock:
         soft: -1
