@@ -30,29 +30,21 @@ else
   PATH_TO_THEME="$PATH_TO_THEME/app/design/frontend/$SCANDIPWA_THEME/"
 fi
 
+echo "Waiting for theme folder. If the app container is ready to handle connections and this message is still shown - something went wrong."
+while ! [ -d $PATH_TO_THEME ]
+do
+  sleep 2
+done
+
+cd $PATH_TO_THEME;
+
 if [ "$mutagen" = "1" ] # wait for theme files
 then
-    echo "Waiting for Mutagen to sync theme folder"
-    while ! [ -d $PATH_TO_THEME ]
-    do
-      sleep 2
-    done
-
-    cd $PATH_TO_THEME;
-
     echo "Waiting for Mutagen to sync files"
     while ! [ -f ./package.json -a -f ./package-lock.json ]
     do
       sleep 2
     done
-else # check for theme folder existence once    
-    if [ -d $PATH_TO_THEME ]
-    then
-      cd $PATH_TO_THEME;
-    else
-      echo "ERROR: theme $PATH_TO_THEME is empty!"
-      exit 1
-    fi
 fi
 
 echo "Installing node modules"
