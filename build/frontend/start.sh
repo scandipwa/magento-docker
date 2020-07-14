@@ -30,9 +30,19 @@ else
   PATH_TO_THEME="$PATH_TO_THEME/app/design/frontend/$SCANDIPWA_THEME/"
 fi
 
-echo "Waiting for theme folder. If the app container is ready to handle connections and this message is still shown - something went wrong."
+retry_count=0
+
+echo "Waiting for the theme folder"
 while ! [ -d $PATH_TO_THEME ]
 do
+  ((retry_count++))
+
+  if [ $retry_count -gt 60 ]
+  then
+      echo "ERROR: Timeout, $((2 * retry_count))s elapsed. Theme folder \"$PATH_TO_THEME\" is empty!"
+      exit 1
+  fi
+
   sleep 2
 done
 
