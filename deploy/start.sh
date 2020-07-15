@@ -347,6 +347,8 @@ magento_set_baseurl
 magento_fix_permissions
 # Flushing all caches, removing maintenance mode
 magento_post_deploy
+# Fixing permissions again due c:f
+magento_fix_permissions
 
 end_time="$(date -u +%s.%N)"
 
