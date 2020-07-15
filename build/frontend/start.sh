@@ -23,6 +23,9 @@ done
 
 PATH_TO_THEME="/var/www/public"
 
+# default value
+SCANDIPWA_THEME=${SCANDIPWA_THEME:Scandiweb/pwa}
+
 if [ "$core" = "1" ]
 then
   PATH_TO_THEME="$PATH_TO_THEME/localmodules/base-theme/"
