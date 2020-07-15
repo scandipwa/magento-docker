@@ -24,7 +24,7 @@ done
 PATH_TO_THEME="/var/www/public"
 
 # default value
-SCANDIPWA_THEME=${SCANDIPWA_THEME:Scandiweb/pwa}
+SCANDIPWA_THEME=${SCANDIPWA_THEME:"Scandiweb/pwa"}
 
 if [ "$core" = "1" ]
 then
