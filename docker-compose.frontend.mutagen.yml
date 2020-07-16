@@ -15,7 +15,9 @@ services:
       - app-data:/var/www/public
       # Uncomment line below only for testing launch script without rebuild
       # - ./build/frontend/start.sh:/start.sh
-    env_file: .env
+    env_file:
+      - .application
+      - .env
     working_dir: "/var/www/public"
     command: ["/start.sh", "-M"]
     expose:

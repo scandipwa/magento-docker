@@ -61,15 +61,18 @@ export bash_colors
 function pwa_theme_install {
   echo "${blue}${bold}Register PWA theme in Magento${normal}"
 
+  # default value
+  SCANDIPWA_THEME=${SCANDIPWA_THEME:"Scandiweb/pwa"}
+
   # Theme setup
-  magento scandipwa:theme:bootstrap Scandiweb/pwa -n || true
+  magento scandipwa:theme:bootstrap "$SCANDIPWA_THEME" -n || true
   php bin/magento setup:upgrade
 
   if [ $? -eq 0 ]; then
     if [ "$frontend" != "1" ]
     then
       echo "${blue}${bold}Building PWA theme${normal}"
-      cd $BASEPATH/app/design/frontend/Scandiweb/pwa
+      cd $BASEPATH/app/design/frontend/$SCANDIPWA_THEME
       npm ci
       npm run build
       cd $BASEPATH
@@ -344,6 +347,8 @@ magento_set_baseurl
 magento_fix_permissions
 # Flushing all caches, removing maintenance mode
 magento_post_deploy
+# Fixing permissions again due c:f
+magento_fix_permissions
 
 end_time="$(date -u +%s.%N)"
 
