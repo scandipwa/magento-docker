@@ -62,7 +62,7 @@ function pwa_theme_install {
   echo "${blue}${bold}Register PWA theme in Magento${normal}"
 
   # default value
-  SCANDIPWA_THEME=${SCANDIPWA_THEME:"Scandiweb/pwa"}
+  SCANDIPWA_THEME=${SCANDIPWA_THEME:-"Scandiweb/pwa"}
 
   # Theme setup
   magento scandipwa:theme:bootstrap "$SCANDIPWA_THEME" -n || true
