@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be1de8ec2888ad1c7db3913cd43eabf1",
+    "content-hash": "34b9f26ed9828a950cf194342625fe4c",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -15493,12 +15493,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "fa901b39a59f209f8a2c6fd3cb75f920b015e0e3"
+                "reference": "48396d41ca779d43b7e851a25efd0147606094f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/fa901b39a59f209f8a2c6fd3cb75f920b015e0e3",
-                "reference": "fa901b39a59f209f8a2c6fd3cb75f920b015e0e3",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/48396d41ca779d43b7e851a25efd0147606094f9",
+                "reference": "48396d41ca779d43b7e851a25efd0147606094f9",
                 "shasum": ""
             },
             "require": {
@@ -15561,7 +15561,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-07-17T15:08:09+00:00"
+            "time": "2020-07-20T06:35:15+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
@@ -18059,6 +18059,14 @@
             "type": "metapackage",
             "license": [
                 "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Mediotype",
+                    "email": "diveinto@mediotype.com",
+                    "homepage": "http://www.mediotype.com/",
+                    "role": "Development Company"
+                }
             ],
             "description": "Vertex Tax Links for Magento 2",
             "homepage": "http://go.vertexsmb.com/magento_cbe",
@@ -22739,7 +22747,7 @@
     ],
     "aliases": [
         {
-            "alias": "2.15.0",
+            "alias": "2.15",
             "alias_normalized": "2.15.0.0",
             "version": "dev-lighthouse",
             "package": "scandipwa/source"
