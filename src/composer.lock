@@ -14820,16 +14820,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.13.3",
+            "version": "2.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "919c147a3a64958ce8a8cc1b4fe50921f3821b37"
+                "reference": "155362cc009a589761906344a99cb526c1a0cf76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/919c147a3a64958ce8a8cc1b4fe50921f3821b37",
-                "reference": "919c147a3a64958ce8a8cc1b4fe50921f3821b37",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/155362cc009a589761906344a99cb526c1a0cf76",
+                "reference": "155362cc009a589761906344a99cb526c1a0cf76",
                 "shasum": ""
             },
             "require": {
@@ -14856,7 +14856,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-07-17T08:13:52+00:00"
+            "time": "2020-07-21T07:57:01+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -18059,14 +18059,6 @@
             "type": "metapackage",
             "license": [
                 "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Mediotype",
-                    "email": "diveinto@mediotype.com",
-                    "homepage": "http://www.mediotype.com/",
-                    "role": "Development Company"
-                }
             ],
             "description": "Vertex Tax Links for Magento 2",
             "homepage": "http://go.vertexsmb.com/magento_cbe",
