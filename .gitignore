@@ -5,3 +5,24 @@ src/*
 !.gitignore
 !**/.gitkeep
 mutagen.*.lock
+
+# Temporary add this to browse vendor within VSCode without showing up in version control
+/vendor
+
+# Ignore files up to path
+src/app/*
+src/app/design/*
+src/app/design/frontend/*
+src/app/design/frontend/Scandiweb/*
+
+# Track folders up to path
+!src/app/
+!src/app/design/
+!src/app/design/frontend/
+!src/app/design/frontend/Scandiweb/
+
+# Track target folder and files
+!src/app/design/frontend/Scandiweb/pwa/
+
+# Ignore folder and files
+src/app/design/frontend/Scandiweb/pwa/Magento_Theme/
