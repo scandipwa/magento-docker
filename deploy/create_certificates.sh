@@ -57,7 +57,7 @@ else
   echo '01' > /cert/serial && touch /cert/index.txt && touch index.txt.attr
   # Generate CA and key
   echo "${yellow}Generating Root CA and key${normal}"
-  openssl req -x509 -newkey rsa:2048 -out scandipwa-ca.pem -outform PEM -days 825 -passin pass:${RANDOM_TMP_PASS} -passout pass:${RANDOM_TMP_PASS}
+  openssl req -x509 -newkey rsa:2048 -out scandipwa-ca.pem -outform PEM -days 365 -passin pass:${RANDOM_TMP_PASS} -passout pass:${RANDOM_TMP_PASS}
   echo "${green}Created ${bold}Root key and certificate${normal}"
 fi
 
@@ -82,7 +82,7 @@ else
   # Singing certificate with CA
   echo "${yellow}Singing server certificate with CA${normal}"
   export OPENSSL_CONF=$CA_CONF_LOCATION
-  yes | openssl ca -in tempreq.pem -out server_crt.pem -days 825 -passin pass:${RANDOM_TMP_PASS}
+  yes | openssl ca -in tempreq.pem -out server_crt.pem -days 365 -passin pass:${RANDOM_TMP_PASS}
   cat server_crt.pem scandipwa-ca.pem > scandipwa-fullchain.pem
   chown -R $UID:$GID /cert
   echo "#########################################################################################################################"
