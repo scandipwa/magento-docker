@@ -15241,16 +15241,16 @@
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
-                "reference": "69a4d3cc85cf86fb76a22291aed9a59ecea3c29f"
+                "reference": "2338eb8dd5bf7ef9caa726f7854784e87c53d0c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/69a4d3cc85cf86fb76a22291aed9a59ecea3c29f",
-                "reference": "69a4d3cc85cf86fb76a22291aed9a59ecea3c29f",
+                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/2338eb8dd5bf7ef9caa726f7854784e87c53d0c3",
+                "reference": "2338eb8dd5bf7ef9caa726f7854784e87c53d0c3",
                 "shasum": ""
             },
             "require": {
@@ -15284,7 +15284,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2020-07-24T13:10:29+00:00"
+            "time": "2020-08-07T08:42:29+00:00"
         },
         {
             "name": "scandipwa/quote-graphql",
@@ -15507,12 +15507,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "8b5c8d82b6d68131a693b5c119f905e434ee0c02"
+                "reference": "1e1287b7f351f4b20457035fc873c41e6ce43a29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/8b5c8d82b6d68131a693b5c119f905e434ee0c02",
-                "reference": "8b5c8d82b6d68131a693b5c119f905e434ee0c02",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/1e1287b7f351f4b20457035fc873c41e6ce43a29",
+                "reference": "1e1287b7f351f4b20457035fc873c41e6ce43a29",
                 "shasum": ""
             },
             "require": {
@@ -15575,7 +15575,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-08-07T07:06:08+00:00"
+            "time": "2020-08-18T14:22:12+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
