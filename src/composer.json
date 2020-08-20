@@ -12,7 +12,9 @@
     },
     "require": {
         "magento/product-community-edition": "2.3.5",
-        "scandipwa/installer": "3.0.*@beta"
+        "scandipwa/installer": "3.0.*@beta",
+        "scandipwa/paypal-graphql": "^2.0.0",
+        "scandipwa/source": "3.0.0-beta.7"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "~2.13.0",
