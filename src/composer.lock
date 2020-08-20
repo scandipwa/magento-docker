@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65cf959214227d37da5f9de1a197ed39",
+    "content-hash": "a8de4e9198e48b0e8c0a5541a2720aa1",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -914,16 +914,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51"
+                "reference": "ebd27a9866ae8254e873866f795491f02418c5a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51",
-                "reference": "fa2aaf99e2087f013a14f7432c1cd2dd7d8f1f51",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/ebd27a9866ae8254e873866f795491f02418c5a5",
+                "reference": "ebd27a9866ae8254e873866f795491f02418c5a5",
                 "shasum": ""
             },
             "require": {
@@ -968,7 +968,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-04T11:16:35+00:00"
+            "time": "2020-08-19T10:27:58+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -2910,16 +2910,16 @@
         },
         {
             "name": "laminas/laminas-http",
-            "version": "2.12.0",
+            "version": "2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-http.git",
-                "reference": "48bd06ffa3a6875e2b77d6852405eb7b1589d575"
+                "reference": "33b7942f51ce905ce9bfc8bf28badc501d3904b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-http/zipball/48bd06ffa3a6875e2b77d6852405eb7b1589d575",
-                "reference": "48bd06ffa3a6875e2b77d6852405eb7b1589d575",
+                "url": "https://api.github.com/repos/laminas/laminas-http/zipball/33b7942f51ce905ce9bfc8bf28badc501d3904b5",
+                "reference": "33b7942f51ce905ce9bfc8bf28badc501d3904b5",
                 "shasum": ""
             },
             "require": {
@@ -2942,12 +2942,6 @@
                 "paragonie/certainty": "For automated management of cacert.pem"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.12.x-dev",
-                    "dev-develop": "2.13.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Laminas\\Http\\": "src/"
@@ -2970,7 +2964,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-06-23T15:14:37+00:00"
+            "time": "2020-08-18T17:11:58+00:00"
         },
         {
             "name": "laminas/laminas-hydrator",
@@ -4364,23 +4358,23 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.0.4",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "fcd87520e4943d968557803919523772475e8ea3"
+                "reference": "4939c81f63a8a4968c108c440275c94955753b19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/fcd87520e4943d968557803919523772475e8ea3",
-                "reference": "fcd87520e4943d968557803919523772475e8ea3",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/4939c81f63a8a4968c108c440275c94955753b19",
+                "reference": "4939c81f63a8a4968c108c440275c94955753b19",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.6 || ^7.0"
+                "php": "^5.6 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1",
+                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.5 || ^8.1 || ^9.3",
                 "squizlabs/php_codesniffer": "^3.5"
             },
             "type": "library",
@@ -4418,7 +4412,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-05-20T16:45:56+00:00"
+            "time": "2020-08-18T16:34:51+00:00"
         },
         {
             "name": "league/color-extractor",
@@ -14982,16 +14976,16 @@
         },
         {
             "name": "scandipwa/installer",
-            "version": "3.0.0-beta.1",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/installer.git",
-                "reference": "716b5a9d28b4ee4e8235178611b8484902d1a454"
+                "reference": "f6d4f0c6b2728490409ab060cd9508db02627ee7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/installer/zipball/716b5a9d28b4ee4e8235178611b8484902d1a454",
-                "reference": "716b5a9d28b4ee4e8235178611b8484902d1a454",
+                "url": "https://api.github.com/repos/scandipwa/installer/zipball/f6d4f0c6b2728490409ab060cd9508db02627ee7",
+                "reference": "f6d4f0c6b2728490409ab060cd9508db02627ee7",
                 "shasum": ""
             },
             "require": {
@@ -15026,7 +15020,7 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2020-06-02T15:36:41+00:00"
+            "time": "2020-07-03T11:10:38+00:00"
         },
         {
             "name": "scandipwa/klarna-graphql",
@@ -15152,16 +15146,16 @@
         },
         {
             "name": "scandipwa/paypal-graphql",
-            "version": "2.0.2",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/paypal-graphql.git",
-                "reference": "5c50ab574550aea6d0bda78d8f924c40b2db4784"
+                "reference": "e5eb88903d37d30fab0f9598652187f1865c46eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/paypal-graphql/zipball/5c50ab574550aea6d0bda78d8f924c40b2db4784",
-                "reference": "5c50ab574550aea6d0bda78d8f924c40b2db4784",
+                "url": "https://api.github.com/repos/scandipwa/paypal-graphql/zipball/e5eb88903d37d30fab0f9598652187f1865c46eb",
+                "reference": "e5eb88903d37d30fab0f9598652187f1865c46eb",
                 "shasum": ""
             },
             "require": {
@@ -15200,7 +15194,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-06-15T16:08:26+00:00"
+            "time": "2020-08-18T16:19:06+00:00"
         },
         {
             "name": "scandipwa/performance",
@@ -15503,37 +15497,37 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "3.0.0-beta.7",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "5f5f2b3be50e6471022caf0b038c5e876c2202d0"
+                "reference": "061a030e6b1f444d890d8998b06390df232ecf19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/5f5f2b3be50e6471022caf0b038c5e876c2202d0",
-                "reference": "5f5f2b3be50e6471022caf0b038c5e876c2202d0",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/061a030e6b1f444d890d8998b06390df232ecf19",
+                "reference": "061a030e6b1f444d890d8998b06390df232ecf19",
                 "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "^2.3.5",
                 "scandipwa/cache": "^1.0",
-                "scandipwa/catalog-graphql": "^2.12.1",
+                "scandipwa/catalog-graphql": "^2.14",
                 "scandipwa/cms-graphql": "^1.3",
                 "scandipwa/customer-graph-ql": "^2.2.3",
-                "scandipwa/customization": "^1.0.3",
+                "scandipwa/customization": "^1.1",
                 "scandipwa/klarna-graphql": "^1.1",
                 "scandipwa/locale": "^1.0",
                 "scandipwa/menu-organizer": "^2.0",
-                "scandipwa/paypal-graphql": "^2.0",
+                "scandipwa/paypal-graphql": "^3.0",
                 "scandipwa/performance": "^1.0",
-                "scandipwa/persisted-query": "^2.0",
-                "scandipwa/quote-graphql": "^2.12",
+                "scandipwa/persisted-query": "^2.3.1",
+                "scandipwa/quote-graphql": "^2.14",
                 "scandipwa/reviews-graphql": "^1.0",
                 "scandipwa/route717": "^1.6",
                 "scandipwa/slider-graphql": "^2.0",
                 "scandipwa/store-graphql": "^1.0.7",
-                "scandipwa/urlrewrite-graphql": "^1.2",
+                "scandipwa/urlrewrite-graphql": "^1.2.1",
                 "scandipwa/wishlist-graphql": "^1.2"
             },
             "type": "magento2-theme",
@@ -15575,7 +15569,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-07-21T09:54:02+00:00"
+            "time": "2020-08-20T16:28:07+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
@@ -16842,16 +16836,16 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.17.1",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
-                "reference": "40309d1700e8f72447bb9e7b54af756eeea35620"
+                "reference": "37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/40309d1700e8f72447bb9e7b54af756eeea35620",
-                "reference": "40309d1700e8f72447bb9e7b54af756eeea35620",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-normalizer/zipball/37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e",
+                "reference": "37078a8dd4a2a1e9ab0231af7c6cb671b2ed5a7e",
                 "shasum": ""
             },
             "require": {
@@ -16863,7 +16857,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -16919,7 +16913,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-14T14:40:37+00:00"
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -17074,16 +17068,16 @@
         },
         {
             "name": "symfony/polyfill-php70",
-            "version": "v1.17.1",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php70.git",
-                "reference": "471b096aede7025bace8eb356b9ac801aaba7e2d"
+                "reference": "0dd93f2c578bdc9c72697eaa5f1dd25644e618d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/471b096aede7025bace8eb356b9ac801aaba7e2d",
-                "reference": "471b096aede7025bace8eb356b9ac801aaba7e2d",
+                "url": "https://api.github.com/repos/symfony/polyfill-php70/zipball/0dd93f2c578bdc9c72697eaa5f1dd25644e618d3",
+                "reference": "0dd93f2c578bdc9c72697eaa5f1dd25644e618d3",
                 "shasum": ""
             },
             "require": {
@@ -17093,7 +17087,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -17147,7 +17141,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
@@ -21178,6 +21172,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2017-11-27T05:48:46+00:00"
         },
         {
@@ -21643,6 +21638,7 @@
             ],
             "description": "FinderFacade is a convenience wrapper for Symfony's Finder component.",
             "homepage": "https://github.com/sebastianbergmann/finder-facade",
+            "abandoned": true,
             "time": "2020-01-16T08:08:45+00:00"
         },
         {
@@ -22763,8 +22759,6 @@
     "aliases": [],
     "minimum-stability": "beta",
     "stability-flags": {
-        "scandipwa/installer": 10,
-        "scandipwa/source": 10,
         "phpmd/phpmd": 0
     },
     "prefer-stable": false,
