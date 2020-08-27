@@ -27,7 +27,7 @@ See what we have for you:
 - [Video Tutorials](https://www.youtube.com/playlist?list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y)
 - [Weekly webinars](https://www.youtube.com/channel/UCvnxo7rh5NRwvMHtJga9fww/videos)
 - [ScandiPWA Documentation](https://docs.scandipwa.com/)
-- [FAQ Page](https://docs.scandipwa.com/docs/installation/faq/)
+- [FAQ Page](https://docs.scandipwa.com/docs/installing.html)
 
 **Your question was not covered?**
 Join our community [Slack channel](https://join.slack.com/t/scandipwa/shared_invite/enQtNzE2Mjg1Nzg3MTg5LTQwM2E2NmQ0NmQ2MzliMjVjYjQ1MTFiYWU5ODAyYTYyMGQzNWM3MDhkYzkyZGMxYTJlZWI1N2ExY2Q1MDMwMTk) and ask the core team directly! 
@@ -46,7 +46,7 @@ We recommend using it as:
 
 ### Ready to try?
 
-Follow the guide for [Docker setup on Linux](https://docs.scandipwa.com/docs/installation/docker/linux/) or watch the video guide.
+Follow the guide for [Docker setup on Linux](https://docs.scandipwa.com/docs/linux.html) or watch the video guide.
 
 [![docker install](https://i.ibb.co/0MpPFXL/Group-5.png)](https://www.youtube.com/watch?v=IOXSBcCBvCw&list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y&index=1)
 
@@ -58,7 +58,7 @@ ScandiPWA is a regular Magento theme. You can install it on the existing Magento
 
 ### Ready to try?
 
-Follow the guide for [setup on existing Magento](https://docs.scandipwa.com/docs/installation/on-existing-m2/) or watch the video guide.
+Follow the guide for [setup on existing Magento](https://docs.scandipwa.com/docs/on-existing-m2.html) or watch the video guide.
 
 [![existing M2 setup](https://i.ibb.co/1Xc12Pd/Group-8.png)](https://www.youtube.com/watch?v=JfvC3PcaHPU&list=PLy0PoJ53Gjy3iHQmsZCD1WAazhyS03l-y&index=2)
 
@@ -70,7 +70,7 @@ If you are not planning to developer a back-end functionality, but to modify the
 
 ### Ready to try?
 
-Follow the guide for [setup with remote M2 server](https://docs.scandipwa.com/docs/installation/with-remote-m2/).
+Follow the guide for [setup with remote M2 server](https://docs.scandipwa.com/docs/with-remote-m2.html).
 
 ## Modularity
 
