@@ -1845,38 +1845,6 @@
             "license": [
                 "Apache-2.0"
             ],
-            "authors": [
-                {
-                    "name": "Joe Constant",
-                    "email": "joe.constant@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dario Kassler",
-                    "email": "dario.kassler@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Kenny Gilles",
-                    "email": "kenny.gilles@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Markus Simon",
-                    "email": "markus.simon2@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Fei Chen",
-                    "email": "fei.chen@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jason Grim",
-                    "email": "jason.grim@klarna.com",
-                    "role": "Developer"
-                }
-            ],
             "description": "Klarna Core Magento 2 Extension"
         },
         {
@@ -1932,38 +1900,6 @@
             "license": [
                 "Apache-2.0"
             ],
-            "authors": [
-                {
-                    "name": "Joe Constant",
-                    "email": "joe.constant@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dario Kassler",
-                    "email": "dario.kassler@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Kenny Gilles",
-                    "email": "kenny.gilles@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Markus Simon",
-                    "email": "markus.simon2@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Fei Chen",
-                    "email": "fei.chen@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jason Grim",
-                    "email": "jason.grim@klarna.com",
-                    "role": "Developer"
-                }
-            ],
             "description": "Klarna Payments Magento 2 Extension"
         },
         {
@@ -2012,38 +1948,6 @@
             },
             "license": [
                 "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Joe Constant",
-                    "email": "joe.constant@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dario Kassler",
-                    "email": "dario.kassler@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Kenny Gilles",
-                    "email": "kenny.gilles@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Markus Simon",
-                    "email": "markus.simon2@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Fei Chen",
-                    "email": "fei.chen@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jason Grim",
-                    "email": "jason.grim@klarna.com",
-                    "role": "Developer"
-                }
             ],
             "description": "Klarna Order Management Magento 2 Extension"
         },
@@ -14834,21 +14738,21 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.14.0",
+            "version": "2.15.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "155362cc009a589761906344a99cb526c1a0cf76"
+                "reference": "dacf941f8c0401dfce2cd8bfef645f8a11a281d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/155362cc009a589761906344a99cb526c1a0cf76",
-                "reference": "155362cc009a589761906344a99cb526c1a0cf76",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/dacf941f8c0401dfce2cd8bfef645f8a11a281d9",
+                "reference": "dacf941f8c0401dfce2cd8bfef645f8a11a281d9",
                 "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "^2.3.5",
-                "scandipwa/performance": "^1.0.3"
+                "scandipwa/performance": "^1.1.0"
             },
             "type": "magento2-module",
             "autoload": {
@@ -14870,7 +14774,7 @@
                 "pwa",
                 "scandipwa"
             ],
-            "time": "2020-07-21T07:57:01+00:00"
+            "time": "2020-08-27T10:15:57+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -15204,16 +15108,16 @@
         },
         {
             "name": "scandipwa/performance",
-            "version": "1.0.4",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/performance.git",
-                "reference": "802ab7a8c82eb9871d2e745cb7a26389796a9e26"
+                "reference": "f097e92a86f52d0a152ae160d5ef56cab944892a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/performance/zipball/802ab7a8c82eb9871d2e745cb7a26389796a9e26",
-                "reference": "802ab7a8c82eb9871d2e745cb7a26389796a9e26",
+                "url": "https://api.github.com/repos/scandipwa/performance/zipball/f097e92a86f52d0a152ae160d5ef56cab944892a",
+                "reference": "f097e92a86f52d0a152ae160d5ef56cab944892a",
                 "shasum": ""
             },
             "type": "magento2-module",
@@ -15237,20 +15141,20 @@
                 }
             ],
             "description": "N/A",
-            "time": "2020-06-09T14:14:26+00:00"
+            "time": "2020-08-24T13:35:21+00:00"
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "2.3.2",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
-                "reference": "2338eb8dd5bf7ef9caa726f7854784e87c53d0c3"
+                "reference": "3666cbe7e7c09eb079807ac47956b9d5e40c4c2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/2338eb8dd5bf7ef9caa726f7854784e87c53d0c3",
-                "reference": "2338eb8dd5bf7ef9caa726f7854784e87c53d0c3",
+                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/3666cbe7e7c09eb079807ac47956b9d5e40c4c2d",
+                "reference": "3666cbe7e7c09eb079807ac47956b9d5e40c4c2d",
                 "shasum": ""
             },
             "require": {
@@ -15284,20 +15188,20 @@
                 "scandipwa",
                 "theme"
             ],
-            "time": "2020-08-07T08:42:29+00:00"
+            "time": "2020-08-26T15:33:32+00:00"
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.14.0",
+            "version": "2.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "23c86e56727ea56b2b41d81b7990e4131529d689"
+                "reference": "2f4ac7791aa85e68930a5288995a9b205400f3bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/23c86e56727ea56b2b41d81b7990e4131529d689",
-                "reference": "23c86e56727ea56b2b41d81b7990e4131529d689",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/2f4ac7791aa85e68930a5288995a9b205400f3bd",
+                "reference": "2f4ac7791aa85e68930a5288995a9b205400f3bd",
                 "shasum": ""
             },
             "require": {
@@ -15329,7 +15233,7 @@
                 }
             ],
             "description": "N/A",
-            "time": "2020-07-28T10:02:16+00:00"
+            "time": "2020-08-26T08:21:18+00:00"
         },
         {
             "name": "scandipwa/reviews-graphql",
@@ -15378,16 +15282,16 @@
         },
         {
             "name": "scandipwa/route717",
-            "version": "1.6.2",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/route717.git",
-                "reference": "45b4a647086420f551bdc988cf9429ccd19f29f2"
+                "reference": "f0df33294dc9085c9584469516e86befb59b096e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/route717/zipball/45b4a647086420f551bdc988cf9429ccd19f29f2",
-                "reference": "45b4a647086420f551bdc988cf9429ccd19f29f2",
+                "url": "https://api.github.com/repos/scandipwa/route717/zipball/f0df33294dc9085c9584469516e86befb59b096e",
+                "reference": "f0df33294dc9085c9584469516e86befb59b096e",
                 "shasum": ""
             },
             "require": {
@@ -15419,7 +15323,7 @@
                 "router",
                 "scandipwa"
             ],
-            "time": "2020-06-15T13:31:27+00:00"
+            "time": "2020-08-25T09:29:22+00:00"
         },
         {
             "name": "scandipwa/slider",
@@ -15507,18 +15411,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "1e1287b7f351f4b20457035fc873c41e6ce43a29"
+                "reference": "d64184424995b9c2085ececea7c9e504ba2b10c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/1e1287b7f351f4b20457035fc873c41e6ce43a29",
-                "reference": "1e1287b7f351f4b20457035fc873c41e6ce43a29",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/d64184424995b9c2085ececea7c9e504ba2b10c2",
+                "reference": "d64184424995b9c2085ececea7c9e504ba2b10c2",
                 "shasum": ""
             },
             "require": {
                 "magento/magento2-base": "^2.3.5",
                 "scandipwa/cache": "^1.0",
-                "scandipwa/catalog-graphql": "^2.14",
+                "scandipwa/catalog-graphql": "^2.15.3",
                 "scandipwa/cms-graphql": "^1.3",
                 "scandipwa/customer-graph-ql": "^2.2.3",
                 "scandipwa/customization": "^1.1",
@@ -15526,11 +15430,11 @@
                 "scandipwa/locale": "^1.0",
                 "scandipwa/menu-organizer": "^2.0",
                 "scandipwa/paypal-graphql": "^1.0",
-                "scandipwa/performance": "^1.0",
-                "scandipwa/persisted-query": "^2.3.1",
-                "scandipwa/quote-graphql": "^2.14",
+                "scandipwa/performance": "^1.1",
+                "scandipwa/persisted-query": "^2.4",
+                "scandipwa/quote-graphql": "^2.14.1",
                 "scandipwa/reviews-graphql": "^1.0",
-                "scandipwa/route717": "^1.6",
+                "scandipwa/route717": "^1.7",
                 "scandipwa/slider-graphql": "^2.0",
                 "scandipwa/store-graphql": "^1.0.7",
                 "scandipwa/urlrewrite-graphql": "^1.2.1",
@@ -15575,7 +15479,7 @@
                 "scandipwa",
                 "source"
             ],
-            "time": "2020-08-18T14:22:12+00:00"
+            "time": "2020-08-27T12:57:14+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
@@ -21039,6 +20943,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2017-11-27T05:48:46+00:00"
         },
         {
@@ -21504,6 +21409,7 @@
             ],
             "description": "FinderFacade is a convenience wrapper for Symfony's Finder component.",
             "homepage": "https://github.com/sebastianbergmann/finder-facade",
+            "abandoned": true,
             "time": "2020-01-16T08:08:45+00:00"
         },
         {
