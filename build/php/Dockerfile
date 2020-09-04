@@ -18,8 +18,11 @@ RUN apt-get update; \
         libssl-dev \
         libzip-dev \
         libicu-dev; \
-    docker-php-ext-configure \
-        gd --with-freetype --with-jpeg; \
+    # First, try installing the old way, else switch to PHP 7.4 style
+    ( \
+        docker-php-ext-configure gd --with-freetype-dir=/usr --with-jpeg-dir=/usr --with-png-dir=/usr \
+        || docker-php-ext-configure gd --with-freetype --with-jpeg; \
+    ); \
     docker-php-ext-install -j$(nproc) \
         gd \
         intl \
