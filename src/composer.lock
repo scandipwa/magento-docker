@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8de4e9198e48b0e8c0a5541a2720aa1",
+    "content-hash": "d0e8f7dc31a1d2df68f45188119b2e04",
     "packages": [
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
@@ -434,16 +434,16 @@
         },
         {
             "name": "claviska/simpleimage",
-            "version": "3.3.4",
+            "version": "3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/claviska/SimpleImage.git",
-                "reference": "3786d80af8e6d05e5e42f0350e5e5da5b92041a0"
+                "reference": "ae043784262e2ebc262d1b125509ef1fea1f1d5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/3786d80af8e6d05e5e42f0350e5e5da5b92041a0",
-                "reference": "3786d80af8e6d05e5e42f0350e5e5da5b92041a0",
+                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/ae043784262e2ebc262d1b125509ef1fea1f1d5e",
+                "reference": "ae043784262e2ebc262d1b125509ef1fea1f1d5e",
                 "shasum": ""
             },
             "require": {
@@ -469,7 +469,13 @@
                 }
             ],
             "description": "A PHP class that makes working with images as simple as possible.",
-            "time": "2019-09-26T01:22:02+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/claviska",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-09-04T18:40:08+00:00"
         },
         {
             "name": "colinmollenhour/cache-backend-file",
@@ -619,16 +625,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd"
+                "reference": "8a7ecad675253e4654ea05505233285377405215"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/95c63ab2117a72f48f5a55da9740a3273d45b7fd",
-                "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/8a7ecad675253e4654ea05505233285377405215",
+                "reference": "8a7ecad675253e4654ea05505233285377405215",
                 "shasum": ""
             },
             "require": {
@@ -677,24 +683,28 @@
                     "type": "custom"
                 },
                 {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/composer/composer",
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-08T08:27:21+00:00"
+            "time": "2020-08-23T12:54:47+00:00"
         },
         {
             "name": "composer/composer",
-            "version": "1.10.10",
+            "version": "1.10.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "32966a3b1d48bc01472a8321fd6472b44fad033a"
+                "reference": "47c841ba3b2d3fc0b4b13282cf029ea18b66d78b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/32966a3b1d48bc01472a8321fd6472b44fad033a",
-                "reference": "32966a3b1d48bc01472a8321fd6472b44fad033a",
+                "url": "https://api.github.com/repos/composer/composer/zipball/47c841ba3b2d3fc0b4b13282cf029ea18b66d78b",
+                "reference": "47c841ba3b2d3fc0b4b13282cf029ea18b66d78b",
                 "shasum": ""
             },
             "require": {
@@ -775,20 +785,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-03T09:35:19+00:00"
+            "time": "2020-09-09T09:46:34+00:00"
         },
         {
             "name": "composer/semver",
-            "version": "1.5.1",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "c6bea70230ef4dd483e6bbcab6005f682ed3a8de"
+                "reference": "38276325bd896f90dfcfe30029aa5db40df387a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/c6bea70230ef4dd483e6bbcab6005f682ed3a8de",
-                "reference": "c6bea70230ef4dd483e6bbcab6005f682ed3a8de",
+                "url": "https://api.github.com/repos/composer/semver/zipball/38276325bd896f90dfcfe30029aa5db40df387a7",
+                "reference": "38276325bd896f90dfcfe30029aa5db40df387a7",
                 "shasum": ""
             },
             "require": {
@@ -836,7 +846,21 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2020-01-13T12:06:48+00:00"
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-27T13:13:07+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -1004,16 +1028,16 @@
         },
         {
             "name": "donatj/phpuseragentparser",
-            "version": "v0.16.0",
+            "version": "v0.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/donatj/PhpUserAgent.git",
-                "reference": "b3551112ed84524aef6542a8778a3f812c8098ce"
+                "reference": "e159493010d4b71c9620a43fd05f8284f29dcfeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/b3551112ed84524aef6542a8778a3f812c8098ce",
-                "reference": "b3551112ed84524aef6542a8778a3f812c8098ce",
+                "url": "https://api.github.com/repos/donatj/PhpUserAgent/zipball/e159493010d4b71c9620a43fd05f8284f29dcfeb",
+                "reference": "e159493010d4b71c9620a43fd05f8284f29dcfeb",
                 "shasum": ""
             },
             "require": {
@@ -1061,7 +1085,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-04-07T15:47:30+00:00"
+            "time": "2020-09-01T16:15:49+00:00"
         },
         {
             "name": "dotmailer/dotmailer-magento2-extension",
@@ -1173,16 +1197,16 @@
         },
         {
             "name": "elasticsearch/elasticsearch",
-            "version": "v7.8.0",
+            "version": "v7.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elastic/elasticsearch-php.git",
-                "reference": "5c2d039ae7bdaa1e28f1e66971c5b3314fc36383"
+                "reference": "38e821f37491bd91fe06b18b88613128950a11bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/5c2d039ae7bdaa1e28f1e66971c5b3314fc36383",
-                "reference": "5c2d039ae7bdaa1e28f1e66971c5b3314fc36383",
+                "url": "https://api.github.com/repos/elastic/elasticsearch-php/zipball/38e821f37491bd91fe06b18b88613128950a11bb",
+                "reference": "38e821f37491bd91fe06b18b88613128950a11bb",
                 "shasum": ""
             },
             "require": {
@@ -1194,6 +1218,7 @@
             "require-dev": {
                 "cpliakas/git-wrapper": "~2.0",
                 "doctrine/inflector": "^1.3",
+                "ext-yaml": "*",
                 "mockery/mockery": "^1.2",
                 "phpstan/phpstan": "^0.12",
                 "phpunit/phpunit": "^7.5",
@@ -1232,7 +1257,7 @@
                 "elasticsearch",
                 "search"
             ],
-            "time": "2020-06-18T19:23:29+00:00"
+            "time": "2020-10-06T13:03:50+00:00"
         },
         {
             "name": "endroid/qr-code",
@@ -1520,23 +1545,23 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "v1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+                "reference": "60d379c243457e073cff02bc323a2a86cb355631"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/60d379c243457e073cff02bc323a2a86cb355631",
+                "reference": "60d379c243457e073cff02bc323a2a86cb355631",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=5.5"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.0"
+                "symfony/phpunit-bridge": "^4.4 || ^5.1"
             },
             "type": "library",
             "extra": {
@@ -1567,20 +1592,20 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2016-12-20T10:07:11+00:00"
+            "time": "2020-09-30T07:37:28+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
-                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53330f47520498c0ae1f61f7e2c90f55690c06a3",
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3",
                 "shasum": ""
             },
             "require": {
@@ -1593,15 +1618,15 @@
             },
             "require-dev": {
                 "ext-zlib": "*",
-                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
             },
             "suggest": {
-                "zendframework/zend-httphandlerrunner": "Emit PSR-7 responses"
+                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -1638,7 +1663,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-07-01T23:21:34+00:00"
+            "time": "2020-09-30T07:37:11+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1845,38 +1870,6 @@
             "license": [
                 "Apache-2.0"
             ],
-            "authors": [
-                {
-                    "name": "Joe Constant",
-                    "email": "joe.constant@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dario Kassler",
-                    "email": "dario.kassler@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Kenny Gilles",
-                    "email": "kenny.gilles@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Markus Simon",
-                    "email": "markus.simon2@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Fei Chen",
-                    "email": "fei.chen@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jason Grim",
-                    "email": "jason.grim@klarna.com",
-                    "role": "Developer"
-                }
-            ],
             "description": "Klarna Core Magento 2 Extension"
         },
         {
@@ -1932,38 +1925,6 @@
             "license": [
                 "Apache-2.0"
             ],
-            "authors": [
-                {
-                    "name": "Joe Constant",
-                    "email": "joe.constant@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dario Kassler",
-                    "email": "dario.kassler@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Kenny Gilles",
-                    "email": "kenny.gilles@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Markus Simon",
-                    "email": "markus.simon2@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Fei Chen",
-                    "email": "fei.chen@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jason Grim",
-                    "email": "jason.grim@klarna.com",
-                    "role": "Developer"
-                }
-            ],
             "description": "Klarna Payments Magento 2 Extension"
         },
         {
@@ -2012,38 +1973,6 @@
             },
             "license": [
                 "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Joe Constant",
-                    "email": "joe.constant@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Dario Kassler",
-                    "email": "dario.kassler@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Kenny Gilles",
-                    "email": "kenny.gilles@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Markus Simon",
-                    "email": "markus.simon2@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Fei Chen",
-                    "email": "fei.chen@klarna.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Jason Grim",
-                    "email": "jason.grim@klarna.com",
-                    "role": "Developer"
-                }
             ],
             "description": "Klarna Order Management Magento 2 Extension"
         },
@@ -2686,16 +2615,16 @@
         },
         {
             "name": "laminas/laminas-feed",
-            "version": "2.12.2",
+            "version": "2.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-feed.git",
-                "reference": "8a193ac96ebcb3e16b6ee754ac2a889eefacb654"
+                "reference": "3c91415633cb1be6f9d78683d69b7dcbfe6b4012"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/8a193ac96ebcb3e16b6ee754ac2a889eefacb654",
-                "reference": "8a193ac96ebcb3e16b6ee754ac2a889eefacb654",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/3c91415633cb1be6f9d78683d69b7dcbfe6b4012",
+                "reference": "3c91415633cb1be6f9d78683d69b7dcbfe6b4012",
                 "shasum": ""
             },
             "require": {
@@ -2749,7 +2678,13 @@
                 "feed",
                 "laminas"
             ],
-            "time": "2020-03-29T12:36:29+00:00"
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-08-18T13:45:04+00:00"
         },
         {
             "name": "laminas/laminas-filter",
@@ -3526,16 +3461,16 @@
         },
         {
             "name": "laminas/laminas-modulemanager",
-            "version": "2.8.4",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-modulemanager.git",
-                "reference": "92b1cde1aab5aef687b863face6dd5d9c6751c78"
+                "reference": "789bbd4ab391da9221f265f6bb2d594f8f11855b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-modulemanager/zipball/92b1cde1aab5aef687b863face6dd5d9c6751c78",
-                "reference": "92b1cde1aab5aef687b863face6dd5d9c6751c78",
+                "url": "https://api.github.com/repos/laminas/laminas-modulemanager/zipball/789bbd4ab391da9221f265f6bb2d594f8f11855b",
+                "reference": "789bbd4ab391da9221f265f6bb2d594f8f11855b",
                 "shasum": ""
             },
             "require": {
@@ -3543,10 +3478,11 @@
                 "laminas/laminas-eventmanager": "^3.2 || ^2.6.3",
                 "laminas/laminas-stdlib": "^3.1 || ^2.7",
                 "laminas/laminas-zendframework-bridge": "^1.0",
-                "php": "^5.6 || ^7.0"
+                "php": "^5.6 || ^7.0",
+                "webimpress/safe-writer": "^1.0.2 || ^2.1"
             },
             "replace": {
-                "zendframework/zend-modulemanager": "self.version"
+                "zendframework/zend-modulemanager": "^2.8.4"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~1.0.0",
@@ -3566,8 +3502,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev",
-                    "dev-develop": "2.9.x-dev"
+                    "dev-master": "2.9.x-dev",
+                    "dev-develop": "2.10.x-dev"
                 }
             },
             "autoload": {
@@ -3585,7 +3521,13 @@
                 "laminas",
                 "modulemanager"
             ],
-            "time": "2019-12-31T17:26:56+00:00"
+            "funding": [
+                {
+                    "url": "https://funding.communitybridge.org/projects/laminas-project",
+                    "type": "community_bridge"
+                }
+            ],
+            "time": "2020-08-25T09:29:22+00:00"
         },
         {
             "name": "laminas/laminas-mvc",
@@ -4358,16 +4300,16 @@
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-zendframework-bridge.git",
-                "reference": "4939c81f63a8a4968c108c440275c94955753b19"
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/4939c81f63a8a4968c108c440275c94955753b19",
-                "reference": "4939c81f63a8a4968c108c440275c94955753b19",
+                "url": "https://api.github.com/repos/laminas/laminas-zendframework-bridge/zipball/6ede70583e101030bcace4dcddd648f760ddf642",
+                "reference": "6ede70583e101030bcace4dcddd648f760ddf642",
                 "shasum": ""
             },
             "require": {
@@ -4379,10 +4321,6 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev",
-                    "dev-develop": "1.1.x-dev"
-                },
                 "laminas": {
                     "module": "Laminas\\ZendFrameworkBridge"
                 }
@@ -4412,7 +4350,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-08-18T16:34:51+00:00"
+            "time": "2020-09-14T14:23:00+00:00"
         },
         {
             "name": "league/color-extractor",
@@ -14357,16 +14295,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.28",
+            "version": "2.0.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "d1ca58cf33cb21046d702ae3a7b14fdacd9f3260"
+                "reference": "497856a8d997f640b4a516062f84228a772a48a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d1ca58cf33cb21046d702ae3a7b14fdacd9f3260",
-                "reference": "d1ca58cf33cb21046d702ae3a7b14fdacd9f3260",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/497856a8d997f640b4a516062f84228a772a48a8",
+                "reference": "497856a8d997f640b4a516062f84228a772a48a8",
                 "shasum": ""
             },
             "require": {
@@ -14375,7 +14313,6 @@
             "require-dev": {
                 "phing/phing": "~2.7",
                 "phpunit/phpunit": "^4.8.35|^5.7|^6.0",
-                "sami/sami": "~2.0",
                 "squizlabs/php_codesniffer": "~2.0"
             },
             "suggest": {
@@ -14459,7 +14396,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-08T09:08:33+00:00"
+            "time": "2020-09-08T04:24:43+00:00"
         },
         {
             "name": "psr/container",
@@ -14777,21 +14714,23 @@
         },
         {
             "name": "scandipwa/cache",
-            "version": "1.0.4",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/cache.git",
-                "reference": "d3ec134e864259a08c5d9edb8d6d070fad9c9a0a"
+                "reference": "08c3b0a9cd99221fd7fe8b6e57b32b5a053620f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/cache/zipball/d3ec134e864259a08c5d9edb8d6d070fad9c9a0a",
-                "reference": "d3ec134e864259a08c5d9edb8d6d070fad9c9a0a",
+                "url": "https://api.github.com/repos/scandipwa/cache/zipball/08c3b0a9cd99221fd7fe8b6e57b32b5a053620f0",
+                "reference": "08c3b0a9cd99221fd7fe8b6e57b32b5a053620f0",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3",
-                "scandipwa/persisted-query": "^2.0"
+                "magento/framework": "*",
+                "magento/module-catalog": "*",
+                "magento/module-graph-ql": "^100.3",
+                "scandipwa/persisted-query": "^2"
             },
             "type": "magento2-theme",
             "autoload": {
@@ -14804,43 +14743,43 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Ilja Lapkovskis",
-                    "email": "ilja@scandiweb.com"
-                }
+                "OSL-3.0"
             ],
             "description": "ScandiPWA bootstrap module",
-            "keywords": [
-                "installer",
-                "magento2",
-                "pwa",
-                "scandipwa",
-                "theme"
-            ],
-            "time": "2020-01-09T15:15:28+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.14.0",
+            "version": "2.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "155362cc009a589761906344a99cb526c1a0cf76"
+                "reference": "9b1ef8c9283db50610a443ff479521785b387bfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/155362cc009a589761906344a99cb526c1a0cf76",
-                "reference": "155362cc009a589761906344a99cb526c1a0cf76",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/9b1ef8c9283db50610a443ff479521785b387bfd",
+                "reference": "9b1ef8c9283db50610a443ff479521785b387bfd",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.5",
-                "scandipwa/performance": "^1.0.3"
+                "magento/framework": "*",
+                "magento/module-bundle-graph-ql": "^100.3",
+                "magento/module-catalog": "*",
+                "magento/module-catalog-graph-ql": "^100.3",
+                "magento/module-catalog-inventory": "*",
+                "magento/module-catalog-widget": "*",
+                "magento/module-configurable-product-graph-ql": "^100.3",
+                "magento/module-eav": "*",
+                "magento/module-elasticsearch": "*",
+                "magento/module-graph-ql": "*",
+                "magento/module-rule": "*",
+                "magento/module-store": "*",
+                "magento/module-swatches": "*",
+                "magento/module-widget": "*",
+                "scandipwa/performance": "^1.1.0"
             },
-            "type": "magento2-module",
+            "type": "magento2-theme",
             "autoload": {
                 "files": [
                     "src/registration.php"
@@ -14853,31 +14792,30 @@
             "license": [
                 "OSL-3.0"
             ],
-            "description": "ScandiPWA GraphQl extend for Catalog",
-            "keywords": [
-                "magento2",
-                "module",
-                "pwa",
-                "scandipwa"
-            ],
-            "time": "2020-07-21T07:57:01+00:00"
+            "description": "Catalog-specific modifications for ScandiPWA",
+            "time": "2020-09-07T09:24:21+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/cms-graphql.git",
-                "reference": "8ae780d2aa4217d1cf77c0a7a1bd676891a5f3c6"
+                "reference": "f337736206043bab0747ffb8b21d49a06134c9d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/cms-graphql/zipball/8ae780d2aa4217d1cf77c0a7a1bd676891a5f3c6",
-                "reference": "8ae780d2aa4217d1cf77c0a7a1bd676891a5f3c6",
+                "url": "https://api.github.com/repos/scandipwa/cms-graphql/zipball/f337736206043bab0747ffb8b21d49a06134c9d4",
+                "reference": "f337736206043bab0747ffb8b21d49a06134c9d4",
                 "shasum": ""
             },
             "require": {
-                "magento/module-cms-graph-ql": "*"
+                "magento/framework": "*",
+                "magento/module-cms": "*",
+                "magento/module-cms-graph-ql": "^100.3",
+                "magento/module-store": "*",
+                "magento/module-variable": "*",
+                "magento/module-widget": "*"
             },
             "type": "magento2-module",
             "autoload": {
@@ -14892,36 +14830,32 @@
             "license": [
                 "OSL-3.0"
             ],
-            "authors": [
-                {
-                    "name": "Yefim Butrameev",
-                    "email": "yefim.butrameev@scandiweb.com"
-                }
-            ],
             "description": "ScandiPWA Graphql extension for CMS page",
-            "keywords": [
-                "magento2",
-                "pwa",
-                "scandipwa"
-            ],
-            "time": "2019-12-19T15:41:42+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/customer-graph-ql",
-            "version": "2.2.3",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/customer-graph-ql.git",
-                "reference": "e8dc3fac175a39b88cdf9ca4bd1cd84eaeecd86c"
+                "reference": "6ad1dcb17169c81d1319b8a638a9ac345c3abfb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/customer-graph-ql/zipball/e8dc3fac175a39b88cdf9ca4bd1cd84eaeecd86c",
-                "reference": "e8dc3fac175a39b88cdf9ca4bd1cd84eaeecd86c",
+                "url": "https://api.github.com/repos/scandipwa/customer-graph-ql/zipball/6ad1dcb17169c81d1319b8a638a9ac345c3abfb2",
+                "reference": "6ad1dcb17169c81d1319b8a638a9ac345c3abfb2",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "~2.3.2"
+                "magento/framework": "*",
+                "magento/module-authorization": "*",
+                "magento/module-catalog": "*",
+                "magento/module-customer": "*",
+                "magento/module-customer-graph-ql": "^100.3",
+                "magento/module-graph-ql": "*",
+                "magento/module-integration": "*",
+                "magento/module-store": "*"
             },
             "type": "magento2-module",
             "autoload": {
@@ -14934,29 +14868,33 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "OSL-3.0",
-                "AFL-3.0"
+                "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2020-06-10T14:34:41+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/customization",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/customization.git",
-                "reference": "9b903428e8dd53030a5e5001b72ad569e8abbf66"
+                "reference": "58fcfee38bb5575d1365e2cbc466eb5ab2f95517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/customization/zipball/9b903428e8dd53030a5e5001b72ad569e8abbf66",
-                "reference": "9b903428e8dd53030a5e5001b72ad569e8abbf66",
+                "url": "https://api.github.com/repos/scandipwa/customization/zipball/58fcfee38bb5575d1365e2cbc466eb5ab2f95517",
+                "reference": "58fcfee38bb5575d1365e2cbc466eb5ab2f95517",
                 "shasum": ""
             },
             "require": {
-                "scandipwa/locale": "^1.0.0",
-                "scandiweb/module-core": "~0.1.2"
+                "magento/framework": "*",
+                "magento/module-catalog": "*",
+                "magento/module-cms": "*",
+                "magento/module-config": "*",
+                "magento/module-eav": "*",
+                "magento/module-store": "*",
+                "scandipwa/locale": "^1"
             },
             "type": "magento2-module",
             "autoload": {
@@ -14972,25 +14910,26 @@
                 "OSL-3.0"
             ],
             "description": "Customization configuration for ScandiPWA",
-            "time": "2020-07-30T12:59:47+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/installer",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/installer.git",
-                "reference": "f6d4f0c6b2728490409ab060cd9508db02627ee7"
+                "reference": "fdea55e2f60f568c984e85bc0eaec63733e49d0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/installer/zipball/f6d4f0c6b2728490409ab060cd9508db02627ee7",
-                "reference": "f6d4f0c6b2728490409ab060cd9508db02627ee7",
+                "url": "https://api.github.com/repos/scandipwa/installer/zipball/fdea55e2f60f568c984e85bc0eaec63733e49d0c",
+                "reference": "fdea55e2f60f568c984e85bc0eaec63733e49d0c",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.3",
-                "scandipwa/source": "3.0.*@beta"
+                "magento/framework": "*",
+                "magento/module-theme": "*",
+                "scandipwa/source": "^3"
             },
             "type": "magento2-theme",
             "autoload": {
@@ -15006,86 +14945,27 @@
             "license": [
                 "OSL-3.0"
             ],
-            "authors": [
-                {
-                    "name": "Ilja Lapkovskis",
-                    "email": "ilja@scandiweb.com"
-                }
-            ],
             "description": "ScandiPWA bootstrap module",
-            "keywords": [
-                "installer",
-                "magento2",
-                "pwa",
-                "scandipwa",
-                "theme"
-            ],
-            "time": "2020-07-03T11:10:38+00:00"
-        },
-        {
-            "name": "scandipwa/klarna-graphql",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scandipwa/klarna-graphql.git",
-                "reference": "0df449d4c8610f6114584cdf02c34931448ba203"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/klarna-graphql/zipball/0df449d4c8610f6114584cdf02c34931448ba203",
-                "reference": "0df449d4c8610f6114584cdf02c34931448ba203",
-                "shasum": ""
-            },
-            "require": {
-                "klarna/module-kp": "^6.3.4",
-                "magento/magento2-base": "^2.3.2"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "src/registration.php"
-                ],
-                "psr-4": {
-                    "ScandiPWA\\KlarnaGraphQl\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "OSL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Artjoms Travkovs",
-                    "email": "artjoms.travkovs@scandiweb.com"
-                }
-            ],
-            "description": "ScandiPWA GraphQl extend for Klarna",
-            "keywords": [
-                "graphql",
-                "klarna",
-                "magento2",
-                "module",
-                "pwa",
-                "scandipwa"
-            ],
-            "time": "2019-11-29T10:42:46+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/locale",
-            "version": "1.0.1",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/locale.git",
-                "reference": "8bfecbe7615011c0886f793d9347e4afa15bf6af"
+                "reference": "4c89c94a1f1724a0e900d7def339da7e006e4ecd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/locale/zipball/8bfecbe7615011c0886f793d9347e4afa15bf6af",
-                "reference": "8bfecbe7615011c0886f793d9347e4afa15bf6af",
+                "url": "https://api.github.com/repos/scandipwa/locale/zipball/4c89c94a1f1724a0e900d7def339da7e006e4ecd",
+                "reference": "4c89c94a1f1724a0e900d7def339da7e006e4ecd",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.1"
+                "magento/framework": "*",
+                "magento/module-deploy": "^100.3",
+                "scandipwa/route717": "^1"
             },
             "type": "magento2-module",
             "autoload": {
@@ -15098,34 +14978,34 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "OSL-3.0",
-                "AFL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alfreds Genkins",
-                    "email": "alfreds@scandiweb.com"
-                }
+                "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2019-12-09T13:43:28+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/menu-organizer",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/menu-organizer.git",
-                "reference": "fae040be4320e4b9119d4b1f871c102c5ca402ae"
+                "reference": "8a3fe81feb4881d515efd72cddaecb86800eb5b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/menu-organizer/zipball/fae040be4320e4b9119d4b1f871c102c5ca402ae",
-                "reference": "fae040be4320e4b9119d4b1f871c102c5ca402ae",
+                "url": "https://api.github.com/repos/scandipwa/menu-organizer/zipball/8a3fe81feb4881d515efd72cddaecb86800eb5b4",
+                "reference": "8a3fe81feb4881d515efd72cddaecb86800eb5b4",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.5",
+                "magento/framework": "*",
+                "magento/module-backend": "*",
+                "magento/module-captcha": "*",
+                "magento/module-catalog": "*",
+                "magento/module-cms": "*",
+                "magento/module-media-storage": "*",
+                "magento/module-store": "*",
+                "magento/module-ui": "*",
                 "scandiweb/module-core": "~0.1.2"
             },
             "type": "magento2-module",
@@ -15142,73 +15022,32 @@
                 "OSL-3.0"
             ],
             "description": "Scandiweb Menu Organizer for ScandiPWA",
-            "time": "2020-06-26T09:14:55+00:00"
-        },
-        {
-            "name": "scandipwa/paypal-graphql",
-            "version": "3.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scandipwa/paypal-graphql.git",
-                "reference": "e5eb88903d37d30fab0f9598652187f1865c46eb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/paypal-graphql/zipball/e5eb88903d37d30fab0f9598652187f1865c46eb",
-                "reference": "e5eb88903d37d30fab0f9598652187f1865c46eb",
-                "shasum": ""
-            },
-            "require": {
-                "magento/magento2-base": "^2.3.2",
-                "magento/module-paypal-graph-ql": "*"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "src/registration.php"
-                ],
-                "psr-4": {
-                    "ScandiPWA\\PayPalGraphQl\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "OSL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Artjoms Travkovs",
-                    "email": "artjoms.travkovs@scandiweb.com"
-                },
-                {
-                    "name": "Jegors Batovs",
-                    "email": "yegor@scandipwa.com"
-                }
-            ],
-            "description": "ScandiPWA GraphQl extend for PayPal",
-            "keywords": [
-                "graphql",
-                "magento2",
-                "module",
-                "paypal",
-                "pwa",
-                "scandipwa"
-            ],
-            "time": "2020-08-18T16:19:06+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/performance",
-            "version": "1.0.4",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/performance.git",
-                "reference": "802ab7a8c82eb9871d2e745cb7a26389796a9e26"
+                "reference": "0734794545355fbda089fe8c5dbc8156fff7dcd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/performance/zipball/802ab7a8c82eb9871d2e745cb7a26389796a9e26",
-                "reference": "802ab7a8c82eb9871d2e745cb7a26389796a9e26",
+                "url": "https://api.github.com/repos/scandipwa/performance/zipball/0734794545355fbda089fe8c5dbc8156fff7dcd2",
+                "reference": "0734794545355fbda089fe8c5dbc8156fff7dcd2",
                 "shasum": ""
+            },
+            "require": {
+                "magento/framework": "*",
+                "magento/module-catalog": "*",
+                "magento/module-catalog-graph-ql": "^100.3",
+                "magento/module-catalog-inventory": "*",
+                "magento/module-eav": "*",
+                "magento/module-inventory-api": "*",
+                "magento/module-inventory-catalog": "*",
+                "magento/module-store": "*",
+                "magento/module-swatches": "*"
             },
             "type": "magento2-module",
             "autoload": {
@@ -15221,35 +15060,33 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "OSL-3.0",
-                "AFL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alfreds Genkins",
-                    "email": "alfreds@scandiweb.com"
-                }
+                "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2020-06-09T14:14:26+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/persisted-query",
-            "version": "2.3.2",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/persisted-query.git",
-                "reference": "2338eb8dd5bf7ef9caa726f7854784e87c53d0c3"
+                "reference": "7f2d72290aa94ba3dba9f1dcdab0b95a3d9cc952"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/2338eb8dd5bf7ef9caa726f7854784e87c53d0c3",
-                "reference": "2338eb8dd5bf7ef9caa726f7854784e87c53d0c3",
+                "url": "https://api.github.com/repos/scandipwa/persisted-query/zipball/7f2d72290aa94ba3dba9f1dcdab0b95a3d9cc952",
+                "reference": "7f2d72290aa94ba3dba9f1dcdab0b95a3d9cc952",
                 "shasum": ""
             },
             "require": {
                 "colinmollenhour/credis": "^1.10",
-                "magento/magento2-base": "^2.3.5"
+                "magento/framework": "*",
+                "magento/module-cache-invalidate": "*",
+                "magento/module-catalog": "*",
+                "magento/module-graph-ql": "^100.3",
+                "magento/module-page-cache": "*",
+                "magento/module-store": "*"
             },
             "type": "magento2-module",
             "autoload": {
@@ -15264,38 +15101,39 @@
             "license": [
                 "OSL-3.0"
             ],
-            "authors": [
-                {
-                    "name": "Ilja Lapkovskis",
-                    "email": "ilja@scandiweb.com"
-                }
-            ],
             "description": "ScandiPWA persisted query module",
-            "keywords": [
-                "installer",
-                "magento2",
-                "pwa",
-                "scandipwa",
-                "theme"
-            ],
-            "time": "2020-08-07T08:42:29+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.14.0",
+            "version": "2.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "23c86e56727ea56b2b41d81b7990e4131529d689"
+                "reference": "937bdbfcd8ff5b74c7fabbc945275b60fe852b64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/23c86e56727ea56b2b41d81b7990e4131529d689",
-                "reference": "23c86e56727ea56b2b41d81b7990e4131529d689",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/937bdbfcd8ff5b74c7fabbc945275b60fe852b64",
+                "reference": "937bdbfcd8ff5b74c7fabbc945275b60fe852b64",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.5",
+                "magento/framework": "*",
+                "magento/module-authorization": "*",
+                "magento/module-bundle": "*",
+                "magento/module-bundle-graph-ql": "^100.3",
+                "magento/module-catalog-rule": "*",
+                "magento/module-checkout": "*",
+                "magento/module-customer": "*",
+                "magento/module-integration": "*",
+                "magento/module-inventory-configuration-api": "*",
+                "magento/module-inventory-reservations-api": "*",
+                "magento/module-inventory-sales-api": "*",
+                "magento/module-quote": "*",
+                "magento/module-quote-graph-ql": "^100.3",
+                "magento/module-sales": "*",
+                "magento/module-webapi": "*",
                 "scandipwa/performance": "^1.0"
             },
             "type": "magento2-module",
@@ -15309,38 +15147,31 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "OSL-3.0",
-                "AFL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Alfreds Genkins",
-                    "email": "alfreds@scandiweb.com"
-                },
-                {
-                    "name": "Ilja Lapkovskis",
-                    "email": "ilja@scandiweb.com"
-                }
+                "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2020-07-28T10:02:16+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/reviews-graphql",
-            "version": "1.4.2",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/reviews-graphql.git",
-                "reference": "769138279a2ca7e26f1cc357fc60e99a8fbc71c7"
+                "reference": "9129f2f7f3e61a5d7d52af5c4e7b1d82329df455"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/reviews-graphql/zipball/769138279a2ca7e26f1cc357fc60e99a8fbc71c7",
-                "reference": "769138279a2ca7e26f1cc357fc60e99a8fbc71c7",
+                "url": "https://api.github.com/repos/scandipwa/reviews-graphql/zipball/9129f2f7f3e61a5d7d52af5c4e7b1d82329df455",
+                "reference": "9129f2f7f3e61a5d7d52af5c4e7b1d82329df455",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.1",
+                "magento/framework": "*",
+                "magento/module-catalog": "*",
+                "magento/module-customer": "*",
+                "magento/module-review": "^100.3",
+                "magento/module-store": "*",
                 "scandipwa/performance": "^1.0"
             },
             "type": "magento2-module",
@@ -15354,38 +15185,31 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "OSL-3.0",
-                "AFL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Indars Lejins",
-                    "email": "indars@scandiweb.com"
-                },
-                {
-                    "name": "Alfreds Genkins",
-                    "email": "alfreds@scandiweb.com"
-                }
+                "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2020-03-05T10:44:50+00:00"
+            "time": "2020-10-06T10:26:11+00:00"
         },
         {
             "name": "scandipwa/route717",
-            "version": "1.6.2",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/route717.git",
-                "reference": "45b4a647086420f551bdc988cf9429ccd19f29f2"
+                "reference": "a4e207a8030851580f7ff6d07448759f892568db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/route717/zipball/45b4a647086420f551bdc988cf9429ccd19f29f2",
-                "reference": "45b4a647086420f551bdc988cf9429ccd19f29f2",
+                "url": "https://api.github.com/repos/scandipwa/route717/zipball/a4e207a8030851580f7ff6d07448759f892568db",
+                "reference": "a4e207a8030851580f7ff6d07448759f892568db",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3"
+                "magento/framework": "*",
+                "magento/module-customer": "*",
+                "magento/module-store": "*",
+                "magento/module-url-rewrite": "*",
+                "magento/module-wishlist": "*"
             },
             "type": "magento2-module",
             "autoload": {
@@ -15400,37 +15224,32 @@
             "license": [
                 "OSL-3.0"
             ],
-            "authors": [
-                {
-                    "name": "Ilja Lapkovskis",
-                    "email": "ilja@scandiweb.com"
-                }
-            ],
             "description": "ScandiPWA dedicated router",
-            "keywords": [
-                "magento2",
-                "pwa",
-                "router",
-                "scandipwa"
-            ],
-            "time": "2020-06-15T13:31:27+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/slider",
-            "version": "2.1.1",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/slider.git",
-                "reference": "338509123d390d47075454d8b9fc78acdf54a23c"
+                "reference": "e10e23e93770a4ff23c956be1677912a44367a07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/slider/zipball/338509123d390d47075454d8b9fc78acdf54a23c",
-                "reference": "338509123d390d47075454d8b9fc78acdf54a23c",
+                "url": "https://api.github.com/repos/scandipwa/slider/zipball/e10e23e93770a4ff23c956be1677912a44367a07",
+                "reference": "e10e23e93770a4ff23c956be1677912a44367a07",
                 "shasum": ""
             },
             "require": {
                 "claviska/simpleimage": "^3.3",
+                "magento/framework": "*",
+                "magento/module-backend": "*",
+                "magento/module-catalog": "*",
+                "magento/module-cms": "*",
+                "magento/module-media-storage": "*",
+                "magento/module-store": "*",
+                "magento/module-widget": "*",
                 "scandiweb/locale-resolver-fix": "^1.0",
                 "scandiweb/module-core": "~0.1.2"
             },
@@ -15448,24 +15267,24 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Slider module for Magento 2",
-            "time": "2020-05-28T06:35:01+00:00"
+            "time": "2020-10-06T12:16:49+00:00"
         },
         {
             "name": "scandipwa/slider-graphql",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/slider-graphql.git",
-                "reference": "0252014a3d78c4c5de4178dc20b9994d6bd20a4e"
+                "reference": "5a1606d01a2443f8c90c3ccc9fe9fe05382d72cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/slider-graphql/zipball/0252014a3d78c4c5de4178dc20b9994d6bd20a4e",
-                "reference": "0252014a3d78c4c5de4178dc20b9994d6bd20a4e",
+                "url": "https://api.github.com/repos/scandipwa/slider-graphql/zipball/5a1606d01a2443f8c90c3ccc9fe9fe05382d72cd",
+                "reference": "5a1606d01a2443f8c90c3ccc9fe9fe05382d72cd",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.1",
+                "magento/framework": "*",
                 "scandipwa/slider": "^2.0"
             },
             "type": "magento2-module",
@@ -15481,52 +15300,39 @@
             "license": [
                 "OSL-3.0"
             ],
-            "authors": [
-                {
-                    "name": "Yefim Butrameev",
-                    "email": "yefim.butrameev@scandiweb.com"
-                }
-            ],
             "description": "ScandiPWA Graphql extension for Slider",
-            "keywords": [
-                "magento2",
-                "pwa",
-                "scandipwa"
-            ],
-            "time": "2020-03-23T11:16:26+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/source",
-            "version": "3.0.0",
+            "version": "dev-3.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "061a030e6b1f444d890d8998b06390df232ecf19"
+                "reference": "52bc733c0ed7fbc90657eb96739447d45bd48afa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/061a030e6b1f444d890d8998b06390df232ecf19",
-                "reference": "061a030e6b1f444d890d8998b06390df232ecf19",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/52bc733c0ed7fbc90657eb96739447d45bd48afa",
+                "reference": "52bc733c0ed7fbc90657eb96739447d45bd48afa",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.5",
+                "magento/framework": "*",
                 "scandipwa/cache": "^1.0",
-                "scandipwa/catalog-graphql": "^2.14",
+                "scandipwa/catalog-graphql": "^2.15.3",
                 "scandipwa/cms-graphql": "^1.3",
                 "scandipwa/customer-graph-ql": "^2.2.3",
                 "scandipwa/customization": "^1.1",
-                "scandipwa/klarna-graphql": "^1.1",
                 "scandipwa/locale": "^1.0",
                 "scandipwa/menu-organizer": "^2.0",
-                "scandipwa/paypal-graphql": "^3.0",
-                "scandipwa/performance": "^1.0",
-                "scandipwa/persisted-query": "^2.3.1",
-                "scandipwa/quote-graphql": "^2.14",
-                "scandipwa/reviews-graphql": "^1.0",
-                "scandipwa/route717": "^1.6",
+                "scandipwa/performance": "^1.1",
+                "scandipwa/persisted-query": "^2.4",
+                "scandipwa/quote-graphql": "^2.14.1",
+                "scandipwa/reviews-graphql": "^1.6",
+                "scandipwa/route717": "^1.7",
                 "scandipwa/slider-graphql": "^2.0",
-                "scandipwa/store-graphql": "^1.0.7",
+                "scandipwa/store-graphql": "^1.1.1",
                 "scandipwa/urlrewrite-graphql": "^1.2.1",
                 "scandipwa/wishlist-graphql": "^1.2"
             },
@@ -15540,53 +15346,26 @@
             "license": [
                 "OSL-3.0"
             ],
-            "authors": [
-                {
-                    "name": "Ilja Lapkovskis",
-                    "email": "ilja@scandiweb.com"
-                },
-                {
-                    "name": "Alfreds Genkins",
-                    "email": "alfreds@scandiweb.com"
-                },
-                {
-                    "name": "Vyacheslav Hlutkov",
-                    "email": "vjaceslavsh@scandiweb.com"
-                },
-                {
-                    "name": "Eduards Mukans",
-                    "email": "eduards@scandiweb.com"
-                },
-                {
-                    "name": "Yefim Butrameev",
-                    "email": "yefim.butrameev@scandiweb.com"
-                }
-            ],
             "description": "ScandiPWA",
-            "keywords": [
-                "magento2",
-                "pwa",
-                "scandipwa",
-                "source"
-            ],
-            "time": "2020-08-20T16:28:07+00:00"
+            "time": "2020-10-06T12:13:21+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
-            "version": "1.0.7",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/store-graphql.git",
-                "reference": "c5a8f5eb763aa8b8239da0fbdeb1b4d18d1ba52e"
+                "reference": "f84f4482302442b03ec54d94268ea9b73672e605"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/c5a8f5eb763aa8b8239da0fbdeb1b4d18d1ba52e",
-                "reference": "c5a8f5eb763aa8b8239da0fbdeb1b4d18d1ba52e",
+                "url": "https://api.github.com/repos/scandipwa/store-graphql/zipball/f84f4482302442b03ec54d94268ea9b73672e605",
+                "reference": "f84f4482302442b03ec54d94268ea9b73672e605",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.2"
+                "magento/framework": "*",
+                "magento/module-store-graph-ql": "^100.3"
             },
             "type": "magento2-module",
             "autoload": {
@@ -15602,31 +15381,28 @@
                 "OSL-3.0"
             ],
             "description": "Magneto 2 Store related functionality extension",
-            "keywords": [
-                "magento2",
-                "module",
-                "pwa",
-                "scandipwa"
-            ],
-            "time": "2020-06-12T10:07:29+00:00"
+            "time": "2020-09-28T14:28:22+00:00"
         },
         {
             "name": "scandipwa/urlrewrite-graphql",
-            "version": "1.2.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/urlrewrite-graphql.git",
-                "reference": "b09e2b9f8ad607e301036610e4c5841f569cb58b"
+                "reference": "9d0bfbcca408798cc10771b56c64db8447ce61f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/urlrewrite-graphql/zipball/b09e2b9f8ad607e301036610e4c5841f569cb58b",
-                "reference": "b09e2b9f8ad607e301036610e4c5841f569cb58b",
+                "url": "https://api.github.com/repos/scandipwa/urlrewrite-graphql/zipball/9d0bfbcca408798cc10771b56c64db8447ce61f9",
+                "reference": "9d0bfbcca408798cc10771b56c64db8447ce61f9",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.1",
-                "scandipwa/route717": "^1.1.0"
+                "magento/framework": "*",
+                "magento/module-catalog": "*",
+                "magento/module-store": "*",
+                "magento/module-url-rewrite": "*",
+                "magento/module-url-rewrite-graph-ql": "^100.3"
             },
             "type": "magento2-module",
             "autoload": {
@@ -15641,38 +15417,32 @@
             "license": [
                 "OSL-3.0"
             ],
-            "authors": [
-                {
-                    "name": "Vladimirs Mihnovics",
-                    "email": "vladimirs.mihnovics@scandiweb.com"
-                }
-            ],
             "description": "N/A",
-            "keywords": [
-                "magento2",
-                "pwa",
-                "scandipwa",
-                "theme",
-                "urlrewrite"
-            ],
-            "time": "2020-07-15T07:50:35+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandipwa/wishlist-graphql",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/wishlist-graphql.git",
-                "reference": "f3e8a08f44cf939b251321373c1abcd84ca17dac"
+                "reference": "b135bd5a3f46825340c6e43464943328dbd24746"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/wishlist-graphql/zipball/f3e8a08f44cf939b251321373c1abcd84ca17dac",
-                "reference": "f3e8a08f44cf939b251321373c1abcd84ca17dac",
+                "url": "https://api.github.com/repos/scandipwa/wishlist-graphql/zipball/b135bd5a3f46825340c6e43464943328dbd24746",
+                "reference": "b135bd5a3f46825340c6e43464943328dbd24746",
                 "shasum": ""
             },
             "require": {
-                "magento/magento2-base": "^2.3.1",
+                "magento/framework": "*",
+                "magento/module-catalog": "*",
+                "magento/module-catalog-graph-ql": "*",
+                "magento/module-configurable-product": "*",
+                "magento/module-customer": "*",
+                "magento/module-store": "*",
+                "magento/module-wishlist": "*",
+                "magento/module-wishlist-graph-ql": "^100.3",
                 "scandipwa/performance": "^1.0"
             },
             "type": "magento2-module",
@@ -15686,25 +15456,10 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "OSL-3.0",
-                "AFL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Anna Bicevska",
-                    "email": "anna.bicevska@scandiweb.com"
-                },
-                {
-                    "name": "Alfreds Genkins",
-                    "email": "alfreds@scandiweb.com"
-                },
-                {
-                    "name": "Artjoms Travkovs",
-                    "email": "artjoms.travkovs@scandiweb.com"
-                }
+                "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2020-06-12T14:47:00+00:00"
+            "time": "2020-09-07T10:32:08+00:00"
         },
         {
             "name": "scandiweb/locale-resolver-fix",
@@ -15780,16 +15535,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd"
+                "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/3d5eb71705adfa34bd34b993400622932b2f62fd",
-                "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/590cfec960b77fd55e39b7d9246659e95dd6d337",
+                "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337",
                 "shasum": ""
             },
             "require": {
@@ -15835,7 +15590,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-13T09:07:59+00:00"
+            "time": "2020-08-25T06:56:57+00:00"
         },
         {
             "name": "seld/phar-utils",
@@ -15947,16 +15702,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.4.11",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "55d07021da933dd0d633ffdab6f45d5b230c7e02"
+                "reference": "90933b39c7b312fc3ceaa1ddeac7eb48cb953124"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/55d07021da933dd0d633ffdab6f45d5b230c7e02",
-                "reference": "55d07021da933dd0d633ffdab6f45d5b230c7e02",
+                "url": "https://api.github.com/repos/symfony/console/zipball/90933b39c7b312fc3ceaa1ddeac7eb48cb953124",
+                "reference": "90933b39c7b312fc3ceaa1ddeac7eb48cb953124",
                 "shasum": ""
             },
             "require": {
@@ -16034,11 +15789,11 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-06T13:18:39+00:00"
+            "time": "2020-09-15T07:58:55+00:00"
         },
         {
             "name": "symfony/css-selector",
-            "version": "v4.4.11",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/css-selector.git",
@@ -16104,81 +15859,17 @@
             "time": "2020-07-05T09:39:30+00:00"
         },
         {
-            "name": "symfony/deprecation-contracts",
-            "version": "v2.1.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5e20b83385a77593259c9f8beb2c43cd03b2ac14",
-                "reference": "5e20b83385a77593259c9f8beb2c43cd03b2ac14",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.1-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "function.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "A generic function and convention to trigger deprecation notices",
-            "homepage": "https://symfony.com",
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-06-06T08:49:21+00:00"
-        },
-        {
             "name": "symfony/event-dispatcher",
-            "version": "v4.4.11",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "6140fc7047dafc5abbe84ba16a34a86c0b0229b8"
+                "reference": "e17bb5e0663dc725f7cdcafc932132735b4725cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/6140fc7047dafc5abbe84ba16a34a86c0b0229b8",
-                "reference": "6140fc7047dafc5abbe84ba16a34a86c0b0229b8",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/e17bb5e0663dc725f7cdcafc932132735b4725cd",
+                "reference": "e17bb5e0663dc725f7cdcafc932132735b4725cd",
                 "shasum": ""
             },
             "require": {
@@ -16196,6 +15887,7 @@
                 "psr/log": "~1.0",
                 "symfony/config": "^3.4|^4.0|^5.0",
                 "symfony/dependency-injection": "^3.4|^4.0|^5.0",
+                "symfony/error-handler": "~3.4|~4.4",
                 "symfony/expression-language": "^3.4|^4.0|^5.0",
                 "symfony/http-foundation": "^3.4|^4.0|^5.0",
                 "symfony/service-contracts": "^1.1|^2",
@@ -16249,7 +15941,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-18T17:59:13+00:00"
+            "time": "2020-09-18T14:07:46+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -16329,16 +16021,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.4.11",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "b27f491309db5757816db672b256ea2e03677d30"
+                "reference": "ebc51494739d3b081ea543ed7c462fa73a4f74db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/b27f491309db5757816db672b256ea2e03677d30",
-                "reference": "b27f491309db5757816db672b256ea2e03677d30",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/ebc51494739d3b081ea543ed7c462fa73a4f74db",
+                "reference": "ebc51494739d3b081ea543ed7c462fa73a4f74db",
                 "shasum": ""
             },
             "require": {
@@ -16389,20 +16081,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-30T18:50:54+00:00"
+            "time": "2020-09-27T13:54:16+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.4.11",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "2727aa35fddfada1dd37599948528e9b152eb742"
+                "reference": "60d08560f9aa72997c44077c40d47aa28a963230"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/2727aa35fddfada1dd37599948528e9b152eb742",
-                "reference": "2727aa35fddfada1dd37599948528e9b152eb742",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/60d08560f9aa72997c44077c40d47aa28a963230",
+                "reference": "60d08560f9aa72997c44077c40d47aa28a963230",
                 "shasum": ""
             },
             "require": {
@@ -16452,97 +16144,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-05T09:39:30+00:00"
-        },
-        {
-            "name": "symfony/inflector",
-            "version": "v5.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/inflector.git",
-                "reference": "fddb4262dd136b34db993a2a3488713df91e4856"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/inflector/zipball/fddb4262dd136b34db993a2a3488713df91e4856",
-                "reference": "fddb4262dd136b34db993a2a3488713df91e4856",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.5",
-                "symfony/deprecation-contracts": "^2.1",
-                "symfony/string": "^5.1"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Inflector\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Bernhard Schussek",
-                    "email": "bschussek@gmail.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Inflector Component",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "inflection",
-                "pluralize",
-                "singularize",
-                "string",
-                "symfony",
-                "words"
-            ],
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-05-20T17:43:50+00:00"
+            "time": "2020-10-02T07:34:48+00:00"
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v4.4.10",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "73e1d0fe11ffceb7b7d4ca55b7381cd7ce0bac05"
+                "reference": "02b120a79ff06b779819f1594a300226bfc75105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/73e1d0fe11ffceb7b7d4ca55b7381cd7ce0bac05",
-                "reference": "73e1d0fe11ffceb7b7d4ca55b7381cd7ce0bac05",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/02b120a79ff06b779819f1594a300226bfc75105",
+                "reference": "02b120a79ff06b779819f1594a300226bfc75105",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": ">=7.1.3"
             },
             "type": "library",
             "extra": {
@@ -16593,7 +16212,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-23T12:09:32+00:00"
+            "time": "2020-09-24T16:40:22+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -16673,16 +16292,16 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.17.1",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "6e4dbcf5e81eba86e36731f94fe56b1726835846"
+                "reference": "b740103edbdcc39602239ee8860f0f45a8eb9aa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/6e4dbcf5e81eba86e36731f94fe56b1726835846",
-                "reference": "6e4dbcf5e81eba86e36731f94fe56b1726835846",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/b740103edbdcc39602239ee8860f0f45a8eb9aa5",
+                "reference": "b740103edbdcc39602239ee8860f0f45a8eb9aa5",
                 "shasum": ""
             },
             "require": {
@@ -16694,7 +16313,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -16747,7 +16366,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -16994,16 +16613,16 @@
         },
         {
             "name": "symfony/polyfill-php56",
-            "version": "v1.17.1",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php56.git",
-                "reference": "a25861bb3c79b0ec2da9ede51de2ea573818b943"
+                "reference": "13df84e91cd168f247c2f2ec82cc0fa24901c011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/a25861bb3c79b0ec2da9ede51de2ea573818b943",
-                "reference": "a25861bb3c79b0ec2da9ede51de2ea573818b943",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/13df84e91cd168f247c2f2ec82cc0fa24901c011",
+                "reference": "13df84e91cd168f247c2f2ec82cc0fa24901c011",
                 "shasum": ""
             },
             "require": {
@@ -17013,7 +16632,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -17064,7 +16683,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
@@ -17374,16 +16993,16 @@
         },
         {
             "name": "symfony/polyfill-util",
-            "version": "v1.17.1",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-util.git",
-                "reference": "6dd644eda43cd2f3daa883d728d8ab4120a05af6"
+                "reference": "46b910c71e9828f8ec2aa7a0314de1130d9b295a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/6dd644eda43cd2f3daa883d728d8ab4120a05af6",
-                "reference": "6dd644eda43cd2f3daa883d728d8ab4120a05af6",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/46b910c71e9828f8ec2aa7a0314de1130d9b295a",
+                "reference": "46b910c71e9828f8ec2aa7a0314de1130d9b295a",
                 "shasum": ""
             },
             "require": {
@@ -17392,7 +17011,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-master": "1.18-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -17440,20 +17059,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "time": "2020-07-14T12:35:20+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v4.4.11",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "65e70bab62f3da7089a8d4591fb23fbacacb3479"
+                "reference": "9b887acc522935f77555ae8813495958c7771ba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/65e70bab62f3da7089a8d4591fb23fbacacb3479",
-                "reference": "65e70bab62f3da7089a8d4591fb23fbacacb3479",
+                "url": "https://api.github.com/repos/symfony/process/zipball/9b887acc522935f77555ae8813495958c7771ba7",
+                "reference": "9b887acc522935f77555ae8813495958c7771ba7",
                 "shasum": ""
             },
             "require": {
@@ -17503,25 +17122,24 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-23T08:31:43+00:00"
+            "time": "2020-09-02T16:08:58+00:00"
         },
         {
             "name": "symfony/property-access",
-            "version": "v5.1.2",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-access.git",
-                "reference": "638b96246da68810484a5a46ff397e9326f42afc"
+                "reference": "4c43f7ff784e1e3ee1c96e15f76b342af6617b39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/638b96246da68810484a5a46ff397e9326f42afc",
-                "reference": "638b96246da68810484a5a46ff397e9326f42afc",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/4c43f7ff784e1e3ee1c96e15f76b342af6617b39",
+                "reference": "4c43f7ff784e1e3ee1c96e15f76b342af6617b39",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2.5",
-                "symfony/inflector": "^4.4|^5.0",
                 "symfony/polyfill-php80": "^1.15",
                 "symfony/property-info": "^5.1.1"
             },
@@ -17586,20 +17204,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-04T09:56:18+00:00"
+            "time": "2020-09-02T16:23:27+00:00"
         },
         {
             "name": "symfony/property-info",
-            "version": "v5.1.2",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/property-info.git",
-                "reference": "75d79faca45092829b55eb83f73068e34c6567c5"
+                "reference": "22518930091e0bdb249694efc509e3697f7e325e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-info/zipball/75d79faca45092829b55eb83f73068e34c6567c5",
-                "reference": "75d79faca45092829b55eb83f73068e34c6567c5",
+                "url": "https://api.github.com/repos/symfony/property-info/zipball/22518930091e0bdb249694efc509e3697f7e325e",
+                "reference": "22518930091e0bdb249694efc509e3697f7e325e",
                 "shasum": ""
             },
             "require": {
@@ -17677,20 +17295,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-15T11:50:15+00:00"
+            "time": "2020-09-07T05:10:28+00:00"
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v2.1.3",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442"
+                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/58c7475e5457c5492c26cc740cc0ad7464be9442",
-                "reference": "58c7475e5457c5492c26cc740cc0ad7464be9442",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/d15da7ba4957ffb8f1747218be9e1a121fd298a1",
+                "reference": "d15da7ba4957ffb8f1747218be9e1a121fd298a1",
                 "shasum": ""
             },
             "require": {
@@ -17703,7 +17321,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -17753,20 +17371,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-06T13:23:11+00:00"
+            "time": "2020-09-07T11:33:47+00:00"
         },
         {
             "name": "symfony/string",
-            "version": "v5.1.2",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "ac70459db781108db7c6d8981dd31ce0e29e3298"
+                "reference": "4a9afe9d07bac506f75bcee8ed3ce76da5a9343e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/ac70459db781108db7c6d8981dd31ce0e29e3298",
-                "reference": "ac70459db781108db7c6d8981dd31ce0e29e3298",
+                "url": "https://api.github.com/repos/symfony/string/zipball/4a9afe9d07bac506f75bcee8ed3ce76da5a9343e",
+                "reference": "4a9afe9d07bac506f75bcee8ed3ce76da5a9343e",
                 "shasum": ""
             },
             "require": {
@@ -17838,7 +17456,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-11T12:16:36+00:00"
+            "time": "2020-09-15T12:23:47+00:00"
         },
         {
             "name": "tedivm/jshrink",
@@ -18163,11 +17781,11 @@
         },
         {
             "name": "vertex/sdk",
-            "version": "1.2.2",
+            "version": "1.2.4",
             "dist": {
                 "type": "zip",
-                "url": "https://repo.magento.com/archives/vertex/sdk/vertex-sdk-1.2.2.0.zip",
-                "shasum": "5588b4c8bf77e1d52a6fb63ad85826276738c301"
+                "url": "https://repo.magento.com/archives/vertex/sdk/vertex-sdk-1.2.4.0.zip",
+                "shasum": "2b9fd3deb46f45930b90d4e020f3236d8256cd4a"
             },
             "require": {
                 "ext-mbstring": "*",
@@ -18176,9 +17794,9 @@
                 "php": "^5.4|^7"
             },
             "require-dev": {
-                "php": "^7.1",
+                "php": "^7.3",
                 "phpmd/phpmd": "^2.6",
-                "phpunit/phpunit": "^7.2",
+                "phpunit/phpunit": "^9",
                 "squizlabs/php_codesniffer": "^3.3"
             },
             "type": "library",
@@ -18191,6 +17809,61 @@
                 "proprietary"
             ],
             "description": "Tools for communicating with Vertex Cloud and Vertex O-Series"
+        },
+        {
+            "name": "webimpress/safe-writer",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webimpress/safe-writer.git",
+                "reference": "5cfafdec5873c389036f14bf832a5efc9390dcdd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webimpress/safe-writer/zipball/5cfafdec5873c389036f14bf832a5efc9390dcdd",
+                "reference": "5cfafdec5873c389036f14bf832a5efc9390dcdd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5.8 || ^9.3.7",
+                "vimeo/psalm": "^3.14.2",
+                "webimpress/coding-standard": "^1.1.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev",
+                    "dev-develop": "2.2.x-dev",
+                    "dev-release-1.0": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webimpress\\SafeWriter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "description": "Tool to write files safely, to avoid race conditions",
+            "keywords": [
+                "concurrent write",
+                "file writer",
+                "race condition",
+                "safe writer",
+                "webimpress"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/michalbundyra",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-08-25T07:21:11+00:00"
         },
         {
             "name": "webonyx/graphql-php",
@@ -18701,16 +18374,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.1.1",
+            "version": "4.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "efc58dc0f34a45539787c5190b41b5d2a50a08da"
+                "reference": "4b596872f24c39d9c04d7b3adb6bc51baa1f2fd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/efc58dc0f34a45539787c5190b41b5d2a50a08da",
-                "reference": "efc58dc0f34a45539787c5190b41b5d2a50a08da",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/4b596872f24c39d9c04d7b3adb6bc51baa1f2fd5",
+                "reference": "4b596872f24c39d9c04d7b3adb6bc51baa1f2fd5",
                 "shasum": ""
             },
             "require": {
@@ -18742,7 +18415,7 @@
                     }
                 },
                 "branch-alias": {
-                    "dev-master": "4.x-dev"
+                    "dev-main": "4.x-dev"
                 }
             },
             "autoload": {
@@ -18761,7 +18434,7 @@
                 }
             ],
             "description": "Initialize Symfony Console commands from annotated command class methods.",
-            "time": "2020-05-27T21:11:36+00:00"
+            "time": "2020-10-03T14:28:42+00:00"
         },
         {
             "name": "consolidation/config",
@@ -19188,16 +18861,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.10.3",
+            "version": "1.10.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d"
+                "reference": "bfe91e31984e2ba76df1c1339681770401ec262f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5db60a4969eba0e0c197a19c077780aadbc43c5d",
-                "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/bfe91e31984e2ba76df1c1339681770401ec262f",
+                "reference": "bfe91e31984e2ba76df1c1339681770401ec262f",
                 "shasum": ""
             },
             "require": {
@@ -19207,7 +18880,8 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^7.5"
+                "phpstan/phpstan": "^0.12.20",
+                "phpunit/phpunit": "^7.5 || ^9.1.5"
             },
             "type": "library",
             "extra": {
@@ -19253,20 +18927,20 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2020-05-25T17:24:27+00:00"
+            "time": "2020-08-10T19:35:50+00:00"
         },
         {
             "name": "doctrine/collections",
-            "version": "1.6.6",
+            "version": "1.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/collections.git",
-                "reference": "5f0470363ff042d0057006ae7acabc5d7b5252d5"
+                "reference": "55f8b799269a1a472457bd1a41b4f379d4cfba4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/collections/zipball/5f0470363ff042d0057006ae7acabc5d7b5252d5",
-                "reference": "5f0470363ff042d0057006ae7acabc5d7b5252d5",
+                "url": "https://api.github.com/repos/doctrine/collections/zipball/55f8b799269a1a472457bd1a41b4f379d4cfba4a",
+                "reference": "55f8b799269a1a472457bd1a41b4f379d4cfba4a",
                 "shasum": ""
             },
             "require": {
@@ -19318,21 +18992,7 @@
                 "iterators",
                 "php"
             ],
-            "funding": [
-                {
-                    "url": "https://www.doctrine-project.org/sponsorship.html",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://www.patreon.com/phpdoctrine",
-                    "type": "patreon"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcollections",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-06-22T19:14:02+00:00"
+            "time": "2020-07-27T17:53:49+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -20633,28 +20293,27 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.1.0",
+            "version": "5.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e"
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e",
-                "reference": "cd72d394ca794d3466a3b2fc09d5a6c1dc86b47e",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/069a785b2141f5bcf49f3e353548dc1cce6df556",
+                "reference": "069a785b2141f5bcf49f3e353548dc1cce6df556",
                 "shasum": ""
             },
             "require": {
-                "ext-filter": "^7.1",
-                "php": "^7.2",
-                "phpdocumentor/reflection-common": "^2.0",
-                "phpdocumentor/type-resolver": "^1.0",
-                "webmozart/assert": "^1"
+                "ext-filter": "*",
+                "php": "^7.2 || ^8.0",
+                "phpdocumentor/reflection-common": "^2.2",
+                "phpdocumentor/type-resolver": "^1.3",
+                "webmozart/assert": "^1.9.1"
             },
             "require-dev": {
-                "doctrine/instantiator": "^1",
-                "mockery/mockery": "^1"
+                "mockery/mockery": "~1.3.2"
             },
             "type": "library",
             "extra": {
@@ -20682,20 +20341,20 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-02-22T12:28:44+00:00"
+            "time": "2020-09-03T19:13:55+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.3.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651"
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/e878a14a65245fbe78f8080eba03b47c3b705651",
-                "reference": "e878a14a65245fbe78f8080eba03b47c3b705651",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
+                "reference": "6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0",
                 "shasum": ""
             },
             "require": {
@@ -20727,7 +20386,7 @@
                 }
             ],
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
-            "time": "2020-06-27T10:12:23+00:00"
+            "time": "2020-09-17T18:55:26+00:00"
         },
         {
             "name": "phpmd/phpmd",
@@ -20799,24 +20458,24 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.7.4",
+            "version": "1.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3"
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3",
-                "reference": "b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.3",
-                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "extra": {
@@ -20860,7 +20519,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-07T10:40:07+00:00"
+            "time": "2020-07-20T17:29:33+00:00"
         },
         {
             "name": "phpspec/prophecy",
@@ -22025,16 +21684,16 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v4.4.10",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "f53310646af9901292488b2ff36e26ea10f545f5"
+                "reference": "9a1786e5020783605a30cff2ceed9aca030e8d80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/f53310646af9901292488b2ff36e26ea10f545f5",
-                "reference": "f53310646af9901292488b2ff36e26ea10f545f5",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/9a1786e5020783605a30cff2ceed9aca030e8d80",
+                "reference": "9a1786e5020783605a30cff2ceed9aca030e8d80",
                 "shasum": ""
             },
             "require": {
@@ -22094,20 +21753,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-22T17:28:00+00:00"
+            "time": "2020-10-02T08:38:15+00:00"
         },
         {
             "name": "symfony/config",
-            "version": "v4.4.10",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "395f6e09e1dc6ac9c1a5eea3b7f44f7a820a5504"
+                "reference": "7c5a1002178a612787c291a4f515f87b19176b61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/395f6e09e1dc6ac9c1a5eea3b7f44f7a820a5504",
-                "reference": "395f6e09e1dc6ac9c1a5eea3b7f44f7a820a5504",
+                "url": "https://api.github.com/repos/symfony/config/zipball/7c5a1002178a612787c291a4f515f87b19176b61",
+                "reference": "7c5a1002178a612787c291a4f515f87b19176b61",
                 "shasum": ""
             },
             "require": {
@@ -22172,20 +21831,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-23T09:11:46+00:00"
+            "time": "2020-10-02T07:34:48+00:00"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.4.10",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "a37cc0a90fec178768aa5048fea9251efde591c5"
+                "reference": "89274c8847dff2ed703e481843eb9159ca25cc6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/a37cc0a90fec178768aa5048fea9251efde591c5",
-                "reference": "a37cc0a90fec178768aa5048fea9251efde591c5",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/89274c8847dff2ed703e481843eb9159ca25cc6e",
+                "reference": "89274c8847dff2ed703e481843eb9159ca25cc6e",
                 "shasum": ""
             },
             "require": {
@@ -22259,20 +21918,84 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-12T07:37:04+00:00"
+            "time": "2020-09-10T10:08:39+00:00"
         },
         {
-            "name": "symfony/dom-crawler",
-            "version": "v4.4.10",
+            "name": "symfony/deprecation-contracts",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "c18354d5a0bb84c945f6257c51b971d52f10c614"
+                "url": "https://github.com/symfony/deprecation-contracts.git",
+                "reference": "5fa56b4074d1ae755beb55617ddafe6f5d78f665"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/c18354d5a0bb84c945f6257c51b971d52f10c614",
-                "reference": "c18354d5a0bb84c945f6257c51b971d52f10c614",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/5fa56b4074d1ae755beb55617ddafe6f5d78f665",
+                "reference": "5fa56b4074d1ae755beb55617ddafe6f5d78f665",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                },
+                "thanks": {
+                    "name": "symfony/contracts",
+                    "url": "https://github.com/symfony/contracts"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "function.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "A generic function and convention to trigger deprecation notices",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-09-07T11:33:47+00:00"
+        },
+        {
+            "name": "symfony/dom-crawler",
+            "version": "v4.4.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "bdcb7633a501770a0daefbf81d2e6b28c3864f2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/bdcb7633a501770a0daefbf81d2e6b28c3864f2b",
+                "reference": "bdcb7633a501770a0daefbf81d2e6b28c3864f2b",
                 "shasum": ""
             },
             "require": {
@@ -22334,20 +22057,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-23T00:03:06+00:00"
+            "time": "2020-10-02T07:34:48+00:00"
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v5.1.2",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "f93055171b847915225bd5b0a5792888419d8d75"
+                "reference": "353b42e7b4fd1c898aab09a059466c9cea74039b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/f93055171b847915225bd5b0a5792888419d8d75",
-                "reference": "f93055171b847915225bd5b0a5792888419d8d75",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/353b42e7b4fd1c898aab09a059466c9cea74039b",
+                "reference": "353b42e7b4fd1c898aab09a059466c9cea74039b",
                 "shasum": ""
             },
             "require": {
@@ -22409,20 +22132,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-15T06:52:54+00:00"
+            "time": "2020-09-27T14:14:57+00:00"
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v4.4.10",
+            "version": "v4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
-                "reference": "f51fb90df1154a7f75987198a9689e28f91e6a50"
+                "reference": "6f89e19772cf61b3c65bab329fe0e318259fbd91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/f51fb90df1154a7f75987198a9689e28f91e6a50",
-                "reference": "f51fb90df1154a7f75987198a9689e28f91e6a50",
+                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/6f89e19772cf61b3c65bab329fe0e318259fbd91",
+                "reference": "6f89e19772cf61b3c65bab329fe0e318259fbd91",
                 "shasum": ""
             },
             "require": {
@@ -22473,20 +22196,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-20T08:37:50+00:00"
+            "time": "2020-09-02T16:08:58+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.4.42",
+            "version": "v3.4.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "7233ac2bfdde24d672f5305f2b3f6b5d741ef8eb"
+                "reference": "ec3c2ac4d881a4684c1f0317d2107f1a4152bad9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/7233ac2bfdde24d672f5305f2b3f6b5d741ef8eb",
-                "reference": "7233ac2bfdde24d672f5305f2b3f6b5d741ef8eb",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/ec3c2ac4d881a4684c1f0317d2107f1a4152bad9",
+                "reference": "ec3c2ac4d881a4684c1f0317d2107f1a4152bad9",
                 "shasum": ""
             },
             "require": {
@@ -22546,7 +22269,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-11T07:51:54+00:00"
+            "time": "2020-09-18T15:58:55+00:00"
         },
         {
             "name": "theseer/fdomdocument",
@@ -22636,21 +22359,21 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.6.5",
+            "version": "v2.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "2e977311ffb17b2f82028a9c36824647789c6365"
+                "reference": "e1d57f62db3db00d9139078cbedf262280701479"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2e977311ffb17b2f82028a9c36824647789c6365",
-                "reference": "2e977311ffb17b2f82028a9c36824647789c6365",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/e1d57f62db3db00d9139078cbedf262280701479",
+                "reference": "e1d57f62db3db00d9139078cbedf262280701479",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.3.9 || ^7.0 || ^8.0",
-                "symfony/polyfill-ctype": "^1.16"
+                "symfony/polyfill-ctype": "^1.17"
             },
             "require-dev": {
                 "ext-filter": "*",
@@ -22704,7 +22427,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-02T14:06:52+00:00"
+            "time": "2020-07-14T17:54:18+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -22756,9 +22479,17 @@
             "time": "2020-07-08T17:02:28+00:00"
         }
     ],
-    "aliases": [],
-    "minimum-stability": "beta",
+    "aliases": [
+        {
+            "alias": "3.1.3",
+            "alias_normalized": "3.1.3.0",
+            "version": "dev-3.x-dev",
+            "package": "scandipwa/source"
+        }
+    ],
+    "minimum-stability": "stable",
     "stability-flags": {
+        "scandipwa/source": 20,
         "phpmd/phpmd": 0
     },
     "prefer-stable": false,
