@@ -14750,16 +14750,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "2.16.0",
+            "version": "2.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "9b1ef8c9283db50610a443ff479521785b387bfd"
+                "reference": "37caf85f19e120cce94a132345b83ed60615a6cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/9b1ef8c9283db50610a443ff479521785b387bfd",
-                "reference": "9b1ef8c9283db50610a443ff479521785b387bfd",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/37caf85f19e120cce94a132345b83ed60615a6cc",
+                "reference": "37caf85f19e120cce94a132345b83ed60615a6cc",
                 "shasum": ""
             },
             "require": {
@@ -14793,7 +14793,7 @@
                 "OSL-3.0"
             ],
             "description": "Catalog-specific modifications for ScandiPWA",
-            "time": "2020-09-07T09:24:21+00:00"
+            "time": "2020-10-09T16:56:01+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -14950,16 +14950,16 @@
         },
         {
             "name": "scandipwa/locale",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/locale.git",
-                "reference": "4c89c94a1f1724a0e900d7def339da7e006e4ecd"
+                "reference": "a33c1691242b11307cc89c79a97c099b9c612d8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/locale/zipball/4c89c94a1f1724a0e900d7def339da7e006e4ecd",
-                "reference": "4c89c94a1f1724a0e900d7def339da7e006e4ecd",
+                "url": "https://api.github.com/repos/scandipwa/locale/zipball/a33c1691242b11307cc89c79a97c099b9c612d8c",
+                "reference": "a33c1691242b11307cc89c79a97c099b9c612d8c",
                 "shasum": ""
             },
             "require": {
@@ -14981,7 +14981,7 @@
                 "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2020-09-07T10:32:08+00:00"
+            "time": "2020-10-09T13:26:23+00:00"
         },
         {
             "name": "scandipwa/menu-organizer",
@@ -15309,22 +15309,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "52bc733c0ed7fbc90657eb96739447d45bd48afa"
+                "reference": "665afa9bc2d75508b7325ecf8beb27271b84c437"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/52bc733c0ed7fbc90657eb96739447d45bd48afa",
-                "reference": "52bc733c0ed7fbc90657eb96739447d45bd48afa",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/665afa9bc2d75508b7325ecf8beb27271b84c437",
+                "reference": "665afa9bc2d75508b7325ecf8beb27271b84c437",
                 "shasum": ""
             },
             "require": {
                 "magento/framework": "*",
                 "scandipwa/cache": "^1.0",
-                "scandipwa/catalog-graphql": "^2.15.3",
+                "scandipwa/catalog-graphql": "^2.16.1",
                 "scandipwa/cms-graphql": "^1.3",
                 "scandipwa/customer-graph-ql": "^2.2.3",
                 "scandipwa/customization": "^1.1",
-                "scandipwa/locale": "^1.0",
+                "scandipwa/locale": "^1.1.1",
                 "scandipwa/menu-organizer": "^2.0",
                 "scandipwa/performance": "^1.1",
                 "scandipwa/persisted-query": "^2.4",
@@ -15347,7 +15347,7 @@
                 "OSL-3.0"
             ],
             "description": "ScandiPWA",
-            "time": "2020-10-06T12:13:21+00:00"
+            "time": "2020-10-09T16:54:59+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
