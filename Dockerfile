@@ -1,5 +1,5 @@
 # hadolint ignore=DL3007
-FROM scandipwa/php:latest
+FROM scandipwa/php:magento-2.3.5
 
 # Set bash by default
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
