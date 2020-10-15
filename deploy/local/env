@@ -28,7 +28,7 @@ RENDERTRON_PORT=8083
 BASEPATH=/var/www/public
 SCANDIPWA_THEME=Scandiweb/pwa
 PROJECT_TAG=local
-PROJECT_IMAGE=latest
+PROJECT_IMAGE=magento-2.3.5
 
 # PHP Composer uses plain version number, fail if not existing
 # version list, manual download section: https://getcomposer.org/download/
