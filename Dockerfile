@@ -70,9 +70,7 @@ COPY deploy/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 # Copy project files
-COPY src/composer.json $BASEPATH/
-COPY src/composer.lock $BASEPATH/
-COPY src/app $BASEPATH/app
+COPY src/ $BASEPATH/
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
