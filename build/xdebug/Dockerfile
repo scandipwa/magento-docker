@@ -1,4 +1,4 @@
-FROM scandipwa/base:magento-2.4
+FROM scandipwa/base:magento-2.4.0
 
 LABEL maintainer="Alfreds Genkins alfreds@scandipwa.com"
 
