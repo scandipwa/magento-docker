@@ -9,6 +9,9 @@ start_time="$(date -u +%s.%N)"
 # Uncomment next line for script debug
 #set -euxo pipefail
 
+# default value
+SCANDIPWA_THEME=${SCANDIPWA_THEME:-"Scandiweb/pwa"}
+
 php-fpm -t
 # Do not force container to restart in debug mode
 if [ $DOCKER_DEBUG = "true" ]; then
@@ -65,7 +68,7 @@ function pwa_theme_install {
 
   # Theme setup
   magento scandipwa:theme:bootstrap "$SCANDIPWA_THEME" -n || true
-  php bin/magento setup:upgrade
+  magento setup:upgrade
 
   if [ $? -eq 0 ]; then
     if [ "$frontend" != "1" ]
@@ -119,7 +122,7 @@ function composer_install {
 
 function magento_database_config {
   echo "${blue}${bold}Setting magento database credentials${normal}"
-  php bin/magento setup:config:set \
+  magento setup:config:set \
       --db-host $MYSQL_HOST \
       --db-name $MYSQL_DATABASE \
       --db-user $MYSQL_USER \
@@ -139,10 +142,10 @@ function magento_database_config {
 
 function create_admin_user {
     echo "${blue}${bold}Checking user $MAGENTO_USER ${normal}"
-    USER_STATUS=$(php bin/magento admin:user:unlock $MAGENTO_USER)
+    USER_STATUS=$(magento admin:user:unlock $MAGENTO_USER)
     export USER_STATUS
     if [[ $USER_STATUS =~ "Couldn't find the user account" ]]; then
-        php bin/magento admin:user:create \
+        magento admin:user:create \
             --admin-firstname $MAGENTO_FIRST_NAME \
             --admin-lastname $MAGENTO_LAST_NAME \
             --admin-email $MAGENTO_EMAIL \
@@ -168,7 +171,7 @@ function magento_database_migration {
   # We cannot rely on Magento Code, as these are update codes, not install codes. Therefore check the output for
   # the specific message!
   if [[ $MAGENTO_STATUS =~ "Magento application is not installed."$ ]]; then
-    php bin/magento setup:install \
+    magento setup:install \
         --admin-firstname $MAGENTO_FIRST_NAME \
         --admin-lastname $MAGENTO_LAST_NAME \
         --admin-email $MAGENTO_EMAIL \
@@ -187,7 +190,7 @@ function magento_database_migration {
     # Magento needs upgrade
   elif [ $ME = 2 ]; then
     echo "$yellow$bold Upgrading magento${normal}"
-    php bin/magento setup:upgrade
+    magento setup:upgrade
     # Check returns All modules updated, move on.
   elif [ $ME = 0 ]; then
     echo "${blue}${bold}No upgrade/install is needed${normal}"
@@ -220,12 +223,12 @@ function magento_redis_config {
 
   # Elasticsearch5 as a search engine
   echo "${blue}${bold}Setting Elasticsearch7 as a search engine${normal}"
-  php bin/magento config:set catalog/search/engine elasticsearch7
+  magento config:set catalog/search/engine elasticsearch7
 
   # elasticsearch container as a host name
   echo "${blue}${bold}Setting elasticsearch as a host name for Elasticsearch5${normal}"
-  php bin/magento config:set catalog/search/elasticsearch7_server_hostname elasticsearch
-  php bin/magento cache:enable
+  magento config:set catalog/search/elasticsearch7_server_hostname elasticsearch
+  magento cache:enable
 }
 
 function magento_varnish_endpoint {
@@ -235,10 +238,10 @@ function magento_varnish_endpoint {
 
 function magento_varnish_config {
     echo "${blue}${bold}Setting Varnish config for Magento${normal}"
-  php bin/magento config:set system/full_page_cache/varnish/access_list "127.0.0.1, app, nginx"
-  php bin/magento config:set system/full_page_cache/varnish/backend_host nginx
-  php bin/magento config:set system/full_page_cache/varnish/backend_port 80
-  php bin/magento config:set system/full_page_cache/caching_application 2
+  magento config:set system/full_page_cache/varnish/access_list "127.0.0.1, app, nginx"
+  magento config:set system/full_page_cache/varnish/backend_host nginx
+  magento config:set system/full_page_cache/varnish/backend_port 80
+  magento config:set system/full_page_cache/caching_application 2
 }
 
 function magento_set_mode {
@@ -260,22 +263,22 @@ function magento_compile {
 function magento_set_baseurl {
   if [[ -n ${MAGENTO_BASEURL+x} ]]; then
     echo "${blue}${bold}Setting baseurl to $MAGENTO_BASEURL${normal}"
-    php bin/magento setup:store-config:set --base-url="$MAGENTO_BASEURL"
+    magento setup:store-config:set --base-url="$MAGENTO_BASEURL"
   fi
   if [[ -n ${MAGENTO_SECURE_BASEURL+x} ]]; then
     echo "${blue}${bold}Setting secure baseurl to $MAGENTO_SECURE_BASEURL${normal}"
-    php bin/magento setup:store-config:set --base-url-secure="$MAGENTO_SECURE_BASEURL"
-    php bin/magento setup:store-config:set --use-secure 1
-    php bin/magento setup:store-config:set --use-secure-admin 1
+    magento setup:store-config:set --base-url-secure="$MAGENTO_SECURE_BASEURL"
+    magento setup:store-config:set --use-secure 1
+    magento setup:store-config:set --use-secure-admin 1
   fi
 }
 
 function magento_post_deploy {
   echo "${blue}${bold}Flushing caches${normal}"
-  php bin/magento cache:flush
+  magento cache:flush
   echo "${blue}${bold}Disabling maintenance mode${normal}"
-  php bin/magento maintenance:disable
-  php bin/magento info:adminuri
+  magento maintenance:disable
+  magento info:adminuri
 }
 
 function exit_catch {
@@ -283,8 +286,20 @@ function exit_catch {
   exit ${LAST_EXIT_CODE}
 }
 
-### Deploy pipe start
+function magento_fix_2fa() {
+    magento module:disable Magento_TwoFactorAuth
+}
 
+function set_theme() {
+    # find theme SCANDIPWA_THEME ID
+    THEME_ID="$(n98-magerun2 dev:theme:list --format=csv | grep "${SCANDIPWA_THEME}" | cut -d, -f1)"
+
+    if [[ -n ${THEME_ID} ]]; then
+        n98-magerun2 config:set design/theme/theme_id "${THEME_ID}"
+    fi
+}
+
+### Deploy pipe start
 helpFunction()
 {
    echo ""
@@ -348,6 +363,12 @@ magento_fix_permissions
 magento_post_deploy
 # Fixing permissions again due c:f
 magento_fix_permissions
+
+# Fixing M2.4 2FA issues
+magento_fix_2fa
+
+# Set ScandiPWA as a theme
+set_theme
 
 end_time="$(date -u +%s.%N)"
 

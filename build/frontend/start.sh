@@ -23,6 +23,9 @@ done
 
 PATH_TO_THEME="/var/www/public"
 
+# default value
+SCANDIPWA_THEME=${SCANDIPWA_THEME:-"Scandiweb/pwa"}
+
 if [ "$core" = "1" ]
 then
   PATH_TO_THEME="$PATH_TO_THEME/localmodules/base-theme/"
@@ -30,29 +33,31 @@ else
   PATH_TO_THEME="$PATH_TO_THEME/app/design/frontend/$SCANDIPWA_THEME/"
 fi
 
+retry_count=0
+
+echo "Waiting for the theme folder"
+while ! [ -d $PATH_TO_THEME ]
+do
+  ((retry_count++))
+
+  if [ $retry_count -gt 60 ]
+  then
+      echo "ERROR: Timeout, $((2 * retry_count))s elapsed. Theme folder \"$PATH_TO_THEME\" is empty!"
+      exit 1
+  fi
+
+  sleep 2
+done
+
+cd $PATH_TO_THEME;
+
 if [ "$mutagen" = "1" ] # wait for theme files
 then
-    echo "Waiting for Mutagen to sync theme folder"
-    while ! [ -d $PATH_TO_THEME ]
-    do
-      sleep 2
-    done
-
-    cd $PATH_TO_THEME;
-
     echo "Waiting for Mutagen to sync files"
     while ! [ -f ./package.json -a -f ./package-lock.json ]
     do
       sleep 2
     done
-else # check for theme folder existence once    
-    if [ -d $PATH_TO_THEME ]
-    then
-      cd $PATH_TO_THEME;
-    else
-      echo "ERROR: theme $PATH_TO_THEME is empty!"
-      exit 1
-    fi
 fi
 
 echo "Installing node modules"
