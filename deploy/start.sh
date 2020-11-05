@@ -174,7 +174,10 @@ function magento_database_migration {
         --admin-lastname $MAGENTO_LAST_NAME \
         --admin-email $MAGENTO_EMAIL \
         --admin-user $MAGENTO_USER \
-        --admin-password $MAGENTO_PASSWORD
+        --admin-password $MAGENTO_PASSWORD \
+        --search-engine='elasticsearch7' \
+        --elasticsearch-host='elasticsearch' \
+        --elasticsearch-port='9200'
   else
     magento setup:db:status
     export ME=$?
