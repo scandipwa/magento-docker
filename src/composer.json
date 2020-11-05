@@ -11,15 +11,9 @@
         "sort-packages": true
     },
     "require": {
-        "magento/product-community-edition": "2.4.0",
+        "magento/product-community-edition": "2.4.1",
         "scandipwa/installer": "^3",
         "scandipwa/source": "dev-3.1.7-rc as 3.1.7"
-    },
-    "require-dev": {
-        "allure-framework/allure-phpunit": "~1.2.0",
-        "lusitanian/oauth": "~0.8.10",
-        "magento/magento2-functional-testing-framework": "^3.0",
-        "phpunit/phpunit": "^9"
     },
     "conflict": {
         "gene/bluefoot": "*"
