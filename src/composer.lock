@@ -16537,16 +16537,16 @@
         },
         {
             "name": "scandipwa/cms-graphql",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/cms-graphql.git",
-                "reference": "f337736206043bab0747ffb8b21d49a06134c9d4"
+                "reference": "bce755e036a78fc8b51ad54a0970f7f1c0711cee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/cms-graphql/zipball/f337736206043bab0747ffb8b21d49a06134c9d4",
-                "reference": "f337736206043bab0747ffb8b21d49a06134c9d4",
+                "url": "https://api.github.com/repos/scandipwa/cms-graphql/zipball/bce755e036a78fc8b51ad54a0970f7f1c0711cee",
+                "reference": "bce755e036a78fc8b51ad54a0970f7f1c0711cee",
                 "shasum": ""
             },
             "require": {
@@ -16571,7 +16571,7 @@
                 "OSL-3.0"
             ],
             "description": "ScandiPWA Graphql extension for CMS page",
-            "time": "2020-09-07T10:32:08+00:00"
+            "time": "2020-10-30T13:54:51+00:00"
         },
         {
             "name": "scandipwa/customer-graph-ql",
@@ -16766,16 +16766,16 @@
         },
         {
             "name": "scandipwa/performance",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/performance.git",
-                "reference": "0734794545355fbda089fe8c5dbc8156fff7dcd2"
+                "reference": "205685e13793c2e24c0a61afb4ecca6ec49fcac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/performance/zipball/0734794545355fbda089fe8c5dbc8156fff7dcd2",
-                "reference": "0734794545355fbda089fe8c5dbc8156fff7dcd2",
+                "url": "https://api.github.com/repos/scandipwa/performance/zipball/205685e13793c2e24c0a61afb4ecca6ec49fcac6",
+                "reference": "205685e13793c2e24c0a61afb4ecca6ec49fcac6",
                 "shasum": ""
             },
             "require": {
@@ -16803,7 +16803,7 @@
                 "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2020-09-07T10:32:08+00:00"
+            "time": "2020-11-05T09:25:32+00:00"
         },
         {
             "name": "scandipwa/persisted-query",
@@ -16969,16 +16969,16 @@
         },
         {
             "name": "scandipwa/slider",
-            "version": "2.2.2",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/slider.git",
-                "reference": "b03c71a04b92433542ce7535a5ab5232b8b2f3e7"
+                "reference": "af966fa8f69ad72110901188b3cd2d125b9f98e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/slider/zipball/b03c71a04b92433542ce7535a5ab5232b8b2f3e7",
-                "reference": "b03c71a04b92433542ce7535a5ab5232b8b2f3e7",
+                "url": "https://api.github.com/repos/scandipwa/slider/zipball/af966fa8f69ad72110901188b3cd2d125b9f98e2",
+                "reference": "af966fa8f69ad72110901188b3cd2d125b9f98e2",
                 "shasum": ""
             },
             "require": {
@@ -16990,7 +16990,6 @@
                 "magento/module-media-storage": "*",
                 "magento/module-store": "*",
                 "magento/module-widget": "*",
-                "scandiweb/locale-resolver-fix": "^1.0",
                 "scandiweb/module-core": "~0.1.2"
             },
             "replace": {
@@ -17007,7 +17006,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Slider module for Magento 2",
-            "time": "2020-10-20T14:18:35+00:00"
+            "time": "2020-11-05T11:15:14+00:00"
         },
         {
             "name": "scandipwa/slider-graphql",
@@ -17045,23 +17044,23 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "3.1.5",
+            "version": "3.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "c6d2c461430569c84598875cc3616bb05f2582a7"
+                "reference": "72fcdf1f4fd80161482fdf29884106c8522852ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/c6d2c461430569c84598875cc3616bb05f2582a7",
-                "reference": "c6d2c461430569c84598875cc3616bb05f2582a7",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/72fcdf1f4fd80161482fdf29884106c8522852ad",
+                "reference": "72fcdf1f4fd80161482fdf29884106c8522852ad",
                 "shasum": ""
             },
             "require": {
                 "magento/framework": "*",
                 "scandipwa/cache": "^1.0",
                 "scandipwa/catalog-graphql": "^2.16.1",
-                "scandipwa/cms-graphql": "^1.3",
+                "scandipwa/cms-graphql": "^1.4.1",
                 "scandipwa/customer-graph-ql": "^2.2.3",
                 "scandipwa/customization": "^1.1",
                 "scandipwa/locale": "^1.1.1",
@@ -17087,7 +17086,7 @@
                 "OSL-3.0"
             ],
             "description": "ScandiPWA",
-            "time": "2020-10-20T14:41:09+00:00"
+            "time": "2020-10-30T14:42:43+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
@@ -17200,48 +17199,6 @@
             ],
             "description": "N/A",
             "time": "2020-09-07T10:32:08+00:00"
-        },
-        {
-            "name": "scandiweb/locale-resolver-fix",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/scandiweb/locale-resolver-fix.git",
-                "reference": "7ba1812222f5f10901205ff69fa43aaa86e2f0a6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/scandiweb/locale-resolver-fix/zipball/7ba1812222f5f10901205ff69fa43aaa86e2f0a6",
-                "reference": "7ba1812222f5f10901205ff69fa43aaa86e2f0a6",
-                "shasum": ""
-            },
-            "require": {
-                "magento/product-community-edition": "^2.3"
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "src/registration.php"
-                ],
-                "psr-4": {
-                    "Scandiweb\\LocaleResolverFix\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "OSL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Ilja Lapkovskis",
-                    "email": "ilja@scandiweb.com"
-                }
-            ],
-            "description": "Fix for Magento locale resolver",
-            "keywords": [
-                "magento2"
-            ],
-            "time": "2019-03-15T10:12:09+00:00"
         },
         {
             "name": "scandiweb/module-core",
@@ -23329,6 +23286,48 @@
                 "simple-cache"
             ],
             "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
+            "name": "scandiweb/locale-resolver-fix",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandiweb/locale-resolver-fix.git",
+                "reference": "7ba1812222f5f10901205ff69fa43aaa86e2f0a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandiweb/locale-resolver-fix/zipball/7ba1812222f5f10901205ff69fa43aaa86e2f0a6",
+                "reference": "7ba1812222f5f10901205ff69fa43aaa86e2f0a6",
+                "shasum": ""
+            },
+            "require": {
+                "magento/product-community-edition": "^2.3"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "Scandiweb\\LocaleResolverFix\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Ilja Lapkovskis",
+                    "email": "ilja@scandiweb.com"
+                }
+            ],
+            "description": "Fix for Magento locale resolver",
+            "keywords": [
+                "magento2"
+            ],
+            "time": "2019-03-15T10:12:09+00:00"
         },
         {
             "name": "sebastian/cli-parser",
