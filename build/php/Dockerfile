@@ -48,7 +48,7 @@ RUN apt-get install -y \
     bc
 
 # Install composer
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --version=1.10.17
 
 # Install Magerun2 from n98
 RUN curl -O https://files.magerun.net/n98-magerun2.phar; \
