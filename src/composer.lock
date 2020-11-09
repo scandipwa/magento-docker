@@ -17111,16 +17111,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "84c5e8176e26e351a2a7b6e2ae95beb34907d4b9"
+                "reference": "4a32df6b98f490c0ded190d293ab852ca6af89c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/84c5e8176e26e351a2a7b6e2ae95beb34907d4b9",
-                "reference": "84c5e8176e26e351a2a7b6e2ae95beb34907d4b9",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/4a32df6b98f490c0ded190d293ab852ca6af89c8",
+                "reference": "4a32df6b98f490c0ded190d293ab852ca6af89c8",
                 "shasum": ""
             },
             "require": {
@@ -17154,7 +17154,7 @@
                 "OSL-3.0"
             ],
             "description": "Catalog-specific modifications for ScandiPWA",
-            "time": "2020-11-05T09:21:30+00:00"
+            "time": "2020-11-09T11:41:42+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -17554,16 +17554,16 @@
         },
         {
             "name": "scandipwa/slider",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/slider.git",
-                "reference": "3099e480100b6c5e44a7ad692ebb77e1ba45324b"
+                "reference": "af966fa8f69ad72110901188b3cd2d125b9f98e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/slider/zipball/3099e480100b6c5e44a7ad692ebb77e1ba45324b",
-                "reference": "3099e480100b6c5e44a7ad692ebb77e1ba45324b",
+                "url": "https://api.github.com/repos/scandipwa/slider/zipball/af966fa8f69ad72110901188b3cd2d125b9f98e2",
+                "reference": "af966fa8f69ad72110901188b3cd2d125b9f98e2",
                 "shasum": ""
             },
             "require": {
@@ -17575,7 +17575,6 @@
                 "magento/module-media-storage": "*",
                 "magento/module-store": "*",
                 "magento/module-widget": "*",
-                "scandiweb/locale-resolver-fix": "^1.0",
                 "scandiweb/module-core": "~0.1.2"
             },
             "replace": {
@@ -17592,7 +17591,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Slider module for Magento 2",
-            "time": "2020-10-21T10:17:46+00:00"
+            "time": "2020-11-05T11:15:14+00:00"
         },
         {
             "name": "scandipwa/slider-graphql",
@@ -17634,18 +17633,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "6557dbf12657149d9de81362128f61a48b48a235"
+                "reference": "7e8a81bbcdad923cc2654e909211b9d2b920c7e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/6557dbf12657149d9de81362128f61a48b48a235",
-                "reference": "6557dbf12657149d9de81362128f61a48b48a235",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/7e8a81bbcdad923cc2654e909211b9d2b920c7e4",
+                "reference": "7e8a81bbcdad923cc2654e909211b9d2b920c7e4",
                 "shasum": ""
             },
             "require": {
                 "magento/framework": "*",
                 "scandipwa/cache": "^1.1.1",
-                "scandipwa/catalog-graphql": "^3.0.1",
+                "scandipwa/catalog-graphql": "^3.0.2",
                 "scandipwa/cms-graphql": "^1.4.1",
                 "scandipwa/customer-graph-ql": "^2.2.3",
                 "scandipwa/customization": "^1.1",
@@ -17671,7 +17670,7 @@
                 "OSL-3.0"
             ],
             "description": "ScandiPWA",
-            "time": "2020-11-05T09:57:44+00:00"
+            "time": "2020-11-09T11:48:55+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
