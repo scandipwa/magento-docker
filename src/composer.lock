@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db71cb0b8aa3c32984bb9451712b2240",
+    "content-hash": "f24e7174afcee7ebae5dfaa5c6e287a0",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -17236,16 +17236,16 @@
         },
         {
             "name": "scandipwa/customization",
-            "version": "1.3.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/customization.git",
-                "reference": "8217f5bd8450b472585f8277e51e81910eba0003"
+                "reference": "e48f23dea23ff7e662d170dcd0143fc1807f2780"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/customization/zipball/8217f5bd8450b472585f8277e51e81910eba0003",
-                "reference": "8217f5bd8450b472585f8277e51e81910eba0003",
+                "url": "https://api.github.com/repos/scandipwa/customization/zipball/e48f23dea23ff7e662d170dcd0143fc1807f2780",
+                "reference": "e48f23dea23ff7e662d170dcd0143fc1807f2780",
                 "shasum": ""
             },
             "require": {
@@ -17271,7 +17271,7 @@
                 "OSL-3.0"
             ],
             "description": "Customization configuration for ScandiPWA",
-            "time": "2020-11-10T14:38:04+00:00"
+            "time": "2020-11-12T10:28:00+00:00"
         },
         {
             "name": "scandipwa/installer",
@@ -17816,16 +17816,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.8.2",
+            "version": "1.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337"
+                "reference": "9ad6ce79c342fbd44df10ea95511a1b24dee5b57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/590cfec960b77fd55e39b7d9246659e95dd6d337",
-                "reference": "590cfec960b77fd55e39b7d9246659e95dd6d337",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/9ad6ce79c342fbd44df10ea95511a1b24dee5b57",
+                "reference": "9ad6ce79c342fbd44df10ea95511a1b24dee5b57",
                 "shasum": ""
             },
             "require": {
@@ -17871,7 +17871,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-25T06:56:57+00:00"
+            "time": "2020-11-11T09:19:24+00:00"
         },
         {
             "name": "seld/phar-utils",
@@ -20311,6 +20311,12 @@
     "packages-dev": [],
     "aliases": [
         {
+            "alias": "1.3.1",
+            "alias_normalized": "1.3.1.0",
+            "version": "9999999-dev",
+            "package": "scandipwa/customization"
+        },
+        {
             "alias": "3.2.1",
             "alias_normalized": "3.2.1.0",
             "version": "dev-3.2.1-rc",
@@ -20319,6 +20325,7 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "scandipwa/customization": 20,
         "scandipwa/source": 20
     },
     "prefer-stable": false,
