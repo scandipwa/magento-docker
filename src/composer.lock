@@ -4238,16 +4238,16 @@
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.3.0",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "b9d84eaa39fde733356ea948cdef36c631f202b6"
+                "reference": "d81c7ffe602ed0e6ecb18691019111c0f4bf1efe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/b9d84eaa39fde733356ea948cdef36c631f202b6",
-                "reference": "b9d84eaa39fde733356ea948cdef36c631f202b6",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/d81c7ffe602ed0e6ecb18691019111c0f4bf1efe",
+                "reference": "d81c7ffe602ed0e6ecb18691019111c0f4bf1efe",
                 "shasum": ""
             },
             "require": {
@@ -4260,15 +4260,9 @@
             "require-dev": {
                 "laminas/laminas-coding-standard": "~1.0.0",
                 "phpbench/phpbench": "^0.17.1",
-                "phpunit/phpunit": "^9.3.7"
+                "phpunit/phpunit": "~9.3.7"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3.x-dev",
-                    "dev-develop": "3.4.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Laminas\\Stdlib\\": "src/"
@@ -4290,7 +4284,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2020-08-25T09:08:16+00:00"
+            "time": "2020-11-19T20:18:59+00:00"
         },
         {
             "name": "laminas/laminas-text",
@@ -17173,6 +17167,44 @@
             "time": "2020-11-19T13:29:53+00:00"
         },
         {
+            "name": "scandipwa/cms-graphql",
+            "version": "1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/cms-graphql.git",
+                "reference": "cb0f4099f605dbab7d0158fea0b7eed9cb70d4e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/cms-graphql/zipball/cb0f4099f605dbab7d0158fea0b7eed9cb70d4e9",
+                "reference": "cb0f4099f605dbab7d0158fea0b7eed9cb70d4e9",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "*",
+                "magento/module-cms": "*",
+                "magento/module-cms-graph-ql": "^100.3",
+                "magento/module-store": "*",
+                "magento/module-variable": "*",
+                "magento/module-widget": "*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "ScandiPWA\\CmsGraphQl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "description": "ScandiPWA Graphql extension for CMS page",
+            "time": "2020-11-10T14:50:17+00:00"
+        },
+        {
             "name": "scandipwa/contact-graphql",
             "version": "1.0.0",
             "source": {
@@ -17693,18 +17725,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "4a9142426cca4a97105dde591739a7f7aaf3fb45"
+                "reference": "0729ea9544f27a7e85b4e7c3ffabf4f3c892ea6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/4a9142426cca4a97105dde591739a7f7aaf3fb45",
-                "reference": "4a9142426cca4a97105dde591739a7f7aaf3fb45",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/0729ea9544f27a7e85b4e7c3ffabf4f3c892ea6f",
+                "reference": "0729ea9544f27a7e85b4e7c3ffabf4f3c892ea6f",
                 "shasum": ""
             },
             "require": {
                 "magento/framework": "*",
                 "scandipwa/cache": "^1.1.1",
                 "scandipwa/catalog-graphql": "^3.1",
+                "scandipwa/cms-graphql": "^1.4.2",
                 "scandipwa/contact-graphql": "^1.0.0",
                 "scandipwa/customer-graph-ql": "^2.2.3",
                 "scandipwa/customization": "^1.4",
@@ -17731,7 +17764,7 @@
                 "OSL-3.0"
             ],
             "description": "ScandiPWA",
-            "time": "2020-11-19T14:27:25+00:00"
+            "time": "2020-11-20T09:49:28+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
