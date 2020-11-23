@@ -13,7 +13,7 @@
     "require": {
         "magento/product-community-edition": "2.4.1",
         "scandipwa/installer": "^3",
-        "scandipwa/source": "dev-3.2.2-rc as 3.2.2"
+        "scandipwa/source": "dev-master as 3.2.2"
     },
     "conflict": {
         "gene/bluefoot": "*"
