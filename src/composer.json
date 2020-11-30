@@ -13,6 +13,7 @@
     "require": {
         "magento/product-community-edition": "2.4.1",
         "scandipwa/installer": "^3",
+        "scandipwa/paypal-graphql": "^3.0",
         "scandipwa/source": "dev-3.2.3-rc as 3.2.3"
     },
     "conflict": {

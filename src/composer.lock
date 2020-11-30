@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9c139d42cc070ca6125fa146dc88f52",
+    "content-hash": "a524dd04ea758fc04a64e2d1b10bd320",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -17480,6 +17480,58 @@
             "time": "2020-09-07T10:32:08+00:00"
         },
         {
+            "name": "scandipwa/paypal-graphql",
+            "version": "3.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scandipwa/paypal-graphql.git",
+                "reference": "00809f261021fbdfd92b2ce0721acfe6cb997d77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scandipwa/paypal-graphql/zipball/00809f261021fbdfd92b2ce0721acfe6cb997d77",
+                "reference": "00809f261021fbdfd92b2ce0721acfe6cb997d77",
+                "shasum": ""
+            },
+            "require": {
+                "magento/magento2-base": "^2.3.2",
+                "magento/module-paypal-graph-ql": "*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "ScandiPWA\\PayPalGraphQl\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Artjoms Travkovs",
+                    "email": "artjoms.travkovs@scandiweb.com"
+                },
+                {
+                    "name": "Jegors Batovs",
+                    "email": "yegor@scandipwa.com"
+                }
+            ],
+            "description": "ScandiPWA GraphQl extend for PayPal",
+            "keywords": [
+                "graphql",
+                "magento2",
+                "module",
+                "paypal",
+                "pwa",
+                "scandipwa"
+            ],
+            "time": "2020-10-23T12:30:34+00:00"
+        },
+        {
             "name": "scandipwa/performance",
             "version": "1.4.0",
             "source": {
@@ -17563,16 +17615,16 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.16.0",
+            "version": "2.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "9650029c6900b4412c3142bbeb6eb73d39374d8f"
+                "reference": "ebfc1f022d6c7043881426640488914428d10b14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/9650029c6900b4412c3142bbeb6eb73d39374d8f",
-                "reference": "9650029c6900b4412c3142bbeb6eb73d39374d8f",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/ebfc1f022d6c7043881426640488914428d10b14",
+                "reference": "ebfc1f022d6c7043881426640488914428d10b14",
                 "shasum": ""
             },
             "require": {
@@ -17607,7 +17659,7 @@
                 "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2020-11-26T14:33:02+00:00"
+            "time": "2020-11-27T15:03:49+00:00"
         },
         {
             "name": "scandipwa/route717",
@@ -17727,12 +17779,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "43c717b6f03a9ff978da94a73275ffeb9259cf85"
+                "reference": "08817d90900470d6136ed0c7d274d7eb82063966"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/43c717b6f03a9ff978da94a73275ffeb9259cf85",
-                "reference": "43c717b6f03a9ff978da94a73275ffeb9259cf85",
+                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/08817d90900470d6136ed0c7d274d7eb82063966",
+                "reference": "08817d90900470d6136ed0c7d274d7eb82063966",
                 "shasum": ""
             },
             "require": {
@@ -17766,7 +17818,7 @@
                 "OSL-3.0"
             ],
             "description": "ScandiPWA",
-            "time": "2020-11-27T11:42:23+00:00"
+            "time": "2020-11-30T11:33:00+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
