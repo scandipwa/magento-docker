@@ -45,12 +45,6 @@ COPY deploy/shared/conf/php/docker-php-fpm.conf /usr/local/etc/php-fpm.d/docker.
 COPY deploy/wait-for-it.sh /wait-for-it.sh
 RUN chmod +x /wait-for-it.sh
 
-# Install MSMTP
-RUN apt-get update; \
-    apt-get install -y \
-        msmtp \
-        msmtp-mta
-
 # MSMTP config set
 RUN { \
         echo 'defaults'; \
