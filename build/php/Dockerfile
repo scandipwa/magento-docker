@@ -42,10 +42,12 @@ RUN apt-get update; \
 RUN curl -sL https://deb.nodesource.com/setup_lts.x | bash -; \
     apt-get install -y nodejs
 
-# Install GOSU and other packages
+# Install GOSU , SMTP and other packages
 RUN apt-get install -y \
     gosu \
-    bc
+    bc \
+    msmtp \
+    msmtp-mta
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer --version=1.10.17
