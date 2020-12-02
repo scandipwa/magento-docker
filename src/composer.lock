@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a524dd04ea758fc04a64e2d1b10bd320",
+    "content-hash": "ee7a83eda41c6c8679f6ed56d41105e4",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -17615,16 +17615,16 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.17.0",
+            "version": "2.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "ebfc1f022d6c7043881426640488914428d10b14"
+                "reference": "c6e99d76a89e982a16a0e3159602a7111ed8cf26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/ebfc1f022d6c7043881426640488914428d10b14",
-                "reference": "ebfc1f022d6c7043881426640488914428d10b14",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/c6e99d76a89e982a16a0e3159602a7111ed8cf26",
+                "reference": "c6e99d76a89e982a16a0e3159602a7111ed8cf26",
                 "shasum": ""
             },
             "require": {
@@ -17659,7 +17659,7 @@
                 "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2020-11-27T15:03:49+00:00"
+            "time": "2020-12-02T08:56:57+00:00"
         },
         {
             "name": "scandipwa/route717",
@@ -17775,16 +17775,16 @@
         },
         {
             "name": "scandipwa/source",
-            "version": "dev-3.2.3-rc",
+            "version": "dev-3.2.4-rc",
             "source": {
                 "type": "git",
-                "url": "https://github.com/scandipwa/base-theme.git",
-                "reference": "08817d90900470d6136ed0c7d274d7eb82063966"
+                "url": "https://github.com/scandipwa/scandipwa.git",
+                "reference": "a35f87dcb20b28be94a7c53f2c4e1d3f82bcdc69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/base-theme/zipball/08817d90900470d6136ed0c7d274d7eb82063966",
-                "reference": "08817d90900470d6136ed0c7d274d7eb82063966",
+                "url": "https://api.github.com/repos/scandipwa/scandipwa/zipball/a35f87dcb20b28be94a7c53f2c4e1d3f82bcdc69",
+                "reference": "a35f87dcb20b28be94a7c53f2c4e1d3f82bcdc69",
                 "shasum": ""
             },
             "require": {
@@ -17800,7 +17800,7 @@
                 "scandipwa/menu-organizer": "^2.0",
                 "scandipwa/performance": "^1.4",
                 "scandipwa/persisted-query": "^3.0",
-                "scandipwa/quote-graphql": "^2.15.1",
+                "scandipwa/quote-graphql": "^2.17.1",
                 "scandipwa/route717": "^2",
                 "scandipwa/slider-graphql": "^2.0",
                 "scandipwa/store-graphql": "^1.1.1",
@@ -17818,7 +17818,7 @@
                 "OSL-3.0"
             ],
             "description": "ScandiPWA",
-            "time": "2020-11-30T11:33:00+00:00"
+            "time": "2020-12-02T11:06:56+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
@@ -20459,9 +20459,9 @@
     "packages-dev": [],
     "aliases": [
         {
-            "alias": "3.2.3",
-            "alias_normalized": "3.2.3.0",
-            "version": "dev-3.2.3-rc",
+            "alias": "3.2.4",
+            "alias_normalized": "3.2.4.0",
+            "version": "dev-3.2.4-rc",
             "package": "scandipwa/source"
         }
     ],
