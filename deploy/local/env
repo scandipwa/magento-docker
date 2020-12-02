@@ -27,7 +27,7 @@ RENDERTRON_PORT=8083
 # These settings used in build and deploy stages, set them once, recheck and deploy.
 BASEPATH=/var/www/public
 PROJECT_TAG=local
-PROJECT_IMAGE=magento-2.4.0
+PROJECT_IMAGE=magento-2.4.1
 
 # PHP Composer uses plain version number, fail if not existing
 # version list, manual download section: https://getcomposer.org/download/
