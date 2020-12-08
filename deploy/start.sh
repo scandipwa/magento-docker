@@ -269,8 +269,9 @@ function magento_set_baseurl {
   if [[ -n ${MAGENTO_SECURE_BASEURL+x} ]]; then
     echo "${blue}${bold}Setting secure baseurl to $MAGENTO_SECURE_BASEURL${normal}"
     magento setup:store-config:set --base-url-secure="$MAGENTO_SECURE_BASEURL"
-    magento setup:store-config:set --use-secure 1
-    magento setup:store-config:set --use-secure-admin 1
+    magento setup:store-config:set --use-rewrites 1
+    magento setup:store-config:set --use-secure 0
+    magento setup:store-config:set --use-secure-admin 0
   fi
 }
 
