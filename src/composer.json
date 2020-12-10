@@ -14,7 +14,7 @@
         "magento/product-community-edition": "2.4.1",
         "scandipwa/installer": "^3",
         "scandipwa/paypal-graphql": "^3.0",
-        "scandipwa/source": "dev-3.2.4-rc as 3.2.4"
+        "scandipwa/source": "dev-3.2.5-rc as 3.2.5"
     },
     "conflict": {
         "gene/bluefoot": "*"
