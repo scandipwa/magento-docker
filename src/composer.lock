@@ -17615,16 +17615,16 @@
         },
         {
             "name": "scandipwa/quote-graphql",
-            "version": "2.17.3",
+            "version": "2.17.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/quote-graphql.git",
-                "reference": "a943f86ff46fcb6430a5110e544c232b22432753"
+                "reference": "39821b1182db97d51c85f364eaa9c21a158a3830"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/a943f86ff46fcb6430a5110e544c232b22432753",
-                "reference": "a943f86ff46fcb6430a5110e544c232b22432753",
+                "url": "https://api.github.com/repos/scandipwa/quote-graphql/zipball/39821b1182db97d51c85f364eaa9c21a158a3830",
+                "reference": "39821b1182db97d51c85f364eaa9c21a158a3830",
                 "shasum": ""
             },
             "require": {
@@ -17659,7 +17659,7 @@
                 "OSL-3.0"
             ],
             "description": "N/A",
-            "time": "2020-12-08T10:01:47+00:00"
+            "time": "2020-12-14T13:24:58+00:00"
         },
         {
             "name": "scandipwa/route717",
@@ -17779,12 +17779,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/scandipwa.git",
-                "reference": "8b8574e55f39e4b0d462f9f9d707eb127e1c808b"
+                "reference": "64f9fd02bc9bb6a3ed871060119e50c6466e61e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/scandipwa/zipball/8b8574e55f39e4b0d462f9f9d707eb127e1c808b",
-                "reference": "8b8574e55f39e4b0d462f9f9d707eb127e1c808b",
+                "url": "https://api.github.com/repos/scandipwa/scandipwa/zipball/64f9fd02bc9bb6a3ed871060119e50c6466e61e3",
+                "reference": "64f9fd02bc9bb6a3ed871060119e50c6466e61e3",
                 "shasum": ""
             },
             "require": {
@@ -17800,7 +17800,7 @@
                 "scandipwa/menu-organizer": "^2.0",
                 "scandipwa/performance": "^1.4",
                 "scandipwa/persisted-query": "^3.0",
-                "scandipwa/quote-graphql": "^2.17.3",
+                "scandipwa/quote-graphql": "^2.17.4",
                 "scandipwa/route717": "^2",
                 "scandipwa/slider-graphql": "^2.0",
                 "scandipwa/store-graphql": "^1.1.2",
@@ -17818,7 +17818,7 @@
                 "OSL-3.0"
             ],
             "description": "ScandiPWA",
-            "time": "2020-12-10T13:51:24+00:00"
+            "time": "2020-12-14T13:43:36+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
