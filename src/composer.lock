@@ -17123,16 +17123,16 @@
         },
         {
             "name": "scandipwa/catalog-graphql",
-            "version": "3.1.2",
+            "version": "3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/catalog-graphql.git",
-                "reference": "cc8424368a8d57b978b6e91f343d9b712a7e951c"
+                "reference": "b7df35a311de45b1c250f80627f5018afeb9bee9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/cc8424368a8d57b978b6e91f343d9b712a7e951c",
-                "reference": "cc8424368a8d57b978b6e91f343d9b712a7e951c",
+                "url": "https://api.github.com/repos/scandipwa/catalog-graphql/zipball/b7df35a311de45b1c250f80627f5018afeb9bee9",
+                "reference": "b7df35a311de45b1c250f80627f5018afeb9bee9",
                 "shasum": ""
             },
             "require": {
@@ -17166,7 +17166,7 @@
                 "OSL-3.0"
             ],
             "description": "Catalog-specific modifications for ScandiPWA",
-            "time": "2020-12-04T11:47:57+00:00"
+            "time": "2020-12-16T13:17:27+00:00"
         },
         {
             "name": "scandipwa/cms-graphql",
@@ -17779,18 +17779,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/scandipwa.git",
-                "reference": "64f9fd02bc9bb6a3ed871060119e50c6466e61e3"
+                "reference": "9358dbc305f55c9279ae34e7ac1cf9ac5504c449"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/scandipwa/zipball/64f9fd02bc9bb6a3ed871060119e50c6466e61e3",
-                "reference": "64f9fd02bc9bb6a3ed871060119e50c6466e61e3",
+                "url": "https://api.github.com/repos/scandipwa/scandipwa/zipball/9358dbc305f55c9279ae34e7ac1cf9ac5504c449",
+                "reference": "9358dbc305f55c9279ae34e7ac1cf9ac5504c449",
                 "shasum": ""
             },
             "require": {
                 "magento/framework": "*",
                 "scandipwa/cache": "^1.1.1",
-                "scandipwa/catalog-graphql": "^3.1.2",
+                "scandipwa/catalog-graphql": "^3.1.3",
                 "scandipwa/cms-graphql": "^1.4.2",
                 "scandipwa/contact-graphql": "^1.0.0",
                 "scandipwa/customer-graph-ql": "^2.2.3",
@@ -17818,7 +17818,7 @@
                 "OSL-3.0"
             ],
             "description": "ScandiPWA",
-            "time": "2020-12-14T13:43:36+00:00"
+            "time": "2020-12-16T13:22:39+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
