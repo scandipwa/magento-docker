@@ -17779,12 +17779,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/scandipwa/scandipwa.git",
-                "reference": "9358dbc305f55c9279ae34e7ac1cf9ac5504c449"
+                "reference": "4901b1fbd053f9e9166a4640cc44d0ef90e1c139"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/scandipwa/scandipwa/zipball/9358dbc305f55c9279ae34e7ac1cf9ac5504c449",
-                "reference": "9358dbc305f55c9279ae34e7ac1cf9ac5504c449",
+                "url": "https://api.github.com/repos/scandipwa/scandipwa/zipball/4901b1fbd053f9e9166a4640cc44d0ef90e1c139",
+                "reference": "4901b1fbd053f9e9166a4640cc44d0ef90e1c139",
                 "shasum": ""
             },
             "require": {
@@ -17818,7 +17818,7 @@
                 "OSL-3.0"
             ],
             "description": "ScandiPWA",
-            "time": "2020-12-16T13:22:39+00:00"
+            "time": "2020-12-18T12:49:25+00:00"
         },
         {
             "name": "scandipwa/store-graphql",
