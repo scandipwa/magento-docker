@@ -12,9 +12,8 @@
     },
     "require": {
         "magento/product-community-edition": "2.4.1",
-        "scandipwa/installer": "^3",
         "scandipwa/paypal-graphql": "^3.0",
-        "scandipwa/source": "dev-3.2.5-rc as 3.2.5"
+        "scandipwa/scandipwa": "^0.0.1"
     },
     "conflict": {
         "gene/bluefoot": "*"
@@ -56,6 +55,10 @@
         "magento": {
             "type": "composer",
             "url": "https://repo.magento.com/"
+        },
+        "theme": {
+            "type": "path",
+            "url": "localmodules/scandipwa/packages/scandipwa"
         }
     },
     "extra": {

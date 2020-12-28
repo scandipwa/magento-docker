@@ -63,21 +63,19 @@ export bash_colors
 function pwa_theme_install {
   echo "${blue}${bold}Register PWA theme in Magento${normal}"
 
-  # default value
-  SCANDIPWA_THEME=${SCANDIPWA_THEME:-"Scandiweb/pwa"}
-
-  # Theme setup
-  magento scandipwa:theme:bootstrap "$SCANDIPWA_THEME" -n || true
-  magento setup:upgrade
-
   if [ $? -eq 0 ]; then
     if [ "$frontend" != "1" ]
     then
       echo "${blue}${bold}Building PWA theme${normal}"
-      cd $BASEPATH/app/design/frontend/$SCANDIPWA_THEME
-      npm ci
-      npm run build
+      mkdir $BASEPATH/localmodules
+      git clone https://github.com/scandipwa/scandipwa.git $BASEPATH/localmodules/scandipwa
+      cd $BASEPATH/localmodules/scandipwa
+      yarn
+      cd $BASEPATH/localmodules/scandipwa/packages/scandipwa
+      BUILD_MODE=magento yarn build
       cd $BASEPATH
+      composer config repo.theme path localmodules/scandipwa/packages/scandipwa
+      composer require scandipwa/scandipwa
     else
       echo "${blue}${bold}Frontend container will build PWA theme${normal}"
     fi
@@ -329,6 +327,8 @@ fi
 
 # Switch current execution directory to WORKDIR (BASEPATH)
 in_basepath
+# Pwa thme install
+pwa_theme_install
 # Installing PHP Composer and packages
 composer_install
 
@@ -349,8 +349,6 @@ create_admin_user
 
 # Set magento mode
 magento_set_mode
-# Pwa thme install
-pwa_theme_install
 # Static content deploy and DI compile, only in production mode
 magento_compile
 

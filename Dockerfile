@@ -70,7 +70,8 @@ COPY deploy/entrypoint.sh /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 
 # Copy project files
-COPY src/ $BASEPATH/
+COPY src/composer.json $BASEPATH/composer.json
+COPY src/composer.lock $BASEPATH/composer.lock
 
 ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 
@@ -78,6 +79,8 @@ ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
 # Spaces in command arguments will result fail to start, put each argument in "" delimited by ,
 #CMD ["arg1", "arg2", ""]
 CMD ["/start.sh"]
+
+RUN npm i -g yarn
 
 # Print all versions for verification
 RUN echo "$(tput setaf 3)php, composer$(tput sgr0)";\

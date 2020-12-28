@@ -2,6 +2,7 @@ node_modules/
 opt/*
 src/*
 !src/composer.*
+!src/module/*
 !.gitignore
 !**/.gitkeep
 mutagen.*.lock
